@@ -302,3 +302,83 @@ body {
     /* Push to the right */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* Year Row Layout - 3 columns per row */
+.year-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .year-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+}
+
+/* Mobile - still 3 columns but smaller */
+@media (max-width: 768px) {
+    .year-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .exam-card {
+        padding: 12px;
+        min-width: auto;
+    }
+
+    .card-header {
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+
+    .year-badge {
+        font-size: 0.75rem;
+        padding: 2px 6px;
+    }
+
+    .session-text {
+        font-size: 0.9rem;
+    }
+
+    .action-btn {
+        padding: 4px 6px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Placeholder Card Styling */
+.placeholder-card {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.placeholder-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.placeholder-actions {
+    justify-content: center;
+}
+
+.placeholder-text {
+    color: var(--dash-text-sub);
+    font-size: 0.9rem;
+    padding: 8px 0;
+}
+
+/* Section Subtitle for 準会場 */
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--dash-text-sub);
+    margin: 30px 0 16px 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
