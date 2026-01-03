@@ -419,3 +419,129 @@
     color: #e74c3c;
     font-weight: 800;
 }
+
+/* --- Mobile Optimization: Full Screen Centered --- */
+@media (max-width: 480px) {
+    .vocab-container {
+        padding: 16px;
+        padding-bottom: env(safe-area-inset-bottom, 16px);
+        overflow: hidden;
+        /* Prevent scrolling */
+    }
+
+    .vocab-app-content {
+        max-height: 100%;
+        overflow: hidden;
+    }
+
+    /* Start Screen - Compact Fit */
+    .start-screen {
+        gap: 16px;
+    }
+
+    .vocab-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .vocab-subtitle {
+        font-size: 1rem;
+    }
+
+    .vocab-info-card {
+        padding: 20px;
+        margin-bottom: 12px;
+    }
+
+    .remaining-count {
+        font-size: 3rem;
+    }
+
+    .remaining-label {
+        font-size: 1rem;
+    }
+
+    .settings-box {
+        padding: 16px;
+    }
+
+    .toggle-btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .start-btn-large {
+        padding: 14px;
+        font-size: 1.2rem;
+    }
+
+    .start-footer-message {
+        margin-top: 16px;
+        font-size: 0.95rem;
+    }
+
+    /* Study Screen - Fit Without Scrolling */
+    .study-screen {
+        padding-top: 8px;
+        padding-bottom: 16px;
+        height: 100%;
+        max-height: calc(100dvh - 32px);
+        overflow: hidden;
+    }
+
+    .study-header {
+        margin-bottom: 8px;
+    }
+
+    .progress-text {
+        font-size: 0.95rem;
+    }
+
+    .flashcard {
+        height: 55vh;
+        max-height: none;
+        margin-bottom: 16px;
+        flex-shrink: 1;
+    }
+
+    .card-face {
+        padding: 16px;
+    }
+
+    .word-en {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .word-jp {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+    }
+
+    .word-en-small {
+        font-size: 1rem;
+    }
+
+    .tap-hint {
+        bottom: 20px;
+        font-size: 0.8rem;
+    }
+
+    .controls {
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .control-btn {
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    .cheer-overlay {
+        padding: 16px 24px;
+        top: 15%;
+    }
+
+    .cheer-content {
+        font-size: 1rem;
+    }
+}
