@@ -1,0 +1,418 @@
+/* Smartphone Optimized Layout */
+:root {
+    --vocab-bg: #e0e5ec;
+    /* Darker bg for desktop contrast */
+    --vocab-app-bg: #f7f9fc;
+    --vocab-accent: #4a90e2;
+    --vocab-text: #333333;
+    --vocab-text-light: #888888;
+}
+
+/* Smartphone Optimized Layout */
+:root {
+    --vocab-bg: #e0e5ec;
+    /* Darker bg for desktop contrast */
+    --vocab-app-bg: #f7f9fc;
+    --vocab-accent: #4a90e2;
+    --vocab-text: #333333;
+    --vocab-text-light: #888888;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vocab-container {
+    background-color: var(--vocab-app-bg);
+    width: 100vw;
+    height: 100vh;
+    /* Full viewport logic for Vocab App specifics */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    /* Scroll within container */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center content vertically */
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.vocab-app-content {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* Take available space */
+    justify-content: center;
+    /* Default center, overridden by study-screen */
+}
+
+/* Desktop & Tablet Enhancement */
+/* Center vertically and add shadow/border */
+@media (min-width: 500px) {
+    .vocab-container {
+        height: 90vh;
+        /* Floating window effect */
+        max-height: 850px;
+        border-radius: 24px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* Start Screen */
+.start-screen {
+    gap: 32px;
+}
+
+.vocab-header {
+    text-align: center;
+}
+
+.vocab-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--vocab-text);
+}
+
+.vocab-subtitle {
+    font-size: 1.2rem;
+    color: var(--vocab-text-light);
+    margin-top: 8px;
+}
+
+/* Info Card with Count */
+.vocab-info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.remaining-label {
+    font-size: 1.2rem;
+    color: var(--vocab-text-light);
+    margin: 0;
+    font-weight: bold;
+}
+
+.remaining-count {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #e74c3c;
+    /* Red highlight */
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.reset-text-btn {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.reset-text-btn:hover {
+    color: #e74c3c;
+}
+
+.start-footer-message {
+    margin-top: 30px;
+    color: var(--vocab-text-light);
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.settings-box {
+    width: 100%;
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.setting-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: var(--vocab-text);
+    text-align: center;
+}
+
+.toggle-group {
+    display: flex;
+    background: #eef2f6;
+    border-radius: 30px;
+    padding: 4px;
+}
+
+.toggle-btn {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: var(--vocab-text-light);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.toggle-btn.active {
+    background: white;
+    color: var(--vocab-accent);
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.start-btn-large {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(74, 144, 226, 0.3);
+    transition: transform 0.1s;
+}
+
+.start-btn-large:active {
+    transform: scale(0.98);
+}
+
+/* Study Screen */
+.study-screen {
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.study-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.progress-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--vocab-text-light);
+}
+
+.quit-btn {
+    background: transparent;
+    border: 1px solid #ddd;
+    color: #888;
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Flashcard */
+.flashcard {
+    width: 100%;
+    /* Fixed aspect ratio or reasonable height for phone feel */
+    height: 60vh;
+    max-height: 500px;
+    /* Don't get too tall on big screens */
+    perspective: 1000px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Card Faces */
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: #fdfdfd;
+}
+
+/* Flip State */
+.flashcard.flipped .card-front {
+    transform: rotateY(-180deg);
+}
+
+.flashcard.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+/* Text Styles */
+.word-en {
+    font-size: 2.5rem;
+    /* Slightly smaller to fit long words */
+    font-weight: bold;
+    color: var(--vocab-text);
+    margin-bottom: 16px;
+    text-align: center;
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+.word-jp {
+    font-size: 1.6rem;
+    /* Slightly smaller for multi-line */
+    font-weight: bold;
+    color: var(--vocab-accent);
+    text-align: left;
+    /* Align left for list look, or center if preferred. Center usually looks better for short lists */
+    text-align: center;
+    margin-bottom: 24px;
+    word-break: break-word;
+    white-space: pre-wrap;
+    /* Enable newlines */
+    line-height: 1.4;
+}
+
+.word-en-small {
+    font-size: 1.2rem;
+    color: var(--vocab-text-light);
+}
+
+.tap-hint {
+    position: absolute;
+    bottom: 30px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Controls */
+.controls {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.control-btn {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.control-btn.prev {
+    background: #eef2f6;
+    color: var(--vocab-text-light);
+}
+
+.control-btn.next {
+    background: var(--vocab-accent);
+    color: white;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.25);
+}
+
+.control-btn:active {
+    opacity: 0.9;
+    transform: translateY(1px);
+}
+
+/* Answer Buttons */
+.answer-btn {
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer-btn.not-yet {
+    background-color: #e74c3c;
+    /* Red */
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.answer-btn.memorized {
+    background-color: #27ae60;
+    /* Green */
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+/* Cheer Overlay */
+.cheer-overlay {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    pointer-events: none;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 80%;
+    text-align: center;
+    border: 3px solid var(--vocab-accent);
+}
+
+.cheer-content {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--vocab-text);
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 20px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(1);
+    }
+}
+
+.count-remaining {
+    color: #e74c3c;
+    font-weight: 800;
+}

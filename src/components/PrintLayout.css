@@ -1,0 +1,145 @@
+/* Print Media Query setup */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 6mm;
+    }
+
+    body {
+        background: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+.print-error {
+    color: red;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.print-sheet-a4 {
+    background: white;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 5mm 8mm;
+    margin: 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Screen Preview Styling */
+@media screen {
+    body {
+        background: #ccc;
+    }
+
+    .print-sheet-a4 {
+        margin: 20px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.print-header {
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.print-header h1 {
+    margin: 0;
+    font-size: 12pt;
+}
+
+.print-meta {
+    font-size: 9pt;
+}
+
+/* 2-Column Layout */
+.print-columns {
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 1px solid #ddd;
+    flex-grow: 1;
+    column-fill: balance;
+}
+
+.print-question-block {
+    break-inside: avoid;
+    margin-bottom: 12px;
+    display: flex;
+    font-size: 9pt;
+    line-height: 1.35;
+}
+
+.pq-number {
+    width: 20px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.pq-content {
+    flex-grow: 1;
+}
+
+.pq-text {
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.pq-choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 12px;
+    justify-content: flex-start;
+}
+
+.pq-choice-item {
+    min-width: 75px;
+    font-size: 8.5pt;
+}
+
+.pq-choice-num {
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+/* Answer Key at bottom - full width, 2 lines */
+.print-answer-key {
+    margin-top: auto;
+    border-top: 1px solid #000;
+    padding-top: 4px;
+    width: 100%;
+}
+
+.answer-key-title {
+    font-weight: bold;
+    font-size: 8pt;
+    margin-bottom: 2px;
+}
+
+.answer-key-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 7pt;
+    line-height: 1.4;
+}
+
+.answer-key-item {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.print-footer {
+    margin-top: 4px;
+    padding-top: 2px;
+    font-size: 6pt;
+    text-align: center;
+    color: #888;
+}

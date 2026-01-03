@@ -1,0 +1,163 @@
+.structure-container {
+    margin-top: 30px;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+.sentence-viz {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.35rem;
+    /* Unified intermediate size */
+    line-height: 2.8;
+    margin-bottom: 25px;
+    display: block;
+    /* Use standard flow to match question text layout */
+    /* flex-wrap: wrap; */
+    /* align-items: baseline; */
+    /* gap: 12px; -> Moved to margin on chunk */
+    color: #2c3e50;
+    letter-spacing: 0.2px;
+}
+
+.viz-text-plain {
+    margin-right: 5px;
+    color: #333;
+}
+
+.viz-chunk {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1px;
+    /* Barely touching */
+    line-height: 1.4;
+    /* Reset to prevent overlap */
+    border-bottom: 3px solid var(--chunk-color, transparent);
+    /* Thicker line */
+    text-align: center;
+    margin-right: 12px;
+    margin-bottom: 25px;
+    /* Increase vertical spacing for wrapped lines */
+}
+
+.chunk-text {
+    font-weight: 500;
+}
+
+.chunk-label-badge {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: var(--chunk-color, #ccc);
+    color: white;
+
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+    /* Fully rounded capsule */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    line-height: 1.2;
+    z-index: 1;
+}
+
+.end-period {
+    font-size: 1.6rem;
+    margin-left: -5px;
+}
+
+/* Translation Styles as Rounded Panel */
+.translation-box {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* Light grey panel background */
+    border-radius: 12px;
+    /* Rounded corners */
+    font-family: "Noto Sans JP", sans-serif;
+    /* border: 1px solid #eee; Optional border */
+}
+
+.trans-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.trans-row:last-child {
+    margin-bottom: 0;
+}
+
+.trans-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #90a4ae;
+    margin-right: 15px;
+    min-width: 60px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.trans-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.trans-text-colored-wrapper {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    font-weight: 500;
+}
+
+.trans-chunk-colored {
+    margin-right: 2px;
+    /* Color is applied inline by React */
+}
+
+/* Correct word highlight - Pastel Yellow */
+.correct-word-highlight {
+    background-color: #fff9c4;
+    /* Pastel Yellow */
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Rationale / Guidance Styles */
+.rationale-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e3f2fd;
+    /* Light Blue for guidance */
+    border-radius: 12px;
+    border-left: 5px solid #2196f3;
+}
+
+.rationale-header {
+    font-size: 1.0rem;
+    font-weight: 700;
+    color: #1976d2;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.rationale-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.rationale-content {
+    font-size: 1.0rem;
+    line-height: 1.8;
+    color: #455a64;
+    white-space: pre-wrap;
+    /* Preserve newlines */
+    font-family: "Noto Sans JP", serif;
+    /* Serif for reading */
+}
