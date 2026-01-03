@@ -603,79 +603,168 @@
 /* --- Tablet Responsive Styles (768px - 1024px) --- */
 @media (max-width: 1024px) {
     .glass-nav {
-        flex-wrap: wrap;
-        gap: 12px;
-        padding: 12px 16px;
-        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding: 8px 12px;
+        justify-content: space-between;
+        overflow-x: auto;
     }
 
     .nav-left,
     .nav-right {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 6px;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
     }
 
     .app-logo {
-        font-size: 1rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
     }
 
     .nav-badge {
-        font-size: 0.75rem;
-        padding: 3px 8px;
+        font-size: 0.65rem;
+        padding: 2px 6px;
+        white-space: nowrap;
     }
 
     .divider-vertical {
         display: none;
     }
 
+    .toggle-label {
+        font-size: 0.7rem;
+    }
+
     .tool-btn {
-        padding: 5px 10px;
-        font-size: 0.8rem;
+        padding: 4px 6px;
+        font-size: 0.7rem;
+        gap: 3px;
+        white-space: nowrap;
+    }
+
+    .tool-btn span:first-child {
+        font-size: 0.9rem;
     }
 
     .mode-pill {
-        padding: 2px;
+        padding: 1px;
     }
 
     .pill-option {
-        padding: 5px 12px;
-        font-size: 0.8rem;
+        padding: 4px 8px;
+        font-size: 0.7rem;
     }
 
     .tool-capsule {
-        padding: 2px;
+        padding: 1px;
     }
 
     .capsule-label {
-        padding: 5px 10px;
-        font-size: 0.8rem;
+        padding: 4px 6px;
+        font-size: 0.7rem;
+    }
+
+    .icon-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
     }
 }
 
 /* --- Mobile Responsive (max 768px) --- */
+/* Mobile Nav Toggle Button - hidden on desktop */
+.mobile-nav-toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
+
+    /* Mobile Nav Toggle */
+    .mobile-nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        font-size: 1.3rem;
+        cursor: pointer;
+        color: #475569;
+    }
+
     .glass-nav {
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
+        gap: 8px;
         padding: 10px;
+        padding-right: 50px;
+        /* Space for toggle button */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Hide nav on scroll down */
+    .glass-nav.nav-hidden {
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Collapsed state - show only minimal info */
+    .glass-nav:not(.nav-expanded) .nav-left,
+    .glass-nav:not(.nav-expanded) .nav-right,
+    .glass-nav:not(.nav-expanded) .mode-pill,
+    .glass-nav:not(.nav-expanded) .tool-capsule,
+    .glass-nav:not(.nav-expanded) .toggle-wrapper {
+        display: none;
+    }
+
+    /* Show grade badge in collapsed state */
+    .glass-nav:not(.nav-expanded) .app-logo {
+        display: block;
+        font-size: 0.85rem;
+        text-align: left;
+    }
+
+    /* Expanded state - show all */
+    .glass-nav.nav-expanded .nav-left,
+    .glass-nav.nav-expanded .nav-right,
+    .glass-nav.nav-expanded .mode-pill,
+    .glass-nav.nav-expanded .tool-capsule,
+    .glass-nav.nav-expanded .toggle-wrapper {
+        display: flex;
     }
 
     .nav-left,
     .nav-right {
         justify-content: center;
-        gap: 8px;
+        gap: 6px;
+        flex-wrap: wrap;
     }
 
     .app-logo {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         text-align: center;
-        width: 100%;
+    }
+
+    .nav-badge {
+        font-size: 0.65rem;
+        padding: 2px 6px;
     }
 
     .toggle-wrapper {
         justify-content: center;
+    }
+
+    .toggle-label {
+        font-size: 0.7rem;
     }
 
     .mode-pill {
@@ -689,7 +778,7 @@
 
     .tool-btn {
         padding: 4px 8px;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .tool-capsule {
@@ -698,7 +787,7 @@
 
     .capsule-label {
         padding: 4px 8px;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .floating-status-bar {
@@ -717,18 +806,42 @@
     }
 
     #question-container {
-        padding: 20px;
+        padding: 16px 12px;
     }
 
     .paper-header {
-        padding: 0 16px;
+        padding: 0 12px;
+        margin-top: 10px;
     }
 
     .big-number {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .instruction-body {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    .question-block {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    .q-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .choices {
+        gap: 8px;
+    }
+
+    .choice-item {
+        padding: 8px 12px;
+        min-width: 100px;
+    }
+
+    .choice-text {
+        font-size: 1rem;
     }
 }

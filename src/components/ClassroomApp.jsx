@@ -50,6 +50,31 @@ function ClassroomApp() {
     });
     const [isWeaknessMode, setIsWeaknessMode] = useState(false);
 
+    // Mobile: Auto-hide header on scroll
+    const [isNavVisible, setIsNavVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            // Only auto-hide on mobile (< 768px)
+            if (window.innerWidth < 768) {
+                if (currentScrollY > lastScrollY && currentScrollY > 60) {
+                    setIsNavVisible(false);
+                    setIsNavExpanded(false);
+                } else {
+                    setIsNavVisible(true);
+                }
+            } else {
+                setIsNavVisible(true);
+            }
+            setLastScrollY(currentScrollY);
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollY]);
+
     // Save wrong questions effect
     useEffect(() => {
         const storageKey = 'wrong_questions_' + targetExam.id;
@@ -252,7 +277,15 @@ function ClassroomApp() {
         <div className={`classroom-body ${isInstructorMode ? 'instructor-mode' : ''}`} onMouseUp={handleMouseUp}>
             {/* App Control Bar (Modern UI) */}
             {/* 1. Unified App Header (Glassy) */}
-            <nav className="glass-nav">
+            <nav className={`glass-nav ${!isNavVisible ? 'nav-hidden' : ''} ${isNavExpanded ? 'nav-expanded' : ''}`}>
+                {/* Mobile Toggle Button */}
+                <button
+                    className="mobile-nav-toggle"
+                    onClick={() => setIsNavExpanded(!isNavExpanded)}
+                    aria-label="Toggle navigation"
+                >
+                    {isNavExpanded ? '✕' : '☰'}
+                </button>
                 <div className="nav-left">
                     <button className="tool-btn secondary" onClick={() => { window.location.href = '/'; }} style={{ display: 'flex', alignItems: 'center', gap: '4px', marginRight: '12px', padding: '6px 12px', cursor: 'pointer' }}>
                         <span style={{ fontSize: '1.1em' }}>⌂</span> <span style={{ fontSize: '0.9rem' }}>ホーム</span>
