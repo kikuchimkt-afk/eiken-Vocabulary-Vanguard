@@ -7,8 +7,6 @@ export const grade2Data = {
             choices: ["income", "convention", "judgment", "geography"],
             choiceMeanings: ["収入", "慣習", "判断", "地理"],
             correctAnswer: 3,
-            structure: "You [S] have to use [V] your own judgment [O] to decide [M] . No one else can do it for you.",
-            explanation: "judgment: 判断",
             structure: "You [S] have to use [V] your own judgment [O] to decide [M].",
             explanation: "judgment: 判断",
             translation: {

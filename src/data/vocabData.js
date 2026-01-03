@@ -1,75 +1,161 @@
 export const vocabDatabase = {
     "2023-1-g2": [
-        { id: 1, word: "income", meaning: "1. 収入\n2. 所得" },
-        { id: 2, word: "convention", meaning: "1. 慣習\n2. 会議, 大会\n3. 条約" },
-        { id: 3, word: "judgment", meaning: "1. 判断\n2. 判決\n3. 見識" },
-        { id: 4, word: "geography", meaning: "地理" },
-        { id: 5, word: "harmful", meaning: "有害な" },
-        { id: 6, word: "previous", meaning: "以前の" },
-        { id: 7, word: "certain", meaning: "1. 特定の\n2. 確信している" },
-        { id: 8, word: "vague", meaning: "曖昧な" },
-        { id: 9, word: "alter", meaning: "変える" },
-        { id: 10, word: "impress", meaning: "1. 感銘を与える\n2. 印象付ける" },
-        { id: 11, word: "honor", meaning: "1. 称える\n2. 名誉\n3. 光栄" },
-        { id: 12, word: "confront", meaning: "立ち向かう" },
-        { id: 13, word: "illustrate", meaning: "1. 説明する\n2. 挿絵を入れる" },
-        { id: 14, word: "remind", meaning: "思い出させる" },
-        { id: 15, word: "proceed", meaning: "進む" },
-        { id: 16, word: "defend", meaning: "守る" },
-        { id: 17, word: "carriage", meaning: "1. 馬車\n2. 車両" },
-        { id: 18, word: "fantasy", meaning: "空想" },
-        { id: 19, word: "puzzle", meaning: "パズル" },
-        { id: 20, word: "luxury", meaning: "贅沢品" },
-        { id: 21, word: "legally", meaning: "法的に" },
-        { id: 22, word: "financially", meaning: "財政的に" },
-        { id: 23, word: "accidentally", meaning: "偶然に" },
-        { id: 24, word: "individually", meaning: "個別に" },
-        { id: 25, word: "engage", meaning: "1. 従事させる\n2. 婚約する\n3. 引き込む" },
-        { id: 26, word: "divide", meaning: "分ける" },
-        { id: 27, word: "bury", meaning: "埋める" },
-        { id: 28, word: "stress", meaning: "1. 強調する\n2. ストレス\n3. 圧力" },
-        { id: 29, word: "spray", meaning: "噴射する（スプレーした）" },
-        { id: 30, word: "demand", meaning: "1. 要求する\n2. 需要" },
-        { id: 31, word: "award", meaning: "授与する" },
-        { id: 32, word: "punish", meaning: "罰する" },
-        { id: 33, word: "urgency", meaning: "緊急" },
-        { id: 34, word: "offspring", meaning: "子孫" },
-        { id: 35, word: "empire", meaning: "帝国" },
-        { id: 36, word: "impulse", meaning: "衝動" },
-        { id: 37, word: "triumph", meaning: "勝利" },
-        { id: 38, word: "religion", meaning: "宗教" },
-        { id: 39, word: "flame", meaning: "炎" },
-        { id: 40, word: "luggage", meaning: "荷物" },
-        { id: 41, word: "capable of", meaning: "〜の能力がある" },
-        { id: 42, word: "be inspired by", meaning: "〜に触発される" },
-        { id: 43, word: "be attracted to", meaning: "〜に惹かれる" },
-        { id: 44, word: "be disappointed in", meaning: "〜に失望して" },
-        { id: 45, word: "cut down", meaning: "1. 〜を減らす\n2. 〜を切り倒す" },
-        { id: 46, word: "hang up", meaning: "1. 電話を切る\n2. （物を）掛ける" },
-        { id: 47, word: "take after", meaning: "〜に似る" },
-        { id: 48, word: "set aside", meaning: "1. （のけて）取っておく\n2. 無視する" },
-        { id: 49, word: "hear of", meaning: "〜のことを聞く" },
-        { id: 50, word: "turn over", meaning: "1. ひっくり返す\n2. 譲る" },
-        { id: 51, word: "shut off", meaning: "止められる（遮断される）" },
-        { id: 52, word: "rule out", meaning: "1. 除外する\n2. 不可能とする" },
-        { id: 53, word: "bring out", meaning: "1. 発売する（世に出す）\n2. 引き出す" },
-        { id: 54, word: "fall for", meaning: "騙される" },
-        { id: 55, word: "pick on", meaning: "いじめる" },
-        { id: 56, word: "give off", meaning: "（においなどを）発する" },
-        { id: 57, word: "flow into", meaning: "〜に流れ込む" },
-        { id: 58, word: "run across", meaning: "偶然出会う" },
-        { id: 59, word: "hand over", meaning: "手渡す" },
-        { id: 60, word: "dig up", meaning: "1. 掘り起こす\n2. 探し出す" },
-        { id: 61, word: "at ease", meaning: "気楽に" },
-        { id: 62, word: "at length", meaning: "詳細に（長々と）" },
-        { id: 63, word: "in person", meaning: "直接（本人が）" },
-        { id: 64, word: "in detail", meaning: "詳細に" },
-        { id: 65, word: "for fear", meaning: "〜を恐れて" },
-        { id: 66, word: "in charge", meaning: "〜を担当して" },
-        { id: 67, word: "on behalf", meaning: "〜を代表して" },
-        { id: 68, word: "by way", meaning: "〜を経由して" },
-        { id: 69, word: "provided", meaning: "〜という条件で" },
-        { id: 70, word: "times the size of", meaning: "〜の倍の大きさ" }
+        // Q1
+        { id: 1, word: "income", meaning: "収入", sentence: "You have to use your own income to decide.", translation: "決めるためには自分の収入を使わなければならない。", questionId: 1 },
+        { id: 2, word: "convention", meaning: "慣習、しきたり", sentence: "Convention dictates that we dress formally.", translation: "慣習により、正装しなければならない。", questionId: 1 },
+        { id: 3, word: "judgment", meaning: "判断", sentence: "Use your own judgment.", translation: "あなた自身の判断を使いなさい。", questionId: 1 },
+        // Q2
+        { id: 4, word: "harmful", meaning: "有害な", sentence: "Smoking is harmful to health.", translation: "喫煙は健康に有害だ。", questionId: 2 },
+        { id: 5, word: "previous", meaning: "以前の", sentence: "In the previous chapter...", translation: "前の章で...", questionId: 2 },
+        { id: 6, word: "vague", meaning: "曖昧な", sentence: "His explanation was vague.", translation: "彼の説明は曖昧だった。", questionId: 2 },
+        // Q3
+        { id: 7, word: "alter", meaning: "変える", sentence: "The plan was altered.", translation: "計画は変更された。", questionId: 3 },
+        { id: 8, word: "impress", meaning: "感銘を与える", sentence: "I was impressed by his speech.", translation: "彼のスピーチに感銘を受けた。", questionId: 3 },
+        { id: 9, word: "confront", meaning: "直面する、立ち向かう", sentence: "He decided to confront the problem.", translation: "彼は問題に立ち向かうことにした。", questionId: 3 },
+        // Q4
+        { id: 10, word: "illustrate", meaning: "説明する、例証する", sentence: "This example illustrates the point.", translation: "この例はその点を説明している。", questionId: 4 },
+        { id: 11, word: "remind", meaning: "思い出させる", sentence: "Please remind me to call him.", translation: "彼に電話するのを思い出させて。", questionId: 4 },
+        { id: 12, word: "proceed", meaning: "進む", sentence: "The parade proceeded slowly.", translation: "パレードはゆっくりと進んだ。", questionId: 4 },
+        // Q5
+        { id: 13, word: "carriage", meaning: "馬車", sentence: "People used carriages pulled by horses.", translation: "人々は馬に引かれる馬車を使った。", questionId: 5 },
+        { id: 14, word: "fantasy", meaning: "空想", sentence: "Unless it's just a fantasy.", translation: "それが単なる空想でない限り。", questionId: 5 },
+        { id: 15, word: "luxury", meaning: "贅沢品", sentence: "Cars were considered a luxury.", translation: "車は贅沢品と考えられていた。", questionId: 5 },
+        // Q6
+        { id: 16, word: "legally", meaning: "法的に", sentence: "Is this legally improved?", translation: "これは法的に認められていますか？", questionId: 6 },
+        { id: 17, word: "accidentally", meaning: "偶然に", sentence: "I accidentally dropped it.", translation: "うっかり落としてしまった。", questionId: 6 },
+        { id: 18, word: "individually", meaning: "個別に", sentence: "Wrap them individually.", translation: "それらを個別に包んでください。", questionId: 6 },
+        // Q7
+        { id: 19, word: "engage", meaning: "従事させる、引き込む", sentence: "He was engaged in conversation.", translation: "彼は会話に夢中になっていた。", questionId: 7 },
+        { id: 20, word: "bury", meaning: "埋める", sentence: "The dog buried the bone.", translation: "犬は骨を埋めた。", questionId: 7 },
+        { id: 21, word: "stress", meaning: "強調する", sentence: "He stressed the importance of good notes.", translation: "彼は良いノートを取ることの重要性を強調した。", questionId: 7 },
+        // Q8
+        { id: 22, word: "spray", meaning: "（液体を）吹きかける", sentence: "Firefighters sprayed water onto the fire.", translation: "消防士は火に水をかけた。", questionId: 8 },
+        { id: 23, word: "demand", meaning: "要求する", sentence: "They demanded an apology.", translation: "彼らは謝罪を要求した。", questionId: 8 },
+        { id: 24, word: "award", meaning: "授与する", sentence: "He was awarded a prize.", translation: "彼は賞を授与された。", questionId: 8 },
+        // Q9
+        { id: 25, word: "urgency", meaning: "緊急", sentence: "It is a matter of urgency.", translation: "それは緊急の問題だ。", questionId: 9 },
+        { id: 26, word: "empire", meaning: "帝国", sentence: "The Roman Empire.", translation: "ローマ帝国。", questionId: 9 },
+        { id: 27, word: "impulse", meaning: "衝動", sentence: "I bought it on impulse.", translation: "衝動買いした。", questionId: 9 },
+        // Q10
+        { id: 28, word: "triumph", meaning: "勝利", sentence: "It was a great triumph.", translation: "それは大勝利だった。", questionId: 10 },
+        { id: 29, word: "flame", meaning: "炎", sentence: "The hottest part is where the blue flame is.", translation: "最も熱い部分は青い炎があるところだ。", questionId: 10 },
+        { id: 30, word: "luggage", meaning: "荷物", sentence: "Check your luggage.", translation: "荷物を預けて。", questionId: 10 },
+        // Q11
+        { id: 31, word: "capable of", meaning: "〜の能力がある", sentence: "She is capable of doing it.", translation: "彼女はそれができる。", questionId: 11 },
+        { id: 32, word: "disappointed in", meaning: "〜に失望して", sentence: "They were disappointed in her.", translation: "彼らは彼女に失望した。", questionId: 11 },
+        { id: 33, word: "attracted to", meaning: "〜に惹かれる", sentence: "He is attracted to her.", translation: "彼は彼女に惹かれている。", questionId: 11 },
+        // Q12
+        { id: 34, word: "cut down", meaning: "切り倒す、減らす", sentence: "Cut down the tree.", translation: "その木を切り倒せ。", questionId: 12 },
+        { id: 35, word: "set aside", meaning: "取っておく", sentence: "I'll set aside some food for you.", translation: "あなたのために食べ物を取っておくよ。", questionId: 12 },
+        { id: 36, word: "take after", meaning: "似ている", sentence: "She takes after her mother.", translation: "彼女は母親に似ている。", questionId: 12 },
+        // Q13
+        { id: 37, word: "turn over", meaning: "めくる、ひっくり返す", sentence: "Turn over the page.", translation: "ページをめくって。", questionId: 13 },
+        { id: 38, word: "shut off", meaning: "（電気などを）止める", sentence: "The electricity was shut off.", translation: "電気が止められた。", questionId: 13 },
+        { id: 39, word: "rule out", meaning: "除外する", sentence: "We can't rule out that possibility.", translation: "その可能性は除外できない。", questionId: 13 },
+        // Q14
+        { id: 40, word: "bring out", meaning: "発売する、世に出す", sentence: "It will be bringing out its new smartphone.", translation: "新しいスマートフォンを発売する予定だ。", questionId: 14 },
+        { id: 41, word: "fall for", meaning: "騙される、惚れ込む", sentence: "Don't fall for that trick.", translation: "その手には乗るな。", questionId: 14 },
+        { id: 42, word: "give off", meaning: "（においなどを）発する", sentence: "The flower gives off a sweet smell.", translation: "その花は甘い香りを放つ。", questionId: 14 },
+        // Q15
+        { id: 43, word: "flow into", meaning: "流れ込む", sentence: "The river flows into the ocean.", translation: "川は海に流れ込む。", questionId: 15 },
+        { id: 44, word: "run across", meaning: "偶然出会う", sentence: "I ran across an old friend.", translation: "旧友に偶然会った。", questionId: 15 },
+        // Q16
+        { id: 45, word: "in person", meaning: "直接、本人が", sentence: "You must take them in person.", translation: "本人が直接持って行かなければならない。", questionId: 16 },
+        { id: 46, word: "at ease", meaning: "気楽に", sentence: "I felt at ease.", translation: "私は気楽に感じた。", questionId: 16 },
+        // Q17
+        { id: 47, word: "in charge", meaning: "担当して、責任者で", sentence: "Jason is in charge of checking.", translation: "ジェイソンが確認の担当だ。", questionId: 17 },
+        { id: 48, word: "on behalf", meaning: "〜を代表して", sentence: "I speak on behalf of the company.", translation: "会社を代表して話します。", questionId: 17 },
+        // Q19
+        { id: 49, word: "provided", meaning: "もし〜なら", sentence: "Provided you finish your homework.", translation: "宿題を終わらせるなら（いいよ）。", questionId: 19 },
+        // Q16 (Distractor)
+        { id: 50, word: "in detail", meaning: "詳細に", sentence: "Explain in detail.", translation: "詳細に説明して。", questionId: 16 }
+    ],
+    "2025-1-g3": [
+        { id: 1, word: "another", meaning: "もう一つの、別の" },
+        { id: 2, word: "beside", meaning: "〜のそばに" },
+        { id: 3, word: "Research", meaning: "研究" },
+        { id: 4, word: "Energy", meaning: "エネルギー" },
+        { id: 5, word: "Environment", meaning: "環境" },
+        { id: 6, word: "global warming", meaning: "地球温暖化" },
+        { id: 7, word: "interview", meaning: "面接" },
+        { id: 8, word: "accident", meaning: "事故" },
+        { id: 9, word: "recycle", meaning: "リサイクルする" },
+        { id: 10, word: "empty", meaning: "空の" },
+        { id: 11, word: "medicine", meaning: "薬" },
+        { id: 12, word: "a little", meaning: "少しの" },
+        { id: 13, word: "turn down", meaning: "（音量を）下げる" },
+        { id: 14, word: "in front of", meaning: "〜の前で" },
+        { id: 15, word: "on one's way to", meaning: "〜へ行く途中で" },
+        { id: 16, word: "do one's best", meaning: "全力を尽くす" },
+        { id: 17, word: "right now", meaning: "今すぐ" },
+        { id: 18, word: "be taken", meaning: "（写真が）撮られる" },
+        { id: 19, word: "check", meaning: "確認する" },
+        { id: 20, word: "cooler", meaning: "より涼しい" },
+        { id: 21, word: "serious", meaning: "深刻な" }
+    ],
+    "2024-3-g3": [
+        { id: 1, word: "true", meaning: "本当の" },
+        { id: 2, word: "topic", meaning: "話題、トピック" },
+        { id: 3, word: "entrance", meaning: "入り口" },
+        { id: 4, word: "view", meaning: "眺め" },
+        { id: 5, word: "get dark", meaning: "暗くなる" },
+        { id: 6, word: "wood", meaning: "木材" },
+        { id: 7, word: "decide to", meaning: "〜することを決める" },
+        { id: 8, word: "How often", meaning: "どのくらいの頻度で" },
+        { id: 9, word: "lose one's way", meaning: "道に迷う" },
+        { id: 10, word: "agree with", meaning: "〜に賛成する" },
+        { id: 11, word: "be famous for", meaning: "〜で有名だ" },
+        { id: 12, word: "opinion", meaning: "意見" },
+        { id: 13, word: "In my opinion", meaning: "私の意見では" },
+        { id: 14, word: "name", meaning: "名付ける" },
+        { id: 15, word: "stolen", meaning: "盗まれた" },
+        { id: 16, word: "which", meaning: "どちら（関係代名詞）" },
+        { id: 17, word: "eco-friendly", meaning: "環境に優しい" },
+        { id: 18, word: "protect", meaning: "守る" },
+        { id: 19, word: "environment", meaning: "環境" },
+        { id: 20, word: "twice a month", meaning: "月に2回" }
+    ],
+    "2024-2-g3": [
+        { id: 1, word: "anything", meaning: "何か（疑問文・否定文で）" },
+        { id: 2, word: "anything special", meaning: "何か特別なこと" },
+        { id: 3, word: "left", meaning: "置き忘れた" },
+        { id: 4, word: "wrap", meaning: "包む" },
+        { id: 5, word: "pass", meaning: "合格する" },
+        { id: 6, word: "introduce", meaning: "紹介する" },
+        { id: 7, word: "century", meaning: "世紀" },
+        { id: 8, word: "tradition", meaning: "伝統、恒例行事" },
+        { id: 9, word: "clean up", meaning: "片付ける" },
+        { id: 10, word: "be worried about", meaning: "〜を心配する" },
+        { id: 11, word: "be proud of", meaning: "〜を誇りに思う" },
+        { id: 12, word: "break one's promise", meaning: "約束を破る" },
+        { id: 13, word: "more and more", meaning: "ますます多くの" },
+        { id: 14, word: "wrote", meaning: "書いた" },
+        { id: 15, word: "author", meaning: "著者" },
+        { id: 16, word: "faster", meaning: "より速く" },
+        { id: 17, word: "have been to", meaning: "〜へ行ったことがある" },
+        { id: 18, word: "runner", meaning: "走者" },
+        { id: 19, word: "planet", meaning: "惑星" },
+        { id: 20, word: "star", meaning: "星" }
+    ],
+    "2024-1-g3": [
+        { id: 1, word: "anytime", meaning: "いつでも" },
+        { id: 2, word: "Dad", meaning: "パパ" },
+        { id: 3, word: "big enough", meaning: "十分に大きい" },
+        { id: 4, word: "finally", meaning: "ついに" },
+        { id: 5, word: "clever", meaning: "賢い、器用な" },
+        { id: 6, word: "healthy", meaning: "健康的な" },
+        { id: 7, word: "secret", meaning: "秘密" },
+        { id: 8, word: "carry", meaning: "運ぶ" },
+        { id: 9, word: "take care of", meaning: "〜の世話をする" },
+        { id: 10, word: "What's the matter?", meaning: "どうしたの？" },
+        { id: 11, word: "all day", meaning: "一日中" },
+        { id: 12, word: "fresh", meaning: "新鮮な" },
+        { id: 13, word: "be made from", meaning: "〜から作られている" },
+        { id: 14, word: "get on", meaning: "（バスなどに）乗る" },
+        { id: 15, word: "practice", meaning: "練習する" },
+        { id: 16, word: "where", meaning: "どこへ" },
+        { id: 17, word: "go shopping", meaning: "買い物に行く" },
+        { id: 18, word: "ate", meaning: "食べた" }
     ],
     "2025-1-g5": [
         { id: 1, word: "floor", meaning: "床" },
@@ -142,6 +228,94 @@ export const vocabDatabase = {
         { id: 18, word: "potato", meaning: "ジャガイモ" },
         { id: 19, word: "during", meaning: "〜の間" },
         { id: 20, word: "important", meaning: "重要な" }
+    ],
+    "2024-3-g4": [
+        { id: 1, word: "win", meaning: "勝つ" },
+        { id: 2, word: "angry with", meaning: "〜に怒っている" },
+        { id: 3, word: "art museum", meaning: "美術館" },
+        { id: 4, word: "sleepy", meaning: "眠い" },
+        { id: 5, word: "town", meaning: "町" },
+        { id: 6, word: "ready for", meaning: "〜の準備ができている" },
+        { id: 7, word: "daughter", meaning: "娘" },
+        { id: 8, word: "kind", meaning: "親切な" },
+        { id: 9, word: "all over the world", meaning: "世界中" },
+        { id: 10, word: "be good at", meaning: "〜が得意だ" },
+        { id: 11, word: "Wait a minute", meaning: "ちょっと待って" },
+        { id: 12, word: "take a bath", meaning: "お風呂に入る" },
+        { id: 13, word: "There are", meaning: "〜がある" },
+        { id: 14, word: "harder", meaning: "より難しい" },
+        { id: 15, word: "ate", meaning: "食べた" },
+        { id: 16, word: "fall", meaning: "落ちる" },
+        { id: 17, word: "loud", meaning: "うるさい" },
+        { id: 18, word: "cloud", meaning: "雲" },
+        { id: 19, word: "noisy", meaning: "騒がしい" },
+        { id: 20, word: "true", meaning: "真実の" }
+    ],
+    "2024-2-g4": [
+        { id: 1, word: "ticket", meaning: "切符" },
+        { id: 2, word: "travel", meaning: "旅行する" },
+        { id: 3, word: "member", meaning: "メンバー" },
+        { id: 4, word: "wear", meaning: "着る" },
+        { id: 5, word: "knife", meaning: "ナイフ" },
+        { id: 6, word: "change", meaning: "着替える" },
+        { id: 7, word: "difficult", meaning: "難しい" },
+        { id: 8, word: "take a walk", meaning: "散歩する" },
+        { id: 9, word: "come in", meaning: "入る" },
+        { id: 10, word: "think of", meaning: "〜について思う" },
+        { id: 11, word: "talk with", meaning: "〜と話す" },
+        { id: 12, word: "leave for", meaning: "〜に向けて出発する" },
+        { id: 13, word: "mine", meaning: "私のもの" },
+        { id: 14, word: "listen to", meaning: "〜を聞く" },
+        { id: 15, word: "earlier", meaning: "より早く" },
+        { id: 16, word: "brush", meaning: "ブラシ" },
+        { id: 17, word: "glove", meaning: "手袋" },
+        { id: 18, word: "vegetable", meaning: "野菜" },
+        { id: 19, word: "comfortable", meaning: "快適な" },
+        { id: 20, word: "exciting", meaning: "ワクワクする" }
+    ],
+    "2024-1-g4": [
+        { id: 1, word: "popular", meaning: "人気のある" },
+        { id: 2, word: "airport", meaning: "空港" },
+        { id: 3, word: "farm", meaning: "農場" },
+        { id: 4, word: "wash", meaning: "洗う" },
+        { id: 5, word: "magazine", meaning: "雑誌" },
+        { id: 6, word: "beautiful", meaning: "美しい" },
+        { id: 7, word: "quiet", meaning: "静かな" },
+        { id: 8, word: "For example", meaning: "例えば" },
+        { id: 9, word: "long", meaning: "長い" },
+        { id: 10, word: "speak to", meaning: "〜と話す" },
+        { id: 11, word: "a cup of", meaning: "一杯の〜" },
+        { id: 12, word: "sit down", meaning: "座る" },
+        { id: 13, word: "made", meaning: "作った" },
+        { id: 14, word: "more", meaning: "より〜" },
+        { id: 15, word: "Shall I", meaning: "〜しましょうか" },
+        { id: 16, word: "uncle", meaning: "おじ" },
+        { id: 17, word: "cousin", meaning: "いとこ" },
+        { id: 18, word: "vegetable", meaning: "野菜" },
+        { id: 19, word: "free time", meaning: "自由な時間" },
+        { id: 20, word: "library", meaning: "図書館" }
+    ],
+    "2023-3-g4": [
+        { id: 1, word: "cry", meaning: "泣く" },
+        { id: 2, word: "birthday card", meaning: "バースデーカード" },
+        { id: 3, word: "by boat", meaning: "船で" },
+        { id: 4, word: "cloudy", meaning: "曇った" },
+        { id: 5, word: "large", meaning: "広い、大きい" },
+        { id: 6, word: "win", meaning: "勝つ" },
+        { id: 7, word: "stadium", meaning: "スタジアム" },
+        { id: 8, word: "over there", meaning: "あそこに" },
+        { id: 9, word: "all over the world", meaning: "世界中" },
+        { id: 10, word: "again and again", meaning: "何度も" },
+        { id: 11, word: "In the future", meaning: "将来" },
+        { id: 12, word: "What kind of", meaning: "どんな種類の〜" },
+        { id: 13, word: "shorter", meaning: "より短い" },
+        { id: 14, word: "build", meaning: "建てる" },
+        { id: 15, word: "like to run", meaning: "走るのが好き" },
+        { id: 16, word: "cousin", meaning: "いとこ" },
+        { id: 17, word: "island", meaning: "島" },
+        { id: 18, word: "popular", meaning: "人気のある" },
+        { id: 19, word: "pass", meaning: "合格する、手渡す" },
+        { id: 20, word: "nature", meaning: "自然" }
     ],
     "2024-3-g5": [
         { id: 1, word: "pocket", meaning: "ポケット" },
@@ -273,6 +447,255 @@ export const vocabDatabase = {
         { id: 24, word: "battery", meaning: "バッテリー" },
         { id: 25, word: "salary", meaning: "給料" }
     ],
+    "2025-1-gp2": [
+        { id: 1, word: "heat", meaning: "暑さ" },
+        { id: 2, word: "leisure", meaning: "娯楽" },
+        { id: 3, word: "amount", meaning: "量" },
+        { id: 4, word: "ground", meaning: "地面" },
+        { id: 5, word: "safety", meaning: "安全" },
+        { id: 6, word: "enemy", meaning: "敵" },
+        { id: 7, word: "technique", meaning: "技術" },
+        { id: 8, word: "response", meaning: "反応" },
+        { id: 9, word: "fry", meaning: "炒める" },
+        { id: 10, word: "ease", meaning: "和らげる" },
+        { id: 11, word: "pull", meaning: "引く" },
+        { id: 12, word: "chew", meaning: "噛む" },
+        { id: 13, word: "bury", meaning: "埋める" },
+        { id: 14, word: "argue", meaning: "議論する" },
+        { id: 15, word: "refreshing", meaning: "すがすがしい" },
+        { id: 16, word: "frequent", meaning: "頻繁な" },
+        { id: 17, word: "respect", meaning: "尊敬する" },
+        { id: 18, word: "produce", meaning: "生産する" },
+        { id: 19, word: "smoothly", meaning: "円滑に" },
+        { id: 20, word: "heavily", meaning: "重く" },
+        { id: 21, word: "take action", meaning: "行動を起こす" },
+        { id: 22, word: "take place", meaning: "起こる" },
+        { id: 23, word: "in a minute", meaning: "すぐに" },
+        { id: 24, word: "by the time", meaning: "〜する時までに" },
+        { id: 25, word: "in common", meaning: "共通して" },
+        { id: 26, word: "at fault", meaning: "過失があって" },
+        { id: 27, word: "turn into", meaning: "〜に変わる" },
+        { id: 28, word: "break down", meaning: "故障する" },
+        { id: 29, word: "catch up with", meaning: "〜に追いつく" },
+        { id: 30, word: "get away with", meaning: "〜を持ち逃げする" }
+    ],
+    "2024-3-gp2": [
+        { id: 1, word: "disagree", meaning: "反対する" },
+        { id: 2, word: "apply", meaning: "申し込む" },
+        { id: 3, word: "private", meaning: "私有の" },
+        { id: 4, word: "stormy", meaning: "嵐の" },
+        { id: 5, word: "certainly", meaning: "確かに" },
+        { id: 6, word: "exactly", meaning: "正確に" },
+        { id: 7, word: "chase", meaning: "追いかける" },
+        { id: 8, word: "match", meaning: "〜に合う" },
+        { id: 9, word: "protect", meaning: "守る" },
+        { id: 10, word: "worry", meaning: "心配する" },
+        { id: 11, word: "collect", meaning: "集める" },
+        { id: 12, word: "cross", meaning: "横切る" },
+        { id: 13, word: "rainfall", meaning: "降雨量" },
+        { id: 14, word: "record", meaning: "記録" },
+        { id: 15, word: "increase", meaning: "増加する" },
+        { id: 16, word: "repeat", meaning: "繰り返す" },
+        { id: 17, word: "enter", meaning: "入る" },
+        { id: 18, word: "gather", meaning: "集まる" },
+        { id: 19, word: "fireworks", meaning: "花火" },
+        { id: 20, word: "system", meaning: "システム" },
+        { id: 21, word: "run across", meaning: "偶然出会う" },
+        { id: 22, word: "take after", meaning: "似ている" },
+        { id: 23, word: "go wrong", meaning: "うまくいかない" },
+        { id: 24, word: "hold out", meaning: "差し出す" },
+        { id: 25, word: "after a while", meaning: "しばらくして" },
+        { id: 26, word: "for the future", meaning: "将来のために" },
+        { id: 27, word: "come true", meaning: "実現する" },
+        { id: 28, word: "get rid", meaning: "取り除く" },
+        { id: 29, word: "deal with", meaning: "対処する" },
+        { id: 30, word: "turn off", meaning: "消す" }
+    ],
+    "2024-2-gp2": [
+        { id: 1, word: "medicine", meaning: "薬" },
+        { id: 2, word: "influence", meaning: "影響" },
+        { id: 3, word: "unlock", meaning: "鍵を開ける" },
+        { id: 4, word: "surprise", meaning: "驚かす" },
+        { id: 5, word: "native", meaning: "母語の" },
+        { id: 6, word: "sudden", meaning: "突然の" },
+        { id: 7, word: "grab", meaning: "掴む" },
+        { id: 8, word: "trade", meaning: "交換する" },
+        { id: 9, word: "seriously", meaning: "真剣に" },
+        { id: 10, word: "separately", meaning: "別々に" },
+        { id: 11, word: "matter", meaning: "重要である" },
+        { id: 12, word: "occur", meaning: "起こる" },
+        { id: 13, word: "tail", meaning: "しっぽ" },
+        { id: 14, word: "mirror", meaning: "鏡" },
+        { id: 15, word: "design", meaning: "設計する" },
+        { id: 16, word: "discourage", meaning: "落胆させる" },
+        { id: 17, word: "series", meaning: "シリーズ" },
+        { id: 18, word: "notice", meaning: "通知" },
+        { id: 19, word: "emergency", meaning: "緊急事態" },
+        { id: 20, word: "facility", meaning: "施設" },
+        { id: 21, word: "short of", meaning: "不足している" },
+        { id: 22, word: "busy with", meaning: "〜で忙しい" },
+        { id: 23, word: "in order to", meaning: "〜するために" },
+        { id: 24, word: "in terms", meaning: "〜の点では" },
+        { id: 25, word: "shake hands", meaning: "握手する" },
+        { id: 26, word: "turn out", meaning: "判明する" },
+        { id: 27, word: "exchange for", meaning: "〜と交換する" },
+        { id: 28, word: "apply to", meaning: "〜に適用する" },
+        { id: 29, word: "depend on", meaning: "〜次第である" },
+        { id: 30, word: "do harm to", meaning: "〜に害を与える" }
+    ],
+    "2024-1-gp2": [
+        { id: 1, word: "dead", meaning: "死んだ" },
+        { id: 2, word: "bright", meaning: "明るい" },
+        { id: 3, word: "dessert", meaning: "デザート" },
+        { id: 4, word: "demand", meaning: "需要" },
+        { id: 5, word: "purchase", meaning: "購入する" },
+        { id: 6, word: "witness", meaning: "目撃する" },
+        { id: 7, word: "unfortunately", meaning: "残念ながら" },
+        { id: 8, word: "eventually", meaning: "結局は" },
+        { id: 9, word: "lay", meaning: "置く" },
+        { id: 10, word: "pump", meaning: "ポンプで送る" },
+        { id: 11, word: "couple", meaning: "夫婦" },
+        { id: 12, word: "machine", meaning: "機械" },
+        { id: 13, word: "beans", meaning: "豆" },
+        { id: 14, word: "tone", meaning: "音色" },
+        { id: 15, word: "rumor", meaning: "噂" },
+        { id: 16, word: "budget", meaning: "予算" },
+        { id: 17, word: "reform", meaning: "改革する" },
+        { id: 18, word: "reject", meaning: "拒絶する" },
+        { id: 19, word: "gain", meaning: "得る" },
+        { id: 20, word: "push", meaning: "押す" },
+        { id: 21, word: "put away", meaning: "片付ける" },
+        { id: 22, word: "set out", meaning: "出発する" },
+        { id: 23, word: "find fault", meaning: "あら探しをする" },
+        { id: 24, word: "keep up", meaning: "ついていく" },
+        { id: 25, word: "on purpose", meaning: "わざと" },
+        { id: 26, word: "in advance", meaning: "前もって" },
+        { id: 27, word: "make out", meaning: "判別する" },
+        { id: 28, word: "drop down", meaning: "落ちる" },
+        { id: 29, word: "see off", meaning: "見送る" },
+        { id: 30, word: "take in", meaning: "取り入れる" }
+    ],
+    "2023-3-gp2": [
+        { id: 1, word: "access", meaning: "アクセスする" },
+        { id: 2, word: "deliver", meaning: "配達する" },
+        { id: 3, word: "tape", meaning: "テープ" },
+        { id: 4, word: "bacon", meaning: "ベーコン" },
+        { id: 5, word: "neighborhood", meaning: "近所" },
+        { id: 6, word: "climate", meaning: "気候" },
+        { id: 7, word: "transfer", meaning: "乗り換える" },
+        { id: 8, word: "boil", meaning: "沸騰させる" },
+        { id: 9, word: "ceiling", meaning: "天井" },
+        { id: 10, word: "crossing", meaning: "交差点" },
+        { id: 11, word: "steadily", meaning: "着実に" },
+        { id: 12, word: "willingly", meaning: "喜んで" },
+        { id: 13, word: "affect", meaning: "影響を与える" },
+        { id: 14, word: "hope", meaning: "望む" },
+        { id: 15, word: "magic", meaning: "魔法の" },
+        { id: 16, word: "general", meaning: "一般的な" },
+        { id: 17, word: "relationship", meaning: "関係" },
+        { id: 18, word: "population", meaning: "人口" },
+        { id: 19, word: "match", meaning: "調和する" },
+        { id: 20, word: "join", meaning: "参加する" },
+        { id: 21, word: "make up of", meaning: "〜から成り立つ" },
+        { id: 22, word: "in the habit of", meaning: "〜の習慣がある" },
+        { id: 23, word: "all of a sudden", meaning: "突然" },
+        { id: 24, word: "up to date", meaning: "最新の" },
+        { id: 25, word: "on the point of", meaning: "まさに〜しようとして" },
+        { id: 26, word: "at the sight", meaning: "〜を見て" },
+        { id: 27, word: "out of the question", meaning: "論外で" },
+        { id: 28, word: "by any chance", meaning: "ひょっとして" },
+        { id: 29, word: "do someone good", meaning: "（人の）ためになる" },
+        { id: 30, word: "take someone seriously", meaning: "真剣に受け止める" },
+        { id: 31, word: "figure out", meaning: "解き明かす" },
+        { id: 32, word: "apply for", meaning: "申し込む" },
+        { id: 33, word: "put off", meaning: "延期する" },
+        { id: 34, word: "carry on", meaning: "続ける" },
+        { id: 35, word: "sit up", meaning: "夜更かしする" },
+        { id: 36, word: "rush", meaning: "急ぐ" },
+        { id: 37, word: "needn't", meaning: "〜する必要はない" },
+        { id: 38, word: "avoid", meaning: "避ける" },
+        { id: 39, word: "worth", meaning: "価値がある" },
+        { id: 40, word: "so as to", meaning: "〜するために" }
+    ],
+    "2023-2-gp2": [
+        // Q1
+        { id: 1, word: "struck", meaning: "打った、蹴った (strike)" },
+        { id: 2, word: "chewed", meaning: "噛んだ" },
+        { id: 3, word: "goalkeeper", meaning: "ゴールキーパー" },
+        // Q2
+        { id: 4, word: "fever", meaning: "熱" },
+        { id: 5, word: "temperature", meaning: "体温、気温" },
+        { id: 6, word: "custom", meaning: "習慣" },
+        // Q3
+        { id: 7, word: "transport", meaning: "輸送する" },
+        { id: 8, word: "overseas", meaning: "海外へ" },
+        { id: 9, word: "consult", meaning: "相談する" },
+        { id: 10, word: "reject", meaning: "拒絶する" },
+        // Q4
+        { id: 11, word: "encouraged", meaning: "勇気づけられた" },
+        { id: 12, word: "frightened", meaning: "怯えた" },
+        { id: 13, word: "defense", meaning: "守備、ディフェンス" },
+        // Q5
+        { id: 14, word: "hired", meaning: "雇われた" },
+        { id: 15, word: "collected", meaning: "集められた" },
+        { id: 16, word: "employee", meaning: "従業員" }, // Related term context
+        // Q6
+        { id: 17, word: "region", meaning: "地域、地方" },
+        { id: 18, word: "theme", meaning: "テーマ" },
+        { id: 19, word: "laundry", meaning: "洗濯" },
+        // Q7
+        { id: 20, word: "solve", meaning: "（問題を）解く" },
+        { id: 21, word: "repair", meaning: "修理する" },
+        { id: 22, word: "invent", meaning: "発明する" },
+        // Q8
+        { id: 23, word: "essay", meaning: "小論文、作文" },
+        { id: 24, word: "victory", meaning: "勝利" },
+        { id: 25, word: "miracle", meaning: "奇跡" },
+        // Q9
+        { id: 26, word: "cheaply", meaning: "安く" },
+        { id: 27, word: "lately", meaning: "最近" },
+        { id: 28, word: "bravely", meaning: "勇敢に" },
+        // Q10
+        { id: 29, word: "wealth", meaning: "富、財産" },
+        { id: 30, word: "literature", meaning: "文学" },
+        { id: 31, word: "nonsense", meaning: "ナンセンス、無意味" },
+        // Q11
+        { id: 32, word: "suffer from", meaning: "（病気など）にかかる、苦しむ" },
+        { id: 33, word: "depend on", meaning: "〜に頼る、次第である" },
+        { id: 34, word: "major in", meaning: "〜を専攻する" },
+        // Q12
+        { id: 35, word: "pay attention", meaning: "注意を払う" },
+        { id: 36, word: "make sense", meaning: "意味をなす、理解できる" },
+        { id: 37, word: "take turns", meaning: "交代でする" },
+        // Q13
+        { id: 38, word: "in place of", meaning: "〜の代わりに" },
+        { id: 39, word: "on behalf of", meaning: "〜を代表して" },
+        { id: 40, word: "for fear of", meaning: "〜を恐れて" },
+        { id: 41, word: "passenger", meaning: "乗客" },
+        // Q14
+        { id: 42, word: "by mistake", meaning: "間違えて" },
+        { id: 43, word: "at present", meaning: "現在は" },
+        { id: 44, word: "with ease", meaning: "容易に" },
+        // Q15
+        { id: 45, word: "one another", meaning: "お互いに" },
+        { id: 46, word: "at least", meaning: "少なくとも" },
+        // Q16
+        { id: 47, word: "hope for", meaning: "〜を望む" },
+        { id: 48, word: "show off", meaning: "見せびらかす" },
+        { id: 49, word: "take over", meaning: "引き継ぐ" },
+        // Q17
+        { id: 50, word: "agree on", meaning: "〜で合意する" },
+        { id: 51, word: "run over", meaning: "（車で）ひく" },
+        { id: 52, word: "hold up", meaning: "持ち上げる、遅らせる" },
+        // Q18
+        { id: 53, word: "by the time", meaning: "〜する時までに" },
+        // Q19
+        { id: 54, word: "visit", meaning: "訪問する" },
+        // Q20
+        { id: 55, word: "above", meaning: "〜の上方に" },
+        { id: 56, word: "among", meaning: "〜の間に" },
+        { id: 57, word: "garden", meaning: "庭" }
+    ],
     "2025-1-gp2p": [
         { id: 1, word: "refused", meaning: "拒んだ" },
         { id: 2, word: "continued", meaning: "続いた" },
@@ -368,3 +791,176 @@ export const vocabDatabase = {
         { id: 50, word: "figure on", meaning: "1. 当てにする\n2. 予想する" }
     ]
 };
+
+const vocabList_2025_2_gp2p_sub = [
+    // Q1
+    { id: '2025-2-gp2p-sub-1-1', word: 'gather', meaning: '集まる', sentence: 'Family members often gather for holidays like Christmas.', translation: 'クリスマスのよう休日に家族が集まる。', questionId: 1 },
+    { id: '2025-2-gp2p-sub-1-2', word: 'chew', meaning: '噛む', sentence: 'Don\'t chew with your mouth open.', translation: '口を開けて噛んではいけません。', questionId: 1 },
+    { id: '2025-2-gp2p-sub-1-3', word: 'shake', meaning: '振る、揺れる', sentence: 'He shook his head.', translation: '彼は首を横に振った。', questionId: 1 },
+    { id: '2025-2-gp2p-sub-1-4', word: 'dig', meaning: '掘る', sentence: 'The dog likes to dig holes in the yard.', translation: 'その犬は庭に穴を掘るのが好きだ。', questionId: 1 },
+    // Q2
+    { id: '2025-2-gp2p-sub-2-1', word: 'retire', meaning: '退職する、引退する', sentence: 'He will retire next month after working for forty years.', translation: '彼は40年間働いた後、来月退職する。', questionId: 2 },
+    { id: '2025-2-gp2p-sub-2-2', word: 'operate', meaning: '操作する、手術する', sentence: 'Do you know how to operate this machine?', translation: 'この機械の操作方法を知っていますか？', questionId: 2 },
+    { id: '2025-2-gp2p-sub-2-3', word: 'broadcast', meaning: '放送する', sentence: 'The game will be broadcast live.', translation: '試合は生放送される。', questionId: 2 },
+    // Q3
+    { id: '2025-2-gp2p-sub-3-1', word: 'abroad', meaning: '海外に、外国へ', sentence: 'Her brother lives abroad.', translation: '彼女の兄は海外に住んでいる。', questionId: 3 },
+    { id: '2025-2-gp2p-sub-3-2', word: 'instead', meaning: 'その代わりに', sentence: 'I didn\'t go out. Instead, I stayed home.', translation: '私は外出しなかった。代わりに家にいた。', questionId: 3 },
+    { id: '2025-2-gp2p-sub-3-3', word: 'seldom', meaning: 'めったに〜ない', sentence: 'He seldom eats meat.', translation: '彼はめったに肉を食べない。', questionId: 3 },
+    // Q4
+    { id: '2025-2-gp2p-sub-4-1', word: 'warn', meaning: '警告する、注意する', sentence: 'Thanks for warning me about the hot plate.', translation: '熱いお皿について注意してくれてありがとう。', questionId: 4 },
+    { id: '2025-2-gp2p-sub-4-2', word: 'remove', meaning: '取り除く', sentence: 'Please remove your shoes.', translation: '靴を脱いでください。', questionId: 4 },
+    { id: '2025-2-gp2p-sub-4-3', word: 'borrow', meaning: '借りる', sentence: 'Can I borrow your pen?', translation: 'ペンを借りてもいいですか？', questionId: 4 },
+    // Q5
+    { id: '2025-2-gp2p-sub-5-1', word: 'criticize', meaning: '批判する', sentence: 'Fans criticized the coach for the team\'s loss.', translation: 'ファンはチームの敗北についてコーチを批判した。', questionId: 5 },
+    { id: '2025-2-gp2p-sub-5-2', word: 'match', meaning: '調和する、匹敵する', sentence: 'Her bag matches her shoes.', translation: '彼女のバッグは靴と合っている。', questionId: 5 },
+    { id: '2025-2-gp2p-sub-5-3', word: 'host', meaning: '主催する', sentence: 'The city will host the Olympics.', translation: 'その都市はオリンピックを主催する。', questionId: 5 },
+    // Q6
+    { id: '2025-2-gp2p-sub-6-1', word: 'thickly', meaning: '厚く', sentence: 'She spreads the butter thickly.', translation: '彼女はバターを厚く塗る。', questionId: 6 },
+    { id: '2025-2-gp2p-sub-6-2', word: 'nearly', meaning: 'ほとんど', sentence: 'It is nearly midnight.', translation: 'もうすぐ真夜中だ。', questionId: 6 },
+    { id: '2025-2-gp2p-sub-6-3', word: 'frankly', meaning: '率直に', sentence: 'Frankly speaking, I don\'t like it.', translation: '率直に言って、私はそれが好きではない。', questionId: 6 },
+    // Q7
+    { id: '2025-2-gp2p-sub-7-1', word: 'colleague', meaning: '同僚', sentence: 'My new colleagues are very kind.', translation: '新しい同僚たちはとても親切だ。', questionId: 7 },
+    { id: '2025-2-gp2p-sub-7-2', word: 'relative', meaning: '親戚', sentence: 'All my relatives live nearby.', translation: '親戚はみんな近くに住んでいる。', questionId: 7 },
+    { id: '2025-2-gp2p-sub-7-3', word: 'infant', meaning: '幼児', sentence: 'The program is designed for infants.', translation: 'そのプログラムは幼児向けに作られている。', questionId: 7 },
+    // Q8
+    { id: '2025-2-gp2p-sub-8-1', word: 'consequently', meaning: 'その結果（として）', sentence: 'It rained heavily. Consequently, the water level rose.', translation: '激しく雨が降った。その結果、水位が上がった。', questionId: 8 },
+    { id: '2025-2-gp2p-sub-8-2', word: 'personally', meaning: '個人的に', sentence: 'Personally, I prefer tea to coffee.', translation: '個人的には、コーヒーより紅茶が好きだ。', questionId: 8 },
+    { id: '2025-2-gp2p-sub-8-3', word: 'willingly', meaning: '喜んで、快く', sentence: 'He willingly helped me.', translation: '彼は快く私を手伝ってくれた。', questionId: 8 },
+    // Q9
+    { id: '2025-2-gp2p-sub-9-1', word: 'remarkable', meaning: '注目すべき、驚くべき', sentence: 'She made remarkable progress in English.', translation: '彼女は英語で驚くべき進歩を遂げた。', questionId: 9 },
+    { id: '2025-2-gp2p-sub-9-2', word: 'traditional', meaning: '伝統的な', sentence: 'We wore traditional Japanese clothes.', translation: '私たちは日本の伝統的な服を着た。', questionId: 9 },
+    { id: '2025-2-gp2p-sub-9-3', word: 'harmful', meaning: '有害な', sentence: 'Smoking is harmful to health.', translation: '喫煙は健康に有害だ。', questionId: 9 },
+    // Q10
+    { id: '2025-2-gp2p-sub-10-1', word: 'identity', meaning: '身元、正体', sentence: 'Passwords are used to prove your identity.', translation: 'パスワードは身元を証明するために使われる。', questionId: 10 },
+    { id: '2025-2-gp2p-sub-10-2', word: 'reunion', meaning: '再会、同窓会', sentence: 'We had a class reunion last week.', translation: '先週、クラスの同窓会があった。', questionId: 10 },
+    { id: '2025-2-gp2p-sub-10-3', word: 'blame', meaning: '非難、責任', sentence: 'Don\'t put the blame on me.', translation: '私に責任を押し付けないで。', questionId: 10 },
+    // Q11 (Phrases)
+    { id: '2025-2-gp2p-sub-11-1', word: 'find out', meaning: '発見する、知る', sentence: 'She found out distinct facts about her family.', translation: '彼女は家族に関する明確な事実を知った。', questionId: 11 },
+    { id: '2025-2-gp2p-sub-11-2', word: 'related to', meaning: '〜と関係がある、親戚である', sentence: 'She is related to a famous writer.', translation: '彼女は有名な作家と親戚だ。', questionId: 11 },
+    // Q12
+    { id: '2025-2-gp2p-sub-12-1', word: 'on the way', meaning: '途中で', sentence: 'I bought it on the way home.', translation: '家に帰る途中でそれを買った。', questionId: 12 },
+    // Q13
+    { id: '2025-2-gp2p-sub-13-1', word: 'get back', meaning: '戻る、帰る', sentence: 'Call me when you get back.', translation: '戻ったら電話して。', questionId: 13 },
+    // Q14
+    { id: '2025-2-gp2p-sub-14-1', word: 'be sure to', meaning: '必ず〜する', sentence: 'Be sure to lock the door.', translation: '必ずドアに鍵をかけてね。', questionId: 14 },
+    // Q15
+    { id: '2025-2-gp2p-sub-15-1', word: 'according to', meaning: '〜によると', sentence: 'According to the news, it will rain tomorrow.', translation: 'ニュースによると、明日は雨だ。', questionId: 15 },
+    { id: '2025-2-gp2p-sub-15-2', word: 'instead of', meaning: '〜の代わりに', sentence: 'I\'ll have tea instead of coffee.', translation: 'コーヒーの代わりに紅茶をください。', questionId: 15 },
+    { id: '2025-2-gp2p-sub-15-3', word: 'except for', meaning: '〜を除いて', sentence: 'Everyone went except for Tom.', translation: 'トム以外はみんな行った。', questionId: 15 },
+    // Q16
+    { id: '2025-2-gp2p-sub-16-1', word: 'kick out', meaning: '追い出す', sentence: 'He was kicked out of the team.', translation: '彼はチームから追い出された。', questionId: 16 },
+    { id: '2025-2-gp2p-sub-16-2', word: 'steal', meaning: '盗む', sentence: 'Someone stole my wallet.', translation: '誰かが私の財布を盗んだ。', questionId: 16 },
+    // Q17
+    { id: '2025-2-gp2p-sub-17-1', word: 'in return', meaning: 'お返しに', sentence: 'I helped him, and he bought me lunch in return.', translation: '私は彼を手伝い、お返しに彼は昼食を買ってくれた。', questionId: 17 },
+    { id: '2025-2-gp2p-sub-17-2', word: 'on time', meaning: '時間通りに', sentence: 'The train arrived on time.', translation: '列車は時間通りに到着した。', questionId: 17 },
+    { id: '2025-2-gp2p-sub-17-3', word: 'in vain', meaning: '無駄に', sentence: 'Her efforts were in vain.', translation: '彼女の努力は無駄に終わった。', questionId: 17 },
+];
+
+vocabDatabase['2025-2-gp2p-sub'] = vocabList_2025_2_gp2p_sub;
+
+const vocabList_2025_1_gp2p_sub = [
+    // Q1
+    { id: '2025-1-gp2p-sub-1-1', word: 'save', meaning: '1. 取っておく\n2. 節約する\n3. 救う', sentence: 'Let\'s save this cake for Dad.', translation: 'このケーキをお父さんのために取っておきましょう。', questionId: 1 },
+    { id: '2025-1-gp2p-sub-1-2', word: 'publish', meaning: '出版する', sentence: 'He published his first novel.', translation: '彼は最初の小説を出版した。', questionId: 1 },
+    { id: '2025-1-gp2p-sub-1-3', word: 'reduce', meaning: '減らす', sentence: 'We need to reduce waste.', translation: '私たちは無駄を減らす必要がある。', questionId: 1 },
+    // Q2
+    { id: '2025-1-gp2p-sub-2-1', word: 'ability', meaning: '能力', sentence: 'She has the ability to learn quickly.', translation: '彼女には素早く学ぶ能力がある。', questionId: 2 },
+    { id: '2025-1-gp2p-sub-2-2', word: 'layer', meaning: '層', sentence: 'The cake has three layers.', translation: 'そのケーキは3層になっている。', questionId: 2 },
+    // Q3
+    { id: '2025-1-gp2p-sub-3-1', word: 'ignore', meaning: '無視する', sentence: 'He ignored my question.', translation: '彼は私の質問を無視した。', questionId: 3 },
+    { id: '2025-1-gp2p-sub-3-2', word: 'rude', meaning: '失礼な', sentence: 'It is rude to point at people.', translation: '人を指差すのは失礼だ。', questionId: 3 },
+    { id: '2025-1-gp2p-sub-3-3', word: 'nervous', meaning: '緊張して、神経質な', sentence: 'I felt nervous before the test.', translation: 'テストの前に緊張した。', questionId: 3 },
+    // Q4
+    { id: '2025-1-gp2p-sub-4-1', word: 'politics', meaning: '政治', sentence: 'He is interested in politics.', translation: '彼は政治に興味がある。', questionId: 4 },
+    { id: '2025-1-gp2p-sub-4-2', word: 'experiment', meaning: '実験', sentence: 'Scientists do experiments.', translation: '科学者は実験を行う。', questionId: 4 },
+    // Q5
+    { id: '2025-1-gp2p-sub-5-1', word: 'control', meaning: '制御する、支配する', sentence: 'Can you control this machine?', translation: 'この機械を操作できますか？', questionId: 5 },
+    { id: '2025-1-gp2p-sub-5-2', word: 'factory', meaning: '工場', sentence: 'My father works in a car factory.', translation: '私の父は自動車工場で働いている。', questionId: 5 },
+    // Q6
+    { id: '2025-1-gp2p-sub-6-1', word: 'completely', meaning: '完全に', sentence: 'I completely agree with you.', translation: 'あなたに完全に同意します。', questionId: 6 },
+    { id: '2025-1-gp2p-sub-6-2', word: 'patiently', meaning: '忍耐強く', sentence: 'She waited patiently.', translation: '彼女は忍耐強く待った。', questionId: 6 },
+    // Q7
+    { id: '2025-1-gp2p-sub-7-1', word: 'offer', meaning: '申し出る、提供する', sentence: 'He offered to help me.', translation: '彼は私を手伝おうと申し出た。', questionId: 7 },
+    { id: '2025-1-gp2p-sub-7-2', word: 'react', meaning: '反応する', sentence: 'How did he react to the news?', translation: '彼はそのニュースにどう反応しましたか？', questionId: 7 },
+    // Q8
+    { id: '2025-1-gp2p-sub-8-1', word: 'acceptable', meaning: '許容される', sentence: 'This behavior is not acceptable.', translation: 'この振る舞いは許容されない。', questionId: 8 },
+    { id: '2025-1-gp2p-sub-8-2', word: 'independent', meaning: '独立した', sentence: 'India became independent in 1947.', translation: 'インドは1947年に独立した。', questionId: 8 },
+    // Q9
+    { id: '2025-1-gp2p-sub-9-1', word: 'determine', meaning: '決定する', sentence: 'Price is determined by demand.', translation: '価格は需要によって決定される。', questionId: 9 },
+    { id: '2025-1-gp2p-sub-9-2', word: 'admire', meaning: '称賛する、感心する', sentence: 'I admire his courage.', translation: '彼の勇気に感心する。', questionId: 9 },
+    // Q10
+    { id: '2025-1-gp2p-sub-10-1', word: 'overcome', meaning: '克服する', sentence: 'She overcame many difficulties.', translation: '彼女は多くの困難を克服した。', questionId: 10 },
+    { id: '2025-1-gp2p-sub-10-2', word: 'preserve', meaning: '保存する', sentence: 'We must preserve nature.', translation: '私たちは自然を保存しなければならない。', questionId: 10 },
+    // Q11 (Phrases)
+    { id: '2025-1-gp2p-sub-11-1', word: 'as a result', meaning: '結果として', sentence: 'He studied hard. As a result, he passed.', translation: '彼は一生懸命勉強した。その結果、合格した。', questionId: 11 },
+    // Q12
+    { id: '2025-1-gp2p-sub-12-1', word: 'break up', meaning: '別れる、解散する', sentence: 'They broke up last month.', translation: '彼らは先月別れた。', questionId: 12 },
+    { id: '2025-1-gp2p-sub-12-2', word: 'take over', meaning: '引き継ぐ', sentence: 'He will take over the business.', translation: '彼がその事業を引き継ぐだろう。', questionId: 12 },
+    // Q13
+    { id: '2025-1-gp2p-sub-13-1', word: 'be sure about', meaning: '〜について確信している', sentence: 'Are you sure about that?', translation: 'それは確かですか？', questionId: 13 },
+    { id: '2025-1-gp2p-sub-13-2', word: 'eager for', meaning: '〜を切望している', sentence: 'She is eager for success.', translation: '彼女は成功を切望している。', questionId: 13 },
+    // Q14
+    { id: '2025-1-gp2p-sub-14-1', word: 'call off', meaning: '中止する', sentence: 'The game was called off.', translation: '試合は中止された。', questionId: 14 },
+    { id: '2025-1-gp2p-sub-14-2', word: 'due to', meaning: '〜のために（原因）', sentence: 'The delay was due to snow.', translation: '遅れは雪のためだった。', questionId: 14 },
+    // Q15
+    { id: '2025-1-gp2p-sub-15-1', word: 'let down', meaning: 'がっかりさせる', sentence: 'Don\'t let me down.', translation: '私をがっかりさせないで。', questionId: 15 },
+    // Q16
+    { id: '2025-1-gp2p-sub-16-1', word: 'differ from', meaning: '〜と異なる', sentence: 'Customs differ from country to country.', translation: '習慣は国によって異なる。', questionId: 16 },
+    // Q17
+    { id: '2025-1-gp2p-sub-17-1', word: 'these days', meaning: '最近、近頃', sentence: 'Vegetarian food is popular these days.', translation: '最近、ベジタリアン料理が人気だ。', questionId: 17 },
+    { id: '2025-1-gp2p-sub-17-2', word: 'by oneself', meaning: '一人で、独力で', sentence: 'He lives by himself.', translation: '彼は一人暮らしをしている。', questionId: 17 }
+];
+
+vocabDatabase['2025-1-gp2p-sub'] = vocabList_2025_1_gp2p_sub;
+
+const vocabList_2025_2_g2 = [
+    // Q1
+    { id: '2025-2-g2-1-1', word: 'govern', meaning: '統治する', sentence: 'The president governs the country.', translation: '大統領が国を統治する。', questionId: 1 },
+    { id: '2025-2-g2-1-2', word: 'arrest', meaning: '逮捕する', sentence: 'Police arrested the thief.', translation: '警察は泥棒を逮捕した。', questionId: 1 },
+    // Q2
+    { id: '2025-2-g2-2-1', word: 'expand', meaning: '拡大する', sentence: 'The universe is expanding.', translation: '宇宙は膨張（拡大）している。', questionId: 2 },
+    { id: '2025-2-g2-2-2', word: 'reflect', meaning: '反射する、反映する', sentence: 'The mirror reflects light.', translation: '鏡は光を反射する。', questionId: 2 },
+    // Q3
+    { id: '2025-2-g2-3-1', word: 'qualify', meaning: '資格を得る', sentence: 'She qualified for the finals.', translation: '彼女は決勝への出場資格を得た。', questionId: 3 },
+    { id: '2025-2-g2-3-2', word: 'rob', meaning: '強奪する', sentence: 'They robbed the bank.', translation: '彼らは銀行を襲った。', questionId: 3 },
+    // Q4
+    { id: '2025-2-g2-4-1', word: 'occupation', meaning: '職業', sentence: 'Please state your name and occupation.', translation: '氏名と職業を述べてください。', questionId: 4 },
+    { id: '2025-2-g2-4-2', word: 'complaint', meaning: '不平、苦情', sentence: 'I have a complaint about the service.', translation: 'サービスについて苦情があります。', questionId: 4 },
+    // Q5
+    { id: '2025-2-g2-5-1', word: 'grip', meaning: '（心を）つかむ', sentence: 'The movie gripped the audience.', translation: 'その映画は観客の心をつかんだ。', questionId: 5 },
+    { id: '2025-2-g2-5-2', word: 'flatten', meaning: '平らにする', sentence: 'Flatten the dough.', translation: '生地を平らにして。', questionId: 5 },
+    // Q6
+    { id: '2025-2-g2-6-1', word: 'consistent', meaning: '一貫した', sentence: 'He is consistent in his beliefs.', translation: '彼は信念において一貫している。', questionId: 6 },
+    { id: '2025-2-g2-6-2', word: 'massive', meaning: '巨大な', sentence: 'A massive rock fell.', translation: '巨大な岩が落ちた。', questionId: 6 },
+    // Q7
+    { id: '2025-2-g2-7-1', word: 'surprisingly', meaning: '驚くほど', sentence: 'It was surprisingly easy.', translation: 'それは驚くほど簡単だった。', questionId: 7 },
+    { id: '2025-2-g2-7-2', word: 'necessarily', meaning: '必ずしも（〜ない）', sentence: 'That is not necessarily true.', translation: 'それは必ずしも真実ではない。', questionId: 7 },
+    // Q8
+    { id: '2025-2-g2-8-1', word: 'mixture', meaning: '混合物', sentence: 'Air is a mixture of gases.', translation: '空気は気体の混合物だ。', questionId: 8 },
+    { id: '2025-2-g2-8-2', word: 'pollution', meaning: '汚染', sentence: 'Air pollution is a problem.', translation: '大気汚染は問題だ。', questionId: 8 },
+    // Q9
+    { id: '2025-2-g2-9-1', word: 'judgment', meaning: '判断、判断力', sentence: 'Trust your own judgment.', translation: '自分の判断を信じなさい。', questionId: 9 },
+    // Q10
+    { id: '2025-2-g2-10-1', word: 'democracy', meaning: '民主主義', sentence: 'We value democracy.', translation: '私たちは民主主義を重んじる。', questionId: 10 },
+    { id: '2025-2-g2-10-2', word: 'tragedy', meaning: '悲劇', sentence: 'The accident was a tragedy.', translation: 'その事故は悲劇だった。', questionId: 10 },
+    // Q11
+    { id: '2025-2-g2-11-1', word: 'go off', meaning: '（警報などが）鳴る', sentence: 'The alarm went off at 6 AM.', translation: 'アラームが午前6時に鳴った。', questionId: 11 },
+    { id: '2025-2-g2-11-2', word: 'drop by', meaning: '立ち寄る', sentence: 'Please drop by later.', translation: '後で立ち寄って。', questionId: 11 },
+    // Q12
+    { id: '2025-2-g2-12-1', word: 'for the time being', meaning: '当分の間', sentence: 'I\'ll stay here for the time being.', translation: '当分の間ここにいます。', questionId: 12 },
+    // Q13
+    { id: '2025-2-g2-13-1', word: 'identical to', meaning: '〜と同一の', sentence: 'This copy is identical to the original.', translation: 'このコピーは原本と同一だ。', questionId: 13 },
+    { id: '2025-2-g2-13-2', word: 'jealous of', meaning: '〜を妬んで', sentence: 'He is jealous of her success.', translation: '彼は彼女の成功を妬んでいる。', questionId: 13 },
+    // Q14
+    { id: '2025-2-g2-14-1', word: 'rather than', meaning: '〜ではなく', sentence: 'I drink tea rather than coffee.', translation: '私はコーヒーではなくお茶を飲む。', questionId: 14 },
+    { id: '2025-2-g2-14-2', word: 'provided that', meaning: 'もし〜ならば', sentence: 'I will go provided that it is sunny.', translation: '晴れならば行きます。', questionId: 14 },
+    // Q15
+    { id: '2025-2-g2-15-1', word: 'feed on', meaning: '〜を餌にする', sentence: 'Owls feed on mice.', translation: 'フクロウはネズミを餌にする。', questionId: 15 },
+    // Q16
+    { id: '2025-2-g2-16-1', word: 'free of charge', meaning: '無料の', sentence: 'Delivery is free of charge.', translation: '配達は無料です。', questionId: 16 },
+    { id: '2025-2-g2-16-2', word: 'out of breath', meaning: '息切れして', sentence: 'I ran and was out of breath.', translation: '走って息切れした。', questionId: 16 },
+    // Q17
+    { id: '2025-2-g2-17-1', word: 'a number of', meaning: '多数の', sentence: 'A number of people agreed.', translation: '多数の人々が同意した。', questionId: 17 }
+];
+
+vocabDatabase['2025-2-g2'] = vocabList_2025_2_g2;

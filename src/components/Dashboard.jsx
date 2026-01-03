@@ -10,13 +10,7 @@ const Dashboard = () => {
         const saved = localStorage.getItem('selectedGrade');
         return saved || '2級';
     });
-    const [bgIndex, setBgIndex] = useState(1);
-
-    useEffect(() => {
-        // Randomly select background 1-5 on mount
-        const randomInfo = Math.floor(Math.random() * 5) + 1;
-        setBgIndex(randomInfo);
-    }, []);
+    const [bgIndex] = useState(() => Math.floor(Math.random() * 5) + 1);
 
     // Save selected grade to localStorage whenever it changes
     useEffect(() => {
@@ -61,7 +55,7 @@ const Dashboard = () => {
                 }}
             />
             <header className="dashboard-header">
-                <h1>Vocabulary Vanguard<span style={{ fontSize: '0.6em', marginLeft: '10px', verticalAlign: 'middle', opacity: 0.8 }}> (英検大問１)</span></h1>
+                <h1>EIKEN Vocabulary Vanguard<br /><span style={{ fontSize: '0.6em', opacity: 0.8 }}>英検大問１</span></h1>
                 <p>学習したい問題を選択してください</p>
             </header>
 
@@ -97,6 +91,7 @@ const Dashboard = () => {
                                 <div className="card-header">
                                     <span className={`year-badge year-${exam.year}`}>{exam.year}</span>
                                     <span className="session-text">{exam.session}</span>
+                                    {exam.badge && <span className="venue-badge">{exam.badge}</span>}
                                 </div>
 
                                 <div className="card-actions">

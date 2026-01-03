@@ -289,3 +289,16 @@ body {
         padding: 20px;
     }
 }
+
+.venue-badge {
+    background-color: #ef4444;
+    /* Red for visibility */
+    color: white;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-left: auto;
+    /* Push to the right */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

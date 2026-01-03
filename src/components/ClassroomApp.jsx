@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { getExamById, exams } from '../data/exams'; // Dynamic data loader
 import StructureVisualizer from './StructureVisualizer';
 import './ClassroomApp.css';
@@ -7,15 +8,29 @@ import './ClassroomApp.css';
 function ClassroomApp() {
     const { examId } = useParams(); // Get ID from URL
     const [searchParams] = useSearchParams();
-    const navigate = useNavigate();
+    // const navigate = useNavigate(); // Unused
 
     // Dynamic Data Loading
     const targetExam = getExamById(examId) || exams[0]; // Fallback to first exam
     const examData = targetExam.data;
 
-    const [questions, setQuestions] = useState([]);
-    const [baseQuestions, setBaseQuestions] = useState([]); // Store original order for Practice Mode
-    const [isInstructorMode, setIsInstructorMode] = useState(false);
+    // Helper to get initial questions based on range
+    const getInitialQuestions = () => {
+        const rangeParam = searchParams.get('range');
+        if (rangeParam) {
+            const [start, end] = rangeParam.split('-').map(Number);
+            if (!isNaN(start) && !isNaN(end)) {
+                return examData.questions.filter(q => q.id >= start && q.id <= end);
+            }
+        }
+        return examData.questions;
+    };
+
+    // State Initialization
+    const initialQs = getInitialQuestions();
+    const [questions, setQuestions] = useState(initialQs);
+    const [baseQuestions] = useState(initialQs); // Store original order for Practice Mode
+    const [isInstructorMode, setIsInstructorMode] = useState(() => searchParams.get('mode') === 'instructor');
 
     // Student Mode States
     const [studentMode, setStudentMode] = useState('practice'); // 'practice' | 'test'
@@ -28,7 +43,7 @@ function ClassroomApp() {
     // Mistake Tracking State
     const [wrongQuestions, setWrongQuestions] = useState(() => {
         // Unique storage key per exam
-        const storageKey = `wrong_questions_${targetExam.id}`;
+        const storageKey = 'wrong_questions_' + targetExam.id;
         const saved = localStorage.getItem(storageKey);
         // Default to ALL questions if nothing saved (Treat as "Unanswered/Uncleared")
         return saved ? JSON.parse(saved) : examData.questions.map(q => q.id);
@@ -37,13 +52,9 @@ function ClassroomApp() {
 
     // Save wrong questions effect
     useEffect(() => {
-        const storageKey = `wrong_questions_${targetExam.id}`;
+        const storageKey = 'wrong_questions_' + targetExam.id;
         localStorage.setItem(storageKey, JSON.stringify(wrongQuestions));
     }, [wrongQuestions, targetExam.id]);
-
-    // ... (Shuffle logic omitted for brevity, keeping existing) ...
-
-    // ... (handleModeSwitch/handleSubmitTest omitted for brevity) ...
 
 
     // Helper: Shuffle Array
@@ -97,7 +108,7 @@ function ClassroomApp() {
     const formatTime = (seconds) => {
         const m = Math.floor(seconds / 60);
         const s = seconds % 60;
-        return `${m}:${s.toString().padStart(2, '0')}`;
+        return `${m}:${s.toString().padStart(2, '0')} `;
     };
 
     // Re-apply filters/shuffle when mode or weakness toggle changes
@@ -105,6 +116,7 @@ function ClassroomApp() {
         // Instructor Mode: Always show full list (respecting range) in original order
         // Ignore Weakness Filter and Test Shuffling
         if (isInstructorMode) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setQuestions(baseQuestions);
             return;
         }
@@ -130,8 +142,8 @@ function ClassroomApp() {
             // Practice Mode: Original Order
             setQuestions(currentPool);
         }
-
-    }, [baseQuestions, isWeaknessMode, wrongQuestions.length, studentMode, isSubmitted, isInstructorMode]); // Added isSubmitted to dependency
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [baseQuestions, isWeaknessMode, wrongQuestions.length, studentMode, isSubmitted, isInstructorMode]);
 
     const handleModeSwitch = (mode) => {
         setStudentMode(mode);
@@ -187,28 +199,6 @@ function ClassroomApp() {
             setWrongQuestions(examData.questions.map(q => q.id));
         }
     };
-
-    // Filtering & Mode Initialization
-    useEffect(() => {
-        // Mode
-        if (searchParams.get('mode') === 'instructor') {
-            setIsInstructorMode(true);
-        }
-
-        // Range Filter
-        const rangeParam = searchParams.get('range');
-        let initialQuestions = examData.questions;
-
-        if (rangeParam) {
-            const [start, end] = rangeParam.split('-').map(Number);
-            if (!isNaN(start) && !isNaN(end)) {
-                initialQuestions = examData.questions.filter(q => q.id >= start && q.id <= end);
-            }
-        }
-
-        setBaseQuestions(initialQuestions);
-        setQuestions(initialQuestions); // Default to Practice (original order)
-    }, [searchParams, examData]);
 
     // Answer Handler
     const handleAnswer = (qId, choiceIdx) => {
@@ -350,9 +340,7 @@ function ClassroomApp() {
             <header className="paper-header">
                 <div className="instruction-row">
                     <h1 className="big-number">1</h1>
-                    <p className="instruction-body">
-                        次の(1)から(20)までの(　　)に入れるのに最も適切なものを選びなさい。
-                    </p>
+                    次の(1)から({examData.questions.length})までの(     )に入れるのに最も適切なものを選びなさい。
                 </div>
             </header>
 

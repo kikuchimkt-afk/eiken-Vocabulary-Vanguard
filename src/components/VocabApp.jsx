@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { vocabDatabase } from '../data/vocabData';
 import { getExamById, exams } from '../data/exams';
@@ -41,7 +41,7 @@ const VocabApp = () => {
 
     const checkProgress = (newMemorizedSize) => {
         const total = vocabList.length;
-        const percent = Math.floor((newMemorizedSize / total) * 100);
+
 
         const thresholds = [90, 80, 60, 40, 20];
         // We only want to trigger if we JUST reached or passed a threshold we hadn't passed before?
