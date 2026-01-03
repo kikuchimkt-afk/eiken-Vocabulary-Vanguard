@@ -599,3 +599,136 @@
     color: #1e293b;
     font-family: 'Crimson Text', serif;
 }
+
+/* --- Tablet Responsive Styles (768px - 1024px) --- */
+@media (max-width: 1024px) {
+    .glass-nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 16px;
+        justify-content: center;
+    }
+
+    .nav-left,
+    .nav-right {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .app-logo {
+        font-size: 1rem;
+    }
+
+    .nav-badge {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+    }
+
+    .divider-vertical {
+        display: none;
+    }
+
+    .tool-btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .mode-pill {
+        padding: 2px;
+    }
+
+    .pill-option {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+
+    .tool-capsule {
+        padding: 2px;
+    }
+
+    .capsule-label {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+/* --- Mobile Responsive (max 768px) --- */
+@media (max-width: 768px) {
+    .glass-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-left,
+    .nav-right {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .app-logo {
+        font-size: 0.9rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .toggle-wrapper {
+        justify-content: center;
+    }
+
+    .mode-pill {
+        justify-content: center;
+    }
+
+    .pill-option {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+
+    .tool-btn {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    .tool-capsule {
+        flex-wrap: nowrap;
+    }
+
+    .capsule-label {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    .floating-status-bar {
+        bottom: 15px;
+        padding: 6px 16px;
+        gap: 16px;
+    }
+
+    .timer-val {
+        font-size: 0.95rem;
+    }
+
+    .fab-submit {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+    }
+
+    #question-container {
+        padding: 20px;
+    }
+
+    .paper-header {
+        padding: 0 16px;
+    }
+
+    .big-number {
+        font-size: 2.5rem;
+    }
+
+    .instruction-body {
+        font-size: 0.9rem;
+    }
+}

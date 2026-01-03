@@ -917,50 +917,223 @@ const vocabList_2025_2_g2 = [
     // Q1
     { id: '2025-2-g2-1-1', word: 'govern', meaning: '統治する', sentence: 'The president governs the country.', translation: '大統領が国を統治する。', questionId: 1 },
     { id: '2025-2-g2-1-2', word: 'arrest', meaning: '逮捕する', sentence: 'Police arrested the thief.', translation: '警察は泥棒を逮捕した。', questionId: 1 },
+    { id: '2025-2-g2-1-3', word: 'overlap', meaning: '重複する', sentence: 'The two schedules overlap.', translation: '2つのスケジュールが重なっている。', questionId: 1 },
+    { id: '2025-2-g2-1-4', word: 'forgive', meaning: '許す', sentence: 'Please forgive me for being late.', translation: '遅れたことを許してください。', questionId: 1 },
     // Q2
     { id: '2025-2-g2-2-1', word: 'expand', meaning: '拡大する', sentence: 'The universe is expanding.', translation: '宇宙は膨張（拡大）している。', questionId: 2 },
     { id: '2025-2-g2-2-2', word: 'reflect', meaning: '反射する、反映する', sentence: 'The mirror reflects light.', translation: '鏡は光を反射する。', questionId: 2 },
+    { id: '2025-2-g2-2-3', word: 'suffer', meaning: '苦しむ', sentence: 'He suffered from a cold.', translation: '彼は風邪に苦しんだ。', questionId: 2 },
+    { id: '2025-2-g2-2-4', word: 'influence', meaning: '影響を与える', sentence: 'Music influenced his life.', translation: '音楽が彼の人生に影響を与えた。', questionId: 2 },
     // Q3
     { id: '2025-2-g2-3-1', word: 'qualify', meaning: '資格を得る', sentence: 'She qualified for the finals.', translation: '彼女は決勝への出場資格を得た。', questionId: 3 },
     { id: '2025-2-g2-3-2', word: 'rob', meaning: '強奪する', sentence: 'They robbed the bank.', translation: '彼らは銀行を襲った。', questionId: 3 },
+    { id: '2025-2-g2-3-3', word: 'weigh', meaning: '重さを量る', sentence: 'Please weigh this package.', translation: 'この荷物の重さを量ってください。', questionId: 3 },
     // Q4
     { id: '2025-2-g2-4-1', word: 'occupation', meaning: '職業', sentence: 'Please state your name and occupation.', translation: '氏名と職業を述べてください。', questionId: 4 },
     { id: '2025-2-g2-4-2', word: 'complaint', meaning: '不平、苦情', sentence: 'I have a complaint about the service.', translation: 'サービスについて苦情があります。', questionId: 4 },
+    { id: '2025-2-g2-4-3', word: 'device', meaning: '装置、機器', sentence: 'This device measures temperature.', translation: 'この装置は温度を測定する。', questionId: 4 },
+    { id: '2025-2-g2-4-4', word: 'proverb', meaning: 'ことわざ', sentence: 'There is an old proverb about it.', translation: 'それについて古いことわざがある。', questionId: 4 },
     // Q5
     { id: '2025-2-g2-5-1', word: 'grip', meaning: '（心を）つかむ', sentence: 'The movie gripped the audience.', translation: 'その映画は観客の心をつかんだ。', questionId: 5 },
     { id: '2025-2-g2-5-2', word: 'flatten', meaning: '平らにする', sentence: 'Flatten the dough.', translation: '生地を平らにして。', questionId: 5 },
+    { id: '2025-2-g2-5-3', word: 'accept', meaning: '受け入れる', sentence: 'She accepted the offer.', translation: '彼女はその申し出を受け入れた。', questionId: 5 },
     // Q6
     { id: '2025-2-g2-6-1', word: 'consistent', meaning: '一貫した', sentence: 'He is consistent in his beliefs.', translation: '彼は信念において一貫している。', questionId: 6 },
     { id: '2025-2-g2-6-2', word: 'massive', meaning: '巨大な', sentence: 'A massive rock fell.', translation: '巨大な岩が落ちた。', questionId: 6 },
+    { id: '2025-2-g2-6-3', word: 'internal', meaning: '内部の', sentence: 'This is an internal matter.', translation: 'これは内部の問題だ。', questionId: 6 },
+    { id: '2025-2-g2-6-4', word: 'recent', meaning: '最近の', sentence: 'I read a recent article.', translation: '最近の記事を読んだ。', questionId: 6 },
     // Q7
     { id: '2025-2-g2-7-1', word: 'surprisingly', meaning: '驚くほど', sentence: 'It was surprisingly easy.', translation: 'それは驚くほど簡単だった。', questionId: 7 },
     { id: '2025-2-g2-7-2', word: 'necessarily', meaning: '必ずしも（〜ない）', sentence: 'That is not necessarily true.', translation: 'それは必ずしも真実ではない。', questionId: 7 },
+    { id: '2025-2-g2-7-3', word: 'continuously', meaning: '連続して', sentence: 'It rained continuously.', translation: '雨が連続して降った。', questionId: 7 },
+    { id: '2025-2-g2-7-4', word: 'faithfully', meaning: '忠実に', sentence: 'The dog waited faithfully.', translation: '犬は忠実に待っていた。', questionId: 7 },
     // Q8
     { id: '2025-2-g2-8-1', word: 'mixture', meaning: '混合物', sentence: 'Air is a mixture of gases.', translation: '空気は気体の混合物だ。', questionId: 8 },
     { id: '2025-2-g2-8-2', word: 'pollution', meaning: '汚染', sentence: 'Air pollution is a problem.', translation: '大気汚染は問題だ。', questionId: 8 },
+    { id: '2025-2-g2-8-3', word: 'surgery', meaning: '手術', sentence: 'He had heart surgery.', translation: '彼は心臓手術を受けた。', questionId: 8 },
+    { id: '2025-2-g2-8-4', word: 'resort', meaning: '行楽地、リゾート', sentence: 'We stayed at a beach resort.', translation: '私たちはビーチリゾートに滞在した。', questionId: 8 },
     // Q9
     { id: '2025-2-g2-9-1', word: 'judgment', meaning: '判断、判断力', sentence: 'Trust your own judgment.', translation: '自分の判断を信じなさい。', questionId: 9 },
+    { id: '2025-2-g2-9-2', word: 'laughter', meaning: '笑い', sentence: 'The room was filled with laughter.', translation: '部屋は笑いで満ちていた。', questionId: 9 },
+    { id: '2025-2-g2-9-3', word: 'climate', meaning: '気候', sentence: 'The climate here is mild.', translation: 'ここの気候は穏やかだ。', questionId: 9 },
     // Q10
     { id: '2025-2-g2-10-1', word: 'democracy', meaning: '民主主義', sentence: 'We value democracy.', translation: '私たちは民主主義を重んじる。', questionId: 10 },
     { id: '2025-2-g2-10-2', word: 'tragedy', meaning: '悲劇', sentence: 'The accident was a tragedy.', translation: 'その事故は悲劇だった。', questionId: 10 },
+    { id: '2025-2-g2-10-3', word: 'mystery', meaning: '謎', sentence: 'It remains a mystery.', translation: 'それは謎のままだ。', questionId: 10 },
+    { id: '2025-2-g2-10-4', word: 'philosophy', meaning: '哲学', sentence: 'He studied philosophy.', translation: '彼は哲学を学んだ。', questionId: 10 },
     // Q11
     { id: '2025-2-g2-11-1', word: 'go off', meaning: '（警報などが）鳴る', sentence: 'The alarm went off at 6 AM.', translation: 'アラームが午前6時に鳴った。', questionId: 11 },
     { id: '2025-2-g2-11-2', word: 'drop by', meaning: '立ち寄る', sentence: 'Please drop by later.', translation: '後で立ち寄って。', questionId: 11 },
+    { id: '2025-2-g2-11-3', word: 'come down', meaning: '降りてくる', sentence: 'The prices came down.', translation: '価格が下がった。', questionId: 11 },
+    { id: '2025-2-g2-11-4', word: 'pass on', meaning: '伝える', sentence: 'Pass on the message.', translation: '伝言を伝えて。', questionId: 11 },
     // Q12
     { id: '2025-2-g2-12-1', word: 'for the time being', meaning: '当分の間', sentence: 'I\'ll stay here for the time being.', translation: '当分の間ここにいます。', questionId: 12 },
+    { id: '2025-2-g2-12-2', word: 'in the old days', meaning: '昔は', sentence: 'In the old days, life was simpler.', translation: '昔は生活がもっとシンプルだった。', questionId: 12 },
+    { id: '2025-2-g2-12-3', word: 'up in the air', meaning: '未定で', sentence: 'The plan is still up in the air.', translation: '計画はまだ未定だ。', questionId: 12 },
     // Q13
     { id: '2025-2-g2-13-1', word: 'identical to', meaning: '〜と同一の', sentence: 'This copy is identical to the original.', translation: 'このコピーは原本と同一だ。', questionId: 13 },
     { id: '2025-2-g2-13-2', word: 'jealous of', meaning: '〜を妬んで', sentence: 'He is jealous of her success.', translation: '彼は彼女の成功を妬んでいる。', questionId: 13 },
+    { id: '2025-2-g2-13-3', word: 'confident of', meaning: '〜を確信して', sentence: 'She is confident of victory.', translation: '彼女は勝利を確信している。', questionId: 13 },
     // Q14
     { id: '2025-2-g2-14-1', word: 'rather than', meaning: '〜ではなく', sentence: 'I drink tea rather than coffee.', translation: '私はコーヒーではなくお茶を飲む。', questionId: 14 },
     { id: '2025-2-g2-14-2', word: 'provided that', meaning: 'もし〜ならば', sentence: 'I will go provided that it is sunny.', translation: '晴れならば行きます。', questionId: 14 },
+    { id: '2025-2-g2-14-3', word: 'even though', meaning: '〜であるのに', sentence: 'He went out even though it was raining.', translation: '雨が降っているのに彼は外出した。', questionId: 14 },
     // Q15
     { id: '2025-2-g2-15-1', word: 'feed on', meaning: '〜を餌にする', sentence: 'Owls feed on mice.', translation: 'フクロウはネズミを餌にする。', questionId: 15 },
+    { id: '2025-2-g2-15-2', word: 'turn in', meaning: '提出する', sentence: 'Turn in your homework.', translation: '宿題を提出しなさい。', questionId: 15 },
     // Q16
     { id: '2025-2-g2-16-1', word: 'free of charge', meaning: '無料の', sentence: 'Delivery is free of charge.', translation: '配達は無料です。', questionId: 16 },
     { id: '2025-2-g2-16-2', word: 'out of breath', meaning: '息切れして', sentence: 'I ran and was out of breath.', translation: '走って息切れした。', questionId: 16 },
     // Q17
-    { id: '2025-2-g2-17-1', word: 'a number of', meaning: '多数の', sentence: 'A number of people agreed.', translation: '多数の人々が同意した。', questionId: 17 }
+    { id: '2025-2-g2-17-1', word: 'a number of', meaning: '多数の', sentence: 'A number of people agreed.', translation: '多数の人々が同意した。', questionId: 17 },
+    { id: '2025-2-g2-17-2', word: 'a kind of', meaning: '一種の', sentence: 'It is a kind of fish.', translation: 'それは一種の魚だ。', questionId: 17 }
 ];
 
 vocabDatabase['2025-2-g2'] = vocabList_2025_2_g2;
+
+// Grade 2 2025-1 (50 words)
+const vocabList_2025_1_g2 = [
+    // Q1
+    { id: '2025-1-g2-1-1', word: 'civilization', meaning: '文明', sentence: 'Ancient civilization flourished here.', translation: '古代文明がここで栄えた。', questionId: 1 },
+    { id: '2025-1-g2-1-2', word: 'disappointment', meaning: '失望', sentence: 'His failure was a disappointment.', translation: '彼の失敗は失望だった。', questionId: 1 },
+    { id: '2025-1-g2-1-3', word: 'proportion', meaning: '割合', sentence: 'The proportion of women increased.', translation: '女性の割合が増えた。', questionId: 1 },
+    // Q2
+    { id: '2025-1-g2-2-1', word: 'uncomfortable', meaning: '不快な', sentence: 'This chair is uncomfortable.', translation: 'この椅子は座り心地が悪い。', questionId: 2 },
+    { id: '2025-1-g2-2-2', word: 'permanent', meaning: '永続的な', sentence: 'He got a permanent job.', translation: '彼は正規の仕事を得た。', questionId: 2 },
+    { id: '2025-1-g2-2-3', word: 'complicated', meaning: '複雑な', sentence: 'The problem is complicated.', translation: 'その問題は複雑だ。', questionId: 2 },
+    // Q3
+    { id: '2025-1-g2-3-1', word: 'severely', meaning: 'ひどく', sentence: 'He was severely injured.', translation: '彼はひどい怪我をした。', questionId: 3 },
+    { id: '2025-1-g2-3-2', word: 'fluently', meaning: '流暢に', sentence: 'She speaks English fluently.', translation: '彼女は英語を流暢に話す。', questionId: 3 },
+    { id: '2025-1-g2-3-3', word: 'currently', meaning: '現在', sentence: 'I am currently busy.', translation: '私は現在忙しい。', questionId: 3 },
+    // Q4
+    { id: '2025-1-g2-4-1', word: 'drag', meaning: '引きずる', sentence: 'He dragged the heavy box.', translation: '彼は重い箱を引きずった。', questionId: 4 },
+    { id: '2025-1-g2-4-2', word: 'wipe', meaning: '拭く', sentence: 'Wipe the table clean.', translation: 'テーブルを拭いてきれいにして。', questionId: 4 },
+    { id: '2025-1-g2-4-3', word: 'row', meaning: '漕ぐ', sentence: 'They rowed the boat.', translation: '彼らはボートを漕いだ。', questionId: 4 },
+    // Q5
+    { id: '2025-1-g2-5-1', word: 'devote', meaning: '捧げる', sentence: 'She devoted her life to music.', translation: '彼女は人生を音楽に捧げた。', questionId: 5 },
+    { id: '2025-1-g2-5-2', word: 'specify', meaning: '指定する', sentence: 'Please specify the date.', translation: '日付を指定してください。', questionId: 5 },
+    { id: '2025-1-g2-5-3', word: 'advertise', meaning: '宣伝する', sentence: 'They advertised the product.', translation: '彼らは製品を宣伝した。', questionId: 5 },
+    // Q6
+    { id: '2025-1-g2-6-1', word: 'indicate', meaning: '示す', sentence: 'The sign indicates the exit.', translation: '標識が出口を示している。', questionId: 6 },
+    { id: '2025-1-g2-6-2', word: 'deceive', meaning: 'だます', sentence: 'Don\'t deceive people.', translation: '人をだますな。', questionId: 6 },
+    { id: '2025-1-g2-6-3', word: 'sacrifice', meaning: '犠牲にする', sentence: 'She sacrificed her career.', translation: '彼女はキャリアを犠牲にした。', questionId: 6 },
+    // Q7
+    { id: '2025-1-g2-7-1', word: 'apologize', meaning: '謝る', sentence: 'He apologized for being late.', translation: '彼は遅刻を謝った。', questionId: 7 },
+    { id: '2025-1-g2-7-2', word: 'supply', meaning: '供給する', sentence: 'They supply water to the village.', translation: '彼らは村に水を供給している。', questionId: 7 },
+    { id: '2025-1-g2-7-3', word: 'instruct', meaning: '指示する', sentence: 'The teacher instructed the students.', translation: '先生は生徒に指示した。', questionId: 7 },
+    // Q8
+    { id: '2025-1-g2-8-1', word: 'anxiety', meaning: '不安', sentence: 'She felt anxiety about the test.', translation: '彼女はテストについて不安を感じた。', questionId: 8 },
+    { id: '2025-1-g2-8-2', word: 'inheritance', meaning: '遺産', sentence: 'He received a large inheritance.', translation: '彼は大きな遺産を受け取った。', questionId: 8 },
+    { id: '2025-1-g2-8-3', word: 'confidence', meaning: '自信', sentence: 'She has confidence in herself.', translation: '彼女は自分に自信がある。', questionId: 8 },
+    // Q9
+    { id: '2025-1-g2-9-1', word: 'welfare', meaning: '福祉', sentence: 'We care about animal welfare.', translation: '私たちは動物の福祉を気にかけている。', questionId: 9 },
+    { id: '2025-1-g2-9-2', word: 'balance', meaning: 'バランス', sentence: 'Keep a good balance.', translation: '良いバランスを保て。', questionId: 9 },
+    { id: '2025-1-g2-9-3', word: 'reputation', meaning: '評判', sentence: 'The company has a good reputation.', translation: 'その会社は評判が良い。', questionId: 9 },
+    // Q10
+    { id: '2025-1-g2-10-1', word: 'characteristic', meaning: '特徴', sentence: 'Kindness is her characteristic.', translation: '優しさは彼女の特徴だ。', questionId: 10 },
+    { id: '2025-1-g2-10-2', word: 'contribution', meaning: '貢献', sentence: 'His contribution was great.', translation: '彼の貢献は大きかった。', questionId: 10 },
+    { id: '2025-1-g2-10-3', word: 'investigation', meaning: '調査', sentence: 'The investigation is ongoing.', translation: '調査は進行中だ。', questionId: 10 },
+    // Q11
+    { id: '2025-1-g2-11-1', word: 'no better', meaning: '良くない', sentence: 'It is no better than before.', translation: '以前と変わらず良くない。', questionId: 11 },
+    // Q12
+    { id: '2025-1-g2-12-1', word: 'only a few', meaning: 'ほんのわずか', sentence: 'Only a few people came.', translation: 'ほんのわずかな人しか来なかった。', questionId: 12 },
+    // Q13
+    { id: '2025-1-g2-13-1', word: 'rely on', meaning: '頼る', sentence: 'You can rely on me.', translation: '私を頼っていいよ。', questionId: 13 },
+    { id: '2025-1-g2-13-2', word: 'cover up', meaning: '隠す', sentence: 'They tried to cover up the truth.', translation: '彼らは真実を隠そうとした。', questionId: 13 },
+    { id: '2025-1-g2-13-3', word: 'approve of', meaning: '認める', sentence: 'I approve of your plan.', translation: 'あなたの計画を認めます。', questionId: 13 },
+    // Q14
+    { id: '2025-1-g2-14-1', word: 'to my regret', meaning: '後悔したことに', sentence: 'To my regret, I refused.', translation: '後悔したことに、私は断った。', questionId: 14 },
+    { id: '2025-1-g2-14-2', word: 'turn down', meaning: '断る', sentence: 'She turned down the offer.', translation: '彼女は申し出を断った。', questionId: 14 },
+    // Q15
+    { id: '2025-1-g2-15-1', word: 'save up', meaning: '貯金する', sentence: 'He is saving up for a car.', translation: '彼は車のために貯金している。', questionId: 15 },
+    { id: '2025-1-g2-15-2', word: 'bring on', meaning: '引き起こす', sentence: 'Stress can bring on illness.', translation: 'ストレスは病気を引き起こすことがある。', questionId: 15 },
+    { id: '2025-1-g2-15-3', word: 'hand over', meaning: '引き渡す', sentence: 'Hand over the keys.', translation: '鍵を渡して。', questionId: 15 },
+    // Q16
+    { id: '2025-1-g2-16-1', word: 'have a good command of', meaning: '〜を自由に操る', sentence: 'She has a good command of French.', translation: '彼女はフランス語が堪能だ。', questionId: 16 },
+    { id: '2025-1-g2-16-2', word: 'take a good look at', meaning: 'よく見る', sentence: 'Take a good look at this picture.', translation: 'この絵をよく見て。', questionId: 16 },
+    // Q17
+    { id: '2025-1-g2-17-1', word: 'at times', meaning: '時々', sentence: 'At times, I feel lonely.', translation: '時々、寂しく感じる。', questionId: 17 },
+    { id: '2025-1-g2-17-2', word: 'with ease', meaning: '容易に', sentence: 'She solved it with ease.', translation: '彼女は容易にそれを解いた。', questionId: 17 },
+    { id: '2025-1-g2-17-3', word: 'in turn', meaning: '順番に', sentence: 'Answer in turn.', translation: '順番に答えて。', questionId: 17 },
+    { id: '2025-1-g2-17-4', word: 'on board', meaning: '搭乗して', sentence: 'All passengers are on board.', translation: '乗客全員が搭乗している。', questionId: 17 },
+    // Additional words from context
+    { id: '2025-1-g2-extra-1', word: 'ancient', meaning: '古代の', sentence: 'Ancient Greece was advanced.', translation: '古代ギリシャは先進的だった。', questionId: 1 },
+    { id: '2025-1-g2-extra-2', word: 'discovery', meaning: '発見', sentence: 'It was a great discovery.', translation: 'それは偉大な発見だった。', questionId: 1 },
+    { id: '2025-1-g2-extra-3', word: 'entrance', meaning: '入学', sentence: 'She passed the entrance exam.', translation: '彼女は入学試験に合格した。', questionId: 5 },
+    { id: '2025-1-g2-extra-4', word: 'organization', meaning: '組織', sentence: 'He works for an organization.', translation: '彼は組織で働いている。', questionId: 9 }
+];
+
+vocabDatabase['2025-1-g2'] = vocabList_2025_1_g2;
+
+// Grade 2 2024-3 (50 words)
+const vocabList_2024_3_g2 = [
+    // Q1
+    { id: '2024-3-g2-1-1', word: 'subscription', meaning: '定期購読', sentence: 'I have a magazine subscription.', translation: '私は雑誌の定期購読をしている。', questionId: 1 },
+    { id: '2024-3-g2-1-2', word: 'opportunity', meaning: '機会', sentence: 'This is a great opportunity.', translation: 'これは素晴らしい機会だ。', questionId: 1 },
+    { id: '2024-3-g2-1-3', word: 'campaign', meaning: 'キャンペーン', sentence: 'They launched a campaign.', translation: '彼らはキャンペーンを開始した。', questionId: 1 },
+    // Q2
+    { id: '2024-3-g2-2-1', word: 'offend', meaning: '感情を害する', sentence: 'I didn\'t mean to offend you.', translation: 'あなたを傷つけるつもりはなかった。', questionId: 2 },
+    { id: '2024-3-g2-2-2', word: 'replace', meaning: '交換する', sentence: 'We need to replace the battery.', translation: 'バッテリーを交換する必要がある。', questionId: 2 },
+    { id: '2024-3-g2-2-3', word: 'transform', meaning: '変える', sentence: 'The city was transformed.', translation: '街は変貌した。', questionId: 2 },
+    // Q3
+    { id: '2024-3-g2-3-1', word: 'storage', meaning: '収納、保管', sentence: 'We need more storage space.', translation: 'もっと収納スペースが必要だ。', questionId: 3 },
+    { id: '2024-3-g2-3-2', word: 'reverse', meaning: '逆', sentence: 'The reverse is also true.', translation: '逆もまた真なり。', questionId: 3 },
+    { id: '2024-3-g2-3-3', word: 'denial', meaning: '否定', sentence: 'He issued a denial.', translation: '彼は否定声明を出した。', questionId: 3 },
+    // Q4
+    { id: '2024-3-g2-4-1', word: 'consequence', meaning: '結果', sentence: 'Consider the consequences.', translation: '結果を考慮しなさい。', questionId: 4 },
+    { id: '2024-3-g2-4-2', word: 'behavior', meaning: '振る舞い', sentence: 'His behavior was rude.', translation: '彼の振る舞いは失礼だった。', questionId: 4 },
+    // Q5
+    { id: '2024-3-g2-5-1', word: 'separately', meaning: '別々に', sentence: 'They live separately.', translation: '彼らは別々に住んでいる。', questionId: 5 },
+    { id: '2024-3-g2-5-2', word: 'meanwhile', meaning: 'その間に', sentence: 'Meanwhile, I will wait here.', translation: 'その間、私はここで待つ。', questionId: 5 },
+    { id: '2024-3-g2-5-3', word: 'permanently', meaning: '永続的に', sentence: 'He moved permanently.', translation: '彼は永住した。', questionId: 5 },
+    // Q6
+    { id: '2024-3-g2-6-1', word: 'outcome', meaning: '結果', sentence: 'The outcome was positive.', translation: '結果は前向きだった。', questionId: 6 },
+    { id: '2024-3-g2-6-2', word: 'appetite', meaning: '食欲', sentence: 'I lost my appetite.', translation: '食欲がなくなった。', questionId: 6 },
+    { id: '2024-3-g2-6-3', word: 'conflict', meaning: '対立', sentence: 'There was a conflict.', translation: '対立があった。', questionId: 6 },
+    // Q7
+    { id: '2024-3-g2-7-1', word: 'accelerate', meaning: '加速させる', sentence: 'The car accelerated.', translation: '車が加速した。', questionId: 7 },
+    { id: '2024-3-g2-7-2', word: 'compose', meaning: '構成する', sentence: 'Water is composed of hydrogen and oxygen.', translation: '水は水素と酸素で構成されている。', questionId: 7 },
+    { id: '2024-3-g2-7-3', word: 'launch', meaning: '発射する', sentence: 'They launched a rocket.', translation: '彼らはロケットを発射した。', questionId: 7 },
+    // Q8
+    { id: '2024-3-g2-8-1', word: 'educate', meaning: '教育する', sentence: 'Schools educate children.', translation: '学校は子供を教育する。', questionId: 8 },
+    { id: '2024-3-g2-8-2', word: 'invent', meaning: '発明する', sentence: 'He invented a new device.', translation: '彼は新しい装置を発明した。', questionId: 8 },
+    { id: '2024-3-g2-8-3', word: 'pretend', meaning: 'ふりをする', sentence: 'She pretended to sleep.', translation: '彼女は寝たふりをした。', questionId: 8 },
+    // Q9
+    { id: '2024-3-g2-9-1', word: 'financial', meaning: '財政の', sentence: 'He has financial problems.', translation: '彼は金銭的な問題を抱えている。', questionId: 9 },
+    { id: '2024-3-g2-9-2', word: 'attractive', meaning: '魅力的な', sentence: 'The offer is attractive.', translation: 'その申し出は魅力的だ。', questionId: 9 },
+    { id: '2024-3-g2-9-3', word: 'ignorant', meaning: '無知な', sentence: 'He is ignorant of the facts.', translation: '彼は事実を知らない。', questionId: 9 },
+    // Q10
+    { id: '2024-3-g2-10-1', word: 'drift', meaning: '漂流する', sentence: 'The boat drifted away.', translation: 'ボートが流されていった。', questionId: 10 },
+    { id: '2024-3-g2-10-2', word: 'split', meaning: '裂ける', sentence: 'The wood split in two.', translation: '木が2つに裂けた。', questionId: 10 },
+    { id: '2024-3-g2-10-3', word: 'resolve', meaning: '解決する', sentence: 'We resolved the issue.', translation: '私たちは問題を解決した。', questionId: 10 },
+    { id: '2024-3-g2-10-4', word: 'grasp', meaning: 'つかむ', sentence: 'He grasped the rope.', translation: '彼はロープをつかんだ。', questionId: 10 },
+    // Q11
+    { id: '2024-3-g2-11-1', word: 'in honor of', meaning: '〜を記念して', sentence: 'The party was in honor of him.', translation: 'パーティーは彼を記念して開かれた。', questionId: 11 },
+    { id: '2024-3-g2-11-2', word: 'for lack of', meaning: '〜の不足のために', sentence: 'The project failed for lack of funds.', translation: 'プロジェクトは資金不足で失敗した。', questionId: 11 },
+    { id: '2024-3-g2-11-3', word: 'at risk', meaning: '危険にさらされて', sentence: 'The species is at risk.', translation: 'その種は絶滅の危機にある。', questionId: 11 },
+    // Q12
+    { id: '2024-3-g2-12-1', word: 'on the go', meaning: '働き詰めで', sentence: 'He is always on the go.', translation: '彼はいつも忙しく動き回っている。', questionId: 12 },
+    { id: '2024-3-g2-12-2', word: 'in the way', meaning: '邪魔になって', sentence: 'The box is in the way.', translation: '箱が邪魔になっている。', questionId: 12 },
+    { id: '2024-3-g2-12-3', word: 'by the book', meaning: '規則通りに', sentence: 'He does everything by the book.', translation: '彼は何でも規則通りにやる。', questionId: 12 },
+    // Q13
+    { id: '2024-3-g2-13-1', word: 'at the mercy of', meaning: '〜のなすがままに', sentence: 'We were at the mercy of the storm.', translation: '私たちは嵐のなすがままだった。', questionId: 13 },
+    { id: '2024-3-g2-13-2', word: 'on the rise', meaning: '増加して', sentence: 'Crime is on the rise.', translation: '犯罪が増加している。', questionId: 13 },
+    // Q14
+    { id: '2024-3-g2-14-1', word: 'fall back on', meaning: '〜に頼る', sentence: 'She fell back on her savings.', translation: '彼女は貯金に頼った。', questionId: 14 },
+    { id: '2024-3-g2-14-2', word: 'break up with', meaning: '〜と別れる', sentence: 'They broke up recently.', translation: '彼らは最近別れた。', questionId: 14 },
+    { id: '2024-3-g2-14-3', word: 'speak ill of', meaning: '〜の悪口を言う', sentence: 'Don\'t speak ill of others.', translation: '他人の悪口を言うな。', questionId: 14 },
+    // Q15
+    { id: '2024-3-g2-15-1', word: 'in effect', meaning: '実施されて', sentence: 'The new rule is in effect.', translation: '新しい規則は実施されている。', questionId: 15 },
+    { id: '2024-3-g2-15-2', word: 'on strike', meaning: 'ストライキ中で', sentence: 'The workers are on strike.', translation: '労働者はストライキ中だ。', questionId: 15 },
+    // Q16
+    { id: '2024-3-g2-16-1', word: 'pick out', meaning: '選ぶ', sentence: 'Pick out a nice shirt.', translation: '素敵なシャツを選んで。', questionId: 16 },
+    { id: '2024-3-g2-16-2', word: 'turn over', meaning: 'めくる', sentence: 'Turn over the page.', translation: 'ページをめくって。', questionId: 16 },
+    { id: '2024-3-g2-16-3', word: 'cut off', meaning: '切り取る', sentence: 'Cut off the end.', translation: '端を切り取って。', questionId: 16 },
+    // Q17
+    { id: '2024-3-g2-17-1', word: 'side by side', meaning: '並んで', sentence: 'They walked side by side.', translation: '彼らは並んで歩いた。', questionId: 17 },
+    { id: '2024-3-g2-17-2', word: 'back and forth', meaning: '行ったり来たり', sentence: 'He paced back and forth.', translation: '彼は行ったり来たりした。', questionId: 17 },
+    { id: '2024-3-g2-17-3', word: 'down the road', meaning: '将来', sentence: 'We\'ll discuss it down the road.', translation: '将来それについて話し合おう。', questionId: 17 },
+    { id: '2024-3-g2-17-4', word: 'on the way', meaning: '途中で', sentence: 'I met him on the way.', translation: '途中で彼に会った。', questionId: 17 }
+];
+
+vocabDatabase['2024-3-g2'] = vocabList_2024_3_g2;
