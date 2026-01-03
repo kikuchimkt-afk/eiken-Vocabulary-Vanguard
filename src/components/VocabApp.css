@@ -29,8 +29,8 @@
 .vocab-container {
     background-color: var(--vocab-app-bg);
     width: 100vw;
-    height: 100vh;
-    /* Full viewport logic for Vocab App specifics */
+    height: 100dvh;
+    /* Use dvh for mobile browsers to avoid cut-off */
     position: fixed;
     top: 0;
     left: 0;
@@ -45,6 +45,8 @@
     /* Center content vertically */
     padding: 24px;
     box-sizing: border-box;
+    padding-bottom: env(safe-area-inset-bottom, 24px);
+    /* Safe area for iPhone home bar */
 }
 
 .vocab-app-content {
@@ -208,8 +210,9 @@
 /* Study Screen */
 .study-screen {
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    /* Increased padding for bottom overlap */
 }
 
 .study-header {
