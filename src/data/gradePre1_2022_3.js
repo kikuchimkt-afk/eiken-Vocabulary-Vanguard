@@ -8,7 +8,7 @@ export const gradePre1_2022_3Data = {
             choices: ["desperate", "philosophical", "inadequate", "instrumental"],
             choiceMeanings: ["自暴自棄の", "達観した、哲学的な", "不十分な", "役立つ、重要な役割を果たす"],
             correctAnswer: 4,
-            structure: "Fernando has been [V] instrumental [C] to the success of the company [M].",
+            structure: "Fernando [S] has been [V] instrumental [C] to the success of the company [M].",
             explanation: "instrumental: 重要な役割を果たす、役立つ",
             translation: {
                 literal: "フェルナンドはずっと [V] 重要な役割を果たしてきた [C] 会社の成功に [M]。",
@@ -98,7 +98,7 @@ export const gradePre1_2022_3Data = {
             choices: ["alleged", "amicable", "abusive", "adhesive"],
             choiceMeanings: ["申し立てられた", "友好的な", "口汚い、虐待の", "粘着性の"],
             correctAnswer: 2,
-            structure: "enjoy [V] an amicable relationship [O].",
+            structure: "they [S] enjoy [V] an amicable relationship [O].",
             explanation: "amicable: 友好的な",
             translation: {
                 literal: "享受している [V] 友好的な関係を [O]。",
@@ -113,7 +113,7 @@ export const gradePre1_2022_3Data = {
             choices: ["commemorate", "alienate", "liberate", "incorporate"],
             choiceMeanings: ["祝う", "遠ざける", "解放する", "組み込む"],
             correctAnswer: 4,
-            structure: "decided to incorporate [V] an exercise program [O] into her daily routine [M].",
+            structure: "she [S] decided to incorporate [V] an exercise program [O] into her daily routine [M].",
             explanation: "incorporate: 組み込む、取り入れる",
             translation: {
                 literal: "決めた [V] エクササイズプログラムを [O] 毎日のルーティンに組み込むことを [M]。",
@@ -173,7 +173,7 @@ export const gradePre1_2022_3Data = {
             choices: ["poetic", "savage", "frail", "rash"],
             choiceMeanings: ["詩的な", "野蛮な", "虚弱な", "軽率な"],
             correctAnswer: 3,
-            structure: "become [V] very frail [C].",
+            structure: "Maggie's grandmother [S] has recently become [V] very frail [C].",
             explanation: "frail: （体が）弱い、虚弱な",
             translation: {
                 literal: "なった [V] とても虚弱に [C]。",
@@ -188,7 +188,7 @@ export const gradePre1_2022_3Data = {
             choices: ["solitude", "corruption", "excess", "consent"],
             choiceMeanings: ["孤独", "汚職", "過剰", "同意"],
             correctAnswer: 1,
-            structure: "work [V] in solitude [M].",
+            structure: "The novelist [S] likes to work [V] in solitude [M].",
             explanation: "solitude: 孤独、ひとりでいること",
             translation: {
                 literal: "仕事をする [V] 孤独の中で [M]。",
@@ -203,7 +203,7 @@ export const gradePre1_2022_3Data = {
             choices: ["setbacks", "artifacts", "pledges", "salutes"],
             choiceMeanings: ["挫折", "工芸品、人工遺物", "誓約", "敬礼"],
             correctAnswer: 2,
-            structure: "found [V] many artifacts [O].",
+            structure: "Archaeologists [S] found [V] many artifacts [O].",
             explanation: "artifact: （考古学的な）人工遺物、工芸品",
             translation: {
                 literal: "見つけた [V] 多くの人工遺物を [O]。",
@@ -233,7 +233,7 @@ export const gradePre1_2022_3Data = {
             choices: ["pathetic", "analytical", "dedicated", "ceaseless"],
             choiceMeanings: ["哀れな", "分析的な", "献身的な", "絶え間ない"],
             correctAnswer: 1,
-            structure: "called [V] him [O] pathetic [C].",
+            structure: "Maria [S] ... called [V] him [O] pathetic [C].",
             explanation: "pathetic: 哀れな、痛ましい",
             translation: {
                 literal: "呼んだ [V] 彼を [O] 哀れだと [C]。",
@@ -308,7 +308,7 @@ export const gradePre1_2022_3Data = {
             choices: ["withdraw", "bypass", "upgrade", "overload"],
             choiceMeanings: ["棄権する、撤退する", "迂回する", "アップグレードする", "過負荷をかける"],
             correctAnswer: 1,
-            structure: "forced [V] her [O] to withdraw [C] from the game [M].",
+            structure: "a shoulder injury [S] had forced [V] her [O] to withdraw [C] from the game [M].",
             explanation: "withdraw: 棄権する、退く",
             translation: {
                 literal: "強制した [V] 彼女に [O] 棄権することを [C] 試合から [M]。",
@@ -323,7 +323,7 @@ export const gradePre1_2022_3Data = {
             choices: ["rolling in", "adding up", "holding out", "passing down"],
             choiceMeanings: ["やってくる、押し寄せる", "合計する", "持ちこたえる", "譲る"],
             correctAnswer: 1,
-            structure: "see [V] the storm [O] rolling in [C].",
+            structure: "Jocelyn [S] could see [V] the storm [O] rolling in [C].",
             explanation: "roll in: （雲や霧などが）やってくる、押し寄せる",
             translation: {
                 literal: "見える [V] 嵐が [O] やってくるのが [C]。",

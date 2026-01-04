@@ -38,7 +38,12 @@ export const grade2_2024_1Data = {
             choices: ["cure", "grant", "flee", "drop"],
             choiceMeanings: ["治す", "与える", "逃げる", "落とす"],
             correctAnswer: 1,
-            structure: "Researchers [S] have not found [V] a way to cure a cold [O].",
+            structure: {
+                fullSentence: "Although medicine has made a lot of progress in the past 50 years, researchers still have not found a way to cure a cold.",
+                althoughClause: "Although medicine [S'] has made [V'] a lot of progress [O'] in the past 50 years [M] → 譲歩のalthough節",
+                mainClause: "researchers [S] still have not found [V] a way [O] to cure a cold [M:to不定詞]",
+                grammarPoint: "although = 「～だけれども」/ a way to do = 「～する方法」"
+            },
             explanation: "cure: 治す",
             translation: {
                 literal: "研究者は [S] 見つけていない [V] 風邪を治す方法を [O]。",
@@ -68,7 +73,13 @@ export const grade2_2024_1Data = {
             choices: ["behavior", "composition", "attendance", "liberty"],
             choiceMeanings: ["行動", "構成", "出席", "自由"],
             correctAnswer: 4,
-            structure: "One of the most important values [S] is [V] liberty [C].",
+            structure: {
+                fullSentence: "One of the most important values of France is liberty. The country has many laws that make sure people are free to say what they want.",
+                mainClause: "One of the most important values [S] of France [M] is [V] liberty [C]",
+                relativeClause: "that [S'] make sure [V'] people are free to say what they want [O'] → 関係代名詞節（lawsを修飾）",
+                indirectQuestion: "what they [S''] want [V''] → 間接疑問文",
+                grammarPoint: "make sure (that) = 「～を確実にする」/ be free to do = 「自由に～できる」"
+            },
             explanation: "liberty: 自由",
             translation: {
                 literal: "最も重要な価値観の1つは [S] である [V] 自由 [C]。",
@@ -233,7 +244,13 @@ export const grade2_2024_1Data = {
             choices: ["by no means", "on good terms", "out of hand", "at first sight"],
             choiceMeanings: ["決して〜ない", "良い関係で", "手に負えなくて", "一目で"],
             correctAnswer: 2,
-            structure: "He [S] wanted to leave [V] the company [O] on good terms.",
+            structure: {
+                fullSentence: "Before Eric finished working for Top Paper Supplies Inc., he offered to train the person who was going to replace him.",
+                beforeClause: "Before Eric [S'] finished [V'] working for Top Paper Supplies Inc. [O'] → 時を表すbefore節",
+                mainClause: "he [S] offered [V] to train the person [O:to不定詞]",
+                relativeClause: "who [S''] was going to replace [V''] him [O''] → 関係代名詞節（personを修飾）",
+                grammarPoint: "offer to do = 「～することを申し出る」/ be going to = 「～する予定だ」"
+            },
             explanation: "on good terms: 良い関係で",
             translation: {
                 literal: "彼は [S] 去りたかった [V] 会社を [O] 良い関係で。",

@@ -23,7 +23,12 @@ export const grade2_2023_2Data = {
             choices: ["structure", "baggage", "disadvantage", "lecture"],
             choiceMeanings: ["構造", "荷物", "欠点", "講義"],
             correctAnswer: 3,
-            structure: "One disadvantage [S] is [V] that she cannot go out [C].",
+            structure: {
+                fullSentence: "One disadvantage is that she cannot go out with her friends on weekends.",
+                mainClause: "One disadvantage [S] is [V] that節 [C]",
+                thatClause: "she [S'] cannot go out [V'] with her friends [M] on weekends [M] → that節（補語）",
+                grammarPoint: "A is that S+V （that節が補語になる構文）"
+            },
             explanation: "disadvantage: 欠点、デメリット",
             translation: {
                 literal: "1つの欠点は [S] である [V] 彼女が出かけられないこと [C]。",
@@ -38,7 +43,12 @@ export const grade2_2023_2Data = {
             choices: ["regulate", "reproduce", "irritate", "impress"],
             choiceMeanings: ["規制する", "再生産する", "苛立たせる", "感動させる"],
             correctAnswer: 1,
-            structure: "Many people [S] began to demand [V] that the government regulate banks [O].",
+            structure: {
+                fullSentence: "Many people began to demand that the government make rules to regulate banks more strictly.",
+                mainClause: "Many people [S] began [V] to demand [O:to不定詞]",
+                thatClause: "the government [S'] make [V':仿定法現在] rules [O'] to regulate banks [M:to不定詞] → demandのthat節",
+                grammarPoint: "demand that S (should) do （要求のthat節：仿定法現在）"
+            },
             explanation: "regulate: 規制する",
             translation: {
                 literal: "多くの人々は [S] 要求し始めた [V] 政府が銀行を規制すること [O]。",
@@ -233,7 +243,12 @@ export const grade2_2023_2Data = {
             choices: ["brought down", "brought out", "turned in", "turned on"],
             choiceMeanings: ["下げた", "出した", "提出した", "つけた"],
             correctAnswer: 3,
-            structure: "Anyone who turned in their work late [S] would be [V] in trouble [C].",
+            structure: {
+                fullSentence: "Anyone who turned in their work late would be in trouble.",
+                mainClause: "Anyone [S] would be [V] in trouble [C]",
+                relativeClause: "who [S'] turned in [V'] their work [O'] late [M] → 関係代名詞節（Anyoneを修飾）",
+                grammarPoint: "turn in = 「提出する」"
+            },
             explanation: "turned in: 提出した",
             translation: {
                 literal: "遅れて課題を提出した人は [S] になる [V] 問題に [C]。",

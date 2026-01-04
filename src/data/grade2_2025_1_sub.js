@@ -113,7 +113,12 @@ export const grade2_2025_1_subData = {
             choices: ["seek", "pour", "transform", "defend"],
             choiceMeanings: ["探す", "注ぐ", "変換する", "守る"],
             correctAnswer: 1,
-            structure: "She [S] decided to seek [V] some additional information [O].",
+            structure: {
+                fullSentence: "Misaki could not find all the facts that she needed for her science project in the school library, so she decided to (seek) some additional information online.",
+                mainClause: "Misaki [S] could not find [V] all the facts [O] in the school library [M]",
+                relativeClause: "that she [S'] needed [V'] for her science project [M] → 関係代名詞節（factsを修飾）",
+                grammarPoint: "目的格の関係代名詞that = 「彼女が必要としていた事実」"
+            },
             explanation: "seek: 探す",
             translation: {
                 literal: "彼女は [S] 探すことに決めた [V] 追加情報を [O]。",

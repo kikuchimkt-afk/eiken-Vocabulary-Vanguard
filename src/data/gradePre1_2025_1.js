@@ -1,4 +1,5 @@
 // Grade Pre-1 (準1級) - 2025年度 第1回検定
+// structure: フィールド分離形式（複雑な文構造対応）
 export const gradePre1_2025_1Data = {
     title: "2025年度第1回検定一次試験(準1級)",
     questions: [
@@ -8,7 +9,12 @@ export const gradePre1_2025_1Data = {
             choices: ["infected", "recited", "galloped", "diverted"],
             choiceMeanings: ["感染させた", "暗唱した", "ギャロップで走った", "迂回させた"],
             correctAnswer: 4,
-            structure: "the police [S] diverted [V] traffic [O] to another road [M].",
+            structure: {
+                fullSentence: "Emergency services were having difficulty getting to the scene, so the police (diverted) traffic to another road.",
+                firstClause: "Emergency services [S] were having [V] difficulty [O] getting to the scene [M:動名詞] → 状況説明",
+                mainClause: "the police [S] diverted [V] traffic [O] to another road [M]",
+                purposeClause: "to make space for ambulances and fire trucks [M:目的のto不定詞] → 「スペースを作るために」"
+            },
             explanation: "divert: 迂回させる、方向転換させる",
             translation: {
                 literal: "警察は [S] 迂回させた [V] 交通を [O] 別の道路へ [M]。",
@@ -23,7 +29,12 @@ export const gradePre1_2025_1Data = {
             choices: ["intake", "outburst", "breakup", "layout"],
             choiceMeanings: ["摂取", "爆発（感情の）", "解散", "レイアウト"],
             correctAnswer: 2,
-            structure: "Following his outburst [M], all the students [S] went [V] silent [C].",
+            structure: {
+                fullSentence: "Following his (outburst), all the students in the classroom went silent.",
+                modifierClause: "Following his outburst [M:分詞構文] → 「彼の爆発の後」",
+                mainClause: "all the students [S] went [V] silent [C]",
+                contextClause: "The teacher suddenly lost his temper and shouted... → outburst の具体的内容"
+            },
             explanation: "outburst: （感情の）爆発、突発",
             translation: {
                 literal: "彼の爆発に続いて [M]、全ての生徒は [S] なった [V] 静かに [C]。",
@@ -38,10 +49,14 @@ export const gradePre1_2025_1Data = {
             choices: ["slender", "gloomy", "abnormal", "prompt"],
             choiceMeanings: ["ほっそりした", "陰鬱な", "異常な", "迅速な"],
             correctAnswer: 4,
-            structure: "She [S] usually gives [V] such prompt replies [O].",
+            structure: {
+                fullSentence: "She usually gives such (prompt) replies.",
+                mainClause: "She [S] usually gives [V] such prompt replies [O]",
+                contrastContext: "hasn't responded ↔ usually gives prompt replies → 対比による根拠"
+            },
             explanation: "prompt: 迅速な、即座の",
             translation: {
-                literal: "彼女は [S] 普段は返します [V]とても迅速な返事を [O]。",
+                literal: "彼女は [S] 普段は返します [V] とても迅速な返事を [O]。",
                 natural: "彼女は普段はとても返信が早い。",
                 intermediate: "A: エミリーにパーティーに来るかどうか聞くために、もう3回もメールしたけど、返事がないんだ。\nB: それは変だね。彼女は普段、とても返信が早いのに。"
             },
@@ -53,7 +68,11 @@ export const gradePre1_2025_1Data = {
             choices: ["excursion", "potency", "friction", "negligence"],
             choiceMeanings: ["遠足", "効能、効力", "摩擦", "怠慢"],
             correctAnswer: 2,
-            structure: "Researchers [S] have improved [V] the potency [O] of their headache medicine.",
+            structure: {
+                fullSentence: "Researchers at the drug company have improved the (potency) of their headache medicine.",
+                mainClause: "Researchers [S] have improved [V] the potency [O] of their headache medicine [M]",
+                evidenceClause: "The pills are now twice as strong → potency の根拠"
+            },
             explanation: "potency: （薬などの）効能、効き目",
             translation: {
                 literal: "研究者たちは [S] 改善した [V] 効能を [O] 頭痛薬の。",
@@ -68,10 +87,15 @@ export const gradePre1_2025_1Data = {
             choices: ["distracts", "reforms", "pacifies", "dismisses"],
             choiceMeanings: ["気を散らす", "改革する", "なだめる", "解雇する"],
             correctAnswer: 1,
-            structure: "it [S] distracts [V] drivers [O].",
+            structure: {
+                fullSentence: "Using a smartphone while driving is now illegal because it (distracts) drivers.",
+                mainClause: "Using a smartphone [S:動名詞句] is [V] illegal [C] in many places [M]",
+                becauseClause: "because it [S'] distracts [V'] drivers [O'] → 理由を表すbecause節",
+                relativeClause: "who [S''] should always be watching [V''] the road [O''] → 非制限的関係詞節"
+            },
             explanation: "distract: 気を散らす、注意をそらす",
             translation: {
-                literal: "それは [S] 気を散らす [V] ドライバーの [O]。",
+                literal: "それは [S'] 気を散らす [V'] ドライバーの [O']。",
                 natural: "それはドライバーの気を散らす。",
                 intermediate: "運転中にスマートフォンを使用することは、多くの場所で違法となっています。なぜなら、常に道路を見ているべきドライバーの気を散らすからです。"
             },
@@ -83,7 +107,12 @@ export const gradePre1_2025_1Data = {
             choices: ["formulated", "privatized", "ventilated", "deformed"],
             choiceMeanings: ["策定した", "民営化した", "換気した", "変形させた"],
             correctAnswer: 2,
-            structure: "the government [S] has privatized [V] the post office [O].",
+            structure: {
+                fullSentence: "The government has (privatized) the post office by allowing a for-profit corporation to take it over.",
+                purposePhrase: "In an effort to reduce government spending [M:目的] → 「政府支出削減のために」",
+                mainClause: "the government [S] has privatized [V] the post office [O]",
+                meansClause: "by allowing a for-profit corporation to take it over [M:手段] → 「営利企業に引き継がせることで」"
+            },
             explanation: "privatize: 民営化する",
             translation: {
                 literal: "政府は [S] 民営化した [V] 郵便局を [O]。",
@@ -98,7 +127,12 @@ export const gradePre1_2025_1Data = {
             choices: ["occupied", "invisible", "irrelevant", "anxious"],
             choiceMeanings: ["忙しい", "見えない", "無関係な", "心配して"],
             correctAnswer: 3,
-            structure: "topics [S] are [V] irrelevant [C] to his section [M].",
+            structure: {
+                fullSentence: "Most of the topics discussed in the weekly meeting are (irrelevant) to his section.",
+                mainClause: "Most of the topics [S] discussed in the weekly meeting [M:過去分詞] are [V] irrelevant [C] to his section [M]",
+                resultClause: "so Hans always takes his laptop [結果] → 無関係だからPCを持っていく",
+                purposeClause: "so that he can spend the time replying to his e-mails [M:目的] → 「メールに時間を使えるように」"
+            },
             explanation: "irrelevant: 無関係な",
             translation: {
                 literal: "トピックの大半は [S] である [V] 無関係 [C] 彼の部署には [M]。",
@@ -113,7 +147,12 @@ export const gradePre1_2025_1Data = {
             choices: ["hazardous", "vigorous", "furious", "monotonous"],
             choiceMeanings: ["危険な", "精力的な", "激怒した", "単調な"],
             correctAnswer: 1,
-            structure: "flooding [S] can make [V] roads [O] hazardous [C].",
+            structure: {
+                fullSentence: "After a storm, flooding can make roads (hazardous).",
+                timePhrase: "After a storm [M:時] → 「嵐の後」",
+                mainClause: "flooding [S] can make [V] roads [O] hazardous [C]",
+                grammarPoint: "make + O + C（SVOC構文）"
+            },
             explanation: "hazardous: 危険な",
             translation: {
                 literal: "洪水は [S] できる [V] 道路を [O] 危険に [C]。",
@@ -128,10 +167,16 @@ export const gradePre1_2025_1Data = {
             choices: ["acute", "rash", "invalid", "imminent"],
             choiceMeanings: ["急性の", "軽率な", "無効な", "差し迫った"],
             correctAnswer: 3,
-            structure: "my coupon [S] was [V] invalid [C].",
+            structure: {
+                fullSentence: "The store clerk told me my coupon was (invalid), so it could no longer be used.",
+                mainClause: "The store clerk [S] told [V] me [IO] that-clause [DO]",
+                thatClause: "my coupon [S'] was [V'] invalid [C'] → 「クーポンは無効だった」",
+                resultClause: "so it could no longer be used → 結果（もう使えない）",
+                evidenceClause: "It had expired two months earlier → invalid の根拠"
+            },
             explanation: "invalid: 無効な",
             translation: {
-                literal: "私のクーポンは [S] だった [V] 無効 [C]。",
+                literal: "私のクーポンは [S'] だった [V'] 無効 [C']。",
                 natural: "私のクーポンは無効だった。",
                 intermediate: "店員は私に、クーポンが無効であるためもう使えないと言いました。それは2ヶ月前に期限切れになっていました。"
             },
@@ -143,7 +188,13 @@ export const gradePre1_2025_1Data = {
             choices: ["loophole", "stronghold", "blueprint", "aftermath"],
             choiceMeanings: ["抜け穴", "要塞", "青写真", "余波"],
             correctAnswer: 1,
-            structure: "Many people [S] took advantage of [V] this loophole [O].",
+            structure: {
+                fullSentence: "Many people took advantage of this (loophole) before the law was finally changed.",
+                contextClause: "The unclear wording of the law meant that... → loophole の定義",
+                mainClause: "Many people [S] took advantage of [V] this loophole [O]",
+                beforeClause: "before the law [S'] was finally changed [V':受動態] this year [M] → 時を表すbefore節",
+                grammarPoint: "take advantage of = 「～を利用する」"
+            },
             explanation: "loophole: （法律などの）抜け穴",
             translation: {
                 literal: "多くの人々が [S] 利用した [V] この抜け穴を [O]。",
@@ -158,7 +209,12 @@ export const gradePre1_2025_1Data = {
             choices: ["vivid", "weary", "hazy", "feeble"],
             choiceMeanings: ["鮮やかな", "疲れた", "霞んだ", "弱い"],
             correctAnswer: 1,
-            structure: "Christine [S] loved [V] vivid colors [O].",
+            structure: {
+                fullSentence: "Christine loved (vivid) colors, so she filled her apartment with bright red, yellow, and orange furnishings.",
+                mainClause: "Christine [S] loved [V] vivid colors [O]",
+                resultClause: "so she [S'] filled [V'] her apartment [O'] with bright red, yellow, and orange furnishings [M] → 結果",
+                evidenceDetail: "bright red, yellow, orange → vivid の具体例"
+            },
             explanation: "vivid: 鮮やかな",
             translation: {
                 literal: "クリスティーンは [S] 愛していた [V] 鮮やかな色を [O]。",
@@ -173,10 +229,16 @@ export const gradePre1_2025_1Data = {
             choices: ["greedily", "obediently", "intentionally", "thoroughly"],
             choiceMeanings: ["貪欲に", "従順に", "意図的に（わざと）", "徹底的に"],
             correctAnswer: 3,
-            structure: "he [S] intentionally knocked [V] her books [O].",
+            structure: {
+                fullSentence: "Although Jeffrey claimed it was an accident, Gretchen believed that he (intentionally) knocked her books to the floor.",
+                althoughClause: "Although Jeffrey [S'] claimed [V'] it was an accident [O'] → 譲歩のalthough節",
+                mainClause: "Gretchen [S] believed [V] that-clause [O]",
+                thatClause: "he [S''] intentionally knocked [V''] her books [O''] to the floor [M]",
+                purposeClause: "in order to make her angry [M:目的] → 「彼女を怒らせるために」"
+            },
             explanation: "intentionally: 意図的に、わざと",
             translation: {
-                literal: "彼は [S] 意図的に落とした [V] 彼女の本を [O]。",
+                literal: "彼は [S''] 意図的に落とした [V''] 彼女の本を [O'']。",
                 natural: "彼はわざと彼女の本を落とした。",
                 intermediate: "ジェフリーは事故だと主張しましたが、グレイッチェンは彼が彼女を怒らせるためにわざと彼女の本を床に落としたと信じていました。"
             },
@@ -188,10 +250,16 @@ export const gradePre1_2025_1Data = {
             choices: ["component", "obligation", "symptom", "resolution"],
             choiceMeanings: ["構成要素", "義務", "症状", "決議"],
             correctAnswer: 2,
-            structure: "it [S] is [V] the obligation [C] of families.",
+            structure: {
+                fullSentence: "In some countries, it is the (obligation) of families, not the government, to financially support senior citizens.",
+                mainClause: "it [形式S] is [V] the obligation of families [C]",
+                trueSubject: "to financially support senior citizens [真S:to不定詞句] → 「高齢者を経済的に支えること」",
+                contrastDetail: "families, not the government → 対比（政府ではなく家族）",
+                grammarPoint: "It is + 名詞 + to do（形式主語構文）"
+            },
             explanation: "obligation: 義務、責任",
             translation: {
-                literal: "それは [S] である [V] 家族の義務 [C]。",
+                literal: "それは [形式S] である [V] 家族の義務 [C]。",
                 natural: "それは家族の義務である。",
                 intermediate: "一部の国では、高齢者を経済的に支えるのは政府ではなく家族の義務です。"
             },
@@ -203,10 +271,16 @@ export const gradePre1_2025_1Data = {
             choices: ["interact", "collapse", "precede", "constrain"],
             choiceMeanings: ["交流する", "崩壊する", "先行する", "強制する"],
             correctAnswer: 1,
-            structure: "for students to interact [V] with other children [M].",
+            structure: {
+                fullSentence: "Although many people like the idea of online learning, others feel that it is important for students to (interact) with other children in person.",
+                althoughClause: "Although many people [S'] like [V'] the idea [O'] → 譲歩のalthough節",
+                mainClause: "others [S] feel [V] that-clause [O]",
+                thatClause: "it [形式S] is [V'] important [C'] for students to interact [真S] → 形式主語構文",
+                grammarPoint: "It is important for O to do / interact with = 「～と交流する」"
+            },
             explanation: "interact: 交流する、相互作用する",
             translation: {
-                literal: "生徒たちが交流すること [V] 他の子供たちと [M]。",
+                literal: "生徒たちが交流すること [真S] 他の子供たちと [M]。",
                 natural: "生徒たちが他の子供たちと交流すること。",
                 intermediate: "多くの人がオンライン学習の考えを気に入っていますが、生徒たちが直接他の子供たちと交流することが重要だと感じている人もいます。"
             },
@@ -218,7 +292,14 @@ export const gradePre1_2025_1Data = {
             choices: ["root out", "pass for", "take up", "blow up"],
             choiceMeanings: ["根絶する", "〜で通る", "始める", "爆発する"],
             correctAnswer: 3,
-            structure: "many people [S] take up [V] new hobbies [O].",
+            structure: {
+                fullSentence: "After retirement, many people (take up) new hobbies that they did not have time for when they were working.",
+                timePhrase: "After retirement [M:時] → 「定年退職後」",
+                mainClause: "many people [S] take up [V] new hobbies [O]",
+                relativeClause: "that they [S'] did not have time for [V'] → 関係代名詞節（hobbiesを修飾）",
+                whenClause: "when they [S''] were working [V''] → 時を表すwhen節",
+                grammarPoint: "take up = 「（趣味などを）始める」"
+            },
             explanation: "take up: （趣味などを）始める",
             translation: {
                 literal: "多くの人々は [S] 始める [V] 新しい趣味を [O]。",
@@ -233,7 +314,13 @@ export const gradePre1_2025_1Data = {
             choices: ["bulk up", "track down", "lay off", "pick on"],
             choiceMeanings: ["体を大きくする", "追跡して捕まえる", "解雇する", "いじめる"],
             correctAnswer: 2,
-            structure: "police [S] were able to track down [V] the thieves [O].",
+            structure: {
+                fullSentence: "It took two weeks, but police were finally able to (track down) the thieves.",
+                firstClause: "It [形式S] took [V] two weeks [O] → 「2週間かかった」",
+                mainClause: "police [S] were finally able to track down [V] the thieves [O]",
+                meansClause: "using video from a security camera and fingerprints [M:手段] → 「ビデオと指紋を使って」",
+                grammarPoint: "be able to do / track down = 「追跡して見つけ出す」"
+            },
             explanation: "track down: 追跡して見つけ出す、捕まえる",
             translation: {
                 literal: "警察は [S] 追跡して捕まえることができた [V] 泥棒たちを [O]。",
@@ -248,10 +335,15 @@ export const gradePre1_2025_1Data = {
             choices: ["pressed for", "put through", "forked over", "set off"],
             choiceMeanings: ["強く求めた", "電話をつないだ", "しぶしぶ支払った", "作動させた（鳴らした）"],
             correctAnswer: 4,
-            structure: "they [S] set off [V] an alarm [O].",
+            structure: {
+                fullSentence: "Three boys were trying to enter the park late at night when they (set off) an alarm.",
+                mainClause: "Three boys [S] were trying [V] to enter the park [O:to不定詞] late at night [M]",
+                whenClause: "when they [S'] set off [V'] an alarm [O'] → 時を表すwhen節",
+                resultClause: "They ran away as soon as they heard it → 結果"
+            },
             explanation: "set off: （警報などを）作動させる、鳴らす",
             translation: {
-                literal: "彼らは [S] 作動させた [V] 警報を [O]。",
+                literal: "彼らは [S'] 作動させた [V'] 警報を [O']。",
                 natural: "彼らは警報を鳴らしてしまった。",
                 intermediate: "3人の少年が夜遅くに公園に入ろうとした時、警報を鳴らしてしまいました。彼らは音を聞くとすぐに逃げ出しました。"
             },
@@ -263,7 +355,13 @@ export const gradePre1_2025_1Data = {
             choices: ["work through", "pass up", "plow through", "wind up"],
             choiceMeanings: ["〜に取り組む", "辞退する（見送る）", "〜を骨折って進む", "〜で終わる"],
             correctAnswer: 2,
-            structure: "Richard [S] decided to pass up [V] the job offer [O].",
+            structure: {
+                fullSentence: "Richard decided to (pass up) the job offer from the large company.",
+                mainClause: "Richard [S] decided [V] to pass up the job offer [O:to不定詞句]",
+                althoughClause: "Although the pay [S'] was [V'] good [C'] → 譲歩のalthough節",
+                reasonClause: "he did not want to relocate his family to a new city → 辞退の理由",
+                grammarPoint: "decide to do / pass up = 「（機会などを）見送る、辞退する」"
+            },
             explanation: "pass up: （機会などを）見送る、辞退する",
             translation: {
                 literal: "リチャードは [S] 見送ることにした [V] 仕事のオファーを [O]。",

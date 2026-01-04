@@ -22,7 +22,12 @@ export const grade2Data = {
             choices: ["harmful", "previous", "certain", "vague"],
             choiceMeanings: ["有害な", "以前の", "特定の", "曖昧な"],
             correctAnswer: 4,
-            structure: "some of the explanations [S] you gave [M] are [V] a bit vague [C]. Maybe you should make those parts clearer.",
+            structure: {
+                fullSentence: "Some of the explanations you gave are a bit vague. Maybe you should make those parts clearer.",
+                mainClause: "some of the explanations [S] are [V] a bit vague [C]",
+                relativeClause: "you [S'] gave [V'] → 関係代名詞節（省略形、explanationsを修飾）",
+                grammarPoint: "目的格の関係代名詞省略 / vague ↔ clear（対照語）"
+            },
             explanation: "vague: 曖昧な",
             translation: {
                 literal: "説明のいくつかは [S] （あなたがした） [M] 、です [V] 少し曖昧 [C] 。",
@@ -65,7 +70,12 @@ export const grade2Data = {
             choices: ["carriages", "fantasies", "puzzles", "luxuries"],
             choiceMeanings: ["馬車", "空想", "パズル", "贅沢品"],
             correctAnswer: 1,
-            structure: "people [S] often used [V] carriages [O] that were pulled by horses [M].",
+            structure: {
+                fullSentence: "Before there were motor vehicles, people often used carriages that were pulled by horses to make long journeys.",
+                mainClause: "people [S] often used [V] carriages [O] to make long journeys [M:to不定詞]",
+                relativeClause: "that [S'] were pulled [V':受動態] by horses [M] → 関係代名詞節（carriagesを修飾）",
+                timeClause: "Before there were motor vehicles → before節（時）"
+            },
             explanation: "carriages: 馬車",
             translation: {
                 intermediate: "自動車が存在する前、人々は長い旅をするために、馬に引かれる馬車をよく使いました。"
@@ -91,7 +101,12 @@ export const grade2Data = {
             choices: ["engaged", "divided", "buried", "stressed"],
             choiceMeanings: ["従事させた", "分けた", "埋めた", "強調した"],
             correctAnswer: 4,
-            structure: "Professor Smith [S] stressed [V] how important it was to take good notes [O].",
+            structure: {
+                fullSentence: "Professor Smith stressed how important it was to take good notes.",
+                mainClause: "Professor Smith [S] stressed [V] how-clause [O]",
+                indirectQuestion: "how important it [S'] was [V'] to take good notes [C:to不定詞] → 間接疑問文（感嘆的意味）",
+                grammarPoint: "stress + 間接疑問 / how + 形容詞 + S + V"
+            },
             explanation: "stressed: 強調した",
             translation: {
                 intermediate: "最初の講義で、スミス教授は良いノートを取ることがいかに重要であるかを強調しました。"

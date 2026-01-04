@@ -38,7 +38,12 @@ export const grade2_2024_2Data = {
             choices: ["primary", "registered", "visible", "distant"],
             choiceMeanings: ["主要な", "登録された", "見える", "遠い"],
             correctAnswer: 4,
-            structure: "Scientists [S] will use it to study [V] distant stars [O].",
+            structure: {
+                fullSentence: "Scientists will use it to study distant stars and planets that are too far away to be seen from Earth.",
+                mainClause: "Scientists [S] will use [V] it [O] to study distant stars and planets [M:to不定詞]",
+                relativeClause: "that [S'] are [V'] too far away [C'] to be seen [M] from Earth [M] → 関係代名詞節",
+                grammarPoint: "too...to do = 「～すぎて...できない」"
+            },
             explanation: "distant: 遠い",
             translation: {
                 literal: "科学者は [S] それを使って研究する [V] 遠い星を [O]。",
@@ -98,7 +103,12 @@ export const grade2_2024_2Data = {
             choices: ["dawn", "faith", "immigrant", "minister"],
             choiceMeanings: ["夜明け", "信仰", "移民", "大臣"],
             correctAnswer: 4,
-            structure: "The minister of education [S] is responsible for [V] ensuring [O].",
+            structure: {
+                fullSentence: "The minister of education is responsible for ensuring that the country's schools, universities, and other places of learning are being managed well.",
+                mainClause: "The minister [S] of education [M] is responsible [V] for ensuring [M:動名詞]",
+                thatClause: "the country's schools, universities, and other places of learning [S'] are being managed [V':受動態進行形] well [M] → that節",
+                grammarPoint: "be responsible for = 「～の責任がある」/ ensure that = 「～を確実にする」"
+            },
             explanation: "minister: 大臣",
             translation: {
                 literal: "教育の大臣は [S] 責任がある [V] 確保することに [O]。",
@@ -218,7 +228,12 @@ export const grade2_2024_2Data = {
             choices: ["jump into", "pull through", "long for", "fall behind"],
             choiceMeanings: ["飛び込む", "乗り越える", "待ち焦がれる", "遅れる"],
             correctAnswer: 3,
-            structure: "The children [S] long for [V] their parents' letters [O].",
+            structure: {
+                fullSentence: "The children who attend the summer camp long for their parents' letters.",
+                mainClause: "The children [S] long for [V] their parents' letters [O]",
+                relativeClause: "who [S'] attend [V'] the summer camp [O'] → 関係代名詞節（childrenを修飾）",
+                grammarPoint: "long for = 「～を待ち焦がれる」"
+            },
             explanation: "long for: 待ち焦がれる、切望する",
             translation: {
                 literal: "子供たちは [S] 待ち焦がれる [V] 親からの手紙を [O]。",

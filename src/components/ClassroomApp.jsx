@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { getExamById, exams } from '../data/exams'; // Dynamic data loader
 import StructureVisualizer from './StructureVisualizer';
+import HomeworkQRModal from './HomeworkQRModal';
 import './ClassroomApp.css';
 
 function ClassroomApp() {
@@ -49,6 +50,9 @@ function ClassroomApp() {
         return saved ? JSON.parse(saved) : examData.questions.map(q => q.id);
     });
     const [isWeaknessMode, setIsWeaknessMode] = useState(false);
+
+    // Homework QR Modal State
+    const [isQRModalOpen, setIsQRModalOpen] = useState(false);
 
     // Mobile: Auto-hide header on scroll
     const [isNavVisible, setIsNavVisible] = useState(true);
@@ -261,17 +265,29 @@ function ClassroomApp() {
     };
 
     const openQRModal = () => {
-        // Implementation for QR generation
-        const start = window.prompt("Start ID:", 1);
-        const end = window.prompt("End ID:", 5);
-        if (start && end) {
-            const url = `${window.location.origin}/classroom?range=${start}-${end}`;
-            const apiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(url)}`;
-            // Simple window open for prototype
-            const w = window.open("", "_blank", "width=400,height=400");
-            w.document.write(`<h3>Scan for Range ${start}-${end}</h3><img src="${apiUrl}" /><br><a href="${url}">${url}</a>`);
-        }
+        setIsQRModalOpen(true);
     };
+
+    const handleQRConfirm = (formData) => {
+        // Build URL with query parameters
+        const params = new URLSearchParams({
+            start: formData.startId,
+            end: formData.endId,
+            issueDate: formData.issueDate,
+            nextAssignment: formData.nextAssignment,
+            instructor: formData.instructorName,
+            deadline: formData.deadline,
+            message: formData.message
+        });
+
+        const printUrl = `/homework-print/${targetExam.id}?${params.toString()}`;
+        window.open(printUrl, '_blank');
+        setIsQRModalOpen(false);
+    };
+
+    const isLocked = searchParams.get('locked') === 'true';
+
+    // ... (existing code) ...
 
     return (
         <div className={`classroom-body ${isInstructorMode ? 'instructor-mode' : ''}`} onMouseUp={handleMouseUp}>
@@ -287,9 +303,11 @@ function ClassroomApp() {
                     {isNavExpanded ? '✕' : '☰'}
                 </button>
                 <div className="nav-left">
-                    <button className="tool-btn secondary" onClick={() => { window.location.href = '/'; }} style={{ display: 'flex', alignItems: 'center', gap: '4px', marginRight: '12px', padding: '6px 12px', cursor: 'pointer' }}>
-                        <span style={{ fontSize: '1.1em' }}>⌂</span> <span style={{ fontSize: '0.9rem' }}>ホーム</span>
-                    </button>
+                    {!isLocked && (
+                        <button className="tool-btn secondary" onClick={() => { window.location.href = '/'; }} style={{ display: 'flex', alignItems: 'center', gap: '4px', marginRight: '12px', padding: '6px 12px', cursor: 'pointer' }}>
+                            <span style={{ fontSize: '1.1em' }}>⌂</span> <span style={{ fontSize: '0.9rem' }}>ホーム</span>
+                        </button>
+                    )}
                     <span className="app-logo" style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'inherit' }}>
                         英検{targetExam.grade}
                     </span>
@@ -312,12 +330,14 @@ function ClassroomApp() {
                 </div>
 
                 <div className="nav-right" style={{ marginLeft: 'auto', display: 'flex', gap: '8px' }}>
-                    <button className="tool-btn secondary" onClick={() => window.open(`/vocab/${targetExam.id}`, '_blank')} title="Vocabulary App" style={{ fontSize: '0.9rem' }}>
+                    <button className="tool-btn secondary" onClick={() => window.open(`/vocab/${targetExam.id}${isLocked ? '?locked=true' : ''}`, '_blank')} title="Vocabulary App" style={{ fontSize: '0.9rem' }}>
                         📖 宿題アプリ
                     </button>
-                    <button className="tool-btn secondary" onClick={openQRModal} title="Show QR" style={{ fontSize: '0.9rem' }}>
-                        📷 宿題QR
-                    </button>
+                    {!isLocked && (
+                        <button className="tool-btn secondary" onClick={openQRModal} title="Show QR" style={{ fontSize: '0.9rem' }}>
+                            📷 宿題QR
+                        </button>
+                    )}
                 </div>
 
                 {/* Student Controls */}
@@ -511,6 +531,14 @@ function ClassroomApp() {
                     );
                 })}
             </main>
+
+            {/* Homework QR Modal */}
+            <HomeworkQRModal
+                isOpen={isQRModalOpen}
+                onClose={() => setIsQRModalOpen(false)}
+                exam={targetExam}
+                onConfirm={handleQRConfirm}
+            />
         </div>
     );
 }

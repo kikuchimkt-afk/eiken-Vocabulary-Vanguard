@@ -38,7 +38,12 @@ export const grade2_2023_2_subData = {
             choices: ["remarked", "occupied", "prohibited", "committed"],
             choiceMeanings: ["述べた", "占めた", "禁止した", "犯した"],
             correctAnswer: 1,
-            structure: "He [S] remarked [V] that it looked much smarter.",
+            structure: {
+                fullSentence: "He (remarked) that it looked much smarter than before.",
+                mainClause: "He [S] remarked [V] that節 [O]",
+                thatClause: "it [S'] looked [V'] much smarter [C'] than before [M] → that節",
+                grammarPoint: "remark that = 「～と述べる」"
+            },
             explanation: "remarked: 述べた、コメントした",
             translation: {
                 literal: "彼は [S] 述べた [V] それが以前よりずっとスマートに見えると。",
@@ -98,7 +103,13 @@ export const grade2_2023_2_subData = {
             choices: ["list", "trial", "mercy", "glory"],
             choiceMeanings: ["リスト", "裁判", "慈悲", "栄光"],
             correctAnswer: 2,
-            structure: "During the trial, the lawyer [S] tried to show [V] that his client was nowhere near the bank.",
+            structure: {
+                fullSentence: "During the (trial), the lawyer tried to show that his client was nowhere near the bank when it was robbed.",
+                mainClause: "the lawyer [S] tried to show [V] that節 [O]",
+                thatClause: "his client [S'] was [V'] nowhere near the bank [C'] → that節",
+                whenClause: "when it [S''] was robbed [V'':受動態] → 時のwhen節",
+                grammarPoint: "show that = 「～であることを示す」"
+            },
             explanation: "trial: 裁判",
             translation: {
                 literal: "裁判中、弁護士は [S] 示そうとした [V] 依頼人が銀行の近くにいなかったことを。",
@@ -278,7 +289,13 @@ export const grade2_2023_2_subData = {
             choices: ["should she think", "did she think", "she thinks", "she would think"],
             choiceMeanings: ["彼女は思うべき", "彼女は思った（倒置）", "彼女は思う", "彼女は思うだろう"],
             correctAnswer: 2,
-            structure: "Not only did she think [V] that her room was very nice...",
+            structure: {
+                fullSentence: "Not only (did she think) that her room was very nice, but also that the food in the hotel's restaurant was excellent.",
+                mainClause: "Not only did she think [V:倒置] that節 [O]",
+                thatClause1: "her room [S'] was [V'] very nice [C'] → 1つ目のthat節",
+                thatClause2: "the food [S''] was [V''] excellent [C''] → 2つ目のthat節",
+                grammarPoint: "Not only + 倒置 (did + S + V) + but also"
+            },
             explanation: "Not only + 倒置：〜だけでなく",
             translation: {
                 literal: "彼女は思っただけでなく [V] 部屋がとても素敵だと...食事も素晴らしかった。",

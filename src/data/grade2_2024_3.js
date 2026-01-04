@@ -56,7 +56,13 @@ export const grade2_2024_3Data = {
             choices: ["requests", "timetables", "suitcases", "consequences"],
             choiceMeanings: ["要求", "時刻表", "スーツケース", "結果（影響）"],
             correctAnswer: 4,
-            structure: "think about [V] the consequences of their actions [O].",
+            structure: {
+                fullSentence: "Ms. Walker asks her students to think about the consequences of their actions. She wants them to understand that their behavior will have effects on themselves and others.",
+                mainClause: "Ms. Walker [S] asks [V] her students [O] to think about the consequences [C:to不定詞]",
+                secondSentence: "She [S'] wants [V'] them [O'] to understand [C':to不定詞]",
+                thatClause: "their behavior [S''] will have [V''] effects [O''] on themselves and others [M] → that節",
+                grammarPoint: "ask + O + to do / want + O + to do"
+            },
             explanation: "consequence: 結果、成り行き",
             translation: {
                 literal: "考える 彼らの行動の結果について [O]。",
@@ -104,7 +110,12 @@ export const grade2_2024_3Data = {
             choices: ["remain", "compose", "launch", "accelerate"],
             choiceMeanings: ["残る", "構成する", "発射する", "加速させる"],
             correctAnswer: 4,
-            structure: "activities that [S] accelerate [V] global warming [O].",
+            structure: {
+                fullSentence: "In the meeting, a group of experts discussed the effects of economic activities that accelerate global warming.",
+                mainClause: "a group of experts [S] discussed [V] the effects [O] of economic activities [M]",
+                relativeClause: "that [S'] accelerate [V'] global warming [O'] → 関係代名詞節（activitiesを修飾）",
+                grammarPoint: "the effects of = 「～の影響」"
+            },
             explanation: "accelerate: 加速させる、早める",
             translation: {
                 literal: "活動 それが地球温暖化を [O] 加速させる [V]。",

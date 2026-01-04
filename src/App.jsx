@@ -4,6 +4,7 @@ import ClassroomApp from './components/ClassroomApp';
 import VocabApp from './components/VocabApp';
 import Dashboard from './components/Dashboard';
 import PrintLayout from './components/PrintLayout';
+import HomeworkPrintPage from './components/HomeworkPrintPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/classroom" element={<ClassroomApp />} /> {/* Fallback or direct access compatibility */}
         <Route path="/vocab/:examId" element={<VocabApp />} />
         <Route path="/print/:examId" element={<PrintLayout />} />
+        <Route path="/homework-print/:examId" element={<HomeworkPrintPage />} />
       </Routes>
     </Router>
   );

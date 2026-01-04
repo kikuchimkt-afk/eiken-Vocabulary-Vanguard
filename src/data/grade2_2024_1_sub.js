@@ -98,7 +98,12 @@ export const grade2_2024_1_subData = {
             choices: ["assignments", "images", "certificates", "beliefs"],
             choiceMeanings: ["課題", "イメージ", "証明書", "信仰"],
             correctAnswer: 4,
-            structure: "Drinking alcohol [S] goes against [V] his religious beliefs [O].",
+            structure: {
+                fullSentence: "Hakim says that drinking alcohol goes against his religious (beliefs) as a Muslim.",
+                mainClause: "Hakim [S] says [V] that節 [O]",
+                thatClause: "drinking alcohol [S':動名詞主語] goes against [V'] his religious beliefs [O'] → that節",
+                grammarPoint: "go against = 「～に反する」"
+            },
             explanation: "beliefs: 信仰、信念",
             translation: {
                 literal: "飲酒は [S] 反する [V] 彼の宗教的信仰に [O]。",

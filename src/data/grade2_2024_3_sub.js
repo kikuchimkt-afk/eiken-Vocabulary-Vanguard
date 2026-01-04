@@ -38,7 +38,13 @@ export const grade2_2024_3_subData = {
             choices: ["shadow", "footstep", "clue", "genius"],
             choiceMeanings: ["影", "足音", "手がかり", "天才"],
             correctAnswer: 3,
-            structure: "One clue [S] was [V] that he knew exactly how much was stolen.",
+            structure: {
+                fullSentence: "One (clue) was that he knew exactly how much was stolen, even though I hadn't told him.",
+                mainClause: "One clue [S] was [V] that節 [C]",
+                thatClause: "he [S'] knew [V'] exactly how much was stolen [O'] → that節（補語）",
+                concessionClause: "even though I [S''] hadn't told [V''] him [O''] → 譲歩のeven though節",
+                grammarPoint: "A is that S+V / even though = 「～にもかかわらず」"
+            },
             explanation: "clue: 手がかり",
             translation: {
                 literal: "1つの手がかりは [S] だった [V] 彼が正確に盗まれた金額を知っていたこと。",
@@ -143,7 +149,12 @@ export const grade2_2024_3_subData = {
             choices: ["melt", "reflect", "emigrate", "publish"],
             choiceMeanings: ["溶ける", "反映する", "移住する", "出版する"],
             correctAnswer: 3,
-            structure: "Many people [S] have decided to emigrate [V] to other countries.",
+            structure: {
+                fullSentence: "Many people from Lutania have decided to (emigrate) to other countries where they think they can find better jobs.",
+                mainClause: "Many people [S] have decided [V] to emigrate [O:to不定詞] to other countries [M]",
+                relativeClause: "where they [S'] think [V'] they can find better jobs [O'] → 関係副詞節（countriesを修飾）",
+                grammarPoint: "whereは場所を表す関係副詞 / decide to do"
+            },
             explanation: "emigrate: 移住する（自国から出る）",
             translation: {
                 literal: "多くの人々は [S] 移住することにした [V] 他国へ。",

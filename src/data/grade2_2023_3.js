@@ -38,7 +38,12 @@ export const grade2_2023_3Data = {
             choices: ["remarkable", "nutritious", "commercial", "artificial"],
             choiceMeanings: ["驚くべき", "栄養価の高い", "商業的な", "人工的な"],
             correctAnswer: 1,
-            structure: "It [S] is [V] remarkable [C] how quickly he has grown.",
+            structure: {
+                fullSentence: "It's remarkable how quickly your son has grown.",
+                mainClause: "It [S:形式主語] is [V] remarkable [C]",
+                howClause: "how quickly your son [S'] has grown [V'] → how節（感嘆的意味）= 「どれほど早く」",
+                grammarPoint: "It is + 形容詞 + how節"
+            },
             explanation: "remarkable: 驚くべき、注目に値する",
             translation: {
                 literal: "それは [S] である [V] 驚くべき [C] 彼がどれほど早く成長したか。",
@@ -98,7 +103,12 @@ export const grade2_2023_3Data = {
             choices: ["directly", "severely", "frequently", "probably"],
             choiceMeanings: ["直接的に", "厳しく", "頻繁に", "おそらく"],
             correctAnswer: 3,
-            structure: "Questions that customers [S] ask [V] most frequently.",
+            structure: {
+                fullSentence: "Yamakom Inc. has added a page with answers to the questions that customers ask most frequently.",
+                mainClause: "Yamakom Inc. [S] has added [V] a page [O] with answers to the questions [M]",
+                relativeClause: "that customers [S'] ask [V'] most frequently [M] → 関係代名詞節（questionsを修飾）",
+                grammarPoint: "FAQ = Frequently Asked Questions"
+            },
             explanation: "frequently: 頻繁に",
             translation: {
                 literal: "顧客が [S] 尋ねる [V] 最も頻繁に質問。",
@@ -128,7 +138,12 @@ export const grade2_2023_3Data = {
             choices: ["deserve", "announce", "operate", "permit"],
             choiceMeanings: ["値する", "発表する", "操作する", "許可する"],
             correctAnswer: 4,
-            structure: "The law [S] does not permit [V] drivers [O] to cross.",
+            structure: {
+                fullSentence: "The law does not permit drivers to cross railway tracks without stopping first.",
+                mainClause: "The law [S] does not permit [V] drivers [O] to cross railway tracks [C:to不定詞]",
+                withoutPhrase: "without stopping first [M] → 「まず止まらずに」",
+                grammarPoint: "permit + O + to do = 「Oが～することを許可する」"
+            },
             explanation: "permit: 許可する",
             translation: {
                 literal: "法律は [S] 許可しない [V] 運転者が [O] 渡ることを。",

@@ -8,7 +8,13 @@ export const grade2_2025_2Data = {
             choices: ["overlap", "govern", "forgive", "arrest"],
             choiceMeanings: ["重複する", "統治する", "許す", "逮捕する"],
             correctAnswer: 2,
-            structure: "too young to govern [V] the kingdom [O].",
+            structure: {
+                fullSentence: "When King Otto died, his son was still too young to govern the kingdom. King Otto's brother looked after the country until the young prince was old enough to rule.",
+                mainClause: "his son [S] was [V] still too young [C] to govern the kingdom [M:too...to構文]",
+                whenClause: "When King Otto [S'] died [V'] → 時を表すwhen節",
+                untilClause: "until the young prince [S''] was [V''] old enough [C''] to rule [M] → 時を表すuntil節",
+                grammarPoint: "too...to do = 「～すぎて...できない」/ enough to do = 「～するのに十分な」"
+            },
             explanation: "govern: 統治する、治める",
             translation: {
                 literal: "若すぎて [C] 統治できない [V] 王国を [O]。",
@@ -152,7 +158,13 @@ export const grade2_2025_2Data = {
             choices: ["tragedy", "democracy", "mystery", "philosophy"],
             choiceMeanings: ["悲劇", "民主主義", "謎", "哲学"],
             correctAnswer: 2,
-            structure: "we [S] live [V] in a democracy [M].",
+            structure: {
+                fullSentence: "We live in a democracy, so we can vote for the people we want to represent us.",
+                mainClause: "we [S] live [V] in a democracy [M]",
+                resultClause: "so we [S'] can vote [V'] for the people [M] → 結果",
+                relativeClause: "we [S''] want [V''] to represent us [C''] → 関係代名詞節（省略形、peopleを修飾）",
+                grammarPoint: "目的格の関係代名詞省略 / want + O + to do"
+            },
             explanation: "democracy: 民主主義（国家）",
             translation: {
                 literal: "私たちは [S] 住んでいる [V] 民主主義国家に [M]。",

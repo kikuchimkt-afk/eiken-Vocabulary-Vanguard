@@ -2335,417 +2335,856 @@ vocabDatabase['2024-1-gp1'] = [
 ];
 
 // 2023年度 第3回 準1級
+// 2023年度 第3回 準1級 (50語に厳選)
 vocabDatabase['2023-3-gp1'] = [
-    // Q1
+    // Q1: 正解 emit
     { id: 1, word: 'emit', meaning: '排出する', sentence: 'Emit smoke.', translation: '煙を排出する。', questionId: 1 },
     { id: 2, word: 'ascribe', meaning: '〜のせいにする', sentence: 'Ascribe success to luck.', translation: '成功を運のせいにする。', questionId: 1 },
-    { id: 3, word: 'allocate', meaning: '割り当てる', sentence: 'Allocate funds.', translation: '資金を割り当てる。', questionId: 1 },
-    // Q2
-    { id: 4, word: 'devastate', meaning: '荒廃させる', sentence: 'Devastated by war.', translation: '戦争で荒廃した。', questionId: 2 },
-    { id: 5, word: 'facilitate', meaning: '促進する', sentence: 'Facilitate trade.', translation: '貿易を促進する。', questionId: 2 },
-    { id: 6, word: 'reprimand', meaning: '叱責する', sentence: 'Reprimand a student.', translation: '生徒を叱責する。', questionId: 2 },
-    // Q3
-    { id: 7, word: 'agonize', meaning: '苦悩する', sentence: 'Agonize over a decision.', translation: '決定に苦悩する。', questionId: 3 },
-    { id: 8, word: 'delighted', meaning: '大喜びして', sentence: 'Delighted to meet you.', translation: 'お会いできて嬉しいです。', questionId: 3 },
-    { id: 9, word: 'expand', meaning: '拡大する', sentence: 'Expand the business.', translation: 'ビジネスを拡大する。', questionId: 3 },
-    // Q4
-    { id: 10, word: 'amenity', meaning: '快適な設備、アメニティ', sentence: 'Hotel amenities.', translation: 'ホテルのアメニティ。', questionId: 4 },
-    { id: 11, word: 'entrepreneur', meaning: '起業家', sentence: 'Young entrepreneur.', translation: '若い起業家。', questionId: 4 },
-    { id: 12, word: 'receptacle', meaning: '容器', sentence: 'Trash receptacle.', translation: 'ゴミ箱。', questionId: 4 },
-    // Q5
-    { id: 13, word: 'insight', meaning: '洞察、見識', sentence: 'Gain insight.', translation: '洞察を得る。', questionId: 5 },
-    { id: 14, word: 'literacy', meaning: '読み書きの能力', sentence: 'Computer literacy.', translation: 'コンピューターリテラシー。', questionId: 5 },
-    { id: 15, word: 'hassle', meaning: '面倒なこと', sentence: 'It\'s a hassle.', translation: 'それは面倒だ。', questionId: 5 },
-    // Q6
-    { id: 16, word: 'intrude', meaning: '立ち入る、侵入する', sentence: 'Intrude on privacy.', translation: 'プライバシーに立ち入る。', questionId: 6 },
-    { id: 17, word: 'discard', meaning: '捨てる', sentence: 'Discard old clothes.', translation: '古い服を捨てる。', questionId: 6 },
-    { id: 18, word: 'deform', meaning: '変形させる', sentence: 'Deformed shape.', translation: '変形した形。', questionId: 6 },
-    // Q7
-    { id: 19, word: 'aftermath', meaning: '直後、余波', sentence: 'In the aftermath of the war.', translation: '戦後直後に。', questionId: 7 },
-    { id: 20, word: 'treaty', meaning: '条約', sentence: 'Peace treaty.', translation: '平和条約。', questionId: 7 },
-    { id: 21, word: 'inclusion', meaning: '包含', sentence: 'Social inclusion.', translation: '社会的包摂。', questionId: 7 },
-    // Q8
-    { id: 22, word: 'ridge', meaning: '尾根', sentence: 'Mountain ridge.', translation: '山の尾根。', questionId: 8 },
-    { id: 23, word: 'pledge', meaning: '誓約、誓い', sentence: 'Make a pledge.', translation: '誓いを立てる。', questionId: 8 },
-    { id: 24, word: 'quota', meaning: 'ノルマ、割当', sentence: 'Meet the quota.', translation: 'ノルマを達成する。', questionId: 8 },
-    // Q9
-    { id: 25, word: 'drowsy', meaning: '眠い', sentence: 'Feel drowsy.', translation: '眠く感じる。', questionId: 9 },
-    { id: 26, word: 'acute', meaning: '急性の、鋭い', sentence: 'Acute pain.', translation: '激痛。', questionId: 9 },
-    { id: 27, word: 'rigid', meaning: '厳格な、硬い', sentence: 'Rigid rules.', translation: '厳格なルール。', questionId: 9 },
-    // Q10
-    { id: 28, word: 'discreet', meaning: '口が堅い、慎重な', sentence: 'Be discreet.', translation: '慎重に（口を慎んで）。', questionId: 10 },
-    { id: 29, word: 'artificial', meaning: '人工的な', sentence: 'Artificial intelligence.', translation: '人工知能。', questionId: 10 },
-    { id: 30, word: 'temporary', meaning: '一時的な', sentence: 'Temporary job.', translation: '一時的な仕事。', questionId: 10 },
-    // Q11
-    { id: 31, word: 'glimpse', meaning: 'ちらりと見ること', sentence: 'Catch a glimpse.', translation: 'ちらりと見る。', questionId: 11 },
-    { id: 32, word: 'sip', meaning: 'ひとくち飲む', sentence: 'Take a sip.', translation: '一口飲む。', questionId: 11 },
-    { id: 33, word: 'couch', meaning: 'カウチ、言い表す', sentence: 'Couched in careful terms.', translation: '慎重な言葉で表現された。', questionId: 11 },
-    // Q12
-    { id: 34, word: 'compensation', meaning: '補償', sentence: 'Demand compensation.', translation: '補償を要求する。', questionId: 12 },
-    { id: 35, word: 'fabric', meaning: '布地', sentence: 'Silk fabric.', translation: '絹の布地。', questionId: 12 },
-    { id: 36, word: 'glance', meaning: '一瞥', sentence: 'Exchange glances.', translation: '視線を交わす。', questionId: 12 },
-    // Q13
-    { id: 37, word: 'justified', meaning: '正当化された', sentence: 'Justified anger.', translation: '正当な怒り。', questionId: 13 },
-    { id: 38, word: 'adjacent', meaning: '隣接した', sentence: 'Adjacent rooms.', translation: '隣り合った部屋。', questionId: 13 },
-    { id: 39, word: 'integral', meaning: '不可欠な', sentence: 'Integral part.', translation: '不可欠な部分。', questionId: 13 },
-    // Q14
-    { id: 40, word: 'lean', meaning: '脂肪の少ない', sentence: 'Lean meat.', translation: '脂肪の少ない肉。', questionId: 14 },
-    { id: 41, word: 'grim', meaning: '厳しい、暗い', sentence: 'Grim reality.', translation: '厳しい現実。', questionId: 14 },
-    { id: 42, word: 'sheer', meaning: '全くの', sentence: 'Sheer luck.', translation: '全くの運。', questionId: 14 },
-    // Q15
-    { id: 43, word: 'orphan', meaning: '孤児', sentence: 'War orphans.', translation: '戦争孤児。', questionId: 15 },
-    { id: 44, word: 'lease', meaning: '賃貸借契約', sentence: 'Sign a lease.', translation: '賃貸契約を結ぶ。', questionId: 15 },
-    { id: 45, word: 'ally', meaning: '同盟国、味方', sentence: 'Close ally.', translation: '親密な同盟国。', questionId: 15 },
-    // Q16
-    { id: 46, word: 'implicate', meaning: '（犯罪などに）巻き込む', sentence: 'Implicated in the scandal.', translation: 'スキャンダルに関与している。', questionId: 16 },
-    { id: 47, word: 'eliminate', meaning: '排除する', sentence: 'Eliminate waste.', translation: '無駄を排除する。', questionId: 16 },
-    { id: 48, word: 'constrain', meaning: '拘束する、強いる', sentence: 'Constrained by rules.', translation: 'ルールに縛られる。', questionId: 16 },
-    // Q17
-    { id: 49, word: 'overdue', meaning: '期限を過ぎた', sentence: 'Overdue bill.', translation: '期限切れの請求書。', questionId: 17 },
-    { id: 50, word: 'bilateral', meaning: '二国間の', sentence: 'Bilateral trade.', translation: '二国間貿易。', questionId: 17 },
-    { id: 51, word: 'potent', meaning: '強力な', sentence: 'Potent drug.', translation: '強力な薬。', questionId: 17 },
-    // Q18
-    { id: 52, word: 'mutual', meaning: '相互の', sentence: 'Mutual understanding.', translation: '相互理解。', questionId: 18 },
-    { id: 53, word: 'indifferent', meaning: '無関心な', sentence: 'Indifferent to politics.', translation: '政治に無関心な。', questionId: 18 },
-    { id: 54, word: 'monetary', meaning: '金銭的な', sentence: 'Monetary policy.', translation: '金融政策。', questionId: 18 },
-    // Q19
-    { id: 55, word: 'pierce', meaning: '穴を開ける', sentence: 'Pierce ears.', translation: '耳にピアスを開ける。', questionId: 19 },
-    { id: 56, word: 'radiate', meaning: '放射する', sentence: 'Radiate heat.', translation: '熱を放射する。', questionId: 19 },
-    { id: 57, word: 'cease', meaning: 'やむ、終わる', sentence: 'Cease fire.', translation: '射撃をやめる（停戦）。', questionId: 19 },
-    // Q20
-    { id: 58, word: 'heap', meaning: '山、積み重ね', sentence: 'Heap of sand.', translation: '砂の山。', questionId: 20 },
-    { id: 59, word: 'bid', meaning: '入札', sentence: 'Make a bid.', translation: '入札する。', questionId: 20 },
-    { id: 60, word: 'grain', meaning: '穀物、粒', sentence: 'Grain of sand.', translation: '砂粒。', questionId: 20 },
-    // Q21
-    { id: 61, word: 'plural', meaning: '複数の', sentence: 'Plural form.', translation: '複数形。', questionId: 21 },
-    { id: 62, word: 'fiscal', meaning: '財政の', sentence: 'Fiscal year.', translation: '会計年度。', questionId: 21 },
-    { id: 63, word: 'empirical', meaning: '経験的な', sentence: 'Empirical evidence.', translation: '経験的証拠。', questionId: 21 },
-    // Q22
-    { id: 64, word: 'die away', meaning: '徐々に消える', sentence: 'The sound died away.', translation: '音が徐々に消えた。', questionId: 22 },
-    { id: 65, word: 'call off', meaning: '中止する', sentence: 'Call off the meeting.', translation: '会議を中止する。', questionId: 22 },
-    { id: 66, word: 'back out', meaning: '手を引く', sentence: 'Back out of the deal.', translation: '取引から手を引く。', questionId: 22 },
-    // Q23
-    { id: 67, word: 'pin down', meaning: '突き止める', sentence: 'Pin down the cause.', translation: '原因を突き止める。', questionId: 23 },
-    { id: 68, word: 'see out', meaning: '見送る、最後まで見届ける', sentence: 'See out the year.', translation: 'ゆく年を見送る。', questionId: 23 },
-    { id: 69, word: 'juice up', meaning: '活気づける', sentence: 'Juice up the party.', translation: 'パーティーを盛り上げる。', questionId: 23 },
-    // Q24
-    { id: 70, word: 'measure up', meaning: '基準に達する', sentence: 'Measure up to expectations.', translation: '期待に応える。', questionId: 24 },
-    { id: 71, word: 'knuckle down', meaning: '真剣に取り組む', sentence: 'Knuckle down to work.', translation: '仕事に真剣に取り組む。', questionId: 24 },
-    { id: 72, word: 'sum up', meaning: '要約する', sentence: 'Sum up the main points.', translation: '要点をまとめる。', questionId: 24 },
-    // Q25
-    { id: 73, word: 'draw back', meaning: '後退する、身を引く', sentence: 'Draw back in fear.', translation: '恐怖で身を引く。', questionId: 25 },
-    { id: 74, word: 'pull through', meaning: '切り抜ける', sentence: 'Pull through the illness.', translation: '病気を切り抜ける。', questionId: 25 },
-    { id: 75, word: 'make up', meaning: '作り上げる、仲直りする', sentence: 'Make up a story.', translation: '話を作り上げる。', questionId: 25 }
+    // Q2: 正解 devastate
+    { id: 3, word: 'devastate', meaning: '荒廃させる', sentence: 'Devastated by war.', translation: '戦争で荒廃した。', questionId: 2 },
+    { id: 4, word: 'facilitate', meaning: '促進する', sentence: 'Facilitate trade.', translation: '貿易を促進する。', questionId: 2 },
+    // Q3: 正解 agonize
+    { id: 5, word: 'agonize', meaning: '苦悩する', sentence: 'Agonize over a decision.', translation: '決定に苦悩する。', questionId: 3 },
+    { id: 6, word: 'expand', meaning: '拡大する', sentence: 'Expand the business.', translation: 'ビジネスを拡大する。', questionId: 3 },
+    // Q4: 正解 amenity
+    { id: 7, word: 'amenity', meaning: '快適な設備、アメニティ', sentence: 'Hotel amenities.', translation: 'ホテルのアメニティ。', questionId: 4 },
+    { id: 8, word: 'entrepreneur', meaning: '起業家', sentence: 'Young entrepreneur.', translation: '若い起業家。', questionId: 4 },
+    // Q5: 正解 insight
+    { id: 9, word: 'insight', meaning: '洞察、見識', sentence: 'Gain insight.', translation: '洞察を得る。', questionId: 5 },
+    { id: 10, word: 'literacy', meaning: '読み書きの能力', sentence: 'Computer literacy.', translation: 'コンピューターリテラシー。', questionId: 5 },
+    // Q6: 正解 intrude
+    { id: 11, word: 'intrude', meaning: '立ち入る、侵入する', sentence: 'Intrude on privacy.', translation: 'プライバシーに立ち入る。', questionId: 6 },
+    { id: 12, word: 'discard', meaning: '捨てる', sentence: 'Discard old clothes.', translation: '古い服を捨てる。', questionId: 6 },
+    // Q7: 正解 aftermath
+    { id: 13, word: 'aftermath', meaning: '直後、余波', sentence: 'In the aftermath of the war.', translation: '戦後直後に。', questionId: 7 },
+    { id: 14, word: 'treaty', meaning: '条約', sentence: 'Peace treaty.', translation: '平和条約。', questionId: 7 },
+    // Q8: 正解 ridge
+    { id: 15, word: 'ridge', meaning: '尾根', sentence: 'Mountain ridge.', translation: '山の尾根。', questionId: 8 },
+    { id: 16, word: 'pledge', meaning: '誓約、誓い', sentence: 'Make a pledge.', translation: '誓いを立てる。', questionId: 8 },
+    // Q9: 正解 drowsy
+    { id: 17, word: 'drowsy', meaning: '眠い', sentence: 'Feel drowsy.', translation: '眠く感じる。', questionId: 9 },
+    { id: 18, word: 'acute', meaning: '急性の、鋭い', sentence: 'Acute pain.', translation: '激痛。', questionId: 9 },
+    // Q10: 正解 discreet
+    { id: 19, word: 'discreet', meaning: '口が堅い、慎重な', sentence: 'Be discreet.', translation: '慎重に（口を慎んで）。', questionId: 10 },
+    { id: 20, word: 'artificial', meaning: '人工的な', sentence: 'Artificial intelligence.', translation: '人工知能。', questionId: 10 },
+    // Q11: 正解 glimpse
+    { id: 21, word: 'glimpse', meaning: 'ちらりと見ること', sentence: 'Catch a glimpse.', translation: 'ちらりと見る。', questionId: 11 },
+    { id: 22, word: 'sip', meaning: 'ひとくち飲む', sentence: 'Take a sip.', translation: '一口飲む。', questionId: 11 },
+    // Q12: 正解 compensation
+    { id: 23, word: 'compensation', meaning: '補償', sentence: 'Demand compensation.', translation: '補償を要求する。', questionId: 12 },
+    { id: 24, word: 'fabric', meaning: '布地', sentence: 'Silk fabric.', translation: '絹の布地。', questionId: 12 },
+    // Q13: 正解 justified
+    { id: 25, word: 'justified', meaning: '正当化された', sentence: 'Justified anger.', translation: '正当な怒り。', questionId: 13 },
+    { id: 26, word: 'adjacent', meaning: '隣接した', sentence: 'Adjacent rooms.', translation: '隣り合った部屋。', questionId: 13 },
+    // Q14: 正解 lean
+    { id: 27, word: 'lean', meaning: '脂肪の少ない', sentence: 'Lean meat.', translation: '脂肪の少ない肉。', questionId: 14 },
+    { id: 28, word: 'grim', meaning: '厳しい、暗い', sentence: 'Grim reality.', translation: '厳しい現実。', questionId: 14 },
+    // Q15: 正解 orphan
+    { id: 29, word: 'orphan', meaning: '孤児', sentence: 'War orphans.', translation: '戦争孤児。', questionId: 15 },
+    { id: 30, word: 'ally', meaning: '同盟国、味方', sentence: 'Close ally.', translation: '親密な同盟国。', questionId: 15 },
+    // Q16: 正解 implicate
+    { id: 31, word: 'implicate', meaning: '（犯罪などに）巻き込む', sentence: 'Implicated in the scandal.', translation: 'スキャンダルに関与している。', questionId: 16 },
+    { id: 32, word: 'eliminate', meaning: '排除する', sentence: 'Eliminate waste.', translation: '無駄を排除する。', questionId: 16 },
+    // Q17: 正解 overdue
+    { id: 33, word: 'overdue', meaning: '期限を過ぎた', sentence: 'Overdue bill.', translation: '期限切れの請求書。', questionId: 17 },
+    { id: 34, word: 'bilateral', meaning: '二国間の', sentence: 'Bilateral trade.', translation: '二国間貿易。', questionId: 17 },
+    // Q18: 正解 mutual
+    { id: 35, word: 'mutual', meaning: '相互の', sentence: 'Mutual understanding.', translation: '相互理解。', questionId: 18 },
+    { id: 36, word: 'indifferent', meaning: '無関心な', sentence: 'Indifferent to politics.', translation: '政治に無関心な。', questionId: 18 },
+    // Q19: 正解 pierce
+    { id: 37, word: 'pierce', meaning: '穴を開ける', sentence: 'Pierce ears.', translation: '耳にピアスを開ける。', questionId: 19 },
+    { id: 38, word: 'radiate', meaning: '放射する', sentence: 'Radiate heat.', translation: '熱を放射する。', questionId: 19 },
+    // Q20: 正解 heap
+    { id: 39, word: 'heap', meaning: '山、積み重ね', sentence: 'Heap of sand.', translation: '砂の山。', questionId: 20 },
+    { id: 40, word: 'bid', meaning: '入札', sentence: 'Make a bid.', translation: '入札する。', questionId: 20 },
+    // Q21: 正解 plural
+    { id: 41, word: 'plural', meaning: '複数の', sentence: 'Plural form.', translation: '複数形。', questionId: 21 },
+    { id: 42, word: 'fiscal', meaning: '財政の', sentence: 'Fiscal year.', translation: '会計年度。', questionId: 21 },
+    // Q22: 正解 die away
+    { id: 43, word: 'die away', meaning: '徐々に消える', sentence: 'The sound died away.', translation: '音が徐々に消えた。', questionId: 22 },
+    { id: 44, word: 'call off', meaning: '中止する', sentence: 'Call off the meeting.', translation: '会議を中止する。', questionId: 22 },
+    // Q23: 正解 pin down
+    { id: 45, word: 'pin down', meaning: '突き止める', sentence: 'Pin down the cause.', translation: '原因を突き止める。', questionId: 23 },
+    { id: 46, word: 'see out', meaning: '見送る、最後まで見届ける', sentence: 'See out the year.', translation: 'ゆく年を見送る。', questionId: 23 },
+    // Q24: 正解 measure up
+    { id: 47, word: 'measure up', meaning: '基準に達する', sentence: 'Measure up to expectations.', translation: '期待に応える。', questionId: 24 },
+    { id: 48, word: 'knuckle down', meaning: '真剣に取り組む', sentence: 'Knuckle down to work.', translation: '仕事に真剣に取り組む。', questionId: 24 },
+    // Q25: 正解 draw back
+    { id: 49, word: 'draw back', meaning: '後退する、身を引く', sentence: 'Draw back in fear.', translation: '恐怖で身を引く。', questionId: 25 },
+    { id: 50, word: 'pull through', meaning: '切り抜ける', sentence: 'Pull through the illness.', translation: '病気を切り抜ける。', questionId: 25 }
 ];
 
-// 2023年度 第2回 準1級
+// 2023年度 第2回 準1級 (50語に厳選)
 vocabDatabase['2023-2-gp1'] = [
-    // Q1
+    // Q1: 正解 strenuous
     { id: 1, word: 'strenuous', meaning: '激しい、きつい', sentence: 'Strenuous exercise.', translation: '激しい運動。', questionId: 1 },
     { id: 2, word: 'subtle', meaning: '微妙な', sentence: 'Subtle difference.', translation: '微妙な違い。', questionId: 1 },
-    { id: 3, word: 'contrary', meaning: '反対の', sentence: 'Contrary to belief.', translation: '信念に反して。', questionId: 1 },
-    // Q2
-    { id: 4, word: 'compile', meaning: 'まとめる、編集する', sentence: 'Compile data.', translation: 'データをまとめる。', questionId: 2 },
-    { id: 5, word: 'punctuate', meaning: '句読点をつける', sentence: 'Punctuate the sentence.', translation: '文に句読点をつける。', questionId: 2 },
-    { id: 6, word: 'obsess', meaning: '取りつく、悩ます', sentence: 'Obsess over details.', translation: '細部にこだわる。', questionId: 2 },
-    // Q3
-    { id: 7, word: 'valve', meaning: '弁、バルブ', sentence: 'Safety valve.', translation: '安全弁。', questionId: 3 },
-    { id: 8, word: 'depot', meaning: '倉庫、駅', sentence: 'Bus depot.', translation: 'バスの車庫。', questionId: 3 },
-    { id: 9, word: 'canal', meaning: '運河', sentence: 'Suez Canal.', translation: 'スエズ運河。', questionId: 3 },
-    // Q4
-    { id: 10, word: 'acquainted', meaning: '知り合いで', sentence: 'Get acquainted.', translation: '知り合いになる。', questionId: 4 },
-    { id: 11, word: 'discharge', meaning: '退院させる、解雇する', sentence: 'Discharged from hospital.', translation: '退院した。', questionId: 4 },
-    { id: 12, word: 'emphasize', meaning: '強調する', sentence: 'Emphasize the importance.', translation: '重要性を強調する。', questionId: 4 },
-    // Q5
-    { id: 13, word: 'partition', meaning: '仕切り', sentence: 'Glass partition.', translation: 'ガラスの仕切り。', questionId: 5 },
-    { id: 14, word: 'estimation', meaning: '推定、見積もり', sentence: 'Rough estimation.', translation: '概算。', questionId: 5 },
-    { id: 15, word: 'assumption', meaning: '仮定', sentence: 'Make an assumption.', translation: '仮定する。', questionId: 5 },
-    // Q6
-    { id: 16, word: 'currency', meaning: '通貨', sentence: 'Foreign currency.', translation: '外貨。', questionId: 6 },
-    { id: 17, word: 'tactic', meaning: '戦術', sentence: 'Marketing tactics.', translation: 'マーケティング戦術。', questionId: 6 },
-    { id: 18, word: 'menace', meaning: '脅威', sentence: 'Menace to society.', translation: '社会への脅威。', questionId: 6 },
-    // Q7
-    { id: 19, word: 'abundant', meaning: '豊富な', sentence: 'Abundant resources.', translation: '豊富な資源。', questionId: 7 },
-    { id: 20, word: 'insubstantial', meaning: '実体のない、不十分な', sentence: 'Insubstantial evidence.', translation: '不十分な証拠。', questionId: 7 },
-    { id: 21, word: 'elastic', meaning: '弾力のある', sentence: 'Elastic band.', translation: 'ゴムバンド。', questionId: 7 },
-    // Q8
-    { id: 22, word: 'condense', meaning: '凝縮する、要約する', sentence: 'Condense into a summary.', translation: '要約にまとめる。', questionId: 8 },
-    { id: 23, word: 'dispute', meaning: '論争する', sentence: 'Dispute the claim.', translation: '主張に異議を唱える。', questionId: 8 },
-    { id: 24, word: 'mumble', meaning: 'つぶやく', sentence: 'Mumble an apology.', translation: '謝罪をつぶやく。', questionId: 8 },
-    // Q9
-    { id: 25, word: 'deport', meaning: '国外追放する', sentence: 'Deported from the country.', translation: '国外退去させられた。', questionId: 9 },
-    { id: 26, word: 'perceive', meaning: '知覚する', sentence: 'Perceive danger.', translation: '危険を察知する。', questionId: 9 },
-    { id: 27, word: 'distribute', meaning: '分配する', sentence: 'Distribute flyers.', translation: 'チラシを配る。', questionId: 9 },
-    // Q10
-    { id: 28, word: 'compulsion', meaning: '衝動、強制', sentence: 'Compulsion to eat.', translation: '食べたいという衝動。', questionId: 10 },
-    { id: 29, word: 'suspension', meaning: '一時停止', sentence: 'License suspension.', translation: '免許停止。', questionId: 10 },
-    { id: 30, word: 'seclusion', meaning: '隔離、隠遁', sentence: 'Live in seclusion.', translation: '隠遁生活を送る。', questionId: 10 },
-    // Q11
-    { id: 31, word: 'resolution', meaning: '決意、解決', sentence: 'New Year\'s resolution.', translation: '新年の抱負。', questionId: 11 },
-    { id: 32, word: 'astonishment', meaning: '驚き', sentence: 'To my astonishment.', translation: '驚いたことに。', questionId: 11 },
-    { id: 33, word: 'vulnerability', meaning: '脆弱性', sentence: 'Assess vulnerability.', translation: '脆弱性を評価する。', questionId: 11 },
-    // Q12
-    { id: 34, word: 'dwindle', meaning: 'だんだん減少する', sentence: 'Dwindling resources.', translation: '減少する資源。', questionId: 12 },
-    { id: 35, word: 'graze', meaning: '（家畜が）草を食べる', sentence: 'Cows grazing.', translation: '草を食べている牛。', questionId: 12 },
-    { id: 36, word: 'rebound', meaning: '跳ね返る、立ち直る', sentence: 'Rebound from defeat.', translation: '敗北から立ち直る。', questionId: 12 },
-    // Q13
-    { id: 37, word: 'grip', meaning: 'しっかり握る', sentence: 'Grip the handle.', translation: 'ハンドルを握る。', questionId: 13 },
-    { id: 38, word: 'harass', meaning: '悩ませる、嫌がらせをする', sentence: 'Harass a coworker.', translation: '同僚に嫌がらせをする。', questionId: 13 },
-    { id: 39, word: 'breach', meaning: '破る、違反する', sentence: 'Breach of contract.', translation: '契約違反。', questionId: 13 },
-    // Q14
-    { id: 40, word: 'nosy', meaning: '詮索好きな', sentence: 'Nosy neighbor.', translation: '詮索好きな隣人。', questionId: 14 },
-    { id: 41, word: 'obedient', meaning: '従順な', sentence: 'Obedient dog.', translation: '従順な犬。', questionId: 14 },
-    { id: 42, word: 'sinful', meaning: '罪深い', sentence: 'Sinful act.', translation: '罪深い行為。', questionId: 14 },
-    // Q15
-    { id: 43, word: 'summit', meaning: '頂上、首脳会談', sentence: 'Reach the summit.', translation: '頂上に達する。', questionId: 15 },
-    { id: 44, word: 'subsidy', meaning: '補助金', sentence: 'Government subsidy.', translation: '政府の補助金。', questionId: 15 },
-    { id: 45, word: 'mirage', meaning: '蜃気楼', sentence: 'See a mirage.', translation: '蜃気楼を見る。', questionId: 15 },
-    // Q16
-    { id: 46, word: 'idle', meaning: '何もしていない、暇な', sentence: 'Idle talk.', translation: '無駄話。', questionId: 16 },
-    { id: 47, word: 'agile', meaning: '機敏な', sentence: 'Agile mind.', translation: '機敏な頭脳。', questionId: 16 },
-    { id: 48, word: 'sane', meaning: '正気の', sentence: 'Stay sane.', translation: '正気を保つ。', questionId: 16 },
-    // Q17
-    { id: 49, word: 'optimistic', meaning: '楽観的な', sentence: 'Optimistic view.', translation: '楽観的な見方。', questionId: 17 },
-    { id: 50, word: 'courteous', meaning: '礼儀正しい', sentence: 'Courteous reply.', translation: '丁寧な返信。', questionId: 17 },
-    { id: 51, word: 'flustered', meaning: '狼狽した', sentence: 'Get flustered.', translation: '慌てる。', questionId: 17 },
-    // Q18
-    { id: 52, word: 'bothersome', meaning: '迷惑な、厄介な', sentence: 'Bothersome noise.', translation: '迷惑な騒音。', questionId: 18 },
-    { id: 53, word: 'compelling', meaning: '説得力のある', sentence: 'Compelling argument.', translation: '説得力のある議論。', questionId: 18 },
-    { id: 54, word: 'flattering', meaning: 'お世辞の、うれしがらせる', sentence: 'Flattering remark.', translation: 'お世辞の言葉。', questionId: 18 },
-    // Q19
-    { id: 55, word: 'spectator', meaning: '観客', sentence: 'Sports spectators.', translation: 'スポーツ観戦者。', questionId: 19 },
-    { id: 56, word: 'patriot', meaning: '愛国者', sentence: 'True patriot.', translation: '真の愛国者。', questionId: 19 },
-    { id: 57, word: 'mimic', meaning: '物まね師', sentence: 'Skillful mimic.', translation: '巧みな物まね師。', questionId: 19 },
-    // Q20
-    { id: 58, word: 'ample', meaning: '十分な', sentence: 'Ample time.', translation: '十分な時間。', questionId: 20 },
-    { id: 59, word: 'regal', meaning: '王の、堂々とした', sentence: 'Regal bearing.', translation: '堂々とした態度。', questionId: 20 },
-    { id: 60, word: 'vain', meaning: '無駄な、うぬぼれた', sentence: 'In vain.', translation: '無駄に。', questionId: 20 },
-    // Q21
-    { id: 61, word: 'parental', meaning: '親の', sentence: 'Parental guidance.', translation: '親の指導。', questionId: 21 },
-    { id: 62, word: 'obsolete', meaning: '時代遅れの', sentence: 'Obsolete technology.', translation: '時代遅れの技術。', questionId: 21 },
-    { id: 63, word: 'infamous', meaning: '悪名高い', sentence: 'Infamous criminal.', translation: '悪名高い犯罪者。', questionId: 21 },
-    // Q22
-    { id: 64, word: 'wipe out', meaning: '全滅させる', sentence: 'Wipe out the enemy.', translation: '敵を全滅させる。', questionId: 22 },
-    { id: 65, word: 'turn down', meaning: '断る', sentence: 'Turn down an offer.', translation: '申し出を断る。', questionId: 22 },
-    { id: 66, word: 'break up', meaning: '解散する、別れる', sentence: 'Break up with boyfriend.', translation: '彼氏と別れる。', questionId: 22 },
-    // Q23
-    { id: 67, word: 'go about', meaning: '〜に取り掛かる', sentence: 'Go about your business.', translation: '自分の仕事に取り掛かる。', questionId: 23 },
-    { id: 68, word: 'pull out', meaning: '引き出す、撤退する', sentence: 'Pull out troops.', translation: '軍隊を撤退させる。', questionId: 23 },
-    { id: 69, word: 'take in', meaning: '取り入れる、理解する、騙す', sentence: 'Take in the view.', translation: '景色に見とれる。', questionId: 23 },
-    // Q24
-    { id: 70, word: 'frown upon', meaning: '難色を示す', sentence: 'Frowned upon by society.', translation: '社会から冷ややかな目で見られる。', questionId: 24 },
-    { id: 71, word: 'carry on', meaning: '続ける', sentence: 'Carry on talking.', translation: '話し続ける。', questionId: 24 },
-    { id: 72, word: 'enter into', meaning: '（契約などを）結ぶ、参入する', sentence: 'Enter into an agreement.', translation: '合意を結ぶ。', questionId: 24 },
-    // Q25
-    { id: 73, word: 'sit in on', meaning: '同席する、傍聴する', sentence: 'Sit in on a class.', translation: '授業を聴講する。', questionId: 25 },
-    { id: 74, word: 'go back on', meaning: '（約束などを）破る', sentence: 'Go back on a promise.', translation: '約束を破る。', questionId: 25 },
-    { id: 75, word: 'look up to', meaning: '尊敬する', sentence: 'Look up to my father.', translation: '父を尊敬する。', questionId: 25 }
+    // Q2: 正解 compile
+    { id: 3, word: 'compile', meaning: 'まとめる、編集する', sentence: 'Compile data.', translation: 'データをまとめる。', questionId: 2 },
+    { id: 4, word: 'punctuate', meaning: '句読点をつける', sentence: 'Punctuate the sentence.', translation: '文に句読点をつける。', questionId: 2 },
+    // Q3: 正解 valve
+    { id: 5, word: 'valve', meaning: '弁、バルブ', sentence: 'Safety valve.', translation: '安全弁。', questionId: 3 },
+    { id: 6, word: 'depot', meaning: '倉庫、駅', sentence: 'Bus depot.', translation: 'バスの車庫。', questionId: 3 },
+    // Q4: 正解 acquainted
+    { id: 7, word: 'acquainted', meaning: '知り合いで', sentence: 'Get acquainted.', translation: '知り合いになる。', questionId: 4 },
+    { id: 8, word: 'discharge', meaning: '退院させる、解雇する', sentence: 'Discharged from hospital.', translation: '退院した。', questionId: 4 },
+    // Q5: 正解 partition
+    { id: 9, word: 'partition', meaning: '仕切り', sentence: 'Glass partition.', translation: 'ガラスの仕切り。', questionId: 5 },
+    { id: 10, word: 'estimation', meaning: '推定、見積もり', sentence: 'Rough estimation.', translation: '概算。', questionId: 5 },
+    // Q6: 正解 currency
+    { id: 11, word: 'currency', meaning: '通貨', sentence: 'Foreign currency.', translation: '外貨。', questionId: 6 },
+    { id: 12, word: 'tactic', meaning: '戦術', sentence: 'Marketing tactics.', translation: 'マーケティング戦術。', questionId: 6 },
+    // Q7: 正解 abundant
+    { id: 13, word: 'abundant', meaning: '豊富な', sentence: 'Abundant resources.', translation: '豊富な資源。', questionId: 7 },
+    { id: 14, word: 'elastic', meaning: '弾力のある', sentence: 'Elastic band.', translation: 'ゴムバンド。', questionId: 7 },
+    // Q8: 正解 condense
+    { id: 15, word: 'condense', meaning: '凝縮する、要約する', sentence: 'Condense into a summary.', translation: '要約にまとめる。', questionId: 8 },
+    { id: 16, word: 'dispute', meaning: '論争する', sentence: 'Dispute the claim.', translation: '主張に異議を唱える。', questionId: 8 },
+    // Q9: 正解 deport
+    { id: 17, word: 'deport', meaning: '国外追放する', sentence: 'Deported from the country.', translation: '国外退去させられた。', questionId: 9 },
+    { id: 18, word: 'perceive', meaning: '知覚する', sentence: 'Perceive danger.', translation: '危険を察知する。', questionId: 9 },
+    // Q10: 正解 compulsion
+    { id: 19, word: 'compulsion', meaning: '衝動、強制', sentence: 'Compulsion to eat.', translation: '食べたいという衝動。', questionId: 10 },
+    { id: 20, word: 'suspension', meaning: '一時停止', sentence: 'License suspension.', translation: '免許停止。', questionId: 10 },
+    // Q11: 正解 resolution
+    { id: 21, word: 'resolution', meaning: '決意、解決', sentence: 'New Year\'s resolution.', translation: '新年の抱負。', questionId: 11 },
+    { id: 22, word: 'astonishment', meaning: '驚き', sentence: 'To my astonishment.', translation: '驚いたことに。', questionId: 11 },
+    // Q12: 正解 dwindle
+    { id: 23, word: 'dwindle', meaning: 'だんだん減少する', sentence: 'Dwindling resources.', translation: '減少する資源。', questionId: 12 },
+    { id: 24, word: 'graze', meaning: '（家畜が）草を食べる', sentence: 'Cows grazing.', translation: '草を食べている牛。', questionId: 12 },
+    // Q13: 正解 grip
+    { id: 25, word: 'grip', meaning: 'しっかり握る', sentence: 'Grip the handle.', translation: 'ハンドルを握る。', questionId: 13 },
+    { id: 26, word: 'harass', meaning: '悩ませる、嫌がらせをする', sentence: 'Harass a coworker.', translation: '同僚に嫌がらせをする。', questionId: 13 },
+    // Q14: 正解 nosy
+    { id: 27, word: 'nosy', meaning: '詮索好きな', sentence: 'Nosy neighbor.', translation: '詮索好きな隣人。', questionId: 14 },
+    { id: 28, word: 'obedient', meaning: '従順な', sentence: 'Obedient dog.', translation: '従順な犬。', questionId: 14 },
+    // Q15: 正解 summit
+    { id: 29, word: 'summit', meaning: '頂上、首脳会談', sentence: 'Reach the summit.', translation: '頂上に達する。', questionId: 15 },
+    { id: 30, word: 'subsidy', meaning: '補助金', sentence: 'Government subsidy.', translation: '政府の補助金。', questionId: 15 },
+    // Q16: 正解 idle
+    { id: 31, word: 'idle', meaning: '何もしていない、暇な', sentence: 'Idle talk.', translation: '無駄話。', questionId: 16 },
+    { id: 32, word: 'agile', meaning: '機敏な', sentence: 'Agile mind.', translation: '機敏な頭脳。', questionId: 16 },
+    // Q17: 正解 optimistic
+    { id: 33, word: 'optimistic', meaning: '楽観的な', sentence: 'Optimistic view.', translation: '楽観的な見方。', questionId: 17 },
+    { id: 34, word: 'courteous', meaning: '礼儀正しい', sentence: 'Courteous reply.', translation: '丁寧な返信。', questionId: 17 },
+    // Q18: 正解 bothersome
+    { id: 35, word: 'bothersome', meaning: '迷惑な、厄介な', sentence: 'Bothersome noise.', translation: '迷惑な騒音。', questionId: 18 },
+    { id: 36, word: 'compelling', meaning: '説得力のある', sentence: 'Compelling argument.', translation: '説得力のある議論。', questionId: 18 },
+    // Q19: 正解 spectator
+    { id: 37, word: 'spectator', meaning: '観客', sentence: 'Sports spectators.', translation: 'スポーツ観戦者。', questionId: 19 },
+    { id: 38, word: 'patriot', meaning: '愛国者', sentence: 'True patriot.', translation: '真の愛国者。', questionId: 19 },
+    // Q20: 正解 ample
+    { id: 39, word: 'ample', meaning: '十分な', sentence: 'Ample time.', translation: '十分な時間。', questionId: 20 },
+    { id: 40, word: 'regal', meaning: '王の、堂々とした', sentence: 'Regal bearing.', translation: '堂々とした態度。', questionId: 20 },
+    // Q21: 正解 parental
+    { id: 41, word: 'parental', meaning: '親の', sentence: 'Parental guidance.', translation: '親の指導。', questionId: 21 },
+    { id: 42, word: 'obsolete', meaning: '時代遅れの', sentence: 'Obsolete technology.', translation: '時代遅れの技術。', questionId: 21 },
+    // Q22: 正解 wipe out
+    { id: 43, word: 'wipe out', meaning: '全滅させる', sentence: 'Wipe out the enemy.', translation: '敵を全滅させる。', questionId: 22 },
+    { id: 44, word: 'turn down', meaning: '断る', sentence: 'Turn down an offer.', translation: '申し出を断る。', questionId: 22 },
+    // Q23: 正解 go about
+    { id: 45, word: 'go about', meaning: '〜に取り掛かる', sentence: 'Go about your business.', translation: '自分の仕事に取り掛かる。', questionId: 23 },
+    { id: 46, word: 'pull out', meaning: '引き出す、撤退する', sentence: 'Pull out troops.', translation: '軍隊を撤退させる。', questionId: 23 },
+    // Q24: 正解 frown upon
+    { id: 47, word: 'frown upon', meaning: '難色を示す', sentence: 'Frowned upon by society.', translation: '社会から冷ややかな目で見られる。', questionId: 24 },
+    { id: 48, word: 'carry on', meaning: '続ける', sentence: 'Carry on talking.', translation: '話し続ける。', questionId: 24 },
+    // Q25: 正解 sit in on
+    { id: 49, word: 'sit in on', meaning: '同席する、傍聴する', sentence: 'Sit in on a class.', translation: '授業を聴講する。', questionId: 25 },
+    { id: 50, word: 'go back on', meaning: '（約束などを）破る', sentence: 'Go back on a promise.', translation: '約束を破る。', questionId: 25 }
 ];
 
-// 2023年度 第1回 準1級
+// 2023年度 第1回 準1級 (50語に厳選)
 vocabDatabase['2023-1-gp1'] = [
-    // Q1
+    // Q1: 正解 daunt
     { id: 1, word: 'daunt', meaning: 'ひるませる', sentence: 'Daunted by the task.', translation: 'その仕事にひるんだ。', questionId: 1 },
     { id: 2, word: 'pacify', meaning: 'なだめる', sentence: 'Pacify the baby.', translation: '赤ちゃんをなだめる。', questionId: 1 },
-    { id: 3, word: 'tackle', meaning: '取り組む', sentence: 'Tackle a problem.', translation: '問題に取り組む。', questionId: 1 },
-    // Q2
-    { id: 4, word: 'cram', meaning: '詰め込み勉強をする、詰め込む', sentence: 'Cram for exams.', translation: '試験のために詰め込み勉強をする。', questionId: 2 },
-    { id: 5, word: 'detain', meaning: '引き留める、拘留する', sentence: 'Detained by police.', translation: '警察に拘留された。', questionId: 2 },
-    { id: 6, word: 'embrace', meaning: '抱きしめる、受け入れる', sentence: 'Embrace change.', translation: '変化を受け入れる。', questionId: 2 },
-    // Q3
-    { id: 7, word: 'flare', meaning: '（怒りなどが）燃え上がる', sentence: 'Tempers flared.', translation: '怒りが爆発した。', questionId: 3 },
-    { id: 8, word: 'profess', meaning: '公言する', sentence: 'Profess one\'s love.', translation: '愛を告白する。', questionId: 3 },
-    { id: 9, word: 'digest', meaning: '消化する', sentence: 'Digest food.', translation: '食べ物を消化する。', questionId: 3 },
-    // Q4
-    { id: 10, word: 'intervention', meaning: '介入', sentence: 'Government intervention.', translation: '政府介入。', questionId: 4 },
-    { id: 11, word: 'accumulation', meaning: '蓄積', sentence: 'Accumulation of wealth.', translation: '富の蓄積。', questionId: 4 },
-    { id: 12, word: 'starvation', meaning: '飢餓', sentence: 'Die of starvation.', translation: '餓死する。', questionId: 4 },
-    // Q5
-    { id: 13, word: 'protocol', meaning: '手順、議定書', sentence: 'Follow protocol.', translation: '手順に従う。', questionId: 5 },
-    { id: 14, word: 'tribute', meaning: '賛辞、貢ぎ物', sentence: 'Pay tribute.', translation: '敬意を表する。', questionId: 5 },
-    { id: 15, word: 'reservoir', meaning: '貯水池', sentence: 'Water reservoir.', translation: '貯水池。', questionId: 5 },
-    // Q6
-    { id: 16, word: 'eject', meaning: '追い出す、排出する', sentence: 'Ejected from the game.', translation: '試合から退場させられた。', questionId: 6 },
-    { id: 17, word: 'slaughter', meaning: '虐殺する', sentence: 'Slaughter animals.', translation: '動物を屠殺する。', questionId: 6 },
-    { id: 18, word: 'administer', meaning: '管理する、投与する', sentence: 'Administer medicine.', translation: '薬を投与する。', questionId: 6 },
-    // Q7
-    { id: 19, word: 'offspring', meaning: '子孫、子', sentence: 'Produce offspring.', translation: '子孫を残す。', questionId: 7 },
-    { id: 20, word: 'prey', meaning: '獲物', sentence: 'Bird of prey.', translation: '猛禽類。', questionId: 7 },
-    { id: 21, word: 'ritual', meaning: '儀式', sentence: 'Morning ritual.', translation: '朝の習慣。', questionId: 7 },
-    // Q8
-    { id: 22, word: 'demotion', meaning: '降格', sentence: 'Face demotion.', translation: '降格に直面する。', questionId: 8 },
-    { id: 23, word: 'craving', meaning: '渇望', sentence: 'Craving for sugar.', translation: '砂糖への渇望。', questionId: 8 },
-    { id: 24, word: 'aggravation', meaning: '悪化、苛立ち', sentence: 'Cause aggravation.', translation: '苛立ちを引き起こす。', questionId: 8 },
-    // Q9
-    { id: 25, word: 'durable', meaning: '耐久性のある', sentence: 'Durable material.', translation: '耐久性のある素材。', questionId: 9 },
-    { id: 26, word: 'aloof', meaning: 'よそよそしい', sentence: 'Keep aloof.', translation: '距離を置く。', questionId: 9 },
-    { id: 27, word: 'shallow', meaning: '浅い', sentence: 'Shallow water.', translation: '浅瀬。', questionId: 9 },
-    // Q10
-    { id: 28, word: 'disclose', meaning: '開示する、暴く', sentence: 'Disclose secrets.', translation: '秘密を明かす。', questionId: 10 },
-    { id: 29, word: 'detest', meaning: 'ひどく嫌う', sentence: 'Detest lies.', translation: '嘘をひどく嫌う。', questionId: 10 },
-    { id: 30, word: 'contemplate', meaning: '熟考する', sentence: 'Contemplate the future.', translation: '将来を熟考する。', questionId: 10 },
-    // Q11
-    { id: 31, word: 'arrogance', meaning: '傲慢さ', sentence: 'Sheer arrogance.', translation: '全くの傲慢さ。', questionId: 11 },
-    { id: 32, word: 'commodity', meaning: '商品、日用品', sentence: 'Basic commodities.', translation: '生活必需品。', questionId: 11 },
-    { id: 33, word: 'neutrality', meaning: '中立', sentence: 'Maintain neutrality.', translation: '中立を維持する。', questionId: 11 },
-    // Q12
-    { id: 34, word: 'incomprehensible', meaning: '理解不能な', sentence: 'Incomprehensible speech.', translation: '理解不能なスピーチ。', questionId: 12 },
-    { id: 35, word: 'genuine', meaning: '本物の', sentence: 'Genuine leather.', translation: '本革。', questionId: 12 },
-    { id: 36, word: 'impending', meaning: '差し迫った', sentence: 'Impending doom.', translation: '差し迫った破滅。', questionId: 12 },
-    // Q13
-    { id: 37, word: 'attentively', meaning: '注意深く', sentence: 'Listen attentively.', translation: '注意深く聞く。', questionId: 13 },
-    { id: 38, word: 'consecutively', meaning: '連続して', sentence: 'Three days consecutively.', translation: '3日連続で。', questionId: 13 },
-    { id: 39, word: 'eloquently', meaning: '雄弁に', sentence: 'Speak eloquently.', translation: '雄弁に語る。', questionId: 13 },
-    // Q14
-    { id: 40, word: 'forefront', meaning: '最前線', sentence: 'At the forefront.', translation: '最前線で。', questionId: 14 },
-    { id: 41, word: 'lapse', meaning: '経過、過失、失効', sentence: 'Lapse of memory.', translation: '記憶の欠落（ど忘れ）。', questionId: 14 },
-    { id: 42, word: 'doctrine', meaning: '教義', sentence: 'Religious doctrine.', translation: '宗教的教義。', questionId: 14 },
-    // Q15
-    { id: 43, word: 'forceful', meaning: '力強い、強引な', sentence: 'Forceful personality.', translation: '強引な性格。', questionId: 15 },
-    { id: 44, word: 'futile', meaning: '無益な', sentence: 'Futile attempt.', translation: '無駄な試み。', questionId: 15 },
-    { id: 45, word: 'tranquil', meaning: '穏やかな', sentence: 'Tranquil scenery.', translation: '穏やかな景色。', questionId: 15 },
-    // Q16
-    { id: 46, word: 'legacy', meaning: '遺産', sentence: 'Leave a legacy.', translation: '遺産を残す。', questionId: 16 },
-    { id: 47, word: 'rhyme', meaning: '韻', sentence: 'Nursery rhyme.', translation: '童謡。', questionId: 16 },
-    { id: 48, word: 'majority', meaning: '過半数、大多数', sentence: 'Majority vote.', translation: '多数決。', questionId: 16 },
-    // Q17
-    { id: 49, word: 'altitude', meaning: '高度、海抜', sentence: 'High altitude.', translation: '高地。', questionId: 17 },
-    { id: 50, word: 'apparatus', meaning: '器具、装置', sentence: 'Breathing apparatus.', translation: '呼吸装置。', questionId: 17 },
-    { id: 51, word: 'equation', meaning: '方程式', sentence: 'Solve an equation.', translation: '方程式を解く。', questionId: 17 },
-    // Q18
-    { id: 52, word: 'modest', meaning: '控えめな、謙虚な', sentence: 'Modest ambition.', translation: 'ささやかな野心。', questionId: 18 },
-    { id: 53, word: 'blissful', meaning: '至福の', sentence: 'Blissful ignorance.', translation: '知らぬが仏（至福の無知）。', questionId: 18 },
-    { id: 54, word: 'sturdy', meaning: '頑丈な', sentence: 'Sturdy table.', translation: '頑丈なテーブル。', questionId: 18 },
-    // Q19
-    { id: 55, word: 'uniform', meaning: '均一な、制服', sentence: 'Uniform size.', translation: '均一なサイズ。', questionId: 19 },
-    { id: 56, word: 'reckless', meaning: '無謀な', sentence: 'Reckless driving.', translation: '無謀運転。', questionId: 19 },
-    { id: 57, word: 'dreary', meaning: 'わびしい、退屈な', sentence: 'Dreary weather.', translation: '陰鬱な天気。', questionId: 19 },
-    // Q20
-    { id: 58, word: 'affection', meaning: '愛情', sentence: 'Deep affection.', translation: '深い愛情。', questionId: 20 },
-    { id: 59, word: 'oppression', meaning: '抑圧', sentence: 'Political oppression.', translation: '政治的抑圧。', questionId: 20 },
-    { id: 60, word: 'coalition', meaning: '連立、提携', sentence: 'Coalition government.', translation: '連立政権。', questionId: 20 },
-    // Q21
-    { id: 61, word: 'buzz', meaning: 'ブーンという音、噂', sentence: 'Create a buzz.', translation: '話題を呼ぶ。', questionId: 21 },
-    { id: 62, word: 'peck', meaning: 'ついばむ', sentence: 'Birds pecking seeds.', translation: '種をついばむ鳥。', questionId: 21 },
-    { id: 63, word: 'thorn', meaning: 'とげ', sentence: 'Rose thorn.', translation: 'バラの棘。', questionId: 21 },
-    // Q22
-    { id: 64, word: 'hold up', meaning: '強盗に入る、持ち上げる', sentence: 'Hold up a bank.', translation: '銀行に強盗に入る。', questionId: 22 },
-    { id: 65, word: 'shrug off', meaning: '（批判などを）無視する', sentence: 'Shrug off criticism.', translation: '批判を無視する。', questionId: 22 },
-    { id: 66, word: 'run against', meaning: '〜に対抗して立候補する', sentence: 'Run against the incumbent.', translation: '現職に対抗して立候補する。', questionId: 22 },
-    // Q23
-    { id: 67, word: 'jump at', meaning: '飛びつく', sentence: 'Jump at the chance.', translation: 'チャンスに飛びつく。', questionId: 23 },
-    { id: 68, word: 'plow through', meaning: 'やっとの思いで進む', sentence: 'Plow through the work.', translation: '仕事を猛烈にこなす。', questionId: 23 },
-    { id: 69, word: 'throw off', meaning: '脱ぎ捨てる、治す', sentence: 'Throw off a cold.', translation: '風邪を治す。', questionId: 23 },
-    // Q24
-    { id: 70, word: 'fit in', meaning: 'うまく合う、溶け込む', sentence: 'Fit in with the team.', translation: 'チームに溶け込む。', questionId: 24 },
-    { id: 71, word: 'get over', meaning: '乗り越える', sentence: 'Get over an illness.', translation: '病気を克服する。', questionId: 24 },
-    { id: 72, word: 'take after', meaning: '似ている', sentence: 'Take after one\'s mother.', translation: '母親に似ている。', questionId: 24 },
-    // Q25
-    { id: 73, word: 'hand over', meaning: '引き渡す', sentence: 'Hand over control.', translation: '支配権を引き渡す。', questionId: 25 },
-    { id: 74, word: 'beef up', meaning: '強化する', sentence: 'Beef up security.', translation: '警備を強化する。', questionId: 25 },
-    { id: 75, word: 'bank on', meaning: '当てにする', sentence: 'Bank on support.', translation: '支援を当てにする。', questionId: 25 }
+    // Q2: 正解 cram
+    { id: 3, word: 'cram', meaning: '詰め込み勉強をする、詰め込む', sentence: 'Cram for exams.', translation: '試験のために詰め込み勉強をする。', questionId: 2 },
+    { id: 4, word: 'detain', meaning: '引き留める、拘留する', sentence: 'Detained by police.', translation: '警察に拘留された。', questionId: 2 },
+    // Q3: 正解 flare
+    { id: 5, word: 'flare', meaning: '（怒りなどが）燃え上がる', sentence: 'Tempers flared.', translation: '怒りが爆発した。', questionId: 3 },
+    { id: 6, word: 'digest', meaning: '消化する', sentence: 'Digest food.', translation: '食べ物を消化する。', questionId: 3 },
+    // Q4: 正解 intervention
+    { id: 7, word: 'intervention', meaning: '介入', sentence: 'Government intervention.', translation: '政府介入。', questionId: 4 },
+    { id: 8, word: 'accumulation', meaning: '蓄積', sentence: 'Accumulation of wealth.', translation: '富の蓄積。', questionId: 4 },
+    // Q5: 正解 protocol
+    { id: 9, word: 'protocol', meaning: '手順、議定書', sentence: 'Follow protocol.', translation: '手順に従う。', questionId: 5 },
+    { id: 10, word: 'tribute', meaning: '賛辞、貢ぎ物', sentence: 'Pay tribute.', translation: '敬意を表する。', questionId: 5 },
+    // Q6: 正解 eject
+    { id: 11, word: 'eject', meaning: '追い出す、排出する', sentence: 'Ejected from the game.', translation: '試合から退場させられた。', questionId: 6 },
+    { id: 12, word: 'administer', meaning: '管理する、投与する', sentence: 'Administer medicine.', translation: '薬を投与する。', questionId: 6 },
+    // Q7: 正解 offspring
+    { id: 13, word: 'offspring', meaning: '子孫、子', sentence: 'Produce offspring.', translation: '子孫を残す。', questionId: 7 },
+    { id: 14, word: 'prey', meaning: '獲物', sentence: 'Bird of prey.', translation: '猛禽類。', questionId: 7 },
+    // Q8: 正解 demotion
+    { id: 15, word: 'demotion', meaning: '降格', sentence: 'Face demotion.', translation: '降格に直面する。', questionId: 8 },
+    { id: 16, word: 'craving', meaning: '渇望', sentence: 'Craving for sugar.', translation: '砂糖への渇望。', questionId: 8 },
+    // Q9: 正解 durable
+    { id: 17, word: 'durable', meaning: '耐久性のある', sentence: 'Durable material.', translation: '耐久性のある素材。', questionId: 9 },
+    { id: 18, word: 'aloof', meaning: 'よそよそしい', sentence: 'Keep aloof.', translation: '距離を置く。', questionId: 9 },
+    // Q10: 正解 disclose
+    { id: 19, word: 'disclose', meaning: '開示する、暴く', sentence: 'Disclose secrets.', translation: '秘密を明かす。', questionId: 10 },
+    { id: 20, word: 'contemplate', meaning: '熟考する', sentence: 'Contemplate the future.', translation: '将来を熟考する。', questionId: 10 },
+    // Q11: 正解 arrogance
+    { id: 21, word: 'arrogance', meaning: '傲慢さ', sentence: 'Sheer arrogance.', translation: '全くの傲慢さ。', questionId: 11 },
+    { id: 22, word: 'commodity', meaning: '商品、日用品', sentence: 'Basic commodities.', translation: '生活必需品。', questionId: 11 },
+    // Q12: 正解 incomprehensible
+    { id: 23, word: 'incomprehensible', meaning: '理解不能な', sentence: 'Incomprehensible speech.', translation: '理解不能なスピーチ。', questionId: 12 },
+    { id: 24, word: 'genuine', meaning: '本物の', sentence: 'Genuine leather.', translation: '本革。', questionId: 12 },
+    // Q13: 正解 attentively
+    { id: 25, word: 'attentively', meaning: '注意深く', sentence: 'Listen attentively.', translation: '注意深く聞く。', questionId: 13 },
+    { id: 26, word: 'consecutively', meaning: '連続して', sentence: 'Three days consecutively.', translation: '3日連続で。', questionId: 13 },
+    // Q14: 正解 forefront
+    { id: 27, word: 'forefront', meaning: '最前線', sentence: 'At the forefront.', translation: '最前線で。', questionId: 14 },
+    { id: 28, word: 'lapse', meaning: '経過、過失、失効', sentence: 'Lapse of memory.', translation: '記憶の欠落（ど忘れ）。', questionId: 14 },
+    // Q15: 正解 forceful
+    { id: 29, word: 'forceful', meaning: '力強い、強引な', sentence: 'Forceful personality.', translation: '強引な性格。', questionId: 15 },
+    { id: 30, word: 'futile', meaning: '無益な', sentence: 'Futile attempt.', translation: '無駄な試み。', questionId: 15 },
+    // Q16: 正解 legacy
+    { id: 31, word: 'legacy', meaning: '遺産', sentence: 'Leave a legacy.', translation: '遺産を残す。', questionId: 16 },
+    { id: 32, word: 'rhyme', meaning: '韻', sentence: 'Nursery rhyme.', translation: '童謡。', questionId: 16 },
+    // Q17: 正解 altitude
+    { id: 33, word: 'altitude', meaning: '高度、海抜', sentence: 'High altitude.', translation: '高地。', questionId: 17 },
+    { id: 34, word: 'apparatus', meaning: '器具、装置', sentence: 'Breathing apparatus.', translation: '呼吸装置。', questionId: 17 },
+    // Q18: 正解 modest
+    { id: 35, word: 'modest', meaning: '控えめな、謙虚な', sentence: 'Modest ambition.', translation: 'ささやかな野心。', questionId: 18 },
+    { id: 36, word: 'blissful', meaning: '至福の', sentence: 'Blissful ignorance.', translation: '知らぬが仏（至福の無知）。', questionId: 18 },
+    // Q19: 正解 uniform
+    { id: 37, word: 'uniform', meaning: '均一な、制服', sentence: 'Uniform size.', translation: '均一なサイズ。', questionId: 19 },
+    { id: 38, word: 'reckless', meaning: '無謀な', sentence: 'Reckless driving.', translation: '無謀運転。', questionId: 19 },
+    // Q20: 正解 affection
+    { id: 39, word: 'affection', meaning: '愛情', sentence: 'Deep affection.', translation: '深い愛情。', questionId: 20 },
+    { id: 40, word: 'oppression', meaning: '抑圧', sentence: 'Political oppression.', translation: '政治的抑圧。', questionId: 20 },
+    // Q21: 正解 buzz
+    { id: 41, word: 'buzz', meaning: 'ブーンという音、噂', sentence: 'Create a buzz.', translation: '話題を呼ぶ。', questionId: 21 },
+    { id: 42, word: 'peck', meaning: 'ついばむ', sentence: 'Birds pecking seeds.', translation: '種をついばむ鳥。', questionId: 21 },
+    // Q22: 正解 hold up
+    { id: 43, word: 'hold up', meaning: '強盗に入る、持ち上げる', sentence: 'Hold up a bank.', translation: '銀行に強盗に入る。', questionId: 22 },
+    { id: 44, word: 'shrug off', meaning: '（批判などを）無視する', sentence: 'Shrug off criticism.', translation: '批判を無視する。', questionId: 22 },
+    // Q23: 正解 jump at
+    { id: 45, word: 'jump at', meaning: '飛びつく', sentence: 'Jump at the chance.', translation: 'チャンスに飛びつく。', questionId: 23 },
+    { id: 46, word: 'plow through', meaning: 'やっとの思いで進む', sentence: 'Plow through the work.', translation: '仕事を猛烈にこなす。', questionId: 23 },
+    // Q24: 正解 fit in
+    { id: 47, word: 'fit in', meaning: 'うまく合う、溶け込む', sentence: 'Fit in with the team.', translation: 'チームに溶け込む。', questionId: 24 },
+    { id: 48, word: 'get over', meaning: '乗り越える', sentence: 'Get over an illness.', translation: '病気を克服する。', questionId: 24 },
+    // Q25: 正解 hand over
+    { id: 49, word: 'hand over', meaning: '引き渡す', sentence: 'Hand over control.', translation: '支配権を引き渡す。', questionId: 25 },
+    { id: 50, word: 'beef up', meaning: '強化する', sentence: 'Beef up security.', translation: '警備を強化する。', questionId: 25 }
 ];
 
-// 2022年度 第3回 準1級
+// 2022年度 第3回 準1級 (50語に厳選)
 vocabDatabase['2022-3-gp1'] = [
-    // Q1
+    // Q1: 正解 instrumental
     { id: 1, word: 'instrumental', meaning: '役立つ、重要な', sentence: 'Instrumental in success.', translation: '成功に重要な役割を果たす。', questionId: 1 },
     { id: 2, word: 'desperate', meaning: '自暴自棄の、絶望的な', sentence: 'Desperate attempt.', translation: '必死の試み。', questionId: 1 },
-    { id: 3, word: 'inadequate', meaning: '不十分な', sentence: 'Inadequate preparation.', translation: '不十分な準備。', questionId: 1 },
+    // Q2: 正解 underrate
+    { id: 3, word: 'underrate', meaning: '過小評価する', sentence: 'Underrated movie.', translation: '過小評価された映画。', questionId: 2 },
+    { id: 4, word: 'override', meaning: '覆す、優先する', sentence: 'Override a decision.', translation: '決定を覆す。', questionId: 2 },
+    // Q3: 正解 perish
+    { id: 5, word: 'perish', meaning: '死ぬ、滅びる', sentence: 'Perish in the fire.', translation: '火事で亡くなる。', questionId: 3 },
+    { id: 6, word: 'haunt', meaning: '出没する、つきまとう', sentence: 'Haunted house.', translation: '幽霊屋敷。', questionId: 3 },
+    // Q4: 正解 peasant
+    { id: 7, word: 'peasant', meaning: '小作人、農民', sentence: 'Peasant uprising.', translation: '農民の一揆。', questionId: 4 },
+    { id: 8, word: 'captive', meaning: '捕虜', sentence: 'Held captive.', translation: '捕虜にされた。', questionId: 4 },
+    // Q5: 正解 flaw
+    { id: 9, word: 'flaw', meaning: '欠陥', sentence: 'Fatal flaw.', translation: '致命的な欠陥。', questionId: 5 },
+    { id: 10, word: 'clog', meaning: '詰まり', sentence: 'Clogged pipe.', translation: '詰まったパイプ。', questionId: 5 },
+    // Q6: 正解 paralyze
+    { id: 11, word: 'paralyze', meaning: '麻痺させる', sentence: 'Paralyzed by fear.', translation: '恐怖で動けない。', questionId: 6 },
+    { id: 12, word: 'trim', meaning: '刈り込む、整える', sentence: 'Trim the hedge.', translation: '生垣を刈り込む。', questionId: 6 },
+    // Q7: 正解 amicable
+    { id: 13, word: 'amicable', meaning: '友好的な', sentence: 'Amicable settlement.', translation: '友好的な解決。', questionId: 7 },
+    { id: 14, word: 'alleged', meaning: '申し立てられた', sentence: 'Alleged criminal.', translation: '容疑者（申し立てられた犯罪者）。', questionId: 7 },
+    // Q8: 正解 incorporate
+    { id: 15, word: 'incorporate', meaning: '組み込む', sentence: 'Incorporate new ideas.', translation: '新しいアイデアを取り入れる。', questionId: 8 },
+    { id: 16, word: 'commemorate', meaning: '祝う、記念する', sentence: 'Commemorate the victory.', translation: '勝利を記念する。', questionId: 8 },
+    // Q9: 正解 domestication
+    { id: 17, word: 'domestication', meaning: '家畜化', sentence: 'Domestication of animals.', translation: '動物の家畜化。', questionId: 9 },
+    { id: 18, word: 'deception', meaning: '欺き、詐欺', sentence: 'Massive deception.', translation: '大規模な詐欺。', questionId: 9 },
+    // Q10: 正解 courteously
+    { id: 19, word: 'courteously', meaning: '礼儀正しく', sentence: 'Bow courteously.', translation: '丁寧にお辞儀をする。', questionId: 10 },
+    { id: 20, word: 'scarcely', meaning: 'ほとんど～ない', sentence: 'Scarcely enough.', translation: 'ぎりぎり足りる。', questionId: 10 },
+    // Q11: 正解 revive
+    { id: 21, word: 'revive', meaning: '復活させる', sentence: 'Revive a tradition.', translation: '伝統を復活させる。', questionId: 11 },
+    { id: 22, word: 'deprive', meaning: '奪う', sentence: 'Deprive of sleep.', translation: '睡眠を奪う。', questionId: 11 },
+    // Q12: 正解 frail
+    { id: 23, word: 'frail', meaning: 'ひ弱な、壊れやすい', sentence: 'Frail health.', translation: '虚弱な健康状態。', questionId: 12 },
+    { id: 24, word: 'savage', meaning: '野蛮な、獰猛な', sentence: 'Savage beast.', translation: '獰猛な獣。', questionId: 12 },
+    // Q13: 正解 solitude
+    { id: 25, word: 'solitude', meaning: '孤独', sentence: 'Enjoy solitude.', translation: '孤独を楽しむ。', questionId: 13 },
+    { id: 26, word: 'excess', meaning: '過剰', sentence: 'In excess.', translation: '過剰に。', questionId: 13 },
+    // Q14: 正解 artifact
+    { id: 27, word: 'artifact', meaning: '人工遺物、工芸品', sentence: 'Ancient artifacts.', translation: '古代の工芸品。', questionId: 14 },
+    { id: 28, word: 'setback', meaning: '挫折、後退', sentence: 'Major setback.', translation: '大きな挫折。', questionId: 14 },
+    // Q15: 正解 transmit
+    { id: 29, word: 'transmit', meaning: '送信する、伝える', sentence: 'Transmit data.', translation: 'データを送信する。', questionId: 15 },
+    { id: 30, word: 'rejoice', meaning: '喜ぶ', sentence: 'Rejoice at the news.', translation: '知らせに喜ぶ。', questionId: 15 },
+    // Q16: 正解 pathetic
+    { id: 31, word: 'pathetic', meaning: '哀れな', sentence: 'Pathetic excuse.', translation: '哀れな言い訳。', questionId: 16 },
+    { id: 32, word: 'analytical', meaning: '分析的な', sentence: 'Analytical skils.', translation: '分析能力。', questionId: 16 },
+    // Q17: 正解 contemporary
+    { id: 33, word: 'contemporary', meaning: '現代の、同時代の', sentence: 'Contemporary art.', translation: '現代美術。', questionId: 17 },
+    { id: 34, word: 'preceding', meaning: '先行する', sentence: 'Preceding chapter.', translation: '前の章。', questionId: 17 },
+    // Q18: 正解 coverage
+    { id: 35, word: 'coverage', meaning: '報道、適用範囲', sentence: 'Media coverage.', translation: 'メディアの報道。', questionId: 18 },
+    { id: 36, word: 'enrollment', meaning: '登録、入学', sentence: 'School enrollment.', translation: '学校への入学。', questionId: 18 },
+    // Q19: 正解 deficit
+    { id: 37, word: 'deficit', meaning: '赤字、不足', sentence: 'Budget deficit.', translation: '財政赤字。', questionId: 19 },
+    { id: 38, word: 'petition', meaning: '請願、嘆願書', sentence: 'Sign a petition.', translation: '嘆願書に署名する。', questionId: 19 },
+    // Q20: 正解 carve
+    { id: 39, word: 'carve', meaning: '彫る', sentence: 'Carve a statue.', translation: '像を彫る。', questionId: 20 },
+    { id: 40, word: 'lure', meaning: '誘い込む', sentence: 'Lure customers.', translation: '客を誘い込む。', questionId: 20 },
+    // Q21: 正解 withdraw
+    { id: 41, word: 'withdraw', meaning: '撤退する、引き出す', sentence: 'Withdraw money.', translation: 'お金を引き出す。', questionId: 21 },
+    { id: 42, word: 'bypass', meaning: '迂回する', sentence: 'Bypass the town.', translation: '町を迂回する。', questionId: 21 },
+    // Q22: 正解 roll in
+    { id: 43, word: 'roll in', meaning: '転がり込む、やってくる', sentence: 'Fog rolled in.', translation: '霧が立ち込めた。', questionId: 22 },
+    { id: 44, word: 'hold out', meaning: '持ちこたえる、差し出す', sentence: 'Hold out hope.', translation: '希望を持ち続ける。', questionId: 22 },
+    // Q23: 正解 go under
+    { id: 45, word: 'go under', meaning: '倒産する、沈む', sentence: 'The firm went under.', translation: 'その会社は倒産した。', questionId: 23 },
+    { id: 46, word: 'pull through', meaning: '切り抜ける', sentence: 'Pull through the crisis.', translation: '危機を切り抜ける。', questionId: 23 },
+    // Q24: 正解 make out
+    { id: 47, word: 'make out', meaning: '理解する、判読する', sentence: 'Make out the sign.', translation: '看板の文字を判読する。', questionId: 24 },
+    { id: 48, word: 'draw up', meaning: '作成する', sentence: 'Draw up a plan.', translation: '計画を立てる。', questionId: 24 },
+    // Q25: 正解 watch over
+    { id: 49, word: 'watch over', meaning: '見守る、世話をする', sentence: 'Watch over the kids.', translation: '子供たちの面倒を見る。', questionId: 25 },
+    { id: 50, word: 'look into', meaning: '調べる', sentence: 'Look into the matter.', translation: 'その件を調査する。', questionId: 25 }
+];
+
+// 2022年度 第2回 準1級 (50語に厳選)
+vocabDatabase['2022-2-gp1'] = [
+    // Q1: 正解 thaw
+    { id: 1, word: 'thaw', meaning: '解凍する、溶ける', sentence: 'Thaw the meat.', translation: '肉を解凍する。', questionId: 1 },
+    { id: 2, word: 'reckon', meaning: '計算する、考える', sentence: 'I reckon so.', translation: 'そう思うよ。', questionId: 1 },
+    // Q2: 正解 instill
+    { id: 3, word: 'instill', meaning: '教え込む、注入する', sentence: 'Instill values.', translation: '価値観を教え込む。', questionId: 2 },
+    { id: 4, word: 'remodel', meaning: '改造する', sentence: 'Remodel the house.', translation: '家をリフォームする。', questionId: 2 },
+    // Q3: 正解 earnest
+    { id: 5, word: 'earnest', meaning: '真剣な、まじめな', sentence: 'Earnest desire.', translation: '切実な願い。', questionId: 3 },
+    { id: 6, word: 'underlying', meaning: '根本的な、潜在的な', sentence: 'Underlying cause.', translation: '根本的な原因。', questionId: 3 },
+    // Q4: 正解 nuisance
+    { id: 7, word: 'nuisance', meaning: '厄介なもの', sentence: 'Public nuisance.', translation: '公共の迷惑。', questionId: 4 },
+    { id: 8, word: 'metaphor', meaning: '隠喩', sentence: 'Use a metaphor.', translation: '隠喩を使う。', questionId: 4 },
+    // Q5: 正解 ridicule
+    { id: 9, word: 'ridicule', meaning: 'あざける', sentence: 'Ridicule an idea.', translation: 'アイデアをあざ笑う。', questionId: 5 },
+    { id: 10, word: 'flatter', meaning: 'お世辞を言う', sentence: 'Flatter someone.', translation: '誰かにお世辞を言う。', questionId: 5 },
+    // Q6: 正解 bashful
+    { id: 11, word: 'bashful', meaning: '恥ずかしがり屋の', sentence: 'Bashful smile.', translation: 'はにかんだ笑顔。', questionId: 6 },
+    { id: 12, word: 'concise', meaning: '簡潔な', sentence: 'Concise summary.', translation: '簡潔な要約。', questionId: 6 },
+    // Q7: 正解 relic
+    { id: 13, word: 'relic', meaning: '遺物', sentence: 'Relic of the past.', translation: '過去の遺物。', questionId: 7 },
+    { id: 14, word: 'fraud', meaning: '詐欺', sentence: 'Commit fraud.', translation: '詐欺を働く。', questionId: 7 },
+    // Q8: 正解 growl
+    { id: 15, word: 'growl', meaning: 'うなる', sentence: 'Dog growled.', translation: '犬がうなった。', questionId: 8 },
+    { id: 16, word: 'sparkle', meaning: '輝く', sentence: 'Eyes sparkled.', translation: '目が輝いた。', questionId: 8 },
+    // Q9: 正解 uphold
+    { id: 17, word: 'uphold', meaning: '支持する、守る', sentence: 'Uphold the law.', translation: '法を守る。', questionId: 9 },
+    { id: 18, word: 'eradicate', meaning: '根絶する', sentence: 'Eradicate poverty.', translation: '貧困を撲滅する。', questionId: 9 },
+    // Q10: 正解 compulsory
+    { id: 19, word: 'compulsory', meaning: '義務的な', sentence: 'Compulsory education.', translation: '義務教育。', questionId: 10 },
+    { id: 20, word: 'gloomy', meaning: '憂鬱な', sentence: 'Gloomy weather.', translation: '憂鬱な天気。', questionId: 10 },
+    // Q11: 正解 division
+    { id: 21, word: 'division', meaning: '分割、分裂', sentence: 'Division of labor.', translation: '分業。', questionId: 11 },
+    { id: 22, word: 'longitude', meaning: '経度', sentence: 'Longitude and latitude.', translation: '経度と緯度。', questionId: 11 },
+    // Q12: 正解 merge
+    { id: 23, word: 'merge', meaning: '合併する', sentence: 'Merge two companies.', translation: '二つの会社を合併させる。', questionId: 12 },
+    { id: 24, word: 'conform', meaning: '従う、適合する', sentence: 'Conform to rules.', translation: '規則に従う。', questionId: 12 },
+    // Q13: 正解 dehydrated
+    { id: 25, word: 'dehydrated', meaning: '脱水状態の', sentence: 'Become dehydrated.', translation: '脱水症状になる。', questionId: 13 },
+    { id: 26, word: 'eternal', meaning: '永遠の', sentence: 'Eternal life.', translation: '永遠の命。', questionId: 13 },
+    // Q14: 正解 disobedient
+    { id: 27, word: 'disobedient', meaning: '不従順な', sentence: 'Disobedient child.', translation: '言うことを聞かない子供。', questionId: 14 },
+    { id: 28, word: 'invincible', meaning: '無敵の', sentence: 'Invincible army.', translation: '無敵の軍隊。', questionId: 14 },
+    // Q15: 正解 bystander
+    { id: 29, word: 'bystander', meaning: '傍観者', sentence: 'Innocent bystander.', translation: '居合わせた無関係な人。', questionId: 15 },
+    { id: 30, word: 'pioneer', meaning: '先駆者', sentence: 'Space pioneer.', translation: '宇宙の先駆者。', questionId: 15 },
+    // Q16: 正解 overthrow
+    { id: 31, word: 'overthrow', meaning: '転覆させる', sentence: 'Overthrow the government.', translation: '政府を転覆させる。', questionId: 16 },
+    { id: 32, word: 'irrigate', meaning: '灌漑する', sentence: 'Irrigate fields.', translation: '畑を灌漑する。', questionId: 16 },
+    // Q17: 正解 evaluate
+    { id: 33, word: 'evaluate', meaning: '評価する', sentence: 'Evaluate performance.', translation: '業績を評価する。', questionId: 17 },
+    { id: 34, word: 'enchant', meaning: '魅了する', sentence: 'Enchanted by music.', translation: '音楽に魅了された。', questionId: 17 },
+    // Q18: 正解 correspondence
+    { id: 35, word: 'correspondence', meaning: '文通、通信', sentence: 'Business correspondence.', translation: 'ビジネス文書。', questionId: 18 },
+    { id: 36, word: 'matrimony', meaning: '結婚生活', sentence: 'Holy matrimony.', translation: '神聖な結婚。', questionId: 18 },
+    // Q19: 正解 anarchy
+    { id: 37, word: 'anarchy', meaning: '無政府状態', sentence: 'Descend into anarchy.', translation: '無秩序状態に陥る。', questionId: 19 },
+    { id: 38, word: 'attainment', meaning: '達成', sentence: 'Goal attainment.', translation: '目標達成。', questionId: 19 },
+    // Q20: 正解 edible
+    { id: 39, word: 'edible', meaning: '食べられる', sentence: 'Edible plants.', translation: '食用植物。', questionId: 20 },
+    { id: 40, word: 'candid', meaning: '率直な', sentence: 'Candid opinion.', translation: '率直な意見。', questionId: 20 },
+    // Q21: 正解 notorious
+    { id: 41, word: 'notorious', meaning: '悪名高い', sentence: 'Notorious criminal.', translation: '悪名高い犯罪者。', questionId: 21 },
+    { id: 42, word: 'treacherous', meaning: '裏切りの、危険な', sentence: 'Treacherous journey.', translation: '危険な旅。', questionId: 21 },
+    // Q22: 正解 pay off
+    { id: 43, word: 'pay off', meaning: '報われる', sentence: 'Efforts paid off.', translation: '努力が報われた。', questionId: 22 },
+    { id: 44, word: 'chop up', meaning: '切り刻む', sentence: 'Chop up vegetables.', translation: '野菜を切り刻む。', questionId: 22 },
+    // Q23: 正解 catch on
+    { id: 45, word: 'catch on', meaning: '理解する、流行する', sentence: 'It caught on quickly.', translation: 'それはすぐに流行した。', questionId: 23 },
+    { id: 46, word: 'duck out', meaning: '逃げ出す', sentence: 'Duck out of a meeting.', translation: '会議から抜け出す。', questionId: 23 },
+    // Q24: 正解 fall on
+    { id: 47, word: 'fall on', meaning: '（責任などが）～にかかる', sentence: 'Duty falls on me.', translation: '義務は私にある。', questionId: 24 },
+    { id: 48, word: 'square with', meaning: '一致する', sentence: 'Square with facts.', translation: '事実と一致する。', questionId: 24 },
+    // Q25: 正解 cover up
+    { id: 49, word: 'cover up', meaning: '隠蔽する', sentence: 'Cover up a mistake.', translation: 'ミスを隠す。', questionId: 25 },
+    { id: 50, word: 'tuck away', meaning: 'しまい込む', sentence: 'Tuck away money.', translation: 'お金をしまい込む。', questionId: 25 }
+];
+
+// 2022年度 第1回 準1級
+vocabDatabase['2022-1-gp1'] = [
+    // Q1
+    { id: 1, word: 'mercy', meaning: '慈悲', sentence: 'Show mercy.', translation: '慈悲を示す。', questionId: 1 },
+    { id: 2, word: 'disgrace', meaning: '不名誉', sentence: 'Bring disgrace.', translation: '不名誉をもたらす。', questionId: 1 },
     // Q2
-    { id: 4, word: 'underrate', meaning: '過小評価する', sentence: 'Underrated movie.', translation: '過小評価された映画。', questionId: 2 },
-    { id: 5, word: 'override', meaning: '覆す、優先する', sentence: 'Override a decision.', translation: '決定を覆す。', questionId: 2 },
-    { id: 6, word: 'overtake', meaning: '追い越す', sentence: 'Overtake a car.', translation: '車を追い越す。', questionId: 2 },
+    { id: 3, word: 'temperament', meaning: '気質', sentence: 'Calm temperament.', translation: '穏やかな気質。', questionId: 2 },
+    { id: 4, word: 'veneer', meaning: 'うわっ面、化粧板', sentence: 'Thin veneer.', translation: '薄いうわっ面。', questionId: 2 },
     // Q3
-    { id: 7, word: 'perish', meaning: '死ぬ、滅びる', sentence: 'Perish in the fire.', translation: '火事で亡くなる。', questionId: 3 },
-    { id: 8, word: 'haunt', meaning: '出没する、つきまとう', sentence: 'Haunted house.', translation: '幽霊屋敷。', questionId: 3 },
-    { id: 9, word: 'jeer', meaning: 'あざける', sentence: 'Jeer at the loser.', translation: '敗者をあざ笑う。', questionId: 3 },
+    { id: 5, word: 'shrug', meaning: '（肩を）すくめる', sentence: 'Shrug shoulders.', translation: '肩をすくめる。', questionId: 3 },
+    { id: 6, word: 'echo', meaning: '反響する', sentence: 'Voice echoed.', translation: '声が反響した。', questionId: 3 },
     // Q4
-    { id: 10, word: 'peasant', meaning: '小作人、農民', sentence: 'Peasant uprising.', translation: '農民の一揆。', questionId: 4 },
-    { id: 11, word: 'captive', meaning: '捕虜', sentence: 'Held captive.', translation: '捕虜にされた。', questionId: 4 },
-    { id: 12, word: 'correspondent', meaning: '特派員', sentence: 'War correspondent.', translation: '従軍記者。', questionId: 4 },
+    { id: 7, word: 'vacancy', meaning: '空室、欠員', sentence: 'No vacancies.', translation: '空室なし。', questionId: 4 },
+    { id: 8, word: 'transition', meaning: '移行、過渡期', sentence: 'Period of transition.', translation: '過渡期。', questionId: 4 },
     // Q5
-    { id: 13, word: 'flaw', meaning: '欠陥', sentence: 'Fatal flaw.', translation: '致命的な欠陥。', questionId: 5 },
-    { id: 14, word: 'clog', meaning: '詰まり', sentence: 'Clogged pipe.', translation: '詰まったパイプ。', questionId: 5 },
-    { id: 15, word: 'dump', meaning: 'ゴミ捨て場', sentence: 'Garbage dump.', translation: 'ゴミ捨て場。', questionId: 5 },
+    { id: 9, word: 'interrogate', meaning: '尋問する', sentence: 'Interrogate a suspect.', translation: '容疑者を尋問する。', questionId: 5 },
+    { id: 10, word: 'discharge', meaning: '解放する、解雇する', sentence: 'Discharge from hospital.', translation: '退院させる。', questionId: 5 },
     // Q6
-    { id: 16, word: 'paralyze', meaning: '麻痺させる', sentence: 'Paralyzed by fear.', translation: '恐怖で動けない。', questionId: 6 },
-    { id: 17, word: 'trim', meaning: '刈り込む、整える', sentence: 'Trim the hedge.', translation: '生垣を刈り込む。', questionId: 6 },
-    { id: 18, word: 'acquire', meaning: '獲得する', sentence: 'Acquire knowledge.', translation: '知識を得る。', questionId: 6 },
+    { id: 11, word: 'compression', meaning: '圧迫', sentence: 'Apply compression.', translation: '圧迫を加える。', questionId: 6 },
+    { id: 12, word: 'progression', meaning: '進行、発展', sentence: 'Geometric progression.', translation: '幾何級数的増加。', questionId: 6 },
     // Q7
-    { id: 19, word: 'amicable', meaning: '友好的な', sentence: 'Amicable settlement.', translation: '友好的な解決。', questionId: 7 },
-    { id: 20, word: 'alleged', meaning: '申し立てられた', sentence: 'Alleged criminal.', translation: '容疑者（申し立てられた犯罪者）。', questionId: 7 },
-    { id: 21, word: 'adhesive', meaning: '粘着性の', sentence: 'Adhesive tape.', translation: '粘着テープ。', questionId: 7 },
+    { id: 13, word: 'heed', meaning: '従う、注意する', sentence: 'Heed advice.', translation: '忠告に従う。', questionId: 7 },
+    { id: 14, word: 'yield', meaning: '譲る、屈する', sentence: 'Yield to pressure.', translation: '圧力に屈する。', questionId: 7 },
     // Q8
-    { id: 22, word: 'incorporate', meaning: '組み込む', sentence: 'Incorporate new ideas.', translation: '新しいアイデアを取り入れる。', questionId: 8 },
-    { id: 23, word: 'commemorate', meaning: '祝う、記念する', sentence: 'Commemorate the victory.', translation: '勝利を記念する。', questionId: 8 },
-    { id: 24, word: 'alienate', meaning: '遠ざける、疎外する', sentence: 'Alienate friends.', translation: '友人を遠ざける。', questionId: 8 },
+    { id: 15, word: 'affluent', meaning: '裕福な', sentence: 'Affluent society.', translation: '豊かな社会。', questionId: 8 },
+    { id: 16, word: 'frantic', meaning: '半狂乱の、大急ぎの', sentence: 'Frantic effort.', translation: '必死の努力。', questionId: 8 },
     // Q9
-    { id: 25, word: 'domestication', meaning: '家畜化', sentence: 'Domestication of animals.', translation: '動物の家畜化。', questionId: 9 },
-    { id: 26, word: 'deception', meaning: '欺き、詐欺', sentence: 'Massive deception.', translation: '大規模な詐欺。', questionId: 9 },
-    { id: 27, word: 'verification', meaning: '検証、確認', sentence: 'Identity verification.', translation: '本人確認。', questionId: 9 },
+    { id: 17, word: 'trivial', meaning: '些細な', sentence: 'Trivial matter.', translation: '些細な問題。', questionId: 9 },
+    { id: 18, word: 'conclusive', meaning: '決定的な', sentence: 'Conclusive evidence.', translation: '決定的な証拠。', questionId: 9 },
     // Q10
-    { id: 28, word: 'courteously', meaning: '礼儀正しく', sentence: 'Bow courteously.', translation: '丁寧にお辞儀をする。', questionId: 10 },
-    { id: 29, word: 'scarcely', meaning: 'ほとんど～ない', sentence: 'Scarcely enough.', translation: 'ぎりぎり足りる。', questionId: 10 },
-    { id: 30, word: 'tediously', meaning: '退屈に', sentence: 'Explain tediously.', translation: 'くどくどと説明する。', questionId: 10 },
+    { id: 19, word: 'enviously', meaning: 'うらやましげに', sentence: 'Look enviously.', translation: 'うらやましげに見る。', questionId: 10 },
+    { id: 20, word: 'substantially', meaning: '実質的に、大いに', sentence: 'Change substantially.', translation: '大幅に変わる。', questionId: 10 },
     // Q11
-    { id: 31, word: 'revive', meaning: '復活させる', sentence: 'Revive a tradition.', translation: '伝統を復活させる。', questionId: 11 },
-    { id: 32, word: 'deprive', meaning: '奪う', sentence: 'Deprive of sleep.', translation: '睡眠を奪う。', questionId: 11 },
-    { id: 33, word: 'obstruct', meaning: '妨害する', sentence: 'Obstruct traffic.', translation: '交通を妨害する。', questionId: 11 },
+    { id: 21, word: 'obstruct', meaning: '妨害する、ふさぐ', sentence: 'Obstruct the view.', translation: '視界を遮る。', questionId: 11 },
+    { id: 22, word: 'delegate', meaning: '委任する', sentence: 'Delegate authority.', translation: '権限を委譲する。', questionId: 11 },
     // Q12
-    { id: 34, word: 'frail', meaning: 'ひ弱な、壊れやすい', sentence: 'Frail health.', translation: '虚弱な健康状態。', questionId: 12 },
-    { id: 35, word: 'savage', meaning: '野蛮な、獰猛な', sentence: 'Savage beast.', translation: '獰猛な獣。', questionId: 12 },
-    { id: 36, word: 'rash', meaning: '軽率な', sentence: 'Rash decision.', translation: '軽率な決定。', questionId: 12 },
+    { id: 23, word: 'stain', meaning: '染み、汚れ', sentence: 'Remove a stain.', translation: '染みを取り除く。', questionId: 12 },
+    { id: 24, word: 'bump', meaning: '衝突、こぶ', sentence: 'Bump on the head.', translation: '頭のこぶ。', questionId: 12 },
     // Q13
-    { id: 37, word: 'solitude', meaning: '孤独', sentence: 'Enjoy solitude.', translation: '孤独を楽しむ。', questionId: 13 },
-    { id: 38, word: 'excess', meaning: '過剰', sentence: 'In excess.', translation: '過剰に。', questionId: 13 },
-    { id: 39, word: 'consent', meaning: '同意', sentence: 'Give consent.', translation: '同意を与える。', questionId: 13 },
+    { id: 25, word: 'prevail', meaning: '勝つ、普及する', sentence: 'Truth will prevail.', translation: '真実は勝つ。', questionId: 13 },
+    { id: 26, word: 'devise', meaning: '考案する', sentence: 'Devise a plan.', translation: '計画を考案する。', questionId: 13 },
     // Q14
-    { id: 40, word: 'artifact', meaning: '人工遺物、工芸品', sentence: 'Ancient artifacts.', translation: '古代の工芸品。', questionId: 14 },
-    { id: 41, word: 'setback', meaning: '挫折、後退', sentence: 'Major setback.', translation: '大きな挫折。', questionId: 14 },
-    { id: 42, word: 'pledge', meaning: '誓約', sentence: 'Campaign pledge.', translation: '選挙公約。', questionId: 14 },
+    { id: 27, word: 'pretext', meaning: '口実', sentence: 'Under the pretext.', translation: '～という口実で。', questionId: 14 },
+    { id: 28, word: 'rampage', meaning: '暴れ回ること', sentence: 'Go on a rampage.', translation: '暴れ回る。', questionId: 14 },
     // Q15
-    { id: 43, word: 'transmit', meaning: '送信する、伝える', sentence: 'Transmit data.', translation: 'データを送信する。', questionId: 15 },
-    { id: 44, word: 'rejoice', meaning: '喜ぶ', sentence: 'Rejoice at the news.', translation: '知らせに喜ぶ。', questionId: 15 },
-    { id: 45, word: 'offend', meaning: '気分を害する', sentence: 'Offend someone.', translation: '誰かの気分を害する。', questionId: 15 },
+    { id: 29, word: 'assert', meaning: '主張する', sentence: 'Assert rights.', translation: '権利を主張する。', questionId: 15 },
+    { id: 30, word: 'conceal', meaning: '隠す', sentence: 'Conceal a weapon.', translation: '武器を隠す。', questionId: 15 },
     // Q16
-    { id: 46, word: 'pathetic', meaning: '哀れな', sentence: 'Pathetic excuse.', translation: '哀れな言い訳。', questionId: 16 },
-    { id: 47, word: 'analytical', meaning: '分析的な', sentence: 'Analytical skils.', translation: '分析能力。', questionId: 16 },
-    { id: 48, word: 'ceaseless', meaning: '絶え間ない', sentence: 'Ceaseless noise.', translation: '絶え間ない騒音。', questionId: 16 },
+    { id: 31, word: 'eliminate', meaning: '排除する', sentence: 'Eliminate waste.', translation: '無駄を省く。', questionId: 16 },
+    { id: 32, word: 'expend', meaning: '費やす', sentence: 'Expend energy.', translation: 'エネルギーを費やす。', questionId: 16 },
     // Q17
-    { id: 49, word: 'contemporary', meaning: '現代の、同時代の', sentence: 'Contemporary art.', translation: '現代美術。', questionId: 17 },
-    { id: 50, word: 'preceding', meaning: '先行する', sentence: 'Preceding chapter.', translation: '前の章。', questionId: 17 },
-    { id: 51, word: 'simultaneous', meaning: '同時の', sentence: 'Simultaneous translation.', translation: '同時通訳。', questionId: 17 },
+    { id: 33, word: 'ransom', meaning: '身代金', sentence: 'Demand ransom.', translation: '身代金を要求する。', questionId: 17 },
+    { id: 34, word: 'monopoly', meaning: '独占', sentence: 'State monopoly.', translation: '国家独占。', questionId: 17 },
     // Q18
-    { id: 52, word: 'coverage', meaning: '報道、適用範囲', sentence: 'Media coverage.', translation: 'メディアの報道。', questionId: 18 },
-    { id: 53, word: 'enrollment', meaning: '登録、入学', sentence: 'School enrollment.', translation: '学校への入学。', questionId: 18 },
-    { id: 54, word: 'assortment', meaning: '詰め合わせ', sentence: 'Assortment of chocolates.', translation: 'チョコレートの詰め合わせ。', questionId: 18 },
+    { id: 35, word: 'prestigious', meaning: '名門の、一流の', sentence: 'Prestigious award.', translation: '権威ある賞。', questionId: 18 },
+    { id: 36, word: 'cordial', meaning: '心からの', sentence: 'Cordial welcome.', translation: '心からの歓迎。', questionId: 18 },
     // Q19
-    { id: 55, word: 'deficit', meaning: '赤字、不足', sentence: 'Budget deficit.', translation: '財政赤字。', questionId: 19 },
-    { id: 56, word: 'petition', meaning: '請願、嘆願書', sentence: 'Sign a petition.', translation: '嘆願書に署名する。', questionId: 19 },
-    { id: 57, word: 'conspiracy', meaning: '陰謀', sentence: 'Conspiracy theory.', translation: '陰謀論。', questionId: 19 },
+    { id: 37, word: 'disguise', meaning: '変装させる', sentence: 'Disguise oneself.', translation: '変装する。', questionId: 19 },
+    { id: 38, word: 'render', meaning: '（～の状態に）する、与える', sentence: 'Render assistance.', translation: '援助を与える。', questionId: 19 },
     // Q20
-    { id: 58, word: 'carve', meaning: '彫る', sentence: 'Carve a statue.', translation: '像を彫る。', questionId: 20 },
-    { id: 59, word: 'lure', meaning: '誘い込む', sentence: 'Lure customers.', translation: '客を誘い込む。', questionId: 20 },
-    { id: 60, word: 'soothe', meaning: 'なだめる、和らげる', sentence: 'Soothe the pain.', translation: '痛みを和らげる。', questionId: 20 },
+    { id: 39, word: 'devoted', meaning: '献身的な', sentence: 'Devoted friend.', translation: '献身的な友人。', questionId: 20 },
+    { id: 40, word: 'defiant', meaning: '反抗的な', sentence: 'Defiant attitude.', translation: '反抗的な態度。', questionId: 20 },
     // Q21
-    { id: 61, word: 'withdraw', meaning: '撤退する、引き出す', sentence: 'Withdraw money.', translation: 'お金を引き出す。', questionId: 21 },
-    { id: 62, word: 'bypass', meaning: '迂回する', sentence: 'Bypass the town.', translation: '町を迂回する。', questionId: 21 },
-    { id: 63, word: 'overload', meaning: '過負荷をかける', sentence: 'System overload.', translation: 'システム過負荷。', questionId: 21 },
+    { id: 41, word: 'modify', meaning: '修正する', sentence: 'Modify the design.', translation: '設計を修正する。', questionId: 21 },
+    { id: 42, word: 'distill', meaning: '蒸留する', sentence: 'Distill water.', translation: '水を蒸留する。', questionId: 21 },
     // Q22
-    { id: 64, word: 'roll in', meaning: '転がり込む、やってくる', sentence: 'Fog rolled in.', translation: '霧が立ち込めた。', questionId: 22 },
-    { id: 65, word: 'hold out', meaning: '持ちこたえる、差し出す', sentence: 'Hold out hope.', translation: '希望を持ち続ける。', questionId: 22 },
-    { id: 66, word: 'pass down', meaning: '（後世に）伝える', sentence: 'Pass down traditions.', translation: '伝統を伝える。', questionId: 22 },
+    { id: 43, word: 'contend with', meaning: '対処する、戦う', sentence: 'Contend with difficulties.', translation: '困難に対処する。', questionId: 22 },
+    { id: 44, word: 'prop up', meaning: '支える', sentence: 'Prop up the economy.', translation: '経済をテコ入れする。', questionId: 22 },
     // Q23
-    { id: 67, word: 'go under', meaning: '倒産する、沈む', sentence: 'The firm went under.', translation: 'その会社は倒産した。', questionId: 23 },
-    { id: 68, word: 'pull through', meaning: '切り抜ける', sentence: 'Pull through the crisis.', translation: '危機を切り抜ける。', questionId: 23 },
-    { id: 69, word: 'come along', meaning: 'やってくる、進捗する', sentence: 'Come along nicely.', translation: '順調に進んでいる。', questionId: 23 },
+    { id: 45, word: 'fall for', meaning: 'だまされる、惚れる', sentence: 'Fall for a trick.', translation: 'トリックに引っかかる。', questionId: 23 },
+    { id: 46, word: 'see out', meaning: '見届ける、玄関まで送る', sentence: 'See a guest out.', translation: '客を玄関まで送る。', questionId: 23 },
     // Q24
-    { id: 70, word: 'make out', meaning: '理解する、判読する', sentence: 'Make out the sign.', translation: '看板の文字を判読する。', questionId: 24 },
-    { id: 71, word: 'draw up', meaning: '作成する', sentence: 'Draw up a plan.', translation: '計画を立てる。', questionId: 24 },
-    { id: 72, word: 'blow out', meaning: '吹き消す', sentence: 'Blow out candles.', translation: 'ろうそくを吹き消す。', questionId: 24 },
+    { id: 47, word: 'map out', meaning: '詳細に計画する', sentence: 'Map out a strategy.', translation: '戦略を練る。', questionId: 24 },
+    { id: 48, word: 'rack up', meaning: '獲得する、積み上げる', sentence: 'Rack up points.', translation: '得点を重ねる。', questionId: 24 },
     // Q25
-    { id: 73, word: 'watch over', meaning: '見守る、世話をする', sentence: 'Watch over the kids.', translation: '子供たちの面倒を見る。', questionId: 25 },
-    { id: 74, word: 'look into', meaning: '調べる', sentence: 'Look into the matter.', translation: 'その件を調査する。', questionId: 25 },
-    { id: 75, word: 'show up', meaning: '現れる', sentence: 'Show up late.', translation: '遅れて現れる。', questionId: 25 }
+    { id: 49, word: 'bet on', meaning: '賭ける、当てにする', sentence: 'Bet on the horse.', translation: 'その馬に賭ける。', questionId: 25 },
+    { id: 50, word: 'cast away', meaning: '捨てる', sentence: 'Cast away fear.', translation: '恐怖を捨て去る。', questionId: 25 }
+];
+
+// 2021年度 第3回 準1級 (50語に厳選)
+vocabDatabase['2021-3-gp1'] = [
+    // Q1: 正解 patriot
+    { id: 1, word: 'patriot', meaning: '愛国者', sentence: 'He is a true patriot.', translation: '彼は真の愛国者だ。', questionId: 1 },
+    { id: 2, word: 'villain', meaning: '悪党', sentence: 'The villain escaped.', translation: '悪党は逃げた。', questionId: 1 },
+    // Q2: 正解 resume
+    { id: 3, word: 'resume', meaning: '再開する', sentence: 'Resume the meeting.', translation: '会議を再開する。', questionId: 2 },
+    { id: 4, word: 'impede', meaning: '妨げる', sentence: 'Impede progress.', translation: '進歩を妨げる。', questionId: 2 },
+    // Q3: 正解 subsequent
+    { id: 5, word: 'subsequent', meaning: 'その後の', sentence: 'Subsequent events.', translation: 'その後の出来事。', questionId: 3 },
+    { id: 6, word: 'prominent', meaning: '著名な', sentence: 'Prominent figure.', translation: '著名な人物。', questionId: 3 },
+    // Q4: 正解 eccentric
+    { id: 7, word: 'eccentric', meaning: '風変わりな', sentence: 'Eccentric behavior.', translation: '風変わりな行動。', questionId: 4 },
+    { id: 8, word: 'vigilant', meaning: '用心深い', sentence: 'Stay vigilant.', translation: '用心深くいる。', questionId: 4 },
+    // Q5: 正解 certify
+    { id: 9, word: 'certify', meaning: '証明する', sentence: 'Certify the document.', translation: '書類を証明する。', questionId: 5 },
+    { id: 10, word: 'glorify', meaning: '称賛する', sentence: 'Glorify the hero.', translation: '英雄を称賛する。', questionId: 5 },
+    // Q6: 正解 vocation
+    { id: 11, word: 'vocation', meaning: '天職', sentence: 'Find your vocation.', translation: '天職を見つける。', questionId: 6 },
+    { id: 12, word: 'publicity', meaning: '宣伝', sentence: 'Get publicity.', translation: '宣伝を得る。', questionId: 6 },
+    // Q7: 正解 gulps
+    { id: 13, word: 'gulp', meaning: 'ごくり（と飲む）', sentence: 'Drink in gulps.', translation: 'ごくごく飲む。', questionId: 7 },
+    { id: 14, word: 'lump', meaning: '塊', sentence: 'A lump of sugar.', translation: '砂糖の塊。', questionId: 7 },
+    // Q8: 正解 startled
+    { id: 15, word: 'startle', meaning: '驚かす', sentence: 'Startle someone.', translation: '誰かを驚かす。', questionId: 8 },
+    { id: 16, word: 'prolong', meaning: '長引かせる', sentence: 'Prolong the meeting.', translation: '会議を長引かせる。', questionId: 8 },
+    // Q9: 正解 lease
+    { id: 17, word: 'lease', meaning: '賃貸契約', sentence: 'Sign a lease.', translation: '賃貸契約に署名する。', questionId: 9 },
+    { id: 18, word: 'vicinity', meaning: '近所', sentence: 'In the vicinity.', translation: '近くに。', questionId: 9 },
+    // Q10: 正解 sluggish
+    { id: 19, word: 'sluggish', meaning: '低迷した', sentence: 'Sluggish economy.', translation: '低迷した経済。', questionId: 10 },
+    { id: 20, word: 'bulky', meaning: 'かさばる', sentence: 'Bulky package.', translation: 'かさばる荷物。', questionId: 10 },
+    // Q11: 正解 contemplating
+    { id: 21, word: 'contemplate', meaning: '熟考する', sentence: 'Contemplate moving.', translation: '引っ越しを熟考する。', questionId: 11 },
+    { id: 22, word: 'emphasize', meaning: '強調する', sentence: 'Emphasize the point.', translation: '要点を強調する。', questionId: 11 },
+    // Q12: 正解 unanimously
+    { id: 23, word: 'unanimously', meaning: '満場一致で', sentence: 'Voted unanimously.', translation: '満場一致で投票した。', questionId: 12 },
+    { id: 24, word: 'abnormally', meaning: '異常に', sentence: 'Abnormally high.', translation: '異常に高い。', questionId: 12 },
+    // Q13: 正解 endure
+    { id: 25, word: 'endure', meaning: '耐える', sentence: 'Endure the pain.', translation: '痛みに耐える。', questionId: 13 },
+    { id: 26, word: 'discern', meaning: '見分ける', sentence: 'Discern the truth.', translation: '真実を見分ける。', questionId: 13 },
+    // Q14: 正解 cozy
+    { id: 27, word: 'cozy', meaning: '居心地の良い', sentence: 'Cozy room.', translation: '居心地の良い部屋。', questionId: 14 },
+    { id: 28, word: 'rigid', meaning: '硬い', sentence: 'Rigid rules.', translation: '厳格なルール。', questionId: 14 },
+    // Q15: 正解 deceive
+    { id: 29, word: 'deceive', meaning: '騙す', sentence: 'Deceive someone.', translation: '誰かを騙す。', questionId: 15 },
+    { id: 30, word: 'suppress', meaning: '抑える', sentence: 'Suppress emotions.', translation: '感情を抑える。', questionId: 15 },
+    // Q16: 正解 punctuality
+    { id: 31, word: 'punctuality', meaning: '時間厳守', sentence: 'Value punctuality.', translation: '時間厳守を重んじる。', questionId: 16 },
+    { id: 32, word: 'congestion', meaning: '混雑', sentence: 'Traffic congestion.', translation: '交通渋滞。', questionId: 16 },
+    // Q17: 正解 conventional
+    { id: 33, word: 'conventional', meaning: '従来の', sentence: 'Conventional method.', translation: '従来の方法。', questionId: 17 },
+    { id: 34, word: 'vulnerable', meaning: '脆弱な', sentence: 'Vulnerable position.', translation: '脆弱な立場。', questionId: 17 },
+    // Q18: 正解 fragile
+    { id: 35, word: 'fragile', meaning: '壊れやすい', sentence: 'Fragile items.', translation: '壊れやすい物品。', questionId: 18 },
+    { id: 36, word: 'coarse', meaning: '粗い', sentence: 'Coarse texture.', translation: '粗い質感。', questionId: 18 },
+    // Q19: 正解 summoned
+    { id: 37, word: 'summon', meaning: '召喚する', sentence: 'Summon the adviser.', translation: '顧問を召喚する。', questionId: 19 },
+    { id: 38, word: 'mingle', meaning: '混ざる', sentence: 'Mingle with guests.', translation: 'ゲストと交流する。', questionId: 19 },
+    // Q20: 正解 retreat
+    { id: 39, word: 'retreat', meaning: '撤退する', sentence: 'Order to retreat.', translation: '撤退命令。', questionId: 20 },
+    { id: 40, word: 'discard', meaning: '捨てる', sentence: 'Discard old items.', translation: '古い物を捨てる。', questionId: 20 },
+    // Q21: 正解 capacity
+    { id: 41, word: 'capacity', meaning: '能力', sentence: 'Intellectual capacity.', translation: '知的能力。', questionId: 21 },
+    { id: 42, word: 'novelty', meaning: '新しさ', sentence: 'The novelty wore off.', translation: '新鮮さが薄れた。', questionId: 21 },
+    // Q22: 正解 rough up
+    { id: 43, word: 'rough up', meaning: '乱暴に扱う', sentence: 'Rough up a suspect.', translation: '容疑者を乱暴に扱う。', questionId: 22 },
+    { id: 44, word: 'give out', meaning: '配る', sentence: 'Give out flyers.', translation: 'チラシを配る。', questionId: 22 },
+    // Q23: 正解 went by
+    { id: 45, word: 'go by', meaning: '（時が）過ぎる', sentence: 'Years went by.', translation: '数年が過ぎた。', questionId: 23 },
+    { id: 46, word: 'hold out', meaning: '持ちこたえる', sentence: 'Hold out hope.', translation: '希望を持ち続ける。', questionId: 23 },
+    // Q24: 正解 ruled out
+    { id: 47, word: 'rule out', meaning: '除外する', sentence: 'Rule out the option.', translation: '選択肢を除外する。', questionId: 24 },
+    { id: 48, word: 'scoop up', meaning: 'すくい上げる', sentence: 'Scoop up water.', translation: '水をすくい上げる。', questionId: 24 },
+    // Q25: 正解 fall back on
+    { id: 49, word: 'fall back on', meaning: '頼りにする', sentence: 'Fall back on savings.', translation: '貯金に頼る。', questionId: 25 },
+    { id: 50, word: 'look up to', meaning: '尊敬する', sentence: 'Look up to mentors.', translation: '指導者を尊敬する。', questionId: 25 }
+];
+
+// 2021年度 第2回 準1級 (50語に厳選)
+vocabDatabase['2021-2-gp1'] = [
+    // Q1: 正解 outweighs
+    { id: 1, word: 'outweigh', meaning: '上回る', sentence: 'Safety outweighs speed.', translation: '安全はスピードより重要だ。', questionId: 1 },
+    { id: 2, word: 'captivate', meaning: '魅了する', sentence: 'Captivate the audience.', translation: '観客を魅了する。', questionId: 1 },
+    // Q2: 正解 spacious
+    { id: 3, word: 'spacious', meaning: '広々とした', sentence: 'Spacious room.', translation: '広々とした部屋。', questionId: 2 },
+    { id: 4, word: 'tentative', meaning: '暫定的な', sentence: 'Tentative plan.', translation: '暫定的な計画。', questionId: 2 },
+    // Q3: 正解 circulation
+    { id: 5, word: 'circulation', meaning: '発行部数', sentence: 'Increase circulation.', translation: '発行部数を増やす。', questionId: 3 },
+    { id: 6, word: 'commencement', meaning: '開始', sentence: 'Commencement ceremony.', translation: '卒業式。', questionId: 3 },
+    // Q4: 正解 fanatical
+    { id: 7, word: 'fanatical', meaning: '熱狂的な', sentence: 'Fanatical fan.', translation: '熱狂的なファン。', questionId: 4 },
+    { id: 8, word: 'holistic', meaning: '全体的な', sentence: 'Holistic approach.', translation: '全体的なアプローチ。', questionId: 4 },
+    // Q5: 正解 sturdily
+    { id: 9, word: 'sturdily', meaning: '頑丈に', sentence: 'Sturdily built.', translation: '頑丈に作られた。', questionId: 5 },
+    { id: 10, word: 'vastly', meaning: '広大に', sentence: 'Vastly different.', translation: '大きく異なる。', questionId: 5 },
+    // Q6: 正解 nurture
+    { id: 11, word: 'nurture', meaning: '育む', sentence: 'Nurture talent.', translation: '才能を育む。', questionId: 6 },
+    { id: 12, word: 'litter', meaning: '散らかす', sentence: 'Litter the street.', translation: '通りを散らかす。', questionId: 6 },
+    // Q7: 正解 emissions
+    { id: 13, word: 'emission', meaning: '排出', sentence: 'CO2 emissions.', translation: 'CO2排出。', questionId: 7 },
+    { id: 14, word: 'collision', meaning: '衝突', sentence: 'Car collision.', translation: '車の衝突。', questionId: 7 },
+    // Q8: 正解 remote
+    { id: 15, word: 'remote', meaning: '辺鄙な', sentence: 'Remote area.', translation: '辺鄙な地域。', questionId: 8 },
+    { id: 16, word: 'swift', meaning: '速い', sentence: 'Swift action.', translation: '迅速な行動。', questionId: 8 },
+    // Q9: 正解 fainted
+    { id: 17, word: 'faint', meaning: '気絶する', sentence: 'Fainted from heat.', translation: '暑さで気絶した。', questionId: 9 },
+    { id: 18, word: 'persist', meaning: '続ける', sentence: 'Persist in efforts.', translation: '努力を続ける。', questionId: 9 },
+    // Q10: 正解 clarity
+    { id: 19, word: 'clarity', meaning: '明瞭さ', sentence: 'Write with clarity.', translation: '明瞭に書く。', questionId: 10 },
+    { id: 20, word: 'preference', meaning: '好み', sentence: 'Personal preference.', translation: '個人的好み。', questionId: 10 },
+    // Q11: 正解 dip
+    { id: 21, word: 'dip', meaning: '落ち込み', sentence: 'A dip in sales.', translation: '売上の落ち込み。', questionId: 11 },
+    { id: 22, word: 'ramp', meaning: '傾斜路', sentence: 'Wheelchair ramp.', translation: '車椅子用スロープ。', questionId: 11 },
+    // Q12: 正解 habitual
+    { id: 23, word: 'habitual', meaning: '習慣的な', sentence: 'Habitual liar.', translation: '常習的な嘘つき。', questionId: 12 },
+    { id: 24, word: 'stale', meaning: '古くなった', sentence: 'Stale bread.', translation: '古くなったパン。', questionId: 12 },
+    // Q13: 正解 vain
+    { id: 25, word: 'vain', meaning: 'うぬぼれた', sentence: 'Vain about appearance.', translation: '外見にうぬぼれている。', questionId: 13 },
+    { id: 26, word: 'crafty', meaning: 'ずる賢い', sentence: 'Crafty plan.', translation: 'ずる賢い計画。', questionId: 13 },
+    // Q14: 正解 rational
+    { id: 27, word: 'rational', meaning: '合理的な', sentence: 'Rational explanation.', translation: '合理的な説明。', questionId: 14 },
+    { id: 28, word: 'steep', meaning: '急な', sentence: 'Steep hill.', translation: '急な坂。', questionId: 14 },
+    // Q15: 正解 faculty
+    { id: 29, word: 'faculty', meaning: '教授陣', sentence: 'Faculty members.', translation: '教授陣。', questionId: 15 },
+    { id: 30, word: 'custody', meaning: '監護権', sentence: 'Child custody.', translation: '子供の監護権。', questionId: 15 },
+    // Q16: 正解 sustain
+    { id: 31, word: 'sustain', meaning: '維持する', sentence: 'Sustain growth.', translation: '成長を維持する。', questionId: 16 },
+    { id: 32, word: 'impair', meaning: '損なう', sentence: 'Impair vision.', translation: '視力を損なう。', questionId: 16 },
+    // Q17: 正解 rotating
+    { id: 33, word: 'rotating', meaning: '交代制の', sentence: 'Rotating shifts.', translation: '交代制シフト。', questionId: 17 },
+    { id: 34, word: 'exerting', meaning: '発揮する', sentence: 'Exerting influence.', translation: '影響力を発揮する。', questionId: 17 },
+    // Q18: 正解 impulse
+    { id: 35, word: 'impulse', meaning: '衝動', sentence: 'Resist the impulse.', translation: '衝動に抵抗する。', questionId: 18 },
+    { id: 36, word: 'pitch', meaning: 'ピッチ', sentence: 'High pitch.', translation: '高い音程。', questionId: 18 },
+    // Q19: 正解 trespassing
+    { id: 37, word: 'trespass', meaning: '不法侵入する', sentence: 'No trespassing.', translation: '立入禁止。', questionId: 19 },
+    { id: 38, word: 'sway', meaning: '揺れる', sentence: 'Trees sway.', translation: '木が揺れる。', questionId: 19 },
+    // Q20: 正解 outsmart
+    { id: 39, word: 'outsmart', meaning: '出し抜く', sentence: 'Outsmart the opponent.', translation: '相手を出し抜く。', questionId: 20 },
+    { id: 40, word: 'inflame', meaning: '激怒させる', sentence: 'Inflame anger.', translation: '怒りを激化させる。', questionId: 20 },
+    // Q21: 正解 weary
+    { id: 41, word: 'weary', meaning: '疲れた', sentence: 'Weary from work.', translation: '仕事で疲れた。', questionId: 21 },
+    { id: 42, word: 'hasty', meaning: '急いだ', sentence: 'Hasty decision.', translation: '急いだ決定。', questionId: 21 },
+    // Q22: 正解 plunged into
+    { id: 43, word: 'plunge into', meaning: '飛び込む', sentence: 'Plunge into water.', translation: '水に飛び込む。', questionId: 22 },
+    { id: 44, word: 'whip up', meaning: 'かき立てる', sentence: 'Whip up support.', translation: '支持をかき立てる。', questionId: 22 },
+    // Q23: 正解 dies down
+    { id: 45, word: 'die down', meaning: '弱まる', sentence: 'Wind dies down.', translation: '風が弱まる。', questionId: 23 },
+    { id: 46, word: 'act up', meaning: '調子が悪くなる', sentence: 'Car acts up.', translation: '車の調子が悪くなる。', questionId: 23 },
+    // Q24: 正解 call off
+    { id: 47, word: 'call off', meaning: '中止する', sentence: 'Call off the event.', translation: 'イベントを中止する。', questionId: 24 },
+    { id: 48, word: 'opt for', meaning: '選ぶ', sentence: 'Opt for safety.', translation: '安全を選ぶ。', questionId: 24 },
+    // Q25: 正解 live on
+    { id: 49, word: 'live on', meaning: 'で生活する', sentence: 'Live on savings.', translation: '貯金で生活する。', questionId: 25 },
+    { id: 50, word: 'rip up', meaning: '破り捨てる', sentence: 'Rip up the paper.', translation: '紙を破り捨てる。', questionId: 25 }
+];
+
+// 2021年度 第1回 準1級 (50語に厳選)
+vocabDatabase['2021-1-gp1'] = [
+    // Q1: 正解 redundant
+    { id: 1, word: 'redundant', meaning: '冗長な', sentence: 'Redundant information.', translation: '冗長な情報。', questionId: 1 },
+    { id: 2, word: 'decisive', meaning: '決定的な', sentence: 'Decisive action.', translation: '決定的な行動。', questionId: 1 },
+    // Q2: 正解 probability
+    { id: 3, word: 'probability', meaning: '可能性', sentence: 'Low probability.', translation: '低い可能性。', questionId: 2 },
+    { id: 4, word: 'credibility', meaning: '信頼性', sentence: 'Lose credibility.', translation: '信頼性を失う。', questionId: 2 },
+    // Q3: 正解 ironic
+    { id: 5, word: 'ironic', meaning: '皮肉な', sentence: 'Ironic situation.', translation: '皮肉な状況。', questionId: 3 },
+    { id: 6, word: 'superficial', meaning: '表面的な', sentence: 'Superficial wound.', translation: '表面的な傷。', questionId: 3 },
+    // Q4: 正解 inflicted
+    { id: 7, word: 'inflict', meaning: '与える', sentence: 'Inflict damage.', translation: '損害を与える。', questionId: 4 },
+    { id: 8, word: 'enhance', meaning: '高める', sentence: 'Enhance quality.', translation: '品質を高める。', questionId: 4 },
+    // Q5: 正解 phobia
+    { id: 9, word: 'phobia', meaning: '恐怖症', sentence: 'Overcome phobia.', translation: '恐怖症を克服する。', questionId: 5 },
+    { id: 10, word: 'temptation', meaning: '誘惑', sentence: 'Resist temptation.', translation: '誘惑に抵抗する。', questionId: 5 },
+    // Q6: 正解 exempted
+    { id: 11, word: 'exempt', meaning: '免除する', sentence: 'Exempt from taxes.', translation: '税金を免除される。', questionId: 6 },
+    { id: 12, word: 'prosecute', meaning: '起訴する', sentence: 'Prosecute criminals.', translation: '犯罪者を起訴する。', questionId: 6 },
+    // Q7: 正解 transformed
+    { id: 13, word: 'transform', meaning: '変革する', sentence: 'Transform society.', translation: '社会を変革する。', questionId: 7 },
+    { id: 14, word: 'synthesize', meaning: '合成する', sentence: 'Synthesize compounds.', translation: '化合物を合成する。', questionId: 7 },
+    // Q8: 正解 milestone
+    { id: 15, word: 'milestone', meaning: '画期的な出来事', sentence: 'Historic milestone.', translation: '歴史的な画期的出来事。', questionId: 8 },
+    { id: 16, word: 'backlog', meaning: '未処理の仕事', sentence: 'Clear backlog.', translation: '未処理の仕事を片付ける。', questionId: 8 },
+    // Q9: 正解 profoundly
+    { id: 17, word: 'profoundly', meaning: '深く', sentence: 'Profoundly moved.', translation: '深く感動した。', questionId: 9 },
+    { id: 18, word: 'harshly', meaning: '厳しく', sentence: 'Harshly criticized.', translation: '厳しく批判された。', questionId: 9 },
+    // Q10: 正解 spotless
+    { id: 19, word: 'spotless', meaning: '染み一つない', sentence: 'Spotless kitchen.', translation: '染み一つないキッチン。', questionId: 10 },
+    { id: 20, word: 'rugged', meaning: 'ごつごつした', sentence: 'Rugged terrain.', translation: 'ごつごつした地形。', questionId: 10 },
+    // Q11: 正解 demoted
+    { id: 21, word: 'demote', meaning: '降格させる', sentence: 'Demoted to second team.', translation: '2軍に降格。', questionId: 11 },
+    { id: 22, word: 'incline', meaning: '傾く', sentence: 'Inclined to agree.', translation: '同意する傾向がある。', questionId: 11 },
+    // Q12: 正解 coalition
+    { id: 23, word: 'coalition', meaning: '連立', sentence: 'Form coalition.', translation: '連立を組む。', questionId: 12 },
+    { id: 24, word: 'warranty', meaning: '保証', sentence: 'Product warranty.', translation: '製品保証。', questionId: 12 },
+    // Q13: 正解 vicious
+    { id: 25, word: 'vicious', meaning: '凶暴な', sentence: 'Vicious attack.', translation: '凶暴な攻撃。', questionId: 13 },
+    { id: 26, word: 'heartfelt', meaning: '心からの', sentence: 'Heartfelt apology.', translation: '心からの謝罪。', questionId: 13 },
+    // Q14: 正解 cultivated
+    { id: 27, word: 'cultivate', meaning: '栽培する', sentence: 'Cultivate crops.', translation: '作物を栽培する。', questionId: 14 },
+    { id: 28, word: 'thaw', meaning: '解凍する', sentence: 'Thaw frozen food.', translation: '冷凍食品を解凍する。', questionId: 14 },
+    // Q15: 正解 gratuity
+    { id: 29, word: 'gratuity', meaning: 'チップ', sentence: 'Leave gratuity.', translation: 'チップを残す。', questionId: 15 },
+    { id: 30, word: 'allotment', meaning: '割り当て', sentence: 'Budget allotment.', translation: '予算の割り当て。', questionId: 15 },
+    // Q16: 正解 exhausted
+    { id: 31, word: 'exhaust', meaning: '使い果たす', sentence: 'Exhaust options.', translation: '選択肢を使い果たす。', questionId: 16 },
+    { id: 32, word: 'retrace', meaning: 'たどり直す', sentence: 'Retrace steps.', translation: '足取りをたどり直す。', questionId: 16 },
+    // Q17: 正解 signifies
+    { id: 33, word: 'signify', meaning: '意味する', sentence: 'Signify agreement.', translation: '同意を意味する。', questionId: 17 },
+    { id: 34, word: 'regulate', meaning: '規制する', sentence: 'Regulate industry.', translation: '産業を規制する。', questionId: 17 },
+    // Q18: 正解 assumption
+    { id: 35, word: 'assumption', meaning: '仮定', sentence: 'Based on assumption.', translation: '仮定に基づく。', questionId: 18 },
+    { id: 36, word: 'institution', meaning: '機関', sentence: 'Financial institution.', translation: '金融機関。', questionId: 18 },
+    // Q19: 正解 descendants
+    { id: 37, word: 'descendant', meaning: '子孫', sentence: 'Direct descendant.', translation: '直系の子孫。', questionId: 19 },
+    { id: 38, word: 'inhabitant', meaning: '住民', sentence: 'Local inhabitants.', translation: '地元住民。', questionId: 19 },
+    // Q20: 正解 revolved
+    { id: 39, word: 'revolve', meaning: '回転する', sentence: 'Earth revolves.', translation: '地球は回転する。', questionId: 20 },
+    { id: 40, word: 'restrain', meaning: '抑える', sentence: 'Restrain anger.', translation: '怒りを抑える。', questionId: 20 },
+    // Q21: 正解 reluctant
+    { id: 41, word: 'reluctant', meaning: '気が進まない', sentence: 'Reluctant to accept.', translation: '受け入れることに気が進まない。', questionId: 21 },
+    { id: 42, word: 'frank', meaning: '率直な', sentence: 'Frank discussion.', translation: '率直な議論。', questionId: 21 },
+    // Q22: 正解 miss out
+    { id: 43, word: 'miss out', meaning: '逃す', sentence: 'Miss out on fun.', translation: '楽しみを逃す。', questionId: 22 },
+    { id: 44, word: 'add up', meaning: '合計する', sentence: 'Numbers add up.', translation: '数字が合計される。', questionId: 22 },
+    // Q23: 正解 wrestling with
+    { id: 45, word: 'wrestle with', meaning: '取り組む', sentence: 'Wrestle with problem.', translation: '問題に取り組む。', questionId: 23 },
+    { id: 46, word: 'clear out', meaning: '片付ける', sentence: 'Clear out room.', translation: '部屋を片付ける。', questionId: 23 },
+    // Q24: 正解 went for
+    { id: 47, word: 'go for', meaning: '取ろうとする', sentence: 'Go for the gun.', translation: '銃を取ろうとする。', questionId: 24 },
+    { id: 48, word: 'set off', meaning: '出発する', sentence: 'Set off early.', translation: '早く出発する。', questionId: 24 },
+    // Q25: 正解 catch up on
+    { id: 49, word: 'catch up on', meaning: '追いつく', sentence: 'Catch up on news.', translation: 'ニュースに追いつく。', questionId: 25 },
+    { id: 50, word: 'put up with', meaning: '我慢する', sentence: 'Put up with noise.', translation: '騒音を我慢する。', questionId: 25 }
+];
+
+// 2023年度 第1回 準2級 (40語に厳選)
+vocabDatabase['2023-1-gp2'] = [
+    // Q1: 正解 erased
+    { id: 1, word: 'erase', meaning: '消す', sentence: 'Erase the board.', translation: '黒板を消す。', questionId: 1 },
+    { id: 2, word: 'extend', meaning: '延長する', sentence: 'Extend the deadline.', translation: '締め切りを延長する。', questionId: 1 },
+    // Q2: 正解 control
+    { id: 3, word: 'control', meaning: 'コントロール', sentence: 'Have control over.', translation: '～をコントロールする。', questionId: 2 },
+    { id: 4, word: 'issue', meaning: '問題', sentence: 'Address the issue.', translation: '問題に取り組む。', questionId: 2 },
+    // Q3: 正解 blankets
+    { id: 5, word: 'blanket', meaning: '毛布', sentence: 'Warm blanket.', translation: '暖かい毛布。', questionId: 3 },
+    { id: 6, word: 'lock', meaning: '錠前', sentence: 'Door lock.', translation: 'ドアの錠前。', questionId: 3 },
+    // Q4: 正解 educational
+    { id: 7, word: 'educational', meaning: '教育的な', sentence: 'Educational program.', translation: '教育番組。', questionId: 4 },
+    { id: 8, word: 'violent', meaning: '暴力的な', sentence: 'Violent movie.', translation: '暴力的な映画。', questionId: 4 },
+    // Q5: 正解 reality
+    { id: 9, word: 'reality', meaning: '現実', sentence: 'Face reality.', translation: '現実に向き合う。', questionId: 5 },
+    { id: 10, word: 'origin', meaning: '起源', sentence: 'The origin of life.', translation: '生命の起源。', questionId: 5 },
+    // Q6: 正解 refused
+    { id: 11, word: 'refuse', meaning: '断る', sentence: 'Refuse the offer.', translation: '申し出を断る。', questionId: 6 },
+    { id: 12, word: 'retire', meaning: '引退する', sentence: 'Retire from work.', translation: '仕事を引退する。', questionId: 6 },
+    // Q7: 正解 discussions
+    { id: 13, word: 'discussion', meaning: '議論', sentence: 'Have a discussion.', translation: '議論する。', questionId: 7 },
+    { id: 14, word: 'approach', meaning: 'アプローチ', sentence: 'New approach.', translation: '新しいアプローチ。', questionId: 7 },
+    // Q8: 正解 respects
+    { id: 15, word: 'respect', meaning: '尊敬する', sentence: 'Respect elders.', translation: '年長者を尊敬する。', questionId: 8 },
+    { id: 16, word: 'assist', meaning: '手伝う', sentence: 'Assist customers.', translation: '客を手伝う。', questionId: 8 },
+    // Q9: 正解 greeted
+    { id: 17, word: 'greet', meaning: '出迎える', sentence: 'Greet visitors.', translation: '訪問者を出迎える。', questionId: 9 },
+    { id: 18, word: 'require', meaning: '要求する', sentence: 'Require approval.', translation: '承認を要求する。', questionId: 9 },
+    // Q10: 正解 terribly
+    { id: 19, word: 'terribly', meaning: 'ひどく', sentence: 'Terribly sorry.', translation: '本当に申し訳ない。', questionId: 10 },
+    { id: 20, word: 'calmly', meaning: '穏やかに', sentence: 'Speak calmly.', translation: '穏やかに話す。', questionId: 10 },
+    // Q11: 正解 take turns
+    { id: 21, word: 'take turns', meaning: '交代でする', sentence: 'Take turns speaking.', translation: '交代で話す。', questionId: 11 },
+    { id: 22, word: 'have faith', meaning: '信頼している', sentence: 'Have faith in.', translation: '～を信頼している。', questionId: 11 },
+    // Q12: 正解 on business
+    { id: 23, word: 'on business', meaning: '仕事で', sentence: 'Travel on business.', translation: '仕事で出張する。', questionId: 12 },
+    { id: 24, word: 'for good', meaning: '永久に', sentence: 'Leave for good.', translation: '永久に去る。', questionId: 12 },
+    // Q13: 正解 felt like
+    { id: 25, word: 'feel like', meaning: '～したい気分だ', sentence: 'Feel like eating.', translation: '食べたい気分だ。', questionId: 13 },
+    { id: 26, word: 'look like', meaning: '～のように見える', sentence: 'Look like rain.', translation: '雨のように見える。', questionId: 13 },
+    // Q14: 正解 take place
+    { id: 27, word: 'take place', meaning: '行われる', sentence: 'Event takes place.', translation: 'イベントが行われる。', questionId: 14 },
+    { id: 28, word: 'put off', meaning: '延期する', sentence: 'Put off meeting.', translation: '会議を延期する。', questionId: 14 },
+    // Q15: 正解 rely on
+    { id: 29, word: 'rely on', meaning: '頼る', sentence: 'Rely on parents.', translation: '親に頼る。', questionId: 15 },
+    { id: 30, word: 'get over', meaning: '乗り越える', sentence: 'Get over illness.', translation: '病気を乗り越える。', questionId: 15 },
+    // Q16: 正解 dress up
+    { id: 31, word: 'dress up', meaning: '仮装する', sentence: 'Dress up as.', translation: '～に仮装する。', questionId: 16 },
+    { id: 32, word: 'break out', meaning: '勃発する', sentence: 'War breaks out.', translation: '戦争が勃発する。', questionId: 16 },
+    // Q17: 正解 backed up
+    { id: 33, word: 'back up', meaning: '裏付ける', sentence: 'Back up claims.', translation: '主張を裏付ける。', questionId: 17 },
+    { id: 34, word: 'call out', meaning: '叫ぶ', sentence: 'Call out names.', translation: '名前を叫ぶ。', questionId: 17 },
+    // Q18: 正解 had given
+    { id: 35, word: 'had given', meaning: 'あげていた（過去完了）', sentence: 'Had given a gift.', translation: 'プレゼントをあげていた。', questionId: 18 },
+    { id: 36, word: 'was giving', meaning: 'あげていた（過去進行）', sentence: 'Was giving advice.', translation: 'アドバイスをしていた。', questionId: 18 },
+    // Q19: 正解 nobody
+    { id: 37, word: 'nobody', meaning: '誰も～ない', sentence: 'Nobody came.', translation: '誰も来なかった。', questionId: 19 },
+    { id: 38, word: 'everybody', meaning: 'みんな', sentence: 'Everybody knows.', translation: 'みんな知っている。', questionId: 19 },
+    // Q20: 正解 helping
+    { id: 39, word: 'helping', meaning: '手伝うこと（動名詞）', sentence: 'Enjoy helping.', translation: '手伝うことを楽しむ。', questionId: 20 },
+    { id: 40, word: 'to help', meaning: '手伝うこと（不定詞）', sentence: 'Want to help.', translation: '手伝いたい。', questionId: 20 }
+];
+
+// 2020年度 第3回 準1級 (50語に厳選)
+vocabDatabase['2020-3-gp1'] = [
+    // Q1: 正解 ingredients
+    { id: 1, word: 'ingredient', meaning: '材料', sentence: 'Fresh ingredients.', translation: '新鮮な材料。', questionId: 1 },
+    { id: 2, word: 'attribute', meaning: '属性', sentence: 'Key attributes.', translation: '重要な属性。', questionId: 1 },
+    // Q2: 正解 consensus
+    { id: 3, word: 'consensus', meaning: '合意', sentence: 'Reach a consensus.', translation: '合意に達する。', questionId: 2 },
+    { id: 4, word: 'simulation', meaning: 'シミュレーション', sentence: 'Computer simulation.', translation: 'コンピュータシミュレーション。', questionId: 2 },
+    // Q3: 正解 intolerable
+    { id: 5, word: 'intolerable', meaning: '耐えられない', sentence: 'Intolerable conditions.', translation: '耐えられない状況。', questionId: 3 },
+    { id: 6, word: 'crucial', meaning: '重要な', sentence: 'Crucial decision.', translation: '重要な決定。', questionId: 3 },
+    // Q4: 正解 inhospitable
+    { id: 7, word: 'inhospitable', meaning: '過酷な', sentence: 'Inhospitable environment.', translation: '過酷な環境。', questionId: 4 },
+    { id: 8, word: 'dignified', meaning: '威厳のある', sentence: 'Dignified manner.', translation: '威厳のある態度。', questionId: 4 },
+    // Q5: 正解 frailty
+    { id: 9, word: 'frailty', meaning: '虚弱さ', sentence: 'Physical frailty.', translation: '身体的虚弱さ。', questionId: 5 },
+    { id: 10, word: 'statistic', meaning: '統計', sentence: 'Crime statistics.', translation: '犯罪統計。', questionId: 5 },
+    // Q6: 正解 classified
+    { id: 11, word: 'classify', meaning: '分類する', sentence: 'Classify species.', translation: '種を分類する。', questionId: 6 },
+    { id: 12, word: 'personify', meaning: '擬人化する', sentence: 'Personify nature.', translation: '自然を擬人化する。', questionId: 6 },
+    // Q7: 正解 oversight
+    { id: 13, word: 'oversight', meaning: '見落とし', sentence: 'Minor oversight.', translation: '軽微な見落とし。', questionId: 7 },
+    { id: 14, word: 'upheaval', meaning: '大変動', sentence: 'Political upheaval.', translation: '政治的大変動。', questionId: 7 },
+    // Q8: 正解 conspired
+    { id: 15, word: 'conspire', meaning: '共謀する', sentence: 'Conspire to rob.', translation: '強盗を共謀する。', questionId: 8 },
+    { id: 16, word: 'diminish', meaning: '減少する', sentence: 'Diminish in value.', translation: '価値が減少する。', questionId: 8 },
+    // Q9: 正解 feasible
+    { id: 17, word: 'feasible', meaning: '実現可能な', sentence: 'Feasible plan.', translation: '実現可能な計画。', questionId: 9 },
+    { id: 18, word: 'fierce', meaning: '激しい', sentence: 'Fierce competition.', translation: '激しい競争。', questionId: 9 },
+    // Q10: 正解 tackling
+    { id: 19, word: 'tackle', meaning: '取り組む', sentence: 'Tackle problems.', translation: '問題に取り組む。', questionId: 10 },
+    { id: 20, word: 'trigger', meaning: '引き起こす', sentence: 'Trigger a reaction.', translation: '反応を引き起こす。', questionId: 10 },
+    // Q11: 正解 complications
+    { id: 21, word: 'complication', meaning: '合併症', sentence: 'Surgical complications.', translation: '手術の合併症。', questionId: 11 },
+    { id: 22, word: 'domain', meaning: '領域', sentence: 'Public domain.', translation: 'パブリックドメイン。', questionId: 11 },
+    // Q12: 正解 passionate
+    { id: 23, word: 'passionate', meaning: '情熱的な', sentence: 'Passionate reader.', translation: '情熱的な読者。', questionId: 12 },
+    { id: 24, word: 'feeble', meaning: '弱い', sentence: 'Feeble attempt.', translation: '弱々しい試み。', questionId: 12 },
+    // Q13: 正解 encounter
+    { id: 25, word: 'encounter', meaning: '遭遇する', sentence: 'Encounter wildlife.', translation: '野生動物に遭遇する。', questionId: 13 },
+    { id: 26, word: 'propel', meaning: '推進する', sentence: 'Propel forward.', translation: '前進させる。', questionId: 13 },
+    // Q14: 正解 dismissal
+    { id: 27, word: 'dismissal', meaning: '解雇', sentence: 'Unfair dismissal.', translation: '不当解雇。', questionId: 14 },
+    { id: 28, word: 'testimony', meaning: '証言', sentence: 'Court testimony.', translation: '法廷での証言。', questionId: 14 },
+    // Q15: 正解 concede
+    { id: 29, word: 'concede', meaning: '譲歩する', sentence: 'Concede defeat.', translation: '敗北を認める。', questionId: 15 },
+    { id: 30, word: 'consolidate', meaning: '統合する', sentence: 'Consolidate power.', translation: '権力を統合する。', questionId: 15 },
+    // Q16: 正解 unwittingly
+    { id: 31, word: 'unwittingly', meaning: '知らずに', sentence: 'Unwittingly offend.', translation: '知らずに怒らせる。', questionId: 16 },
+    { id: 32, word: 'sympathetically', meaning: '同情的に', sentence: 'Listen sympathetically.', translation: '同情的に聞く。', questionId: 16 },
+    // Q17: 正解 vivid
+    { id: 33, word: 'vivid', meaning: '鮮明な', sentence: 'Vivid dreams.', translation: '鮮明な夢。', questionId: 17 },
+    { id: 34, word: 'stout', meaning: '頑丈な', sentence: 'Stout boots.', translation: '頑丈なブーツ。', questionId: 17 },
+    // Q18: 正解 autographs
+    { id: 35, word: 'autograph', meaning: 'サイン', sentence: 'Ask for autograph.', translation: 'サインを求める。', questionId: 18 },
+    { id: 36, word: 'exhibit', meaning: '展示品', sentence: 'Museum exhibit.', translation: '博物館の展示品。', questionId: 18 },
+    // Q19: 正解 guardian
+    { id: 37, word: 'guardian', meaning: '保護者', sentence: 'Legal guardian.', translation: '法定後見人。', questionId: 19 },
+    { id: 38, word: 'defendant', meaning: '被告', sentence: 'The defendant.', translation: '被告。', questionId: 19 },
+    // Q20: 正解 elevated
+    { id: 39, word: 'elevate', meaning: '高くする', sentence: 'Elevate the stage.', translation: 'ステージを高くする。', questionId: 20 },
+    { id: 40, word: 'donate', meaning: '寄付する', sentence: 'Donate money.', translation: 'お金を寄付する。', questionId: 20 },
+    // Q21: 正解 divine
+    { id: 41, word: 'divine', meaning: '神の', sentence: 'Divine warning.', translation: '神の警告。', questionId: 21 },
+    { id: 42, word: 'sparse', meaning: 'まばらな', sentence: 'Sparse population.', translation: 'まばらな人口。', questionId: 21 },
+    // Q22: 正解 broke away
+    { id: 43, word: 'break away', meaning: '離脱する', sentence: 'Break away from.', translation: '～から離脱する。', questionId: 22 },
+    { id: 44, word: 'hold down', meaning: '押さえつける', sentence: 'Hold down costs.', translation: 'コストを押さえる。', questionId: 22 },
+    // Q23: 正解 straighten out
+    { id: 45, word: 'straighten out', meaning: '解決する', sentence: 'Straighten out problems.', translation: '問題を解決する。', questionId: 23 },
+    { id: 46, word: 'stumble on', meaning: '偶然見つける', sentence: 'Stumble on truth.', translation: '真実を偶然見つける。', questionId: 23 },
+    // Q24: 正解 check up on
+    { id: 47, word: 'check up on', meaning: '様子を見る', sentence: 'Check up on kids.', translation: '子供の様子を見る。', questionId: 24 },
+    { id: 48, word: 'fall back on', meaning: '頼る', sentence: 'Fall back on savings.', translation: '貯金に頼る。', questionId: 24 },
+    // Q25: 正解 made up
+    { id: 49, word: 'make up', meaning: '仲直りする', sentence: 'Make up with friend.', translation: '友人と仲直りする。', questionId: 25 },
+    { id: 50, word: 'work up', meaning: '興奮させる', sentence: 'Work up appetite.', translation: '食欲を増進させる。', questionId: 25 }
 ];

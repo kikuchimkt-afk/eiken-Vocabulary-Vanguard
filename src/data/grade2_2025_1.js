@@ -8,7 +8,12 @@ export const grade2_2025_1Data = {
             choices: ["civilization", "disappointment", "proportion", "advertisement"],
             choiceMeanings: ["文明", "失望", "割合", "広告"],
             correctAnswer: 1,
-            structure: "The civilization of ancient Greece [S] made [V] many great discoveries [O].",
+            structure: {
+                fullSentence: "The civilization of ancient Greece made many great discoveries. These discoveries changed the way that people think and live.",
+                mainClause: "The civilization [S] of ancient Greece [M] made [V] many great discoveries [O] in science, politics, and art [M]",
+                secondSentence: "These discoveries [S] changed [V] the way [O]",
+                relativeClause: "that people [S'] think [V'] and live [V'] → 関係代名詞節（the wayを修飾）"
+            },
             explanation: "civilization: 文明",
             translation: {
                 literal: "古代ギリシャの文明は [S] した [V] 多くの偉大な発見を [O]。",
@@ -88,7 +93,12 @@ export const grade2_2025_1Data = {
             choices: ["deceived", "sacrificed", "composed", "indicated"],
             choiceMeanings: ["だました", "犠牲にした", "構成した", "示した"],
             correctAnswer: 4,
-            structure: "Gary [S] indicated [V] that his message was a joke [O].",
+            structure: {
+                fullSentence: "Gary indicated that his message was a joke by putting a laughing face symbol at the end of it.",
+                mainClause: "Gary [S] indicated [V] that節 [O]",
+                thatClause: "his message [S'] was [V'] a joke [C'] → 「メッセージが冗談であること」",
+                meansPhrase: "by putting a laughing face symbol at the end of it [M:手段] → 「笑顔マークをつけることで」"
+            },
             explanation: "indicate: 示す、表示する",
             translation: {
                 literal: "ゲイリーは [S] 示した [V] 彼のメッセージが冗談であることを [O]。",
@@ -136,7 +146,12 @@ export const grade2_2025_1Data = {
             choices: ["balance", "welfare", "reputation", "genius"],
             choiceMeanings: ["バランス", "福祉（幸福）", "評判", "天才"],
             correctAnswer: 2,
-            structure: "improve [V] their welfare [O].",
+            structure: {
+                fullSentence: "I'm going to help people who are in need and try to improve their welfare.",
+                mainClause: "I [S] 'm going to help [V] people [O] and try to improve their welfare [O']",
+                relativeClause: "who [S'] are [V'] in need [C'] → 関係代名詞節（peopleを修飾）「困っている」",
+                grammarPoint: "be in need = 「困っている、必要としている」"
+            },
             explanation: "welfare: 福祉、幸福、繁栄",
             translation: {
                 literal: "改善する [V] 彼らの福祉を [O]。",
@@ -152,7 +167,13 @@ export const grade2_2025_1Data = {
             choices: ["contributions", "characteristics", "investigations", "exhibitions"],
             choiceMeanings: ["貢献", "特徴", "調査", "展示"],
             correctAnswer: 2,
-            structure: "The characteristics [S] ... are [V] that they have long ears... [C].",
+            structure: {
+                fullSentence: "The characteristics that make rabbits different from other animals are that they have long ears and short tails.",
+                mainClause: "The characteristics [S] are [V] that節 [C]",
+                relativeClause: "that [S'] make [V'] rabbits [O'] different [C'] from other animals [M] → 関係代名詞節（characteristicsを修飾）",
+                complementClause: "that they [S''] have [V''] long ears and short tails [O''] → 補語のthat節",
+                grammarPoint: "make + O + C（SVOC構文）/ that節が補語になる構文"
+            },
             explanation: "characteristic: 特徴、特性",
             translation: {
                 literal: "特徴は [S] ... である [V] 彼らが長い耳を持っていること [C]。",

@@ -38,7 +38,12 @@ export const grade2_2023_1_subData = {
             choices: ["revised", "provided", "inserted", "overwhelmed"],
             choiceMeanings: ["修正された", "提供された", "挿入された", "圧倒された"],
             correctAnswer: 4,
-            structure: "The staff members [S] were completely overwhelmed [V] by the number of customers.",
+            structure: {
+                fullSentence: "The staff members were completely (overwhelmed) by the number of customers who came to the store for the 50-percent-off sale.",
+                mainClause: "The staff members [S] were completely overwhelmed [V:受動態] by the number of customers [M]",
+                relativeClause: "who [S'] came [V'] to the store [M] for the 50-percent-off sale [M] → 関係代名詞節（customersを修飾）",
+                grammarPoint: "be overwhelmed by = 「～に圧倒される」"
+            },
             explanation: "overwhelmed: 圧倒された",
             translation: {
                 literal: "スタッフは [S] 完全に圧倒された [V] 客の数に。",

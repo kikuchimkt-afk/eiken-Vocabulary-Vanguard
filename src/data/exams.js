@@ -35,6 +35,7 @@ import { gradePre2_2024_3Data } from './gradePre2_2024_3';
 import { gradePre2_2024_2Data } from './gradePre2_2024_2';
 import { gradePre2_2024_1Data } from './gradePre2_2024_1';
 import { gradePre2_2023_2Data } from './gradePre2_2023_2';
+import { gradePre2_2023_1Data } from './gradePre2_2023_1';
 import { gradePre2_2023_3Data } from './gradePre2_2023_3';
 import { gradePre2PlusData } from './gradePre2Plus_2025_2';
 import { gradePre2Plus_2025_2_subData } from './gradePre2Plus_2025_2_sub';
@@ -49,6 +50,12 @@ import { gradePre1_2023_3Data } from './gradePre1_2023_3';
 import { gradePre1_2023_2Data } from './gradePre1_2023_2';
 import { gradePre1_2023_1Data } from './gradePre1_2023_1';
 import { gradePre1_2022_3Data } from './gradePre1_2022_3';
+import { gradePre1_2022_2Data } from './gradePre1_2022_2';
+import { gradePre1_2022_1Data } from './gradePre1_2022_1';
+import { gradePre1_2021_3Data } from './gradePre1_2021_3';
+import { gradePre1_2021_2Data } from './gradePre1_2021_2';
+import { gradePre1_2021_1Data } from './gradePre1_2021_1';
+import { gradePre1_2020_3Data } from './gradePre1_2020_3';
 
 export const exams = [
     {
@@ -140,6 +147,66 @@ export const exams = [
         title: '2022年度 第3回検定',
         subTitle: 'Advanced Vocabulary & Idioms',
         data: gradePre1_2022_3Data
+    },
+    {
+        id: '2022-2-gp1',
+        grade: '準1級',
+        gradeLabel: '準1級',
+        year: 2022,
+        session: '第2回',
+        title: '2022年度 第2回検定',
+        subTitle: 'Advanced Vocabulary & Idioms',
+        data: gradePre1_2022_2Data
+    },
+    {
+        id: '2022-1-gp1',
+        grade: '準1級',
+        gradeLabel: '準1級',
+        year: 2022,
+        session: '第1回',
+        title: '2022年度 第1回検定',
+        subTitle: 'Advanced Vocabulary & Idioms',
+        data: gradePre1_2022_1Data
+    },
+    {
+        id: '2021-3-gp1',
+        grade: '準1級',
+        gradeLabel: '準1級',
+        year: 2021,
+        session: '第3回',
+        title: '2021年度 第3回検定',
+        subTitle: 'Advanced Vocabulary & Idioms',
+        data: gradePre1_2021_3Data
+    },
+    {
+        id: '2021-2-gp1',
+        grade: '準1級',
+        gradeLabel: '準1級',
+        year: 2021,
+        session: '第2回',
+        title: '2021年度 第2回検定',
+        subTitle: 'Advanced Vocabulary & Idioms',
+        data: gradePre1_2021_2Data
+    },
+    {
+        id: '2021-1-gp1',
+        grade: '準1級',
+        gradeLabel: '準1級',
+        year: 2021,
+        session: '第1回',
+        title: '2021年度 第1回検定',
+        subTitle: 'Advanced Vocabulary & Idioms',
+        data: gradePre1_2021_1Data
+    },
+    {
+        id: '2020-3-gp1',
+        grade: '準1級',
+        gradeLabel: '準1級',
+        year: 2020,
+        session: '第3回',
+        title: '2020年度 第3回検定',
+        subTitle: 'Advanced Vocabulary & Idioms',
+        data: gradePre1_2020_3Data
     },
     {
         id: '2025-1-g2',
@@ -421,6 +488,16 @@ export const exams = [
         title: '2023年度 第2回検定',
         subTitle: 'Daily Life & Social',
         data: gradePre2_2023_2Data
+    },
+    {
+        id: '2023-1-gp2',
+        grade: '準2級',
+        gradeLabel: '準2級',
+        year: 2023,
+        session: '第1回',
+        title: '2023年度 第1回検定',
+        subTitle: 'Daily Life & Social',
+        data: gradePre2_2023_1Data
     },
     {
         id: '2025-2-g3',

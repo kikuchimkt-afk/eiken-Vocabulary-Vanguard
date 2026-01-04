@@ -53,7 +53,13 @@ export const grade2_2023_3_subData = {
             choices: ["enlarge", "assume", "facilitate", "compensate"],
             choiceMeanings: ["拡大する", "思い込む", "促進する", "補償する"],
             correctAnswer: 2,
-            structure: "Most people [S] assume [V] that Matt is in his 30s.",
+            structure: {
+                fullSentence: "Most people (assume) that Matt is in his 30s because he looks very young.",
+                mainClause: "Most people [S] assume [V] that節 [O]",
+                thatClause: "Matt [S'] is [V'] in his 30s [C'] → that節",
+                reasonClause: "because he [S''] looks [V''] very young [C''] → 理由のbecause節",
+                grammarPoint: "assume that = 「～だと思い込む」"
+            },
             explanation: "assume: 思い込む、推測する",
             translation: {
                 literal: "ほとんどの人は [S] 思い込む [V] マットが30代だと。",
@@ -113,7 +119,12 @@ export const grade2_2023_3_subData = {
             choices: ["fortunes", "scales", "aspects", "exhibits"],
             choiceMeanings: ["財産", "規模", "側面", "展示品"],
             correctAnswer: 3,
-            structure: "There are other aspects [S] of the job that don't sound good.",
+            structure: {
+                fullSentence: "There are other (aspects) of the job that don't sound so good.",
+                mainClause: "There are [V] other aspects [S] of the job [M]",
+                relativeClause: "that [S'] don't sound [V'] so good [C'] → 関係代名詞節（aspectsを修飾）",
+                grammarPoint: "there are + 名詞 + that節"
+            },
             explanation: "aspects: 側面",
             translation: {
                 literal: "他の側面がある [S] 仕事の、良くないように聞こえる。",
