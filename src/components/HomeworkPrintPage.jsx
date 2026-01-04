@@ -14,6 +14,7 @@ const HomeworkPrintPage = () => {
     const endId = parseInt(searchParams.get('end')) || exam?.data?.questions?.length || 17;
     const issueDate = searchParams.get('issueDate') || '';
     const nextAssignment = searchParams.get('nextAssignment') || '';
+    const nextExamId = searchParams.get('nextExamId');
     const instructorName = searchParams.get('instructor') || '';
     const deadline = searchParams.get('deadline') || '';
     const message = searchParams.get('message') || '';
@@ -44,29 +45,27 @@ const HomeworkPrintPage = () => {
         return <div className="print-error">試験データが見つかりません。</div>;
     }
 
-    const { questions } = exam.data;
-    // ID比較を安全に行う（数値変換）
-    const filteredQuestions = questions.filter(q => Number(q.id) >= Number(startId) && Number(q.id) <= Number(endId));
-    const questionCount = filteredQuestions.length;
+    // ... (questions filtering) ...
 
-    if (questionCount === 0) {
-        return <div className="print-error">選択された範囲の問題が見つかりません。(ID: {startId} - {endId})</div>;
-    }
-
-    // 問題を左右2列に分割
-    const halfPoint = Math.ceil(questionCount / 2);
-    const leftColumn = filteredQuestions.slice(0, halfPoint);
-    const rightColumn = filteredQuestions.slice(halfPoint);
-
-    // 正解を2行に分割
-    const answerHalfPoint = Math.ceil(questionCount / 2);
-    const answerLine1 = filteredQuestions.slice(0, answerHalfPoint);
+    // ... (layout splitting) ...
     const answerLine2 = filteredQuestions.slice(answerHalfPoint);
 
     // QRコード用URL生成
     const baseUrl = 'https://eiken-vocabulary-vanguard.vercel.app';
     const instructorPageUrl = `${baseUrl}/classroom/${examId}?mode=instructor&range=${startId}-${endId}&locked=true`;
-    const vocabPageUrl = `${baseUrl}/vocab/${examId}?range=${startId}-${endId}&locked=true`;
+
+    let vocabExamId = examId;
+    let vocabRange = `${startId}-${endId}`;
+
+    if (nextExamId) {
+        vocabExamId = nextExamId;
+        const nextExam = getExamById(nextExamId);
+        if (nextExam?.data?.questions) {
+            vocabRange = `1-${nextExam.data.questions.length}`;
+        }
+    }
+
+    const vocabPageUrl = `${baseUrl}/vocab/${vocabExamId}?range=${vocabRange}&locked=true`;
     const qrApiBase = 'https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=';
 
     // 日付フォーマット

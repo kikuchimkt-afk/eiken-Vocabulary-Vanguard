@@ -269,12 +269,19 @@ function ClassroomApp() {
     };
 
     const handleQRConfirm = (formData) => {
+        // Find ID for next assignment
+        const nextExam = exams.find(ex =>
+            `${ex.year}年度 ${ex.session} ${ex.grade}${ex.isSubVenue ? ' (准会場)' : ''}` === formData.nextAssignment
+        );
+        const nextExamId = nextExam ? nextExam.id : '';
+
         // Build URL with query parameters
         const params = new URLSearchParams({
             start: formData.startId,
             end: formData.endId,
             issueDate: formData.issueDate,
             nextAssignment: formData.nextAssignment,
+            nextExamId: nextExamId,
             instructor: formData.instructorName,
             deadline: formData.deadline,
             message: formData.message
