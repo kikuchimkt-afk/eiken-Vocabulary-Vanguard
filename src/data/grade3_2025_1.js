@@ -8,7 +8,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["もう一つの", "近い", "すべての", "たくさんの"],
             correctAnswer: 1,
             structure: "I [S] 'll make [V] you [O] another one [O].",
-            explanation: "another: もう一つの、別の",
+            explanation: "正解単語: another (もう一つの)。「まだお腹が空いている」ので、サンドイッチを「もう一つ（another one）」作ってあげる、という文脈。",
             translation: {
                 literal: "私は [S] 作ります [V] あなたに [O] もう一つを [O]。",
                 natural: "もう一つ作ってあげるわ。",
@@ -23,7 +23,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["〜の間", "〜の", "〜まで", "〜のそばに"],
             correctAnswer: 4,
             structure: "It [S] is [V] beside the post office [C].",
-            explanation: "beside: 〜のそばに、〜の横に",
+            explanation: "正解単語: beside (〜のそばに)。場所を尋ねる質問への答えとして、郵便局の「そばに」あると説明している。",
             translation: {
                 literal: "それは [S] です [V] 郵便局のそば [C]。",
                 natural: "それは郵便局のそばにある。",
@@ -38,7 +38,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["研究", "エネルギー", "環境", "危険"],
             correctAnswer: 1,
             structure: "Research by scientists [S] shows [V] that global warming is a big problem [O].",
-            explanation: "research: 研究、調査",
+            explanation: "正解単語: Research (研究)。scientist (科学者) が行うものなので「研究」。show (示す) の主語として適切。",
             translation: {
                 literal: "科学者による研究は [S] 示している [V] 地球温暖化が大きな問題であることを [O]。",
                 natural: "科学者による研究は、地球温暖化が大きな問題であることを示している。",
@@ -53,7 +53,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["面接", "空港", "例", "言い訳"],
             correctAnswer: 1,
             structure: "John [S] has [V] an interview [O] tomorrow [M].",
-            explanation: "interview: 面接",
+            explanation: "正解単語: interview (面接)。get a new job (新しい仕事を得る) ために必要なものは「面接」。",
             translation: {
                 literal: "ジョンは [S] ある [V] 面接が [O] 明日 [M]。",
                 natural: "ジョンは明日面接がある。",
@@ -68,7 +68,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["事故", "約束／予約", "アパート", "住所"],
             correctAnswer: 1,
             structure: "there [M] was [V] an accident [S].",
-            explanation: "accident: 事故",
+            explanation: "正解単語: accident (事故)。road was closed (道路が閉鎖された) 理由として「事故」があったことが適切。",
             translation: {
                 literal: "事故が [S] あった [V]。",
                 natural: "事故があった。",
@@ -82,8 +82,8 @@ export const grade3_2025_1Data = {
             choices: ["glad", "empty", "different", "serious"],
             choiceMeanings: ["うれしい", "空の", "違った", "深刻な"],
             correctAnswer: 2,
-            structure: "What should I do [V] with this empty bottle [M]?",
-            explanation: "empty: 空の",
+            structure: "What [O] should [aux] I [S] do [V] with this empty bottle [M]?",
+            explanation: "正解単語: empty (空の)。recycle (リサイクルする) 対象なので、中身のない「空の」ボトル。",
             translation: {
                 literal: "私は何をすべきですか [V] この空のボトルを [M]？",
                 natural: "この空のボトルはどうしたらいい？",
@@ -98,7 +98,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["少しの", "たくさんの", "大部分の", "たくさんの"],
             correctAnswer: 1,
             structure: "Pat [S] took [V] a little medicine [O].",
-            explanation: "a little: 少しの",
+            explanation: "正解単語: little。a little medicine で「少量の薬」。薬の量なので much や little を使うが、文脈的に少量から試した（そして効かなかった）と考えられる。",
             translation: {
                 literal: "パットは [S] 飲んだ [V] 少しの薬を [O]。",
                 natural: "パットは少し薬を飲んだ。",
@@ -112,8 +112,8 @@ export const grade3_2025_1Data = {
             choices: ["turn", "get", "go", "make"],
             choiceMeanings: ["回す", "得る", "行く", "作る"],
             correctAnswer: 1,
-            structure: "Can you turn down [V] the radio [O]?",
-            explanation: "turn down: （音量などを）下げる",
+            structure: "Can [aux] you [S] turn down [V] the radio [O]?",
+            explanation: "正解単語: turn。turn down で「（音量などを）下げる」。ラジオの音を下げてほしいという依頼。",
             translation: {
                 literal: "あなたは下げられますか [V] ラジオを [O]？",
                 natural: "ラジオの音を下げてくれますか？",
@@ -128,7 +128,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["〜の上に", "〜のために", "〜の中に", "〜へ"],
             correctAnswer: 3,
             structure: "Let's meet [V] in front of the flower shop [M].",
-            explanation: "in front of: 〜の前で",
+            explanation: "正解単語: in。in front of で「〜の前で」。待ち合わせ場所の指定に使われる熟語。",
             translation: {
                 literal: "会いましょう [V] 花屋の前で [M]。",
                 natural: "花屋の前で会おう。",
@@ -143,7 +143,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["〜で", "〜によって", "〜の上に", "〜へ"],
             correctAnswer: 3,
             structure: "on his way [M] to work [M].",
-            explanation: "on one's way to: 〜へ行く途中で",
+            explanation: "正解単語: on。on one's way to ... で「...へ行く途中で」。仕事へ行く途中で新聞を買う。",
             translation: {
                 literal: "彼の途中で [M] 仕事へ行く [M]。",
                 natural: "仕事へ行く途中で。",
@@ -158,7 +158,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["最善", "最も広い", "最も長い", "最も深い"],
             correctAnswer: 1,
             structure: "Do [V] your best [O].",
-            explanation: "do one's best: 全力を尽くす、頑張る",
+            explanation: "正解単語: best。do your best で「全力を尽くす/頑張る」。試合前の応援メッセージ。",
             translation: {
                 literal: "あなたの最善を尽くしなさい [V]。",
                 natural: "全力を尽くしなさい。",
@@ -173,7 +173,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["正しい／まさに", "いくつかの", "とても", "〜もまた"],
             correctAnswer: 1,
             structure: "He [S] has to leave [V] right now [M].",
-            explanation: "right now: たった今、すぐに",
+            explanation: "正解単語: right。right now で「今すぐ（たった今）」。5時の会議に間に合うために、今すぐ出発しなければならない。",
             translation: {
                 literal: "彼は [S] 出発しなければならない [V] 今すぐに [M]。",
                 natural: "彼は今すぐ出発しなければならない。",
@@ -188,7 +188,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["撮る", "撮った", "撮っている", "撮られた"],
             correctAnswer: 4,
             structure: "Was [aux] this picture [S] taken [V] in Australia [M]?",
-            explanation: "be taken: （写真を）撮られる（受動態）",
+            explanation: "正解単語: taken (撮られた)。写真は「撮られる」ものなので受動態 (be + taken)。",
             translation: {
                 literal: "この写真は [S] 撮られましたか [V] オーストラリアで [M]？",
                 natural: "この写真はオーストラリアで撮られたの？",
@@ -203,7 +203,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["確認する", "確認している", "確認すること", "確認した"],
             correctAnswer: 4,
             structure: "have [aux] you [S] checked [V] the mail [O] yet [M]?",
-            explanation: "have checked: 確認した（現在完了）",
+            explanation: "正解単語: checked (確認した)。have you ... yet? で現在完了形の疑問文。check の過去分詞形 checked が必要。",
             translation: {
                 literal: "あなたは [S] 確認しましたか [V] 郵便を [O] もう [M]？",
                 natural: "もう郵便を確認した？",
@@ -218,7 +218,7 @@ export const grade3_2025_1Data = {
             choiceMeanings: ["冷やしている", "より涼しい", "最も涼しい", "涼しい"],
             correctAnswer: 2,
             structure: "it [S] was [V] cooler [C] than my hometown [M].",
-            explanation: "cooler: より涼しい（比較級）",
+            explanation: "正解単語: cooler (より涼しい)。than (〜より) があるので比較級。",
             translation: {
                 literal: "それは [S] だった [V] より涼しい [C] 私の故郷より [M]。",
                 natural: "私の故郷より涼しかった。",

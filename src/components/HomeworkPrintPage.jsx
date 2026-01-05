@@ -45,9 +45,23 @@ const HomeworkPrintPage = () => {
         return <div className="print-error">試験データが見つかりません。</div>;
     }
 
-    // ... (questions filtering) ...
+    const { questions } = exam.data;
+    // ID比較を安全に行う（数値変換）
+    const filteredQuestions = questions.filter(q => Number(q.id) >= Number(startId) && Number(q.id) <= Number(endId));
+    const questionCount = filteredQuestions.length;
 
-    // ... (layout splitting) ...
+    if (questionCount === 0) {
+        return <div className="print-error">選択された範囲の問題が見つかりません。(ID: {startId} - {endId})</div>;
+    }
+
+    // 問題を左右2列に分割
+    const halfPoint = Math.ceil(questionCount / 2);
+    const leftColumn = filteredQuestions.slice(0, halfPoint);
+    const rightColumn = filteredQuestions.slice(halfPoint);
+
+    // 正解を2行に分割
+    const answerHalfPoint = Math.ceil(questionCount / 2);
+    const answerLine1 = filteredQuestions.slice(0, answerHalfPoint);
     const answerLine2 = filteredQuestions.slice(answerHalfPoint);
 
     // QRコード用URL生成

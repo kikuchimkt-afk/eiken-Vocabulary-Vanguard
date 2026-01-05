@@ -8,7 +8,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["清潔な", "本当の", "簡単な", "元気な／素晴らしい"],
             correctAnswer: 2,
             structure: "that [S] 's not true [C].",
-            explanation: "true: 本当の",
+            explanation: "正解単語: true (本当の)。看護師だと言われたが、実際は医者なので「それは本当ではない(That's not true)」と否定する。",
             translation: {
                 literal: "それは [S] 本当ではない [C]。",
                 natural: "それは違います。",
@@ -23,7 +23,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["トピック／話題", "理由", "機会", "方法"],
             correctAnswer: 1,
             structure: "What [C] is [V] the topic [S] of your report [M]?",
-            explanation: "topic: 話題、トピック",
+            explanation: "正解単語: topic (トピック/話題)。レポートの内容 (Life in Brazil) を尋ねているので、レポートの「トピック」は何？と聞くのが自然。",
             translation: {
                 literal: "何 [C] ですか [V] トピックは [S] あなたのレポートの [M]？",
                 natural: "あなたのレポートのトピックは何？",
@@ -38,7 +38,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["トーナメント", "惑星", "入り口", "地平線"],
             correctAnswer: 3,
             structure: "Where [C] is [V] the main entrance [S]?",
-            explanation: "entrance: 入り口",
+            explanation: "正解単語: entrance (入り口)。場所を尋ねている質問で、「正門/正面玄関 (main entrance)」が適切。",
             translation: {
                 literal: "どこ [C] ですか [V] 正面玄関は [S]？",
                 natural: "正面玄関はどこですか？",
@@ -53,7 +53,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["眺め", "機会", "世紀", "健康"],
             correctAnswer: 1,
             structure: "The view [S] from our room [M] is [V] beautiful [C].",
-            explanation: "view: 眺め、景色",
+            explanation: "正解単語: view (眺め)。ホテルについての会話で、美しい (beautiful) と言えば部屋からの「眺め」。",
             translation: {
                 literal: "眺めは [S] 私たちの部屋からの [M] です [V] 美しい [C]。",
                 natural: "部屋からの眺めが美しい。",
@@ -68,7 +68,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["暗い", "若い", "低い", "広い"],
             correctAnswer: 1,
             structure: "It [S] 's getting [V] dark [C].",
-            explanation: "get dark: 暗くなる",
+            explanation: "正解単語: dark (暗い)。Look at the sky (空を見て) や go home soon (早く帰ろう) という文脈から、日が暮れて「暗く (getting dark)」なってきたことがわかる。",
             translation: {
                 literal: "それは [S] なってきている [V] 暗く [C]。",
                 natural: "暗くなってきた。",
@@ -83,7 +83,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["音", "パン", "木材", "危険"],
             correctAnswer: 3,
             structure: "She [S] used [V] a lot of wood [O].",
-            explanation: "wood: 木材",
+            explanation: "正解単語: wood (木材)。椅子とテーブルを作った (made chairs and tables) ので、たくさんの「木材」を使った。",
             translation: {
                 literal: "彼女は [S] 使った [V] たくさんの木材を [O]。",
                 natural: "彼女はたくさんの木材を使った。",
@@ -98,7 +98,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["決めた", "練習した", "参加した", "招待した"],
             correctAnswer: 1,
             structure: "he [S] decided [V] to stay home [O].",
-            explanation: "decide to ...: 〜することに決める",
+            explanation: "正解単語: decided (決めた)。decide to ... で「〜することに決める」。疲れていたので家にいることにした。",
             translation: {
                 literal: "彼は [S] 決めた [V] 家にいることを [O]。",
                 natural: "彼は家にいることにした。",
@@ -113,7 +113,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["素早く", "しばしば（頻度）", "本当に", "遠く"],
             correctAnswer: 2,
             structure: "How often [M] do [aux] you [S] go [V] to the library [M]?",
-            explanation: "How often: どのくらいの頻度で",
+            explanation: "正解単語: often (しばしば)。twice a month (月に2回) という頻度を答えているので、How often (どのくらいの頻度で) が適切。",
             translation: {
                 literal: "どのくらいの頻度で [M] あなたは [S] 行きますか [V] 図書館へ [M]？",
                 natural: "どのくらい図書館に行くの？",
@@ -128,7 +128,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["〜になった", "費やした", "失った", "持ってきた"],
             correctAnswer: 3,
             structure: "she [S] lost [V] her way [O].",
-            explanation: "lose one's way: 道に迷う",
+            explanation: "正解単語: lost (失った)。lose one's way で「道に迷う」。",
             translation: {
                 literal: "彼女は [S] 道に迷った [V]。",
                 natural: "彼女は道に迷った。",
@@ -143,7 +143,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["発明する", "同意する", "満たす", "成長する"],
             correctAnswer: 2,
             structure: "I [S] agree [V] with you [M].",
-            explanation: "agree with ...: 〜に賛成する、同意する",
+            explanation: "正解単語: agree (賛成する)。environment is important に対し、eco-friendly (環境に優しい) であるべきだと言っているので「賛成 (agree)」。",
             translation: {
                 literal: "私は [S] 同意します [V] あなたに [M]。",
                 natural: "私はあなたに賛成です。",
@@ -158,7 +158,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["〜で", "〜の中へ", "〜として", "〜のために"],
             correctAnswer: 4,
             structure: "This restaurant [S] is [V] famous [C] for its great pizza [M].",
-            explanation: "be famous for ...: 〜で有名である",
+            explanation: "正解単語: for。be famous for ... で「〜で有名である」。",
             translation: {
                 literal: "このレストランは [S] です [V] 有名 [C] その素晴らしいピザのために [M]。",
                 natural: "このレストランは素晴らしいピザで有名だ。",
@@ -173,7 +173,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["意見", "高さ", "問題", "接触／連絡"],
             correctAnswer: 1,
             structure: "In my opinion [M], it [S] is [V] really good [C].",
-            explanation: "In my opinion: 私の意見では",
+            explanation: "正解単語: opinion (意見)。In my opinion で「私の意見では」。本の感想を述べる場面。",
             translation: {
                 literal: "私の意見では [M] それは [S] です [V] 本当に良い [C]。",
                 natural: "私の意見では、それは本当に良い本だ。",
@@ -188,7 +188,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["彼女は（主格）", "彼女自身（再帰代名詞）", "彼女を（目的格）", "彼女のもの（所有代名詞）"],
             correctAnswer: 3,
             structure: "He [S] named [V] her [O] Moka [C].",
-            explanation: "name A B: AをBと名付ける",
+            explanation: "正解単語: her (彼女を)。name A B (AをBと名付ける) の A にあたる部分。目的格の her が必要。",
             translation: {
                 literal: "彼は [S] 名付けた [V] 彼女を [O] モカと [C]。",
                 natural: "彼は彼女をモカと名付けた。",
@@ -203,7 +203,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["盗まれた（過去分詞）", "盗んでいる（現在分詞）", "盗む（三単現）", "盗んだ（過去形）"],
             correctAnswer: 1,
             structure: "The police [S] looked for [V] the bicycle [O] (which was) stolen from a bicycle shop [M].",
-            explanation: "stolen: 盗まれた（過去分詞の形容詞的用法）",
+            explanation: "正解単語: stolen (盗まれた)。bicycle を後ろから修飾する分詞。自転車からすれば「盗まれた」受け身の関係なので過去分詞 stolen。",
             translation: {
                 literal: "警察は [S] 探した [V] 自転車を [O] 自転車屋から盗まれた [形容詞句]。",
                 natural: "警察は自転車屋から盗まれた自転車を探した。",
@@ -218,7 +218,7 @@ export const grade3_2024_3Data = {
             choiceMeanings: ["どちら／あれこれ（関係代名詞）", "何", "誰", "どこ"],
             correctAnswer: 1,
             structure: "She [S] wants [V] one [O] which is easy to carry [形容詞節].",
-            explanation: "which: （主格の関係代名詞）",
+            explanation: "正解単語: which。コンピューター (one) を修飾する関係代名詞。物が先行詞なので which (または that)。",
             translation: {
                 literal: "彼女は [S] 欲しい [V] ものが [O] 運びやすい [形容詞節]。",
                 natural: "彼女は運びやすいものが欲しい。",

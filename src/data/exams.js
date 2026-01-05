@@ -17,6 +17,14 @@ import { grade2_2023_1_subData } from './grade2_2023_1_sub';
 import { grade5Data } from './grade5_2025_1';
 import { grade5_2025_2Data } from './grade5_2025_2';
 import { grade5_2024_3Data } from './grade5_2024_3';
+import { grade5_2024_2Data } from './grade5_2024_2';
+import { grade5_2024_1Data } from './grade5_2024_1';
+import { grade5_2023_3Data } from './grade5_2023_3';
+import { grade5_2023_2Data } from './grade5_2023_2';
+import { grade5_2023_1Data } from './grade5_2023_1';
+import { grade5_2022_3Data } from './grade5_2022_3';
+import { grade5_2022_2Data } from './grade5_2022_2';
+import { grade5_2022_1Data } from './grade5_2022_1';
 import { grade4Data } from './grade4_2025_2';
 import { grade4_2025_1Data } from './grade4_2025_1';
 
@@ -24,16 +32,46 @@ import { grade4_2024_3Data } from './grade4_2024_3';
 import { grade4_2024_2Data } from './grade4_2024_2';
 import { grade4_2024_1Data } from './grade4_2024_1';
 import { grade4_2023_3Data } from './grade4_2023_3';
+import { grade4_2023_2Data } from './grade4_2023_2';
+import { grade4_2023_1Data } from './grade4_2023_1';
+import { grade4_2022_3Data } from './grade4_2022_3';
+import { grade4_2022_2Data } from './grade4_2022_2';
+import { grade4_2022_1Data } from './grade4_2022_1';
+import { grade4_2021_3Data } from './grade4_2021_3';
+import { grade4_2021_2Data } from './grade4_2021_2';
+import { grade4_2021_1Data } from './grade4_2021_1';
 import { grade3Data } from './grade3_2025_2';
+import { grade3_2025_2_subData } from './grade3_2025_2_sub';
+import { grade3_2025_1_subData } from './grade3_2025_1_sub';
 import { grade3_2025_1Data } from './grade3_2025_1';
 import { grade3_2024_3Data } from './grade3_2024_3';
+import { grade3_2024_3_subData } from './grade3_2024_3_sub';
+import { grade3_2024_2_subData } from './grade3_2024_2_sub';
 import { grade3_2024_2Data } from './grade3_2024_2';
+import { grade3_2024_1_subData } from './grade3_2024_1_sub';
 import { grade3_2024_1Data } from './grade3_2024_1';
+import { grade3_2023_3_subData } from './grade3_2023_3_sub';
+import { grade3_2023_3Data } from './grade3_2023_3';
+import { grade3_2023_2_subData } from './grade3_2023_2_sub';
+import { grade3_2023_2Data } from './grade3_2023_2';
+import { grade3_2023_1_subData } from './grade3_2023_1_sub';
+import { grade3_2023_1Data } from './grade3_2023_1';
+import { grade3_2022_3_subData } from './grade3_2022_3_sub';
+import { grade3_2022_3Data } from './grade3_2022_3';
+import { grade3_2022_2_subData } from './grade3_2022_2_sub';
+import { grade3_2022_2Data } from './grade3_2022_2';
+import { grade3_2022_1_subData } from './grade3_2022_1_sub';
+import { grade3_2022_1Data } from './grade3_2022_1';
 import { gradePre2Data } from './gradePre2_2025_2';
+import { gradePre2_2025_2_subData } from './gradePre2_2025_2_sub';
 import { gradePre2_2025_1Data } from './gradePre2_2025_1';
+import { gradePre2_2025_1_subData } from './gradePre2_2025_1_sub';
 import { gradePre2_2024_3Data } from './gradePre2_2024_3';
+import { gradePre2_2024_3_subData } from './gradePre2_2024_3_sub';
 import { gradePre2_2024_2Data } from './gradePre2_2024_2';
+import { gradePre2_2024_2_subData } from './gradePre2_2024_2_sub';
 import { gradePre2_2024_1Data } from './gradePre2_2024_1';
+import { gradePre2_2024_1_subData } from './gradePre2_2024_1_sub';
 import { gradePre2_2023_2Data } from './gradePre2_2023_2';
 import { gradePre2_2023_1Data } from './gradePre2_2023_1';
 import { gradePre2_2023_3Data } from './gradePre2_2023_3';
@@ -430,6 +468,17 @@ export const exams = [
         data: gradePre2Data
     },
     {
+        id: '2025-2-gp2-sub',
+        grade: '準2級',
+        gradeLabel: '準2級',
+        year: 2025,
+        session: '第2回',
+        title: '2025年度 第2回検定 (準会場)',
+        subTitle: 'Vocabulary & Expressions',
+        badge: '準会場',
+        data: gradePre2_2025_2_subData
+    },
+    {
         id: '2025-1-gp2',
         grade: '準2級',
         gradeLabel: '準2級',
@@ -438,6 +487,17 @@ export const exams = [
         title: '2025年度 第1回検定',
         subTitle: 'Education',
         data: gradePre2_2025_1Data
+    },
+    {
+        id: '2025-1-gp2-sub',
+        grade: '準2級',
+        gradeLabel: '準2級',
+        year: 2025,
+        session: '第1回',
+        title: '2025年度 第1回検定 (準会場)',
+        subTitle: 'Vocabulary & Expressions',
+        badge: '準会場',
+        data: gradePre2_2025_1_subData
     },
     {
         id: '2024-3-gp2',
@@ -450,6 +510,17 @@ export const exams = [
         data: gradePre2_2024_3Data
     },
     {
+        id: '2024-3-gp2-sub',
+        grade: '準2級',
+        gradeLabel: '準2級',
+        year: 2024,
+        session: '第3回',
+        title: '2024年度 第3回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: gradePre2_2024_3_subData
+    },
+    {
         id: '2024-2-gp2',
         grade: '準2級',
         gradeLabel: '準2級',
@@ -460,6 +531,17 @@ export const exams = [
         data: gradePre2_2024_2Data
     },
     {
+        id: '2024-2-gp2-sub',
+        grade: '準2級',
+        gradeLabel: '準2級',
+        year: 2024,
+        session: '第2回',
+        title: '2024年度 第2回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: gradePre2_2024_2_subData
+    },
+    {
         id: '2024-1-gp2',
         grade: '準2級',
         gradeLabel: '準2級',
@@ -468,6 +550,17 @@ export const exams = [
         title: '2024年度 第1回検定',
         subTitle: 'Daily Life & Social',
         data: gradePre2_2024_1Data
+    },
+    {
+        id: '2024-1-gp2-sub',
+        grade: '準2級',
+        gradeLabel: '準2級',
+        year: 2024,
+        session: '第1回',
+        title: '2024年度 第1回検定 (準会場)',
+        subTitle: 'Vocabulary & Expressions',
+        badge: '準会場',
+        data: gradePre2_2024_1_subData
     },
     {
         id: '2023-3-gp2',
@@ -508,6 +601,17 @@ export const exams = [
         title: '2025年度 第2回検定',
         subTitle: 'Daily Life & Expressions',
         data: grade3Data
+    },
+    {
+        id: '2025-2-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2025,
+        session: '第2回',
+        title: '2025年度 第2回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2025_2_subData
     },
     {
         id: '2025-2-g4',
@@ -570,6 +674,86 @@ export const exams = [
         data: grade4_2023_3Data
     },
     {
+        id: '2023-2-g4',
+        grade: '4級',
+        gradeLabel: '4級',
+        year: 2023,
+        session: '第2回',
+        title: '2023年度 第2回検定',
+        subTitle: 'Daily Life & School',
+        data: grade4_2023_2Data
+    },
+    {
+        id: '2023-1-g4',
+        grade: '4級',
+        gradeLabel: '4級',
+        year: 2023,
+        session: '第1回',
+        title: '2023年度 第1回検定',
+        subTitle: 'Daily Life & School',
+        data: grade4_2023_1Data
+    },
+    {
+        id: '2022-3-g4',
+        grade: '4級',
+        gradeLabel: '4級',
+        year: 2022,
+        session: '第3回',
+        title: '2022年度 第3回検定',
+        subTitle: 'Daily Life & School',
+        data: grade4_2022_3Data
+    },
+    {
+        id: '2022-2-g4',
+        grade: '4級',
+        gradeLabel: '4級',
+        year: 2022,
+        session: '第2回',
+        title: '2022年度 第2回検定',
+        subTitle: 'Daily Life & School',
+        data: grade4_2022_2Data
+    },
+    {
+        id: '2022-1-g4',
+        grade: '4級',
+        gradeLabel: '4級',
+        year: 2022,
+        session: '第1回',
+        title: '2022年度 第1回検定',
+        subTitle: 'Daily Life & School',
+        data: grade4_2022_1Data
+    },
+    {
+        id: '2021-3-g4',
+        grade: '4級',
+        gradeLabel: '4級',
+        year: 2021,
+        session: '第3回',
+        title: '2021年度 第3回検定',
+        subTitle: 'Daily Life & School',
+        data: grade4_2021_3Data
+    },
+    {
+        id: '2021-2-g4',
+        grade: '4級',
+        gradeLabel: '4級',
+        year: 2021,
+        session: '第2回',
+        title: '2021年度 第2回検定',
+        subTitle: 'Daily Life & School',
+        data: grade4_2021_2Data
+    },
+    {
+        id: '2021-1-g4',
+        grade: '4級',
+        gradeLabel: '4級',
+        year: 2021,
+        session: '第1回',
+        title: '2021年度 第1回検定',
+        subTitle: 'Daily Life & School',
+        data: grade4_2021_1Data
+    },
+    {
         id: '2025-1-g3',
         grade: '3級',
         gradeLabel: '3級',
@@ -580,6 +764,17 @@ export const exams = [
         data: grade3_2025_1Data
     },
     {
+        id: '2025-1-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2025,
+        session: '第1回',
+        title: '2025年度 第1回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2025_1_subData
+    },
+    {
         id: '2024-3-g3',
         grade: '3級',
         gradeLabel: '3級',
@@ -588,6 +783,28 @@ export const exams = [
         title: '2024年度 第3回検定',
         subTitle: 'Daily Life',
         data: grade3_2024_3Data
+    },
+    {
+        id: '2024-3-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2024,
+        session: '第3回',
+        title: '2024年度 第3回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2024_3_subData
+    },
+    {
+        id: '2024-2-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2024,
+        session: '第2回',
+        title: '2024年度 第2回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2024_2_subData
     },
     {
         id: '2024-2-g3',
@@ -608,6 +825,143 @@ export const exams = [
         title: '2024年度 第1回検定',
         subTitle: 'Daily Life',
         data: grade3_2024_1Data
+    },
+    {
+        id: '2024-1-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2024,
+        session: '第1回',
+        title: '2024年度 第1回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2024_1_subData
+    },
+    {
+        id: '2023-3-g3',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2023,
+        session: '第3回',
+        title: '2023年度 第3回検定',
+        subTitle: 'Daily Life',
+        data: grade3_2023_3Data
+    },
+    {
+        id: '2023-3-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2023,
+        session: '第3回',
+        title: '2023年度 第3回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions', // Placeholder
+        badge: '準会場',
+        data: grade3_2023_3_subData
+    },
+    {
+        id: '2023-2-g3',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2023,
+        session: '第2回',
+        title: '2023年度 第2回検定',
+        subTitle: 'Daily Life',
+        data: grade3_2023_2Data
+    },
+    {
+        id: '2023-2-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2023,
+        session: '第2回',
+        title: '2023年度 第2回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2023_2_subData
+    },
+    {
+        id: '2023-1-g3',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2023,
+        session: '第1回',
+        title: '2023年度 第1回検定',
+        subTitle: 'Daily Life',
+        data: grade3_2023_1Data
+    },
+    {
+        id: '2023-1-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2023,
+        session: '第1回',
+        title: '2023年度 第1回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2023_1_subData
+    },
+    {
+        id: '2022-3-g3',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2022,
+        session: '第3回',
+        title: '2022年度 第3回検定',
+        subTitle: 'Daily Life',
+        data: grade3_2022_3Data
+    },
+    {
+        id: '2022-3-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2022,
+        session: '第3回',
+        title: '2022年度 第3回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2022_3_subData
+    },
+    {
+        id: '2022-2-g3',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2022,
+        session: '第2回',
+        title: '2022年度 第2回検定',
+        subTitle: 'Daily Life',
+        data: grade3_2022_2Data
+    },
+    {
+        id: '2022-2-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2022,
+        session: '第2回',
+        title: '2022年度 第2回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2022_2_subData
+    },
+    {
+        id: '2022-1-g3',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2022,
+        session: '第1回',
+        title: '2022年度 第1回検定',
+        subTitle: 'Daily Life',
+        data: grade3_2022_1Data
+    },
+    {
+        id: '2022-1-g3-sub',
+        grade: '3級',
+        gradeLabel: '3級',
+        year: 2022,
+        session: '第1回',
+        title: '2022年度 第1回検定 (準会場)',
+        subTitle: 'Daily Life & Expressions',
+        badge: '準会場',
+        data: grade3_2022_1_subData
     },
     {
         id: '2025-1-g5',
@@ -638,6 +992,86 @@ export const exams = [
         title: '2024年度 第3回検定',
         subTitle: 'Conversation & Basic Grammar',
         data: grade5_2024_3Data
+    },
+    {
+        id: '2024-2-g5',
+        grade: '5級',
+        gradeLabel: '5級',
+        year: 2024,
+        session: '第2回',
+        title: '2024年度 第2回検定',
+        subTitle: 'Conversation & Basic Grammar',
+        data: grade5_2024_2Data
+    },
+    {
+        id: '2024-1-g5',
+        grade: '5級',
+        gradeLabel: '5級',
+        year: 2024,
+        session: '第1回',
+        title: '2024年度 第1回検定',
+        subTitle: 'Conversation & Basic Grammar',
+        data: grade5_2024_1Data
+    },
+    {
+        id: '2023-3-g5',
+        grade: '5級',
+        gradeLabel: '5級',
+        year: 2023,
+        session: '第3回',
+        title: '2023年度 第3回検定',
+        subTitle: 'Conversation & Basic Grammar',
+        data: grade5_2023_3Data
+    },
+    {
+        id: '2023-2-g5',
+        grade: '5級',
+        gradeLabel: '5級',
+        year: 2023,
+        session: '第2回',
+        title: '2023年度 第2回検定',
+        subTitle: 'Conversation & Basic Grammar',
+        data: grade5_2023_2Data
+    },
+    {
+        id: '2023-1-g5',
+        grade: '5級',
+        gradeLabel: '5級',
+        year: 2023,
+        session: '第1回',
+        title: '2023年度 第1回検定',
+        subTitle: 'Conversation & Basic Grammar',
+        data: grade5_2023_1Data
+    },
+    {
+        id: '2022-3-g5',
+        grade: '5級',
+        gradeLabel: '5級',
+        year: 2022,
+        session: '第3回',
+        title: '2022年度 第3回検定',
+        subTitle: 'Conversation & Basic Grammar',
+        data: grade5_2022_3Data
+    },
+    {
+        id: '2022-2-g5',
+        grade: '5級',
+        gradeLabel: '5級',
+        year: 2022,
+        session: '第2回',
+        title: '2022年度 第2回検定',
+        subTitle: 'Conversation & Basic Grammar',
+        data: grade5_2022_2Data
+    },
+    {
+        id: '2022-1-g5',
+        grade: '5級',
+        gradeLabel: '5級',
+        year: 2022,
+        session: '第1回',
+        title: '2022年度 第1回検定',
+        subTitle: 'Conversation & Basic Grammar',
+        data: grade5_2022_1Data
     }
 ];
 

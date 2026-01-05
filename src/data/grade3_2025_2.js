@@ -8,7 +8,7 @@ export const grade3Data = {
             choiceMeanings: ["貸す", "捕まえる", "費用がかかる", "閉じる"],
             correctAnswer: 1,
             structure: "I [S] 'll lend [V] it [O] to you [M].",
-            explanation: "lend: 貸す（lend A to B = AをBに貸す）",
+            explanation: "正解単語: lend (貸す)。「本を借りてもいい？」という問いに対し、「貸してあげる」と答える文脈。lend A to B で「AをBに貸す」。",
             translation: {
                 literal: "私は [S] 貸すつもりだ [V] それを [O] あなたに [M]。",
                 natural: "それをあなたに貸してあげるね。",
@@ -23,7 +23,7 @@ export const grade3Data = {
             choiceMeanings: ["高い", "冷たい", "短い", "深い"],
             correctAnswer: 4,
             structure: "This pool [S] is [V] so deep [C] that ...",
-            explanation: "deep: 深い（so ... that 〜 = とても...なので〜）",
+            explanation: "正解単語: deep (深い)。底が見えない（can't see the bottom）ほど「深い」プールなので、入ると危険。",
             translation: {
                 literal: "このプールは [S] ある [V] とても深く [C] 〜なので...",
                 natural: "このプールはとても深いので...。",
@@ -37,8 +37,8 @@ export const grade3Data = {
             choices: ["quick", "clean", "happy", "total"],
             choiceMeanings: ["速い", "きれいな", "幸せな", "合計の"],
             correctAnswer: 4,
-            structure: "What was [V] my total score [S]?",
-            explanation: "total score: 合計点",
+            structure: "What [C] was [V] my total score [S]?",
+            explanation: "正解単語: total (合計の)。テストの点数について聞いており、80点という回答から「合計点 (total score)」を聞いていると判断できる。",
             translation: {
                 literal: "何でしたか [V] 私の合計点は [S]？",
                 natural: "私の合計点は何点でしたか？",
@@ -53,7 +53,7 @@ export const grade3Data = {
             choiceMeanings: ["水族館", "カフェテリア", "スタジアム", "大学"],
             correctAnswer: 1,
             structure: "Let's go [V] to the new aquarium [M].",
-            explanation: "aquarium: 水族館",
+            explanation: "正解単語: aquarium (水族館)。魚 (fish) やイルカ (dolphins) を見に行こうという話題なので「水族館」。",
             translation: {
                 literal: "行こう [V] 新しい水族館へ [M]。",
                 natural: "新しい水族館に行こう。",
@@ -68,7 +68,7 @@ export const grade3Data = {
             choiceMeanings: ["たくさんの", "高い", "十分な", "少しの"],
             correctAnswer: 3,
             structure: "He [S] doesn't have [V] enough time [O].",
-            explanation: "enough: 十分な（enough time = 十分な時間）",
+            explanation: "正解単語: enough (十分な)。とても忙しい (very busy) ので、新聞を読むための「十分な」時間がない。",
             translation: {
                 literal: "彼は [S] 持っていない [V] 十分な時間を [O]。",
                 natural: "彼は十分な時間がない。",
@@ -82,8 +82,8 @@ export const grade3Data = {
             choices: ["cousin", "bottle", "blanket", "castle"],
             choiceMeanings: ["いとこ", "ボトル", "毛布", "城"],
             correctAnswer: 3,
-            structure: "Do you need [V] a blanket [O]?",
-            explanation: "blanket: 毛布",
+            structure: "Do [aux] you [S] need [V] a blanket [O]?",
+            explanation: "正解単語: blanket (毛布)。寒くなってきた (getting cold) と言っているので、必要なのは「毛布」。",
             translation: {
                 literal: "あなたは必要ですか [V] 毛布を [O]？",
                 natural: "毛布は必要？",
@@ -98,7 +98,7 @@ export const grade3Data = {
             choiceMeanings: ["録画した", "開けた", "描いた", "祝った"],
             correctAnswer: 1,
             structure: "Yumi [S] recorded [V] a video [O].",
-            explanation: "record: 録画する",
+            explanation: "正解単語: recorded (録画した)。ダンス教室のビデオを「録画して」祖父に送った。video と record は自然な組み合わせ。",
             translation: {
                 literal: "ユミは [S] 録画した [V] 動画を [O]。",
                 natural: "ユミは動画を録画した。",
@@ -113,7 +113,7 @@ export const grade3Data = {
             choiceMeanings: ["急ぎ", "約束", "カレンダー", "荷物"],
             correctAnswer: 1,
             structure: "She [S] 's [V] always in a hurry [C].",
-            explanation: "in a hurry: 急いでいる",
+            explanation: "正解単語: hurry (急ぎ)。in a hurry で「急いでいる」。いつも急いでいるので話す機会がない。",
             translation: {
                 literal: "彼女は [S] いる [V] いつも急いでいる状態に [C]。",
                 natural: "彼女はいつも急いでいる。",
@@ -128,7 +128,7 @@ export const grade3Data = {
             choiceMeanings: ["〜のために", "〜から", "〜の外に", "〜を越えて"],
             correctAnswer: 1,
             structure: "Jenny [S] saw [V] her grandparents [O] for the first time [M].",
-            explanation: "for the first time: 初めて（in years = 何年かぶりに）",
+            explanation: "正解単語: for。for the first time in in years で「何年かぶりに初めて」。久しぶりに祖父母に会った。",
             translation: {
                 literal: "ジェニーは [S] 会った [V] 祖父母に [O] 初めて [M]。",
                 natural: "ジェニーは祖父母に初めて会った。",
@@ -143,7 +143,7 @@ export const grade3Data = {
             choiceMeanings: ["両方の", "すべての", "あの", "私たちの"],
             correctAnswer: 2,
             structure: "Jeff [S] plays [V] video games [O] all the time [M].",
-            explanation: "all the time: いつも、常に",
+            explanation: "正解単語: all。all the time で「いつも/常に」。いつもゲームばかりしているので母親が怒っている。",
             translation: {
                 literal: "ジェフは [S] する [V] ビデオゲームを [O] いつも [M]。",
                 natural: "ジェフはいつもビデオゲームをしている。",
@@ -158,7 +158,7 @@ export const grade3Data = {
             choiceMeanings: ["静かな", "狭い", "まっすぐな", "欠席の"],
             correctAnswer: 4,
             structure: "Tim [S] was [V] absent [C] from school [M].",
-            explanation: "absent: 欠席の（be absent from = 〜を欠席している）",
+            explanation: "正解単語: absent (欠席の)。be absent from school で「学校を欠席する」。病気だったので学校を休んだ。",
             translation: {
                 literal: "ティムは [S] だった [V] 欠席 [C] 学校から [M]。",
                 natural: "ティムは学校を欠席していた。",
@@ -173,7 +173,7 @@ export const grade3Data = {
             choiceMeanings: ["右に", "前に", "上に", "後に"],
             correctAnswer: 2,
             structure: "Yuki [S] was looking forward [V] to going [O].",
-            explanation: "look forward to: 〜を楽しみにする",
+            explanation: "正解単語: forward (前に)。look forward to ...ing で「〜するのを楽しみに待つ」。コンサートに行くのを楽しみにしていた。",
             translation: {
                 literal: "ユキは [S] 楽しみにしていた [V] 行くことを [O]。",
                 natural: "ユキは行くことを楽しみにしていた。",
@@ -187,8 +187,8 @@ export const grade3Data = {
             choices: ["drank", "drinking", "to drink", "drinks"],
             choiceMeanings: ["飲んだ（過去形）", "飲んでいる", "飲むための", "飲む（三単現）"],
             correctAnswer: 3,
-            structure: "Do you have [V] anything to drink [O]?",
-            explanation: "anything to drink: 何か飲むもの（to不定詞の形容詞用法）",
+            structure: "Do [aux] you [S] have [V] anything to drink [O]?",
+            explanation: "正解単語: to drink (飲むための)。anything to drink で「何か飲むもの」。喉が渇いた、あるいはお茶を勧める文脈などで使われる。",
             translation: {
                 literal: "あなたは持っていますか [V] 何か飲むものを [O]？",
                 natural: "何か飲むものはありますか？",
@@ -202,8 +202,8 @@ export const grade3Data = {
             choices: ["grown", "grew", "grow", "grows"],
             choiceMeanings: ["育てた（過去分詞）", "育てた（過去形）", "育てる（原形）", "育てる（三単現）"],
             correctAnswer: 1,
-            structure: "the tomato plant [S] (that) she has grown [V].",
-            explanation: "has grown: 育てた（現在完了形）",
+            structure: "the tomato plant [S] (that) she [S] has grown [V].",
+            explanation: "正解単語: grown (育てた)。has + 過去分詞で現在完了形。トマトの苗を「育てた」。grew は過去形なので不可（hasの後ろ）。",
             translation: {
                 literal: "トマトの苗は [S] 彼女が育てた [V]。",
                 natural: "彼女が育てたトマトの苗。",
@@ -217,10 +217,10 @@ export const grade3Data = {
             choices: ["weren't", "couldn't", "didn't", "shouldn't"],
             choiceMeanings: ["〜でなかった", "〜できなかった", "〜しなかった", "〜すべきでなかった"],
             correctAnswer: 3,
-            structure: "you walked the dog, didn't you?",
-            explanation: "付加疑問文: 肯定文 + didn't you?（〜したよね？）",
+            structure: "you [S] walked [V] the dog [O], didn't you?",
+            explanation: "正解単語: didn't。you walked... という一般動詞の過去形の文に対する付加疑問文なので didn't you? となる。",
             translation: {
-                literal: "あなたは散歩させた、犬を、〜だよね？",
+                literal: "あなたは [S] 散歩させた [V] 犬を [O] 〜だよね？",
                 natural: "犬の散歩したよね？",
                 intermediate: "A: ボブ、犬の散歩はしたよね？\nB: いいえ、お母さん。夕食後にするよ。"
             },

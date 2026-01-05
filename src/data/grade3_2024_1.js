@@ -8,7 +8,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["〜に沿って", "ほとんど", "海外へ", "いつでも"],
             correctAnswer: 4,
             structure: "You [S] can ask [V] me [O] anytime [M].",
-            explanation: "anytime: いつでも",
+            explanation: "正解単語: anytime (いつでも)。「もちろん (Of course)」と快諾しているので「いつでも」聞いていいよ、という流れ。",
             translation: {
                 literal: "あなたは [S] 尋ねることができます [V] 私に [O] いつでも [M]。",
                 natural: "いつでも聞いていいよ。",
@@ -22,8 +22,8 @@ export const grade3_2024_1Data = {
             choices: ["enough", "forward", "half", "else"],
             choiceMeanings: ["十分に", "前方へ", "半分", "他に"],
             correctAnswer: 1,
-            structure: "The shoes [S] aren't [V] big enough [C].",
-            explanation: "big enough: 十分に大きい",
+            structure: "The shoes [S] (which I wore last year) aren't [V] big enough [C] anymore [M].",
+            explanation: "正解単語: enough (十分に)。big enough で「十分に大きい」。成長して靴が小さくなった（十分な大きさではなくなった）。",
             translation: {
                 literal: "その靴は [S] です [V] 十分に大きくない [C]。",
                 natural: "その靴はもう十分な大きさではない（小さくなった）。",
@@ -38,7 +38,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["特に", "ついに／とうとう", "重く／激しく", "主に"],
             correctAnswer: 2,
             structure: "Finally [M], he [S] found [V] them [O].",
-            explanation: "finally: ついに、ようやく",
+            explanation: "正解単語: Finally (ついに/とうとう)。いろいろな場所を探して、最後に見つけたので「ついに (Finally)」。",
             translation: {
                 literal: "ついに [M] 彼は [S] 見つけた [V] それらを [O]。",
                 natural: "ついに彼はそれらを見つけた。",
@@ -53,7 +53,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["疲れた", "短い／背が低い", "重い", "賢い／器用な"],
             correctAnswer: 4,
             structure: "he [S] 's [V] really clever [C].",
-            explanation: "clever: 賢い",
+            explanation: "正解単語: clever (賢い)。5ヶ国語を話せてチェスも上手いことから、頭が良い「賢い (clever)」と判断できる。",
             translation: {
                 literal: "彼は [S] です [V] 本当に賢い [C]。",
                 natural: "彼は本当に賢いね。",
@@ -68,7 +68,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["健康的な", "騒がしい", "丸い", "鋭い"],
             correctAnswer: 1,
             structure: "That [S] 's [V] very healthy [C].",
-            explanation: "healthy: 健康的な",
+            explanation: "正解単語: healthy (健康的)。野菜や果物を食べてお菓子を控えるのは「健康的 (healthy)」な習慣。",
             translation: {
                 literal: "それは [S] です [V] とても健康的 [C]。",
                 natural: "それはとても健康的だね。",
@@ -83,7 +83,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["秘密", "天井", "システム", "危険"],
             correctAnswer: 1,
             structure: "it [S] 's [V] a secret [C].",
-            explanation: "secret: 秘密",
+            explanation: "正解単語: secret (秘密)。I won't tell him (彼には言わない) と言っているので「秘密 (secret)」。",
             translation: {
                 literal: "それは [S] です [V] 秘密 [C]。",
                 natural: "それは秘密だよ。",
@@ -98,7 +98,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["摘む／選ぶ", "見つける", "運ぶ", "建てる"],
             correctAnswer: 3,
             structure: "I [S] can carry [V] some [O] for you [M].",
-            explanation: "carry: 運ぶ",
+            explanation: "正解単語: carry (運ぶ)。本が多くて重そうなので、いくつか「運んであげられる (can carry)」と申し出ている。",
             translation: {
                 literal: "私は [S] 運べます [V] いくらかを [O] あなたのために [M]。",
                 natural: "いくつか持ってあげるよ。",
@@ -112,8 +112,8 @@ export const grade3_2024_1Data = {
             choices: ["of", "into", "before", "by"],
             choiceMeanings: ["〜の", "〜の中へ", "〜の前に", "〜によって"],
             correctAnswer: 1,
-            structure: "Can you take care of [V] my dog [O]?",
-            explanation: "take care of: 〜の世話をする",
+            structure: "Can [aux] you [S] take care of [V] my dog [O]?",
+            explanation: "正解単語: of。take care of ... で「...の世話をする」。",
             translation: {
                 literal: "〜の世話をしてくれますか [V] 私の犬を [O]？",
                 natural: "私の犬の世話をしてくれない？",
@@ -128,7 +128,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["問題／事柄", "財布", "顔", "贈り物"],
             correctAnswer: 1,
             structure: "What [S] 's [V] the matter [C]?",
-            explanation: "What's the matter?: どうしたの？（問題は何？）",
+            explanation: "正解単語: matter (問題)。What's the matter? で「どうしたの？（何か問題があるの？）」。相手の様子がおかしい時に使う表現。",
             translation: {
                 literal: "何が [S] ですか [V] 問題は [C]？",
                 natural: "どうしたの？",
@@ -143,7 +143,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["少ない", "すべての", "一生懸命な", "全ての／一日中"],
             correctAnswer: 4,
             structure: "It [S] 'll take [V] him [O1] all day [O2] to finish it [真S].",
-            explanation: "all day: 一日中",
+            explanation: "正解単語: all。all day で「一日中」。宿題がたくさんあるので終わらせるのに一日中かかる。",
             translation: {
                 literal: "それは [S] かかるでしょう [V] 彼に [O1] 一日中を [O2] それを終えるのに [真S]。",
                 natural: "それを終えるのに一日かかるでしょう。",
@@ -158,7 +158,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["〜へ", "〜を通って", "〜から（原料）", "〜の上に"],
             correctAnswer: 3,
             structure: "it [S] 's made [V] from fresh oranges [M].",
-            explanation: "be made from: （原料）から作られている",
+            explanation: "正解単語: from。be made from ... で「...（原料）から作られている」。見た目で材料がわかりにくい場合に使われることが多いが、ジュースの場合は from が定着している。",
             translation: {
                 literal: "それは [S] 作られている [V] 新鮮なオレンジから [M]。",
                 natural: "それは新鮮なオレンジから作られているんだ。",
@@ -173,7 +173,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["作る", "得る／乗る", "話す", "置く"],
             correctAnswer: 2,
             structure: "when you [S] get on [V] the bus [M].",
-            explanation: "get on: （バスや電車に）乗る",
+            explanation: "正解単語: get。get on で「（バスなどに）乗る」。",
             translation: {
                 literal: "〜のときあなたが [S] 乗る [V] バスに [M]。",
                 natural: "バスに乗るときにお金を払ってね。",
@@ -188,7 +188,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["練習するために（不定詞）", "練習する（原形）", "練習した（過去形）", "練習する（三単現）"],
             correctAnswer: 1,
             structure: "to practice [V] playing the piano [O].",
-            explanation: "to practice: 練習するために（不定詞の副詞的用法）",
+            explanation: "正解単語: to practice (練習するために)。to不定詞の副詞的用法。早起きする目的を表す。",
             translation: {
                 literal: "練習するために [副] ピアノを弾くことを [O]。",
                 natural: "ピアノの練習をするために（早く起きる）。",
@@ -203,7 +203,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["誰の", "なぜ", "どこへ", "誰が"],
             correctAnswer: 3,
             structure: "I [S] don't know [V] where to go shopping [O].",
-            explanation: "where to ...: どこへ〜すべきか",
+            explanation: "正解単語: where (どこへ)。「靴が必要だが、場所を知らない」ので where to go (どこへ行くべきか) が適切。",
             translation: {
                 literal: "私は [S] 知らない [V] どこへ買い物に行くべきかを [O]。",
                 natural: "どこへ買い物に行けばいいかわからない。",
@@ -218,7 +218,7 @@ export const grade3_2024_1Data = {
             choiceMeanings: ["食べること／食べるために", "食べた（過去形）", "食べる（原形）", "食べられた（過去分詞）"],
             correctAnswer: 2,
             structure: "He [S] ate [V] a lot of food [O].",
-            explanation: "ate: 食べた（eatの過去形）",
+            explanation: "正解単語: ate (食べた)。過去の出来事 (at that time) なので eat の過去形 ate。",
             translation: {
                 literal: "彼は [S] 食べた [V] たくさんの食べ物を [O]。",
                 natural: "彼はたくさんの食事をした。",

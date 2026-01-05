@@ -1,4 +1,289 @@
-export const vocabDatabase = {
+﻿export const vocabDatabase = {
+    "2025-2-gp2-sub": [
+        // Q1: precious (正解)
+        { id: 1, word: "precious", meaning: "大切な、貴重な", sentence: "The necklace is precious to her.", translation: "そのネックレスは彼女にとって大切だ。", questionId: 1 },
+        { id: 2, word: "belong to", meaning: "〜のものである", sentence: "It used to belong to her grandmother.", translation: "それは彼女のおばあさんのものだった。", questionId: 1 },
+        { id: 3, word: "remember", meaning: "思い出す", sentence: "She remembers her grandmother.", translation: "彼女はおばあさんを思い出す。", questionId: 1 },
+        // Q2: swing (正解)
+        { id: 4, word: "swing", meaning: "揺らす、振る", sentence: "He likes to swing his legs.", translation: "彼は足をブラブラさせるのが好き。", questionId: 2 },
+        { id: 5, word: "kick", meaning: "蹴る", sentence: "He might kick someone.", translation: "誰かを蹴ってしまうかも。", questionId: 2 },
+        // Q3: traditionally (正解)
+        { id: 6, word: "traditionally", meaning: "伝統的に", sentence: "People traditionally rode horses.", translation: "人々は伝統的に馬に乗った。", questionId: 3 },
+        { id: 7, word: "journey", meaning: "旅", sentence: "They made long journeys.", translation: "彼らは長い旅をした。", questionId: 3 },
+        { id: 8, word: "important", meaning: "重要な", sentence: "Horses have been an important part.", translation: "馬は重要な一部だった。", questionId: 3 },
+        // Q4: blamed (正解)
+        { id: 9, word: "blame", meaning: "責める", sentence: "His mother blamed him.", translation: "お母さんは彼を責めた。", questionId: 4 },
+        { id: 10, word: "upset", meaning: "怒って、動揺して", sentence: "Pete was upset.", translation: "ピートは怒っていた。", questionId: 4 },
+        { id: 11, word: "actually", meaning: "実際は", sentence: "Actually, it was his brother.", translation: "実際は、弟だった。", questionId: 4 },
+        // Q5: furniture (正解)
+        { id: 12, word: "furniture", meaning: "家具", sentence: "We need new furniture.", translation: "新しい家具が必要だ。", questionId: 5 },
+        { id: 13, word: "sofa", meaning: "ソファ", sentence: "Look at our sofa.", translation: "ソファを見て。", questionId: 5 },
+        // Q6: delayed (正解)
+        { id: 14, word: "delayed", meaning: "遅延した", sentence: "The flight was delayed.", translation: "フライトは遅れた。", questionId: 6 },
+        { id: 15, word: "due to", meaning: "〜のせいで", sentence: "Due to a storm.", translation: "嵐のせいで。", questionId: 6 },
+        { id: 16, word: "passenger", meaning: "乗客", sentence: "Passengers had to wait.", translation: "乗客は待たなければならなかった。", questionId: 6 },
+        // Q7: fever (正解)
+        { id: 17, word: "fever", meaning: "熱", sentence: "Maybe I have a fever.", translation: "たぶん熱があるかも。", questionId: 7 },
+        { id: 18, word: "feel hot", meaning: "暑く感じる", sentence: "I feel really hot.", translation: "すごく暑く感じる。", questionId: 7 },
+        // Q8: weigh (正解)
+        { id: 19, word: "weigh", meaning: "量る", sentence: "He should weigh himself.", translation: "彼は体重を量るべきだ。", questionId: 8 },
+        { id: 20, word: "junk food", meaning: "ジャンクフード", sentence: "Stop eating junk food.", translation: "ジャンクフードを食べるのをやめなさい。", questionId: 8 },
+        { id: 21, word: "lose weight", meaning: "体重を減らす", sentence: "Check if he was losing weight.", translation: "体重が減っているか確認する。", questionId: 8 },
+        // Q9: region (正解)
+        { id: 22, word: "region", meaning: "地域", sentence: "In your region.", translation: "あなたの地域で。", questionId: 9 },
+        { id: 23, word: "seafood", meaning: "シーフード、海産物", sentence: "We have a lot of seafood.", translation: "シーフードがたくさんある。", questionId: 9 },
+        { id: 24, word: "popular", meaning: "人気がある", sentence: "What is popular in your region?", translation: "あなたの地域で何が人気？", questionId: 9 },
+        // Q10: roots (正解)
+        { id: 25, word: "roots", meaning: "ルーツ、根", sentence: "She has no roots in Germany.", translation: "彼女はドイツにルーツがない。", questionId: 10 },
+        { id: 26, word: "born", meaning: "生まれた", sentence: "She was born in Japan.", translation: "彼女は日本で生まれた。", questionId: 10 },
+        // Q11: make money (正解)
+        { id: 27, word: "make money", meaning: "お金を稼ぐ", sentence: "Students try to make money.", translation: "学生はお金を稼ごうとする。", questionId: 11 },
+        { id: 28, word: "summer vacation", meaning: "夏休み", sentence: "During their summer vacations.", translation: "夏休みの間に。", questionId: 11 },
+        // Q12: result in (正解)
+        { id: 29, word: "result in", meaning: "〜という結果になる", sentence: "It would result in accidents.", translation: "事故につながるだろう。", questionId: 12 },
+        { id: 30, word: "heavy snow", meaning: "大雪", sentence: "Driving through heavy snow.", translation: "大雪の中を運転する。", questionId: 12 },
+        { id: 31, word: "accident", meaning: "事故", sentence: "Many accidents.", translation: "多くの事故。", questionId: 12 },
+        // Q13: over and over (正解)
+        { id: 32, word: "over and over", meaning: "何度も繰り返し", sentence: "I've been listening to it over and over.", translation: "何度も繰り返し聴いている。", questionId: 13 },
+        { id: 33, word: "get tired of", meaning: "〜に飽きる", sentence: "I can't get tired of it.", translation: "飽きることができない。", questionId: 13 },
+        // Q14: hoping for (正解)
+        { id: 34, word: "hope for", meaning: "〜を望む", sentence: "She is hoping for good weather.", translation: "彼女は良い天気を望んでいる。", questionId: 14 },
+        { id: 35, word: "worried", meaning: "心配して", sentence: "She is worried.", translation: "彼女は心配している。", questionId: 14 },
+        { id: 36, word: "get wet", meaning: "濡れる", sentence: "She might get wet.", translation: "彼女は濡れるかもしれない。", questionId: 14 },
+        // Q15: To my surprise (正解)
+        { id: 37, word: "to my surprise", meaning: "驚いたことに", sentence: "To my surprise, I enjoyed it.", translation: "驚いたことに、楽しかった。", questionId: 15 },
+        { id: 38, word: "exciting", meaning: "エキサイティングな", sentence: "It was much more exciting.", translation: "ずっとエキサイティングだった。", questionId: 15 },
+        { id: 39, word: "concert", meaning: "コンサート", sentence: "At the concert last night.", translation: "昨夜のコンサートで。", questionId: 15 },
+        { id: 40, word: "enjoy", meaning: "楽しむ", sentence: "I enjoyed it a lot.", translation: "すごく楽しんだ。", questionId: 15 }
+    ],
+    "2025-1-gp2-sub": [
+        // Q1: suitable (正解)
+        { id: 1, word: "suitable", meaning: "適した", sentence: "What are suitable jobs for me?", translation: "私に適した仕事は何？", questionId: 1 },
+        { id: 2, word: "strength", meaning: "強み", sentence: "Your strength is that you are friendly.", translation: "あなたの強みはフレンドリーなこと。", questionId: 1 },
+        { id: 3, word: "flight attendant", meaning: "客室乗務員", sentence: "Jobs like a flight attendant.", translation: "客室乗務員のような仕事。", questionId: 1 },
+        // Q2: performed (正解)
+        { id: 4, word: "perform", meaning: "演じる、上演する", sentence: "Her son performed in the musical.", translation: "息子はミュージカルで演じた。", questionId: 2 },
+        { id: 5, word: "practice", meaning: "練習する", sentence: "He practiced hard for it.", translation: "彼は一生懸命練習した。", questionId: 2 },
+        // Q3: improved (正解)
+        { id: 6, word: "improve", meaning: "向上する", sentence: "She has improved a lot.", translation: "彼女はとても上達した。", questionId: 3 },
+        { id: 7, word: "test score", meaning: "テストの点数", sentence: "Her test scores have gotten better.", translation: "テストの点数が良くなった。", questionId: 3 },
+        // Q4: satisfy (正解)
+        { id: 8, word: "satisfy", meaning: "満足させる", sentence: "The laws did not satisfy everyone.", translation: "法律は全員を満足させなかった。", questionId: 4 },
+        { id: 9, word: "strict", meaning: "厳しい", sentence: "They were too strict.", translation: "それらは厳しすぎた。", questionId: 4 },
+        { id: 10, word: "government", meaning: "政府", sentence: "The government's new laws.", translation: "政府の新しい法律。", questionId: 4 },
+        // Q5: obtain (正解)
+        { id: 11, word: "obtain", meaning: "得る、取得する", sentence: "Obtain a license.", translation: "免許を取得する。", questionId: 5 },
+        { id: 12, word: "license", meaning: "免許", sentence: "A license to be a hairdresser.", translation: "美容師の免許。", questionId: 5 },
+        { id: 13, word: "pass", meaning: "合格する", sentence: "Pass several tests.", translation: "いくつかのテストに合格する。", questionId: 5 },
+        // Q6: creation (正解)
+        { id: 14, word: "creation", meaning: "創作物", sentence: "It's my latest creation.", translation: "これは私の最新作。", questionId: 6 },
+        { id: 15, word: "painting", meaning: "絵", sentence: "I love this painting.", translation: "この絵が大好き。", questionId: 6 },
+        // Q7: shower (正解)
+        { id: 16, word: "take a shower", meaning: "シャワーを浴びる", sentence: "Do you want to take a shower?", translation: "シャワーを浴びたい？", questionId: 7 },
+        { id: 17, word: "before dinner", meaning: "夕食前に", sentence: "Before dinner.", translation: "夕食前に。", questionId: 7 },
+        // Q8: talent (正解)
+        { id: 18, word: "talent", meaning: "才能", sentence: "You have a lot of talent.", translation: "才能がたくさんあるね。", questionId: 8 },
+        { id: 19, word: "enjoy", meaning: "楽しむ", sentence: "I really enjoy painting.", translation: "絵を描くのが本当に好き。", questionId: 8 },
+        // Q9: closet (正解)
+        { id: 20, word: "closet", meaning: "クローゼット", sentence: "Put them in the closet.", translation: "クローゼットに置いて。", questionId: 9 },
+        { id: 21, word: "store", meaning: "保管する", sentence: "A good place to store them.", translation: "保管するのにいい場所。", questionId: 9 },
+        // Q10: perfectly (正解)
+        { id: 22, word: "perfectly", meaning: "完璧に", sentence: "It was perfectly relaxing.", translation: "完璧にリラックスできた。", questionId: 10 },
+        { id: 23, word: "vacation", meaning: "休暇", sentence: "Your vacation in Hawaii.", translation: "ハワイでの休暇。", questionId: 10 },
+        { id: 24, word: "beach", meaning: "ビーチ", sentence: "Reading on the beach.", translation: "ビーチで読書。", questionId: 10 },
+        // Q11: an eye on (正解)
+        { id: 25, word: "keep an eye on", meaning: "〜を見張る", sentence: "I'll keep an eye on it.", translation: "見ておくよ。", questionId: 11 },
+        { id: 26, word: "suitcase", meaning: "スーツケース", sentence: "Watch my suitcase.", translation: "スーツケースを見ていて。", questionId: 11 },
+        // Q12: got lost (正解)
+        { id: 27, word: "get lost", meaning: "道に迷う", sentence: "I got lost.", translation: "道に迷った。", questionId: 12 },
+        { id: 28, word: "ask for directions", meaning: "道を尋ねる", sentence: "I had to ask for directions.", translation: "道を尋ねなければならなかった。", questionId: 12 },
+        // Q13: popular with (正解)
+        { id: 29, word: "popular with", meaning: "〜に人気がある", sentence: "Popular with young girls.", translation: "若い女の子に人気がある。", questionId: 13 },
+        { id: 30, word: "packaging", meaning: "パッケージ、包装", sentence: "They like the packaging.", translation: "パッケージが好き。", questionId: 13 },
+        { id: 31, word: "cute", meaning: "かわいい", sentence: "The cute shapes.", translation: "かわいい形。", questionId: 13 },
+        // Q14: Keep on (正解)
+        { id: 32, word: "keep on", meaning: "〜し続ける", sentence: "Keep on practicing.", translation: "練習し続けなさい。", questionId: 14 },
+        { id: 33, word: "get better", meaning: "上達する", sentence: "You'll get better for sure.", translation: "きっと上達するよ。", questionId: 14 },
+        { id: 34, word: "piano", meaning: "ピアノ", sentence: "Learn to play the piano.", translation: "ピアノを弾けるようになる。", questionId: 14 },
+        // Q15: keep her promise (正解)
+        { id: 35, word: "keep one's promise", meaning: "約束を守る", sentence: "She didn't keep her promise.", translation: "彼女は約束を守らなかった。", questionId: 15 },
+        { id: 36, word: "zoo", meaning: "動物園", sentence: "Take him to the zoo.", translation: "彼を動物園に連れて行く。", questionId: 15 },
+        { id: 37, word: "busy with", meaning: "〜で忙しい", sentence: "She was too busy with work.", translation: "仕事が忙しすぎた。", questionId: 15 },
+        { id: 38, word: "son", meaning: "息子", sentence: "To her son.", translation: "息子に。", questionId: 15 },
+        { id: 39, word: "tell", meaning: "言う", sentence: "She told him.", translation: "彼に言った。", questionId: 15 },
+        { id: 40, word: "work", meaning: "仕事", sentence: "Too busy with work.", translation: "仕事が忙しすぎる。", questionId: 15 }
+    ],
+    "2024-3-gp2-sub": [
+        // Q1: bake (正解)
+        { id: 1, word: "bake", meaning: "焼く", sentence: "Tanya likes to bake cookies.", translation: "ターニャはクッキーを焼くのが好き。", questionId: 1 },
+        { id: 2, word: "delicious", meaning: "おいしい", sentence: "Delicious chocolate chip cookies.", translation: "おいしいチョコチップクッキー。", questionId: 1 },
+        // Q2: correct (正解)
+        { id: 3, word: "correct", meaning: "正しい", sentence: "Is my answer correct?", translation: "私の答えは正しい？", questionId: 2 },
+        { id: 4, word: "wrong", meaning: "間違った", sentence: "It's wrong.", translation: "間違っている。", questionId: 2 },
+        { id: 5, word: "solve", meaning: "解く", sentence: "Try solving the problem.", translation: "問題を解いてみて。", questionId: 2 },
+        // Q3: easily (正解)
+        { id: 6, word: "easily", meaning: "簡単に", sentence: "She could not hear easily.", translation: "簡単に聞こえなかった。", questionId: 3 },
+        { id: 7, word: "loudly", meaning: "大きな声で", sentence: "Speak more loudly.", translation: "もっと大きな声で話して。", questionId: 3 },
+        { id: 8, word: "lecture", meaning: "講義", sentence: "Hear his lecture.", translation: "彼の講義を聞く。", questionId: 3 },
+        // Q4: denied (正解)
+        { id: 9, word: "deny", meaning: "否定する", sentence: "He denied it.", translation: "彼はそれを否定した。", questionId: 4 },
+        { id: 10, word: "cake", meaning: "ケーキ", sentence: "Had you eaten the cake?", translation: "ケーキを食べた？", questionId: 4 },
+        // Q5: freeze (正解)
+        { id: 11, word: "freeze", meaning: "凍る", sentence: "The water started to freeze.", translation: "水が凍り始めた。", questionId: 5 },
+        { id: 12, word: "temperature", meaning: "気温", sentence: "The temperature was low.", translation: "気温が低かった。", questionId: 5 },
+        { id: 13, word: "river", meaning: "川", sentence: "The water in the river.", translation: "川の水。", questionId: 5 },
+        // Q6: beat (正解)
+        { id: 14, word: "beat", meaning: "負かす", sentence: "I hope the Jaguars beat them.", translation: "ジャガーズが勝つといいな。", questionId: 6 },
+        { id: 15, word: "close game", meaning: "接戦", sentence: "It will be a close game.", translation: "接戦になるだろう。", questionId: 6 },
+        // Q7: railroad (正解)
+        { id: 16, word: "railroad", meaning: "鉄道", sentence: "The railroad company.", translation: "鉄道会社。", questionId: 7 },
+        { id: 17, word: "station", meaning: "駅", sentence: "Built a station.", translation: "駅を建てた。", questionId: 7 },
+        { id: 18, word: "travel", meaning: "旅行する", sentence: "Easy to travel to nearby cities.", translation: "近くの都市に行きやすい。", questionId: 7 },
+        // Q8: comfort (正解)
+        { id: 19, word: "comfort", meaning: "慰める", sentence: "They tried to comfort her.", translation: "彼女を慰めようとした。", questionId: 8 },
+        { id: 20, word: "death", meaning: "死", sentence: "After the death of her cat.", translation: "猫が死んだ後。", questionId: 8 },
+        { id: 21, word: "present", meaning: "プレゼント", sentence: "A new cat as a present.", translation: "プレゼントとして新しい猫。", questionId: 8 },
+        // Q9: complicate (正解)
+        { id: 22, word: "complicate", meaning: "複雑にする", sentence: "It does not complicate things.", translation: "物事を複雑にしない。", questionId: 9 },
+        { id: 23, word: "software", meaning: "ソフトウェア", sentence: "The new software.", translation: "新しいソフトウェア。", questionId: 9 },
+        // Q10: government (正解)
+        { id: 24, word: "government", meaning: "政府", sentence: "The government decided.", translation: "政府は決めた。", questionId: 10 },
+        { id: 25, word: "hospital", meaning: "病院", sentence: "Build a new hospital.", translation: "新しい病院を建てる。", questionId: 10 },
+        { id: 26, word: "medical treatment", meaning: "医療", sentence: "Get medical treatment.", translation: "医療を受ける。", questionId: 10 },
+        // Q11: in the long run (正解)
+        { id: 27, word: "in the long run", meaning: "長い目で見れば", sentence: "He saves money in the long run.", translation: "長い目で見ればお金を節約できる。", questionId: 11 },
+        { id: 28, word: "quality", meaning: "品質", sentence: "Good quality clothes.", translation: "品質の良い服。", questionId: 11 },
+        { id: 29, word: "expensive", meaning: "高い", sentence: "Such clothes are expensive.", translation: "そのような服は高い。", questionId: 11 },
+        // Q12: get rid of (正解)
+        { id: 30, word: "get rid of", meaning: "〜を処分する", sentence: "Get rid of this old T-shirt.", translation: "この古いTシャツを捨てて。", questionId: 12 },
+        { id: 31, word: "throw away", meaning: "捨てる", sentence: "I'll throw it away.", translation: "捨てるよ。", questionId: 12 },
+        // Q13: do the laundry (正解)
+        { id: 32, word: "do the laundry", meaning: "洗濯をする", sentence: "Tammy is going to do the laundry.", translation: "タミーは洗濯をする予定。", questionId: 13 },
+        { id: 33, word: "dry", meaning: "乾かす", sentence: "Put the clothes outside to dry.", translation: "外に服を干して乾かす。", questionId: 13 },
+        { id: 34, word: "beautiful day", meaning: "天気の良い日", sentence: "It is a beautiful day.", translation: "天気の良い日だ。", questionId: 13 },
+        // Q14: clear up (正解)
+        { id: 35, word: "clear up", meaning: "晴れる", sentence: "It should clear up.", translation: "晴れるはず。", questionId: 14 },
+        { id: 36, word: "weather report", meaning: "天気予報", sentence: "The weather report said.", translation: "天気予報で言っていた。", questionId: 14 },
+        { id: 37, word: "afternoon", meaning: "午後", sentence: "By the afternoon.", translation: "午後までには。", questionId: 14 },
+        // Q15: day by day (正解)
+        { id: 38, word: "day by day", meaning: "日に日に", sentence: "Getting warmer day by day.", translation: "日に日に暖かくなっている。", questionId: 15 },
+        { id: 39, word: "look forward to", meaning: "〜を楽しみにする", sentence: "Looking forward to spring.", translation: "春を楽しみにしている。", questionId: 15 },
+        { id: 40, word: "spring", meaning: "春", sentence: "The start of spring.", translation: "春の始まり。", questionId: 15 }
+    ],
+    "2024-2-gp2-sub": [
+        // Q1: cotton (正解)
+        { id: 1, word: "cotton", meaning: "綿", sentence: "Sweaters made of cotton.", translation: "綿でできたセーター。", questionId: 1 },
+        { id: 2, word: "comfortable", meaning: "快適な", sentence: "They are more comfortable.", translation: "より快適だ。", questionId: 1 },
+        // Q2: promised (正解)
+        { id: 3, word: "promise", meaning: "約束する", sentence: "You promised her.", translation: "彼女に約束したでしょ。", questionId: 2 },
+        { id: 4, word: "softball", meaning: "ソフトボール", sentence: "Lisa's softball game.", translation: "リサのソフトボールの試合。", questionId: 2 },
+        // Q3: annoying (正解)
+        { id: 5, word: "annoying", meaning: "うっとうしい", sentence: "That must be annoying.", translation: "それはうっとうしいね。", questionId: 3 },
+        { id: 6, word: "co-worker", meaning: "同僚", sentence: "My co-worker asks questions.", translation: "同僚が質問してくる。", questionId: 3 },
+        // Q4: sealed (正解)
+        { id: 7, word: "seal", meaning: "封をする", sentence: "He sealed the envelope.", translation: "彼は封筒に封をした。", questionId: 4 },
+        { id: 8, word: "envelope", meaning: "封筒", sentence: "Put it in an envelope.", translation: "封筒に入れる。", questionId: 4 },
+        { id: 9, word: "stamp", meaning: "切手", sentence: "Put a stamp on it.", translation: "切手を貼る。", questionId: 4 },
+        // Q5: daily (正解)
+        { id: 10, word: "daily", meaning: "毎日", sentence: "He practices daily.", translation: "彼は毎日練習する。", questionId: 5 },
+        { id: 11, word: "professional", meaning: "プロの", sentence: "A professional athlete.", translation: "プロ選手。", questionId: 5 },
+        { id: 12, word: "improve", meaning: "向上させる", sentence: "To improve his skills.", translation: "スキルを向上させるために。", questionId: 5 },
+        // Q6: assists (正解)
+        { id: 13, word: "assist", meaning: "手伝う", sentence: "She assists people.", translation: "彼女は人々を手伝う。", questionId: 6 },
+        { id: 14, word: "language", meaning: "言語", sentence: "She can speak a few languages.", translation: "いくつかの言語が話せる。", questionId: 6 },
+        // Q7: growth (正解)
+        { id: 15, word: "growth", meaning: "成長", sentence: "Help the growth of vegetables.", translation: "野菜の成長を助ける。", questionId: 7 },
+        { id: 16, word: "plant food", meaning: "肥料", sentence: "He bought plant food.", translation: "肥料を買った。", questionId: 7 },
+        { id: 17, word: "garden", meaning: "庭", sentence: "Vegetables in his garden.", translation: "庭の野菜。", questionId: 7 },
+        // Q8: seek (正解)
+        { id: 18, word: "seek", meaning: "探す", sentence: "Seek a new job.", translation: "新しい仕事を探す。", questionId: 8 },
+        { id: 19, word: "satisfied", meaning: "満足した", sentence: "He isn't satisfied with his pay.", translation: "給料に満足していない。", questionId: 8 },
+        // Q9: prison (正解)
+        { id: 20, word: "prison", meaning: "刑務所", sentence: "He was sent to prison.", translation: "刑務所に送られた。", questionId: 9 },
+        { id: 21, word: "taxes", meaning: "税金", sentence: "He had not paid his taxes.", translation: "税金を払っていなかった。", questionId: 9 },
+        // Q10: location (正解)
+        { id: 22, word: "location", meaning: "場所", sentence: "Find an ideal location.", translation: "理想的な場所を見つける。", questionId: 10 },
+        { id: 23, word: "build", meaning: "建てる", sentence: "To build their house.", translation: "家を建てるために。", questionId: 10 },
+        { id: 24, word: "small town", meaning: "小さな町", sentence: "In a small town.", translation: "小さな町に。", questionId: 10 },
+        // Q11: far from (正解)
+        { id: 25, word: "far from", meaning: "〜から遠い", sentence: "Your house is far from the office.", translation: "あなたの家はオフィスから遠い。", questionId: 11 },
+        { id: 26, word: "exercise", meaning: "運動", sentence: "It's good exercise.", translation: "いい運動になる。", questionId: 11 },
+        // Q12: from now on (正解)
+        { id: 27, word: "from now on", meaning: "これから", sentence: "Exercise regularly from now on.", translation: "これから定期的に運動する。", questionId: 12 },
+        { id: 28, word: "balanced diet", meaning: "バランスの良い食事", sentence: "Eat a more balanced diet.", translation: "よりバランスの良い食事をする。", questionId: 12 },
+        { id: 29, word: "health", meaning: "健康", sentence: "To improve his health.", translation: "健康を改善するために。", questionId: 12 },
+        // Q13: makes his bed (正解)
+        { id: 30, word: "make one's bed", meaning: "ベッドを整える", sentence: "He makes his bed every morning.", translation: "毎朝ベッドを整える。", questionId: 13 },
+        { id: 31, word: "clean", meaning: "きれいな", sentence: "Keep his room clean.", translation: "部屋をきれいに保つ。", questionId: 13 },
+        { id: 32, word: "as soon as", meaning: "〜するとすぐに", sentence: "As soon as he gets up.", translation: "起きてすぐに。", questionId: 13 },
+        // Q14: set up (正解)
+        { id: 33, word: "set up", meaning: "設定する", sentence: "Set up her new computer.", translation: "新しいコンピュータを設定する。", questionId: 14 },
+        { id: 34, word: "grandmother", meaning: "おばあちゃん", sentence: "Helped his grandmother.", translation: "おばあちゃんを手伝った。", questionId: 14 },
+        { id: 35, word: "send emails", meaning: "メールを送る", sentence: "How to send emails.", translation: "メールの送り方。", questionId: 14 },
+        // Q15: curious about (正解)
+        { id: 36, word: "curious about", meaning: "〜に興味がある", sentence: "Curious about Japanese history.", translation: "日本の歴史に興味がある。", questionId: 15 },
+        { id: 37, word: "borrow", meaning: "借りる", sentence: "He borrows books.", translation: "本を借りる。", questionId: 15 },
+        { id: 38, word: "library", meaning: "図書館", sentence: "From the school library.", translation: "学校の図書館から。", questionId: 15 },
+        { id: 39, word: "history", meaning: "歴史", sentence: "Japanese history.", translation: "日本の歴史。", questionId: 15 },
+        { id: 40, word: "often", meaning: "よく", sentence: "He often borrows books.", translation: "彼はよく本を借りる。", questionId: 15 }
+    ],
+    "2024-1-gp2-sub": [
+        // Q1: advice (正解)
+        { id: 1, word: "advice", meaning: "アドバイス", sentence: "She can give you good advice.", translation: "良いアドバイスをくれるよ。", questionId: 1 },
+        { id: 2, word: "career", meaning: "キャリア、職業", sentence: "She knows a lot about careers.", translation: "キャリアについて詳しい。", questionId: 1 },
+        { id: 3, word: "decide", meaning: "決める", sentence: "I can't decide.", translation: "決められない。", questionId: 1 },
+        // Q2: constant (正解)
+        { id: 4, word: "constant", meaning: "絶え間ない", sentence: "Money is a constant problem.", translation: "お金は常に問題だ。", questionId: 2 },
+        { id: 5, word: "lend", meaning: "貸す", sentence: "Asking his parents to lend him some.", translation: "親にお金を貸してと頼む。", questionId: 2 },
+        // Q3: switch (正解)
+        { id: 6, word: "switch", meaning: "交換する", sentence: "Would you switch seats?", translation: "席を交換してくれる？", questionId: 3 },
+        { id: 7, word: "prefer", meaning: "好む", sentence: "I prefer the window seat.", translation: "窓際の席の方が好き。", questionId: 3 },
+        // Q4: presentation (正解)
+        { id: 8, word: "presentation", meaning: "発表", sentence: "A topic for your presentation.", translation: "発表のトピック。", questionId: 4 },
+        { id: 9, word: "topic", meaning: "トピック、話題", sentence: "Have you chosen a topic?", translation: "トピックは決めた？", questionId: 4 },
+        { id: 10, word: "airplane", meaning: "飛行機", sentence: "Talk about airplanes.", translation: "飛行機について話す。", questionId: 4 },
+        // Q5: describe (正解)
+        { id: 11, word: "describe", meaning: "説明する", sentence: "How would you describe your mother?", translation: "お母さんってどんな人？", questionId: 5 },
+        { id: 12, word: "tall", meaning: "背が高い", sentence: "She's tall.", translation: "彼女は背が高い。", questionId: 5 },
+        { id: 13, word: "kind", meaning: "親切な", sentence: "She's very kind.", translation: "彼女はとても親切。", questionId: 5 },
+        // Q6: comments (正解)
+        { id: 14, word: "comment", meaning: "コメント", sentence: "He writes comments on homework.", translation: "宿題にコメントを書く。", questionId: 6 },
+        { id: 15, word: "homework", meaning: "宿題", sentence: "On his students' homework.", translation: "生徒の宿題に。", questionId: 6 },
+        // Q7: mainly (正解)
+        { id: 16, word: "mainly", meaning: "主に", sentence: "Apples are mainly water.", translation: "リンゴは主に水だ。", questionId: 7 },
+        { id: 17, word: "percent", meaning: "パーセント", sentence: "About 86 percent.", translation: "約86パーセント。", questionId: 7 },
+        // Q8: examined (正解)
+        { id: 18, word: "examine", meaning: "検査する", sentence: "He examined my shoulder.", translation: "彼は肩を検査した。", questionId: 8 },
+        { id: 19, word: "shoulder", meaning: "肩", sentence: "My shoulder.", translation: "私の肩。", questionId: 8 },
+        { id: 20, word: "pain", meaning: "痛み", sentence: "If the pain continues.", translation: "痛みが続くなら。", questionId: 8 },
+        // Q9: fear (正解)
+        { id: 21, word: "fear", meaning: "恐れる", sentence: "He has nothing to fear.", translation: "恐れることは何もない。", questionId: 9 },
+        { id: 22, word: "storm", meaning: "嵐", sentence: "During storms.", translation: "嵐の間。", questionId: 9 },
+        { id: 23, word: "protect", meaning: "守る", sentence: "It protects the house.", translation: "家を守る。", questionId: 9 },
+        // Q10: degree (正解)
+        { id: 24, word: "degree", meaning: "学位", sentence: "Get a degree in engineering.", translation: "工学の学位を取る。", questionId: 10 },
+        { id: 25, word: "engineer", meaning: "エンジニア", sentence: "Become an engineer.", translation: "エンジニアになる。", questionId: 10 },
+        { id: 26, word: "university", meaning: "大学", sentence: "Go to university.", translation: "大学に行く。", questionId: 10 },
+        // Q11: help yourself (正解)
+        { id: 27, word: "help yourself to", meaning: "ご自由にどうぞ", sentence: "Please help yourself to drinks.", translation: "飲み物はご自由にどうぞ。", questionId: 11 },
+        { id: 28, word: "invite", meaning: "招待する", sentence: "Thank you for inviting us.", translation: "招待してくれてありがとう。", questionId: 11 },
+        // Q12: Take a rest (正解)
+        { id: 29, word: "take a rest", meaning: "休憩する", sentence: "Take a rest over there.", translation: "あちらで休んで。", questionId: 12 },
+        { id: 30, word: "hurt", meaning: "痛める", sentence: "I hurt my foot.", translation: "足を痛めた。", questionId: 12 },
+        { id: 31, word: "practice", meaning: "練習する", sentence: "While practicing for the race.", translation: "レースの練習中に。", questionId: 12 },
+        // Q13: As for (正解)
+        { id: 32, word: "as for", meaning: "〜については", sentence: "As for his sister.", translation: "妹については。", questionId: 13 },
+        { id: 33, word: "spend time", meaning: "時間を過ごす", sentence: "She likes to spend her time.", translation: "彼女は時間を過ごすのが好き。", questionId: 13 },
+        // Q14: get around (正解)
+        { id: 34, word: "get around", meaning: "移動する", sentence: "Use cars to get around.", translation: "移動に車を使う。", questionId: 14 },
+        { id: 35, word: "village", meaning: "村", sentence: "In the village.", translation: "村で。", questionId: 14 },
+        { id: 36, word: "bicycle", meaning: "自転車", sentence: "Cars or bicycles.", translation: "車か自転車。", questionId: 14 },
+        // Q15: makes no difference (正解)
+        { id: 37, word: "make no difference", meaning: "関係ない", sentence: "It makes no difference.", translation: "関係ない。", questionId: 15 },
+        { id: 38, word: "good at", meaning: "〜が上手", sentence: "Whether you're good at tennis.", translation: "テニスが上手かどうか。", questionId: 15 },
+        { id: 39, word: "welcome", meaning: "歓迎する", sentence: "Everyone is welcome to join.", translation: "誰でも歓迎。", questionId: 15 },
+        { id: 40, word: "join", meaning: "入る、参加する", sentence: "I'd like to join the club.", translation: "部活に入りたい。", questionId: 15 }
+    ],
     "2023-1-g2": [
         // Q1
         { id: 1, word: "income", meaning: "収入", sentence: "You have to use your own income to decide.", translation: "決めるためには自分の収入を使わなければならない。", questionId: 1 },
@@ -94,96 +379,452 @@ export const vocabDatabase = {
         { id: 21, word: "serious", meaning: "深刻な" }
     ],
     "2024-3-g3": [
-        { id: 1, word: "true", meaning: "本当の" },
-        { id: 2, word: "topic", meaning: "話題、トピック" },
-        { id: 3, word: "entrance", meaning: "入り口" },
-        { id: 4, word: "view", meaning: "眺め" },
-        { id: 5, word: "get dark", meaning: "暗くなる" },
-        { id: 6, word: "wood", meaning: "木材" },
-        { id: 7, word: "decide to", meaning: "〜することを決める" },
-        { id: 8, word: "How often", meaning: "どのくらいの頻度で" },
-        { id: 9, word: "lose one's way", meaning: "道に迷う" },
-        { id: 10, word: "agree with", meaning: "〜に賛成する" },
-        { id: 11, word: "be famous for", meaning: "〜で有名だ" },
-        { id: 12, word: "opinion", meaning: "意見" },
-        { id: 13, word: "In my opinion", meaning: "私の意見では" },
-        { id: 14, word: "name", meaning: "名付ける" },
-        { id: 15, word: "stolen", meaning: "盗まれた" },
-        { id: 16, word: "which", meaning: "どちら（関係代名詞）" },
-        { id: 17, word: "eco-friendly", meaning: "環境に優しい" },
-        { id: 18, word: "protect", meaning: "守る" },
-        { id: 19, word: "environment", meaning: "環境" },
-        { id: 20, word: "twice a month", meaning: "月に2回" }
+        // Q1: true
+        { id: 1, word: "true", meaning: "本当の", sentence: "That is true.", translation: "それは本当です。", questionId: 1 },
+        { id: 2, word: "nurse", meaning: "看護師", sentence: "My sister is a nurse.", translation: "私の姉は看護師です。", questionId: 1 },
+        // Q2: topic
+        { id: 3, word: "topic", meaning: "トピック、話題", sentence: "What is the topic?", translation: "トピックは何ですか？", questionId: 2 },
+        { id: 4, word: "report", meaning: "レポート", sentence: "I wrote a report.", translation: "私はレポートを書きました。", questionId: 2 },
+        // Q3: entrance
+        { id: 5, word: "entrance", meaning: "入り口", sentence: "Where is the entrance?", translation: "入り口はどこですか？", questionId: 3 },
+        { id: 6, word: "library", meaning: "図書館", sentence: "I study at the library.", translation: "私は図書館で勉強します。", questionId: 3 },
+        // Q4: view
+        { id: 7, word: "view", meaning: "眺め", sentence: "The view is beautiful.", translation: "眺めが美しいです。", questionId: 4 },
+        { id: 8, word: "hotel", meaning: "ホテル", sentence: "We stayed at a hotel.", translation: "私たちはホテルに泊まりました。", questionId: 4 },
+        // Q5: dark
+        { id: 9, word: "dark", meaning: "暗い", sentence: "It is getting dark.", translation: "暗くなってきました。", questionId: 5 },
+        { id: 10, word: "sky", meaning: "空", sentence: "Look at the sky.", translation: "空を見てください。", questionId: 5 },
+        // Q6: wood
+        { id: 11, word: "wood", meaning: "木材", sentence: "This table is made of wood.", translation: "このテーブルは木でできています。", questionId: 6 },
+        { id: 12, word: "make", meaning: "作る", sentence: "I like to make things.", translation: "私は物を作るのが好きです。", questionId: 6 },
+        // Q7: decided
+        { id: 13, word: "decided", meaning: "決めた", sentence: "I decided to go.", translation: "私は行くことに決めました。", questionId: 7 },
+        { id: 14, word: "tired", meaning: "疲れた", sentence: "I am tired.", translation: "私は疲れました。", questionId: 7 },
+        // Q8: often
+        { id: 15, word: "often", meaning: "よく、しばしば", sentence: "I often read books.", translation: "私はよく本を読みます。", questionId: 8 },
+        { id: 16, word: "twice", meaning: "2回", sentence: "I went there twice.", translation: "私はそこに2回行きました。", questionId: 8 },
+        // Q9: lost
+        { id: 17, word: "lost", meaning: "失った、迷った", sentence: "I lost my way.", translation: "私は道に迷いました。", questionId: 9 },
+        { id: 18, word: "way", meaning: "道、方法", sentence: "This is the way.", translation: "こちらが道です。", questionId: 9 },
+        // Q10: agree
+        { id: 19, word: "agree", meaning: "同意する", sentence: "I agree with you.", translation: "あなたに同意します。", questionId: 10 },
+        { id: 20, word: "environment", meaning: "環境", sentence: "Protect the environment.", translation: "環境を守りましょう。", questionId: 10 },
+        // Q11: famous
+        { id: 21, word: "famous", meaning: "有名な", sentence: "He is a famous singer.", translation: "彼は有名な歌手です。", questionId: 11 },
+        { id: 22, word: "pizza", meaning: "ピザ", sentence: "Do you like pizza?", translation: "ピザは好きですか？", questionId: 11 },
+        // Q12: opinion
+        { id: 23, word: "opinion", meaning: "意見", sentence: "In my opinion...", translation: "私の意見では...", questionId: 12 },
+        { id: 24, word: "think", meaning: "思う", sentence: "What do you think?", translation: "どう思いますか？", questionId: 12 },
+        // Q13: her
+        { id: 25, word: "her", meaning: "彼女を（目的格）", sentence: "I know her.", translation: "私は彼女を知っています。", questionId: 13 },
+        { id: 26, word: "name", meaning: "名付ける、名前", sentence: "What is your name?", translation: "あなたの名前は何ですか？", questionId: 13 },
+        // Q14: stolen
+        { id: 27, word: "stolen", meaning: "盗まれた", sentence: "My bike was stolen.", translation: "私の自転車が盗まれました。", questionId: 14 },
+        { id: 28, word: "bicycle", meaning: "自転車", sentence: "I ride a bicycle.", translation: "私は自転車に乗ります。", questionId: 14 },
+        // Q15: which
+        { id: 29, word: "which", meaning: "どちら、〜するもの（関係代名詞）", sentence: "Here is the book which I read.", translation: "これが私が読んだ本です。", questionId: 15 },
+        { id: 30, word: "computer", meaning: "コンピューター", sentence: "I use a computer.", translation: "私はコンピューターを使います。", questionId: 15 }
     ],
+
     "2024-2-g3": [
-        { id: 1, word: "anything", meaning: "何か（疑問文・否定文で）" },
-        { id: 2, word: "anything special", meaning: "何か特別なこと" },
-        { id: 3, word: "left", meaning: "置き忘れた" },
-        { id: 4, word: "wrap", meaning: "包む" },
-        { id: 5, word: "pass", meaning: "合格する" },
-        { id: 6, word: "introduce", meaning: "紹介する" },
-        { id: 7, word: "century", meaning: "世紀" },
-        { id: 8, word: "tradition", meaning: "伝統、恒例行事" },
-        { id: 9, word: "clean up", meaning: "片付ける" },
-        { id: 10, word: "be worried about", meaning: "〜を心配する" },
-        { id: 11, word: "be proud of", meaning: "〜を誇りに思う" },
-        { id: 12, word: "break one's promise", meaning: "約束を破る" },
-        { id: 13, word: "more and more", meaning: "ますます多くの" },
-        { id: 14, word: "wrote", meaning: "書いた" },
-        { id: 15, word: "author", meaning: "著者" },
-        { id: 16, word: "faster", meaning: "より速く" },
-        { id: 17, word: "have been to", meaning: "〜へ行ったことがある" },
-        { id: 18, word: "runner", meaning: "走者" },
-        { id: 19, word: "planet", meaning: "惑星" },
-        { id: 20, word: "star", meaning: "星" }
+        // Q1: special
+        { id: 1, word: "special", meaning: "特別な", sentence: "I have a special gift.", translation: "私は特別な贈り物を持っています。", questionId: 1 },
+        { id: 2, word: "anything", meaning: "何か（疑問文・否定文で）", sentence: "Did you buy anything?", translation: "何か買いましたか？", questionId: 1 },
+        // Q2: left
+        { id: 3, word: "left", meaning: "置き忘れた", sentence: "I left my bag.", translation: "鞄を置き忘れました。", questionId: 2 },
+        { id: 4, word: "dictionary", meaning: "辞書", sentence: "This is my dictionary.", translation: "これは私の辞書です。", questionId: 2 },
+        // Q3: wrap
+        { id: 5, word: "wrap", meaning: "包む", sentence: "Wrap the present.", translation: "プレゼントを包んでください。", questionId: 3 },
+        { id: 6, word: "paper", meaning: "紙", sentence: "I need some paper.", translation: "紙が必要です。", questionId: 3 },
+        // Q4: pass
+        { id: 7, word: "pass", meaning: "合格する", sentence: "He passed the test.", translation: "彼は試験に合格しました。", questionId: 4 },
+        { id: 8, word: "test", meaning: "試験", sentence: "The test was easy.", translation: "その試験は簡単でした。", questionId: 4 },
+        // Q5: introduce
+        { id: 9, word: "introduce", meaning: "紹介する", sentence: "Let me introduce myself.", translation: "自己紹介させてください。", questionId: 5 },
+        { id: 10, word: "friend", meaning: "友達", sentence: "He is my friend.", translation: "彼は私の友達です。", questionId: 5 },
+        // Q6: century
+        { id: 11, word: "century", meaning: "世紀", sentence: "It was in the 20th century.", translation: "それは20世紀のことでした。", questionId: 6 },
+        { id: 12, word: "castle", meaning: "城", sentence: "The castle is old.", translation: "その城は古いです。", questionId: 6 },
+        // Q7: tradition
+        { id: 13, word: "tradition", meaning: "伝統、恒例行事", sentence: "It is a family tradition.", translation: "それは家族の伝統です。", questionId: 7 },
+        { id: 14, word: "dinner", meaning: "夕食", sentence: "Dinner is ready.", translation: "夕食の準備ができました。", questionId: 7 },
+        // Q8: up (clean up)
+        { id: 15, word: "up", meaning: "完全に（clean upなどで）", sentence: "Clean up your room.", translation: "部屋を片付けなさい。", questionId: 8 },
+        { id: 16, word: "library", meaning: "図書館", sentence: "I am going to the library.", translation: "図書館に行きます。", questionId: 8 },
+        // Q9: about (worried about)
+        { id: 17, word: "about", meaning: "〜について", sentence: "Don't worry about it.", translation: "そのことは心配しないで。", questionId: 9 },
+        { id: 18, word: "worried", meaning: "心配して", sentence: "She was worried.", translation: "彼女は心配していました。", questionId: 9 },
+        // Q10: proud (proper of)
+        { id: 19, word: "proud", meaning: "誇りに思う", sentence: "I am proud of you.", translation: "あなたを誇りに思います。", questionId: 10 },
+        { id: 20, word: "competition", meaning: "コンテスト、競争", sentence: "She won the competition.", translation: "彼女はコンテストで優勝しました。", questionId: 10 },
+        // Q11: broke
+        { id: 21, word: "broke", meaning: "破った（breakの過去形）", sentence: "He broke his promise.", translation: "彼は約束を破りました。", questionId: 11 },
+        { id: 22, word: "promise", meaning: "約束", sentence: "Keep your promise.", translation: "約束を守りなさい。", questionId: 11 },
+        // Q12: more (more and more)
+        { id: 23, word: "more", meaning: "より多くの", sentence: "I want more time.", translation: "もっと時間が欲しいです。", questionId: 12 },
+        { id: 24, word: "space", meaning: "宇宙", sentence: "Space is vast.", translation: "宇宙は広大です。", questionId: 12 },
+        // Q13: wrote
+        { id: 25, word: "wrote", meaning: "書いた", sentence: "She wrote a letter.", translation: "彼女は手紙を書きました。", questionId: 13 },
+        { id: 26, word: "author", meaning: "著者", sentence: "Who is the author?", translation: "著者は誰ですか？", questionId: 13 },
+        // Q14: faster
+        { id: 27, word: "faster", meaning: "より速く", sentence: "Run faster.", translation: "もっと速く走りなさい。", questionId: 14 },
+        { id: 28, word: "class", meaning: "クラス", sentence: "He is in my class.", translation: "彼は私のクラスにいます。", questionId: 14 },
+        // Q15: been (have been to)
+        { id: 29, word: "been", meaning: "行ったことがある（have been to）", sentence: "I have been to Paris.", translation: "私はパリに行ったことがあります。", questionId: 15 },
+        { id: 30, word: "ever", meaning: "これまでに", sentence: "Have you ever seen it?", translation: "これまでにそれを見たことがありますか？", questionId: 15 }
+    ],
+
+    "2022-3-g3": [
+        // Q1: wrapped
+        { id: 1, word: "wrapped", meaning: "包んだ", sentence: "I wrapped the gift.", translation: "私はプレゼントを包みました。", questionId: 1 },
+        { id: 2, word: "present", meaning: "プレゼント", sentence: "This is a present for you.", translation: "これはあなたへのプレゼントです。", questionId: 1 },
+        // Q2: special
+        { id: 3, word: "special", meaning: "特別な", sentence: "Today is a special day.", translation: "今日は特別な日です。", questionId: 2 },
+        { id: 4, word: "lunch", meaning: "昼食", sentence: "Let's eat lunch.", translation: "昼食を食べましょう。", questionId: 2 },
+        // Q3: already
+        { id: 5, word: "already", meaning: "すでに", sentence: "I have already finished.", translation: "私はすでに終わりました。", questionId: 3 },
+        { id: 6, word: "kitchen", meaning: "台所", sentence: "She is in the kitchen.", translation: "彼女は台所にいます。", questionId: 3 },
+        // Q4: touch
+        { id: 7, word: "touch", meaning: "触る", sentence: "Don't touch that.", translation: "それに触らないで。", questionId: 4 },
+        { id: 8, word: "animal", meaning: "動物", sentence: "I like animals.", translation: "私は動物が好きです。", questionId: 4 },
+        // Q5: healthy
+        { id: 9, word: "healthy", meaning: "健康的な", sentence: "Vegetables are healthy.", translation: "野菜は健康的です。", questionId: 5 },
+        { id: 10, word: "run", meaning: "走る", sentence: "I run every morning.", translation: "私は毎朝走ります。", questionId: 5 },
+        // Q6: clever
+        { id: 11, word: "clever", meaning: "賢い", sentence: "He is a clever boy.", translation: "彼は賢い少年です。", questionId: 6 },
+        { id: 12, word: "math", meaning: "数学", sentence: "I study math.", translation: "私は数学を勉強します。", questionId: 6 },
+        // Q7: laughed
+        { id: 13, word: "laughed", meaning: "笑った", sentence: "We laughed a lot.", translation: "私たちはたくさん笑いました。", questionId: 7 },
+        { id: 14, word: "funny", meaning: "面白い", sentence: "That joke is funny.", translation: "その冗談は面白いです。", questionId: 7 },
+        // Q8: able
+        { id: 15, word: "able", meaning: "できる（能力がある）", sentence: "I am able to drive.", translation: "私は運転できます。", questionId: 8 },
+        { id: 16, word: "speak", meaning: "話す", sentence: "Can you speak English?", translation: "英語を話せますか？", questionId: 8 },
+        // Q9: left
+        { id: 17, word: "left", meaning: "残した", sentence: "He left a message.", translation: "彼はメッセージを残しました。", questionId: 9 },
+        { id: 18, word: "message", meaning: "メッセージ、伝言", sentence: "I got a message.", translation: "メッセージを受け取りました。", questionId: 9 },
+        // Q10: from
+        { id: 19, word: "from", meaning: "〜から（原料）", sentence: "Cheese is made from milk.", translation: "チーズは牛乳から作られます。", questionId: 10 },
+        { id: 20, word: "milk", meaning: "牛乳", sentence: "I drink milk.", translation: "私は牛乳を飲みます。", questionId: 10 },
+        // Q11: spend
+        { id: 21, word: "spend", meaning: "費やす、使う", sentence: "Don't spend too much money.", translation: "お金を使いすぎないで。", questionId: 11 },
+        { id: 22, word: "money", meaning: "お金", sentence: "I need money.", translation: "私はお金が必要です。", questionId: 11 },
+        // Q12: in
+        { id: 23, word: "in", meaning: "〜の中に（状態）", sentence: "He is sick in bed.", translation: "彼は病気で寝込んでいます。", questionId: 12 },
+        { id: 24, word: "bed", meaning: "ベッド", sentence: "Go to bed.", translation: "寝なさい。", questionId: 12 },
+        // Q13: built
+        { id: 25, word: "built", meaning: "建てられた", sentence: "This house was built last year.", translation: "この家は昨年建てられました。", questionId: 13 },
+        { id: 26, word: "house", meaning: "家", sentence: "This is my house.", translation: "これは私の家です。", questionId: 13 },
+        // Q14: recycle
+        { id: 27, word: "recycle", meaning: "リサイクルする", sentence: "We recycle bottles.", translation: "私たちはボトルをリサイクルします。", questionId: 14 },
+        { id: 28, word: "plastic", meaning: "プラスチック", sentence: "Plastic bags.", translation: "ビニール袋。", questionId: 14 },
+        // Q15: when
+        { id: 29, word: "when", meaning: "いつ", sentence: "When does the bus leave?", translation: "バスはいつ出発しますか？", questionId: 15 },
+        { id: 30, word: "bus", meaning: "バス", sentence: "I take the bus.", translation: "私はバスに乗ります。", questionId: 15 }
+    ],
+    "2022-2-g3": [
+        // Q1: prizes
+        { id: 1, word: "prizes", meaning: "賞", sentence: "He won many prizes.", translation: "彼は多くの賞をとりました。", questionId: 1 },
+        { id: 2, word: "winner", meaning: "勝者", sentence: "The winner got a prize.", translation: "勝者は賞をもらいました。", questionId: 1 },
+        // Q2: straight
+        { id: 3, word: "straight", meaning: "まっすぐに", sentence: "Go straight.", translation: "まっすぐ行きなさい。", questionId: 2 },
+        { id: 4, word: "road", meaning: "道", sentence: "Cross the road.", translation: "道を渡りなさい。", questionId: 2 },
+        // Q3: until
+        { id: 5, word: "until", meaning: "〜まで（ずっと）", sentence: "Wait here until 5.", translation: "5時までここで待って。", questionId: 3 },
+        { id: 6, word: "night", meaning: "夜", sentence: "Good night.", translation: "おやすみ。", questionId: 3 },
+        // Q4: angry
+        { id: 7, word: "angry", meaning: "怒った", sentence: "Why are you angry?", translation: "なぜ怒っているの？", questionId: 4 },
+        { id: 8, word: "weekend", meaning: "週末", sentence: "Have a nice weekend.", translation: "よい週末を。", questionId: 4 },
+        // Q5: clearly
+        { id: 9, word: "clearly", meaning: "はっきりと", sentence: "I can't see clearly.", translation: "はっきりと見えません。", questionId: 5 },
+        { id: 10, word: "blackboard", meaning: "黒板", sentence: "Look at the blackboard.", translation: "黒板を見なさい。", questionId: 5 },
+        // Q6: address
+        { id: 11, word: "address", meaning: "アドレス、住所", sentence: "What is your e-mail address?", translation: "あなたのメールアドレスは何ですか？", questionId: 6 },
+        { id: 12, word: "e-mail", meaning: "Eメール", sentence: "Send me an e-mail.", translation: "メールを送って。", questionId: 6 },
+        // Q7: anything
+        { id: 13, word: "anything", meaning: "何か（疑問文で）", sentence: "Do you want anything?", translation: "何か欲しいですか？", questionId: 7 },
+        { id: 14, word: "bookstore", meaning: "書店", sentence: "I went to the bookstore.", translation: "私は本屋に行きました。", questionId: 7 },
+        // Q8: ride
+        { id: 15, word: "ride", meaning: "乗ること（車で送ること）", sentence: "Give me a ride.", translation: "車に乗せてって。", questionId: 8 },
+        { id: 16, word: "home", meaning: "家へ", sentence: "Let's go home.", translation: "家に帰ろう。", questionId: 8 },
+        // Q9: filled
+        { id: 17, word: "filled", meaning: "満たされた", sentence: "The cup is filled with water.", translation: "カップは水で満たされています。", questionId: 9 },
+        { id: 18, word: "student", meaning: "生徒", sentence: "I am a student.", translation: "私は生徒です。", questionId: 9 },
+        // Q10: on
+        { id: 19, word: "on", meaning: "〜で（通信手段）", sentence: "I am on the phone.", translation: "私は電話中です。", questionId: 10 },
+        { id: 20, word: "phone", meaning: "電話", sentence: "Answer the phone.", translation: "電話に出て。", questionId: 10 },
+        // Q11: ran
+        { id: 21, word: "ran", meaning: "走った（runの過去形）", sentence: "He ran fast.", translation: "彼は速く走りました。", questionId: 11 },
+        { id: 22, word: "spider", meaning: "クモ", sentence: "I hate spiders.", translation: "私はクモが嫌いです。", questionId: 11 },
+        // Q12: in
+        { id: 23, word: "in", meaning: "〜（の中）に", sentence: "In fact, I like it.", translation: "実は、私はそれが好きです。", questionId: 12 },
+        { id: 24, word: "fact", meaning: "事実", sentence: "That is a fact.", translation: "それは事実です。", questionId: 12 },
+        // Q13: given
+        { id: 25, word: "given", meaning: "与えられた", sentence: "It was given to me.", translation: "それは私に与えられました。", questionId: 13 },
+        { id: 26, word: "bat", meaning: "バット", sentence: "A baseball bat.", translation: "野球のバット。", questionId: 13 },
+        // Q14: worst
+        { id: 27, word: "worst", meaning: "最も悪い", sentence: "That was the worst movie.", translation: "それは最悪の映画でした。", questionId: 14 },
+        { id: 28, word: "movie", meaning: "映画", sentence: "Let's watch a movie.", translation: "映画を見よう。", questionId: 14 },
+        // Q15: why
+        { id: 29, word: "why", meaning: "なぜ", sentence: "Why are you crying?", translation: "なぜ泣いているの？", questionId: 15 },
+        { id: 30, word: "baby", meaning: "赤ちゃん", sentence: "The baby is sleeping.", translation: "赤ちゃんは眠っています。", questionId: 15 }
+    ],
+    "2022-1-g3": [
+        // Q1: farmers
+        { id: 1, word: "farmers", meaning: "農家", sentence: "Farmers grow vegetables.", translation: "農家は野菜を育てます。", questionId: 1 },
+        { id: 2, word: "fresh", meaning: "新鮮な", sentence: "Fresh fruit.", translation: "新鮮な果物。", questionId: 1 },
+        // Q2: dark
+        { id: 3, word: "dark", meaning: "暗い", sentence: "It is getting dark.", translation: "暗くなってきました。", questionId: 2 },
+        { id: 4, word: "summer", meaning: "夏", sentence: "I like summer.", translation: "私は夏が好きです。", questionId: 2 },
+        // Q3: drugstores
+        { id: 5, word: "drugstores", meaning: "薬局、ドラッグストア", sentence: "I went to the drugstores.", translation: "私はドラッグストアに行きました。", questionId: 3 },
+        { id: 6, word: "useful", meaning: "役に立つ", sentence: "This pen is useful.", translation: "このペンは役に立ちます。", questionId: 3 },
+        // Q4: forever
+        { id: 7, word: "forever", meaning: "永遠に", sentence: "Friends forever.", translation: "永遠に友達。", questionId: 4 },
+        { id: 8, word: "beach", meaning: "浜辺", sentence: "We played at the beach.", translation: "私たちは浜辺で遊びました。", questionId: 4 },
+        // Q5: chef
+        { id: 9, word: "chef", meaning: "シェフ、料理人", sentence: "He is a famous chef.", translation: "彼は有名なシェフです。", questionId: 5 },
+        { id: 10, word: "dream", meaning: "夢", sentence: "My dream came true.", translation: "私の夢が叶いました。", questionId: 5 },
+        // Q6: sentences
+        { id: 11, word: "sentences", meaning: "文", sentence: "Write three sentences.", translation: "3つの文を書きなさい。", questionId: 6 },
+        { id: 12, word: "write", meaning: "書く", sentence: "Write your name.", translation: "名前を書きなさい。", questionId: 6 },
+        // Q7: correct
+        { id: 13, word: "correct", meaning: "正しい", sentence: "That is the correct answer.", translation: "それが正解です。", questionId: 7 },
+        { id: 14, word: "question", meaning: "質問", sentence: "Ask a question.", translation: "質問をしなさい。", questionId: 7 },
+        // Q8: tired
+        { id: 15, word: "tired", meaning: "飽きた、疲れた", sentence: "I am tired of this.", translation: "これには飽きました。", questionId: 8 },
+        { id: 16, word: "snow", meaning: "雪", sentence: "It snowed yesterday.", translation: "昨日は雪が降りました。", questionId: 8 },
+        // Q9: feel
+        { id: 17, word: "feel", meaning: "感じる", sentence: "I feel good.", translation: "気分が良いです。", questionId: 9 },
+        { id: 18, word: "better", meaning: "より良い", sentence: "I feel better.", translation: "気分が良くなりました。", questionId: 9 },
+        // Q10: all
+        { id: 19, word: "all", meaning: "すべての", sentence: "It rained all day.", translation: "一日中雨が降りました。", questionId: 10 },
+        { id: 20, word: "Saturday", meaning: "土曜日", sentence: "See you on Saturday.", translation: "土曜日に会いましょう。", questionId: 10 },
+        // Q11: married
+        { id: 21, word: "married", meaning: "結婚した", sentence: "Get married.", translation: "結婚する。", questionId: 11 },
+        { id: 22, word: "brother", meaning: "兄、弟", sentence: "My brother is tall.", translation: "私の兄は背が高いです。", questionId: 11 },
+        // Q12: worried
+        { id: 23, word: "worried", meaning: "心配した", sentence: "Don't be worried.", translation: "心配しないで。", questionId: 12 },
+        { id: 24, word: "library", meaning: "図書館", sentence: "Study in the library.", translation: "図書館で勉強する。", questionId: 12 },
+        // Q13: gone
+        { id: 25, word: "gone", meaning: "行ってしまった", sentence: "He has gone to work.", translation: "彼は仕事に行ってしまいました。", questionId: 13 },
+        { id: 26, word: "work", meaning: "仕事", sentence: "I have work today.", translation: "私は今日仕事があります。", questionId: 13 },
+        // Q14: won
+        { id: 27, word: "won", meaning: "勝った", sentence: "We won the game.", translation: "私たちは試合に勝ちました。", questionId: 14 },
+        { id: 28, word: "prize", meaning: "賞", sentence: "I got a prize.", translation: "私は賞をもらいました。", questionId: 14 },
+        // Q15: smarter
+        { id: 29, word: "smarter", meaning: "より賢い", sentence: "Dogs are smarter than cats.", translation: "犬は猫より賢いです。", questionId: 15 },
+        { id: 30, word: "than", meaning: "〜よりも", sentence: "Older than me.", translation: "私より年上。", questionId: 15 }
+    ],
+    "2024-3-g3-sub": [
+        // Q1: raise
+        { id: 1, word: "raise", meaning: "上げる", sentence: "Please raise your hand.", translation: "手を挙げてください。", questionId: 1 },
+        { id: 2, word: "hand", meaning: "手", sentence: "Wash your hands.", translation: "手を洗いなさい。", questionId: 1 },
+        // Q2: exercise
+        { id: 3, word: "exercise", meaning: "運動する", sentence: "I exercise every day.", translation: "私は毎日運動します。", questionId: 2 },
+        { id: 4, word: "healthy", meaning: "健康な", sentence: "He is very healthy.", translation: "彼はとても健康です。", questionId: 2 },
+        // Q3: foreign
+        { id: 5, word: "foreign", meaning: "外国の", sentence: "I study foreign languages.", translation: "私は外国語を勉強しています。", questionId: 3 },
+        { id: 6, word: "language", meaning: "言語", sentence: "English is a language.", translation: "英語は言語です。", questionId: 3 },
+        // Q4: others
+        { id: 7, word: "others", meaning: "他人、他の人々", sentence: "Be kind to others.", translation: "他人に親切にしなさい。", questionId: 4 },
+        { id: 8, word: "kind", meaning: "親切な", sentence: "She is a kind person.", translation: "彼女は親切な人です。", questionId: 4 },
+        // Q5: local
+        { id: 9, word: "local", meaning: "地元の", sentence: "We buy local food.", translation: "私たちは地元の食べ物を買います。", questionId: 5 },
+        { id: 10, word: "fresh", meaning: "新鮮な", sentence: "These vegetables are fresh.", translation: "これらの野菜は新鮮です。", questionId: 5 },
+        // Q6: convenient
+        { id: 11, word: "convenient", meaning: "便利な", sentence: "This shop is convenient.", translation: "この店は便利です。", questionId: 6 },
+        { id: 12, word: "close", meaning: "近い", sentence: "My house is close to the station.", translation: "私の家は駅から近いです。", questionId: 6 },
+        // Q7: address
+        { id: 13, word: "address", meaning: "住所", sentence: "What is your address?", translation: "あなたの住所は何ですか？", questionId: 7 },
+        { id: 14, word: "send", meaning: "送る", sentence: "I will send a letter.", translation: "手紙を送ります。", questionId: 7 },
+        // Q8: married
+        { id: 15, word: "married", meaning: "結婚した", sentence: "They got married.", translation: "彼らは結婚しました。", questionId: 8 },
+        { id: 16, word: "miss", meaning: "寂しく思う", sentence: "I miss you.", translation: "あなたが恋しいです。", questionId: 8 },
+        // Q9: able
+        { id: 17, word: "able", meaning: "できる（能力がある）", sentence: "I am able to swim.", translation: "私は泳ぐことができます。", questionId: 9 },
+        { id: 18, word: "busy", meaning: "忙しい", sentence: "I am busy now.", translation: "私は今忙しいです。", questionId: 9 },
+        // Q10: soon
+        { id: 19, word: "soon", meaning: "すぐに", sentence: "I will go soon.", translation: "すぐに行きます。", questionId: 10 },
+        { id: 20, word: "flight", meaning: "フライト、飛行便", sentence: "Identify your flight number.", translation: "フライト番号を確認してください。", questionId: 10 },
+        // Q11: ready
+        { id: 21, word: "ready", meaning: "準備ができた", sentence: "Are you ready?", translation: "準備はできましたか？", questionId: 11 },
+        { id: 22, word: "trip", meaning: "旅行", sentence: "Have a nice trip.", translation: "よい旅行を。", questionId: 11 },
+        // Q12: back
+        { id: 23, word: "back", meaning: "戻って、（返事を）返して", sentence: "Write back to me.", translation: "私に返事を書いてください。", questionId: 12 },
+        { id: 24, word: "letter", meaning: "手紙", sentence: "I wrote a letter.", translation: "私は手紙を書きました。", questionId: 12 },
+        // Q13: better
+        { id: 25, word: "better", meaning: "より良い", sentence: "This one is better.", translation: "こちらの方が良いです。", questionId: 13 },
+        { id: 26, word: "wear", meaning: "着る", sentence: "I wear a blue shirt.", translation: "私は青いシャツを着ます。", questionId: 13 },
+        // Q14: gave
+        { id: 27, word: "gave", meaning: "与えた（giveの過去形）", sentence: "He gave me a gift.", translation: "彼は私にプレゼントをくれました。", questionId: 14 },
+        { id: 28, word: "shoes", meaning: "靴", sentence: "New shoes.", translation: "新しい靴。", questionId: 14 },
+        // Q15: to make
+        { id: 29, word: "make", meaning: "作る", sentence: "I like to make cakes.", translation: "私はケーキを作るのが好きです。", questionId: 15 },
+        { id: 30, word: "fun", meaning: "楽しい、楽しみ", sentence: "It is fun.", translation: "それは楽しいです。", questionId: 15 }
+    ],
+    "2024-2-g3-sub": [
+        // Q1: oversleep
+        { id: 1, word: "oversleep", meaning: "寝坊する", sentence: "Don't oversleep.", translation: "寝坊するな。", questionId: 1 },
+        { id: 2, word: "late", meaning: "遅い、遅れた", sentence: "I was late for school.", translation: "学校に遅刻しました。", questionId: 1 },
+        // Q2: joined
+        { id: 3, word: "joined", meaning: "参加した、入った", sentence: "I joined the club.", translation: "私はそのクラブに入りました。", questionId: 2 },
+        { id: 4, word: "club", meaning: "クラブ、部活", sentence: "He is in the soccer club.", translation: "彼はサッカー部に所属しています。", questionId: 2 },
+        // Q3: reach
+        { id: 5, word: "reach", meaning: "着く、達する", sentence: "When will we reach the hotel?", translation: "いつホテルに着きますか？", questionId: 3 },
+        { id: 6, word: "station", meaning: "駅", sentence: "The station is nearby.", translation: "駅は近くです。", questionId: 3 },
+        // Q4: sure
+        { id: 7, word: "sure", meaning: "確信して", sentence: "I'm sure about it.", translation: "私はそれを確信しています。", questionId: 4 },
+        { id: 8, word: "really", meaning: "本当に", sentence: "I'm really tired.", translation: "本当に疲れました。", questionId: 4 },
+        // Q5: side
+        { id: 9, word: "side", meaning: "側", sentence: "Look at the other side.", translation: "反対側を見て。", questionId: 5 },
+        { id: 10, word: "across", meaning: "〜を横切って", sentence: "Walk across the street.", translation: "通りを渡りなさい。", questionId: 5 },
+        // Q6: happen
+        { id: 11, word: "happen", meaning: "起こる", sentence: "What happened?", translation: "何が起きたの？", questionId: 6 },
+        { id: 12, word: "held", meaning: "開催された", sentence: "The party was held yesterday.", translation: "パーティーは昨日開かれました。", questionId: 6 },
+        // Q7: abroad
+        { id: 13, word: "abroad", meaning: "海外へ", sentence: "I want to go abroad.", translation: "海外に行きたいです。", questionId: 7 },
+        { id: 14, word: "week", meaning: "週", sentence: "See you next week.", translation: "来週会いましょう。", questionId: 7 },
+        // Q8: on (the phone)
+        { id: 15, word: "on", meaning: "〜で（通信手段）", sentence: "Talk on the phone.", translation: "電話で話す。", questionId: 8 },
+        { id: 16, word: "busy", meaning: "忙しい", sentence: "Are you busy?", translation: "忙しいですか？", questionId: 8 },
+        // Q9: have (fun)
+        { id: 17, word: "have", meaning: "持つ、楽しむ", sentence: "Have fun!", translation: "楽しんで！", questionId: 9 },
+        { id: 18, word: "beach", meaning: "浜辺、ビーチ", sentence: "Let's go to the beach.", translation: "ビーチに行こう。", questionId: 9 },
+        // Q10: Hold (on)
+        { id: 19, word: "Hold", meaning: "待つ、掴む", sentence: "Hold on a minute.", translation: "少し待ってください。", questionId: 10 },
+        { id: 20, word: "speak", meaning: "話す", sentence: "Can I speak to Tom?", translation: "トムと話せますか？", questionId: 10 },
+        // Q11: long
+        { id: 21, word: "long", meaning: "長い", sentence: "It's a long story.", translation: "話せば長くなります。", questionId: 11 },
+        { id: 22, word: "night", meaning: "夜", sentence: "Good night.", translation: "おやすみ。", questionId: 11 },
+        // Q12: myself
+        { id: 23, word: "myself", meaning: "私自身", sentence: "I did it myself.", translation: "自分でそれをしました。", questionId: 12 },
+        { id: 24, word: "live", meaning: "住む", sentence: "I live in Tokyo.", translation: "私は東京に住んでいます。", questionId: 12 },
+        // Q13: best
+        { id: 25, word: "best", meaning: "最も良い", sentence: "You are the best.", translation: "あなたが最高です。", questionId: 13 },
+        { id: 26, word: "heard", meaning: "聞いた（hearの過去・過去分詞）", sentence: "I've never heard of it.", translation: "それは聞いたことがありません。", questionId: 13 },
+        // Q14: who
+        { id: 27, word: "who", meaning: "誰", sentence: "Who are you?", translation: "あなたは誰ですか？", questionId: 14 },
+        { id: 28, word: "singing", meaning: "歌っている", sentence: "He is singing.", translation: "彼は歌っています。", questionId: 14 },
+        // Q15: him
+        { id: 29, word: "him", meaning: "彼を", sentence: "I know him.", translation: "私は彼を知っています。", questionId: 15 },
+        { id: 30, word: "happy", meaning: "幸せな、嬉しい", sentence: "I'm happy.", translation: "私は幸せです。", questionId: 15 }
+    ],
+    "2024-1-g3-sub": [
+        // Q1: catch
+        { id: 1, word: "catch", meaning: "捕まえる、釣る", sentence: "We didn't catch anything.", translation: "私たちは何も釣れませんでした。", questionId: 1 },
+        { id: 2, word: "rest", meaning: "休む", sentence: "Let's rest here.", translation: "ここで休みましょう。", questionId: 1 },
+        // Q2: climbed
+        { id: 3, word: "climbed", meaning: "登った", sentence: "They climbed a mountain.", translation: "彼らは山に登りました。", questionId: 2 },
+        { id: 4, word: "invited", meaning: "招待した", sentence: "She invited me to the party.", translation: "彼女は私をパーティーに招待しました。", questionId: 2 },
+        // Q3: wild
+        { id: 5, word: "wild", meaning: "野生の", sentence: "I saw wild animals.", translation: "私は野生動物を見ました。", questionId: 3 },
+        { id: 6, word: "wrong", meaning: "間違った", sentence: "That answer is wrong.", translation: "その答えは間違っています。", questionId: 3 },
+        // Q4: glad
+        { id: 7, word: "glad", meaning: "嬉しい", sentence: "I'm glad to hear that.", translation: "それを聞いて嬉しいです。", questionId: 4 },
+        { id: 8, word: "sure", meaning: "確信して", sentence: "Are you sure?", translation: "確かですか？", questionId: 4 },
+        // Q5: alive
+        { id: 9, word: "alive", meaning: "生きている", sentence: "The plant is still alive.", translation: "その植物はまだ生きています。", questionId: 5 },
+        { id: 10, word: "difficult", meaning: "難しい", sentence: "Math is difficult.", translation: "数学は難しいです。", questionId: 5 },
+        // Q6: humans
+        { id: 11, word: "humans", meaning: "人間", sentence: "Humans can think.", translation: "人間は考えることができます。", questionId: 6 },
+        { id: 12, word: "buildings", meaning: "建物", sentence: "There are many tall buildings.", translation: "高い建物がたくさんあります。", questionId: 6 },
+        // Q7: lend
+        { id: 13, word: "lend", meaning: "貸す", sentence: "Can you lend me a pen?", translation: "ペンを貸してくれますか？", questionId: 7 },
+        { id: 14, word: "grow", meaning: "育てる、成長する", sentence: "Flowers grow in the garden.", translation: "庭で花が育ちます。", questionId: 7 },
+        // Q8: hurry
+        { id: 15, word: "hurry", meaning: "急ぎ", sentence: "I'm in a hurry.", translation: "私は急いでいます。", questionId: 8 },
+        { id: 16, word: "surprise", meaning: "驚き", sentence: "It was a big surprise.", translation: "それは大きな驚きでした。", questionId: 8 },
+        // Q9: have (headache)
+        { id: 17, word: "have", meaning: "持っている、（病気などが）ある", sentence: "I have a headache.", translation: "頭痛がします。", questionId: 9 },
+        { id: 18, word: "headache", meaning: "頭痛", sentence: "I have a bad headache.", translation: "ひどい頭痛がします。", questionId: 9 },
+        // Q10: give up
+        { id: 19, word: "give up", meaning: "あきらめる", sentence: "Don't give up.", translation: "あきらめるな。", questionId: 10 },
+        { id: 20, word: "dream", meaning: "夢", sentence: "I have a dream.", translation: "私には夢があります。", questionId: 10 },
+        // Q11: soon
+        { id: 21, word: "soon", meaning: "すぐに", sentence: "See you soon.", translation: "またすぐに会いましょう。", questionId: 11 },
+        { id: 22, word: "finish", meaning: "終える", sentence: "Finish your homework.", translation: "宿題を終わらせなさい。", questionId: 11 },
+        // Q12: throw away
+        { id: 23, word: "throw away", meaning: "捨てる", sentence: "Don't throw away trash here.", translation: "ここにゴミを捨てないでください。", questionId: 12 },
+        { id: 24, word: "clean up", meaning: "掃除する、片付ける", sentence: "Clean up your room.", translation: "部屋を片付けなさい。", questionId: 12 },
+        // Q13: get to
+        { id: 25, word: "get to", meaning: "〜に着く", sentence: "How do I get to the station?", translation: "どうやって駅に行けばいいですか？", questionId: 13 },
+        { id: 26, word: "stadium", meaning: "スタジアム", sentence: "The game is at the stadium.", translation: "試合はスタジアムで行われます。", questionId: 13 },
+        // Q14: eating
+        { id: 27, word: "eating", meaning: "食べている", sentence: "She is eating lunch.", translation: "彼女は昼食を食べています。", questionId: 14 },
+        { id: 28, word: "sandwich", meaning: "サンドイッチ", sentence: "I made a sandwich.", translation: "私はサンドイッチを作りました。", questionId: 14 },
+        // Q15: what
+        { id: 29, word: "what", meaning: "何を", sentence: "I don't know what to do.", translation: "何をすべきかわかりません。", questionId: 15 },
+        { id: 30, word: "party", meaning: "パーティー", sentence: "We had a party.", translation: "私たちはパーティーをしました。", questionId: 15 }
     ],
     "2024-1-g3": [
-        { id: 1, word: "anytime", meaning: "いつでも" },
-        { id: 2, word: "Dad", meaning: "パパ" },
-        { id: 3, word: "big enough", meaning: "十分に大きい" },
-        { id: 4, word: "finally", meaning: "ついに" },
-        { id: 5, word: "clever", meaning: "賢い、器用な" },
-        { id: 6, word: "healthy", meaning: "健康的な" },
-        { id: 7, word: "secret", meaning: "秘密" },
-        { id: 8, word: "carry", meaning: "運ぶ" },
-        { id: 9, word: "take care of", meaning: "〜の世話をする" },
-        { id: 10, word: "What's the matter?", meaning: "どうしたの？" },
-        { id: 11, word: "all day", meaning: "一日中" },
-        { id: 12, word: "fresh", meaning: "新鮮な" },
-        { id: 13, word: "be made from", meaning: "〜から作られている" },
-        { id: 14, word: "get on", meaning: "（バスなどに）乗る" },
-        { id: 15, word: "practice", meaning: "練習する" },
-        { id: 16, word: "where", meaning: "どこへ" },
-        { id: 17, word: "go shopping", meaning: "買い物に行く" },
-        { id: 18, word: "ate", meaning: "食べた" }
+        // Q1: anytime
+        { id: 1, word: "anytime", meaning: "いつでも", sentence: "You can ask me anytime.", translation: "いつでも私に聞いてください。", questionId: 1 },
+        { id: 2, word: "science", meaning: "科学、理科", sentence: "I have a science project.", translation: "私には理科の課題があります。", questionId: 1 },
+        // Q2: enough
+        { id: 3, word: "enough", meaning: "十分に", sentence: "It is not big enough.", translation: "それは十分に大きくありません。", questionId: 2 },
+        { id: 4, word: "basketball", meaning: "バスケットボール", sentence: "I like basketball.", translation: "私はバスケットボールが好きです。", questionId: 2 },
+        // Q3: Finally
+        { id: 5, word: "Finally", meaning: "ついに", sentence: "Finally, he found it.", translation: "ついに彼はそれを見つけました。", questionId: 3 },
+        { id: 6, word: "pocket", meaning: "ポケット", sentence: "It was in my pocket.", translation: "それは私のポケットの中にありました。", questionId: 3 },
+        // Q4: clever
+        { id: 7, word: "clever", meaning: "賢い", sentence: "He is really clever.", translation: "彼は本当に賢いです。", questionId: 4 },
+        { id: 8, word: "chess", meaning: "チェス", sentence: "He plays chess.", translation: "彼はチェスをします。", questionId: 4 },
+        // Q5: healthy
+        { id: 9, word: "healthy", meaning: "健康的な", sentence: "Vegetables are healthy.", translation: "野菜は健康的です。", questionId: 5 },
+        { id: 10, word: "vegetable", meaning: "野菜", sentence: "I eat vegetables.", translation: "私は野菜を食べます。", questionId: 5 },
+        // Q6: secret
+        { id: 11, word: "secret", meaning: "秘密", sentence: "It is a secret.", translation: "それは秘密です。", questionId: 6 },
+        { id: 12, word: "party", meaning: "パーティー", sentence: "We are planning a party.", translation: "私たちはパーティーを計画しています。", questionId: 6 },
+        // Q7: carry
+        { id: 13, word: "carry", meaning: "運ぶ", sentence: "I can carry this bag.", translation: "私はこの鞄を運べます。", questionId: 7 },
+        { id: 14, word: "bag", meaning: "鞄", sentence: "My bag is heavy.", translation: "私の鞄は重いです。", questionId: 7 },
+        // Q8: care (take care of)
+        { id: 15, word: "care", meaning: "世話、注意", sentence: "Take care of yourself.", translation: "お体に気をつけて。", questionId: 8 },
+        { id: 16, word: "vacation", meaning: "休暇", sentence: "I am on vacation.", translation: "私は休暇中です。", questionId: 8 },
+        // Q9: matter
+        { id: 17, word: "matter", meaning: "問題、事柄", sentence: "What's the matter?", translation: "どうしたの？", questionId: 9 },
+        { id: 18, word: "stomachache", meaning: "腹痛", sentence: "I have a stomachache.", translation: "お腹が痛いです。", questionId: 9 },
+        // Q10: all
+        { id: 19, word: "all", meaning: "すべての", sentence: "It snowed all day.", translation: "一日中雪が降りました。", questionId: 10 },
+        { id: 20, word: "finish", meaning: "終える", sentence: "Finish your homework.", translation: "宿題を終えなさい。", questionId: 10 },
+        // Q11: from
+        { id: 21, word: "from", meaning: "〜から（原料）", sentence: "This is made from milk.", translation: "これは牛乳から作られています。", questionId: 11 },
+        { id: 22, word: "delicious", meaning: "おいしい", sentence: "This cake is delicious.", translation: "このケーキはおいしいです。", questionId: 11 },
+        // Q12: get (get on)
+        { id: 23, word: "get", meaning: "乗る（get on）", sentence: "Get on the bus.", translation: "バスに乗りなさい。", questionId: 12 },
+        { id: 24, word: "ticket", meaning: "切符", sentence: "I lost my ticket.", translation: "切符をなくしました。", questionId: 12 },
+        // Q13: practice
+        { id: 25, word: "practice", meaning: "練習する", sentence: "I practice piano.", translation: "私はピアノを練習します。", questionId: 13 },
+        { id: 26, word: "early", meaning: "早く", sentence: "I wake up early.", translation: "私は早く起きます。", questionId: 13 },
+        // Q14: where
+        { id: 27, word: "where", meaning: "どこ", sentence: "Where are you going?", translation: "どこに行くのですか？", questionId: 14 },
+        { id: 28, word: "mall", meaning: "ショッピングモール", sentence: "Let's go to the mall.", translation: "モールに行きましょう。", questionId: 14 },
+        // Q15: ate
+        { id: 29, word: "ate", meaning: "食べた", sentence: "I ate too much.", translation: "食べ過ぎました。", questionId: 15 },
+        { id: 30, word: "hungry", meaning: "お腹が空いた", sentence: "I am hungry.", translation: "お腹が空きました。", questionId: 15 }
     ],
+
     "2025-1-g5": [
-        { id: 1, word: "floor", meaning: "床" },
-        { id: 2, word: "breakfast", meaning: "朝食" },
-        { id: 3, word: "garden", meaning: "庭" },
-        { id: 4, word: "tree", meaning: "木" },
-        { id: 5, word: "dictionary", meaning: "辞書" },
-        { id: 6, word: "music teacher", meaning: "音楽の先生" },
-        { id: 7, word: "trumpet", meaning: "トランペット" },
-        { id: 8, word: "great", meaning: "すばらしい" },
-        { id: 9, word: "delicious", meaning: "おいしい" },
-        { id: 10, word: "cloudy", meaning: "くもりの" },
-        { id: 11, word: "smart", meaning: "賢い" },
-        { id: 12, word: "catch", meaning: "捕る（キャッチする）" },
-        { id: 13, word: "make", meaning: "作る" },
-        { id: 14, word: "sandwich", meaning: "サンドイッチ" },
-        { id: 15, word: "have a cold", meaning: "風邪をひいている" },
-        { id: 16, word: "I see", meaning: "なるほど（わかった）" },
-        { id: 17, word: "Excuse me", meaning: "すみません" },
-        { id: 18, word: "bathroom", meaning: "トイレ（浴室）" },
-        { id: 19, word: "Have a good day", meaning: "よい一日を" },
-        { id: 20, word: "Welcome to", meaning: "〜へようこそ" },
-        { id: 21, word: "at school", meaning: "学校で" },
-        { id: 22, word: "junior high school", meaning: "中学校" },
-        { id: 23, word: "dress", meaning: "ドレス（服）" },
-        { id: 24, word: "Whose", meaning: "誰の" },
-        { id: 25, word: "check", meaning: "確認する" },
-        { id: 26, word: "homework", meaning: "宿題" }
+        { id: 1, word: "washing", meaning: "洗っている" },
+        { id: 2, word: "Wear", meaning: "着る" },
+        { id: 3, word: "brown", meaning: "茶色" },
+        { id: 4, word: "album", meaning: "アルバム" },
+        { id: 5, word: "come", meaning: "来る" },
+        { id: 6, word: "musician", meaning: "音楽家" },
+        { id: 7, word: "gym", meaning: "体育館" },
+        { id: 8, word: "on", meaning: "〜で（テレビで）" },
+        { id: 9, word: "cup", meaning: "カップ" },
+        { id: 10, word: "little", meaning: "少し" },
+        { id: 11, word: "up", meaning: "起きる（get up）" },
+        { id: 12, word: "goes", meaning: "行く" },
+        { id: 13, word: "write", meaning: "書く" },
+        { id: 14, word: "They", meaning: "彼らは" },
+        { id: 15, word: "open", meaning: "開ける" },
+        { id: 16, word: "dog", meaning: "犬" },
+        { id: 17, word: "coat", meaning: "コート" },
+        { id: 18, word: "guitar", meaning: "ギター" },
+        { id: 19, word: "coffee", meaning: "コーヒー" },
+        { id: 20, word: "window", meaning: "窓" }
     ],
     "2025-2-g5": [
         { id: 1, word: "floor", meaning: "床" },
@@ -200,12 +841,12 @@ export const vocabDatabase = {
         { id: 12, word: "at school", meaning: "学校で" },
         { id: 13, word: "isn't", meaning: "〜ではない" },
         { id: 14, word: "Whose", meaning: "誰の" },
-        { id: 15, word: "let's", meaning: "〜しよう" },
-        { id: 16, word: "smart", meaning: "賢い" },
-        { id: 17, word: "sandwich", meaning: "サンドイッチ" },
-        { id: 18, word: "cold", meaning: "風邪" },
-        { id: 19, word: "bathroom", meaning: "トイレ" },
-        { id: 20, word: "junior high school", meaning: "中学校" }
+        { id: 15, word: "check", meaning: "確認する" },
+        { id: 16, word: "sit down", meaning: "座る" },
+        { id: 17, word: "garden", meaning: "庭" },
+        { id: 18, word: "music teacher", meaning: "音楽の先生" },
+        { id: 19, word: "computer", meaning: "コンピュータ" },
+        { id: 20, word: "sandwich", meaning: "サンドイッチ" }
     ],
     "2025-1-g4": [
         { id: 1, word: "professional", meaning: "プロの" },
@@ -317,6 +958,182 @@ export const vocabDatabase = {
         { id: 19, word: "pass", meaning: "合格する、手渡す" },
         { id: 20, word: "nature", meaning: "自然" }
     ],
+    "2023-2-g4": [
+        { id: 1, word: "shout", meaning: "叫ぶ" },
+        { id: 2, word: "glad", meaning: "嬉しい" },
+        { id: 3, word: "speech contest", meaning: "スピーチコンテスト" },
+        { id: 4, word: "town", meaning: "町" },
+        { id: 5, word: "airplane ticket", meaning: "航空券" },
+        { id: 6, word: "radio", meaning: "ラジオ" },
+        { id: 7, word: "sleepy", meaning: "眠い" },
+        { id: 8, word: "have to", meaning: "〜しなければならない" },
+        { id: 9, word: "wait a minute", meaning: "ちょっと待って" },
+        { id: 10, word: "wake up", meaning: "起きる" },
+        { id: 11, word: "kind", meaning: "親切な" },
+        { id: 12, word: "part", meaning: "部分" },
+        { id: 13, word: "can", meaning: "〜できる" },
+        { id: 14, word: "mine", meaning: "私のもの" },
+        { id: 15, word: "check", meaning: "調べる" },
+        { id: 16, word: "coach", meaning: "コーチ" },
+        { id: 17, word: "present", meaning: "プレゼント" },
+        { id: 18, word: "museum", meaning: "博物館" },
+        { id: 19, word: "dessert", meaning: "デザート" },
+        { id: 20, word: "be going to", meaning: "〜するつもり" }
+    ],
+    "2023-1-g4": [
+        { id: 1, word: "class", meaning: "授業" },
+        { id: 2, word: "began", meaning: "始めた" },
+        { id: 3, word: "TV program", meaning: "テレビ番組" },
+        { id: 4, word: "Be careful", meaning: "気をつけて" },
+        { id: 5, word: "before", meaning: "〜の前に" },
+        { id: 6, word: "arrive", meaning: "到着する" },
+        { id: 7, word: "news", meaning: "ニュース" },
+        { id: 8, word: "come home", meaning: "家に帰る" },
+        { id: 9, word: "stay with", meaning: "〜のところに泊まる" },
+        { id: 10, word: "slow down", meaning: "ゆっくりする" },
+        { id: 11, word: "Just a moment", meaning: "ちょっと待って" },
+        { id: 12, word: "have an idea", meaning: "アイデアがある" },
+        { id: 13, word: "was reading", meaning: "読んでいた" },
+        { id: 14, word: "oldest", meaning: "最も古い" },
+        { id: 15, word: "drew", meaning: "描いた" },
+        { id: 16, word: "grandmother", meaning: "おばあちゃん" },
+        { id: 17, word: "temple", meaning: "お寺" },
+        { id: 18, word: "magazine", meaning: "雑誌" },
+        { id: 19, word: "together", meaning: "一緒に" },
+        { id: 20, word: "surprised", meaning: "驚いた" }
+    ],
+    "2022-3-g4": [
+        { id: 1, word: "angry", meaning: "怒っている" },
+        { id: 2, word: "art museum", meaning: "美術館" },
+        { id: 3, word: "met", meaning: "会った" },
+        { id: 4, word: "library", meaning: "図書館" },
+        { id: 5, word: "useful", meaning: "役に立つ" },
+        { id: 6, word: "introduce myself", meaning: "自己紹介する" },
+        { id: 7, word: "history", meaning: "歴史" },
+        { id: 8, word: "Hurry up", meaning: "急いで" },
+        { id: 9, word: "be late for", meaning: "〜に遅れる" },
+        { id: 10, word: "take a train", meaning: "電車に乗る" },
+        { id: 11, word: "make friends", meaning: "友達を作る" },
+        { id: 12, word: "stay at", meaning: "〜に泊まる" },
+        { id: 13, word: "Which", meaning: "どちらの" },
+        { id: 14, word: "than", meaning: "〜より" },
+        { id: 15, word: "was going", meaning: "〜していた" },
+        { id: 16, word: "forgot", meaning: "忘れた" },
+        { id: 17, word: "famous", meaning: "有名な" },
+        { id: 18, word: "weekend", meaning: "週末" },
+        { id: 19, word: "popular", meaning: "人気のある" },
+        { id: 20, word: "faster", meaning: "より速く" }
+    ],
+    "2022-2-g4": [
+        { id: 1, word: "ask", meaning: "尋ねる" },
+        { id: 2, word: "presents", meaning: "プレゼント" },
+        { id: 3, word: "apartment", meaning: "アパート" },
+        { id: 4, word: "brings", meaning: "持ってくる" },
+        { id: 5, word: "stars", meaning: "星" },
+        { id: 6, word: "beautiful", meaning: "美しい" },
+        { id: 7, word: "knife", meaning: "ナイフ" },
+        { id: 8, word: "play catch", meaning: "キャッチボールをする" },
+        { id: 9, word: "be kind to", meaning: "〜に優しい" },
+        { id: 10, word: "on TV", meaning: "テレビで" },
+        { id: 11, word: "take a walk", meaning: "散歩をする" },
+        { id: 12, word: "What do you think of", meaning: "〜をどう思う？" },
+        { id: 13, word: "won't", meaning: "〜しないだろう" },
+        { id: 14, word: "us", meaning: "私たちを" },
+        { id: 15, word: "sleeping", meaning: "眠っている" },
+        { id: 16, word: "Christmas", meaning: "クリスマス" },
+        { id: 17, word: "camping", meaning: "キャンプ" },
+        { id: 18, word: "Canada", meaning: "カナダ" },
+        { id: 19, word: "hurt", meaning: "ケガをした" },
+        { id: 20, word: "dancer", meaning: "ダンサー" }
+    ],
+    "2022-1-g4": [
+        { id: 1, word: "next", meaning: "次の" },
+        { id: 2, word: "For", meaning: "〜間" },
+        { id: 3, word: "eraser", meaning: "消しゴム" },
+        { id: 4, word: "temperature", meaning: "気温" },
+        { id: 5, word: "send", meaning: "送る" },
+        { id: 6, word: "sleepy", meaning: "眠い" },
+        { id: 7, word: "busy", meaning: "忙しい" },
+        { id: 8, word: "slow down", meaning: "ゆっくりする" },
+        { id: 9, word: "at once", meaning: "すぐに" },
+        { id: 10, word: "idea", meaning: "アイデア" },
+        { id: 11, word: "Just a moment", meaning: "ちょっと待って" },
+        { id: 12, word: "look like", meaning: "〜に似ている" },
+        { id: 13, word: "to play", meaning: "遊ぶために" },
+        { id: 14, word: "helping", meaning: "助けること" },
+        { id: 15, word: "Shall I", meaning: "〜しましょうか" },
+        { id: 16, word: "grandmother", meaning: "おばあちゃん" },
+        { id: 17, word: "concert", meaning: "コンサート" },
+        { id: 18, word: "police officer", meaning: "警察官" },
+        { id: 19, word: "glasses", meaning: "メガネ" },
+        { id: 20, word: "present", meaning: "プレゼント" }
+    ],
+    "2021-3-g4": [
+        { id: 1, word: "lessons", meaning: "レッスン" },
+        { id: 2, word: "stopped", meaning: "止まった" },
+        { id: 3, word: "information", meaning: "情報" },
+        { id: 4, word: "exciting", meaning: "わくわくする" },
+        { id: 5, word: "another", meaning: "もう一つの" },
+        { id: 6, word: "build", meaning: "建てる" },
+        { id: 7, word: "checks", meaning: "チェックする" },
+        { id: 8, word: "each other", meaning: "お互いに" },
+        { id: 9, word: "talk about", meaning: "〜について話す" },
+        { id: 10, word: "wakes up", meaning: "起きる" },
+        { id: 11, word: "during", meaning: "〜の間" },
+        { id: 12, word: "more and more", meaning: "ますます多く" },
+        { id: 13, word: "swam", meaning: "泳いだ" },
+        { id: 14, word: "them", meaning: "それらを" },
+        { id: 15, word: "Could I", meaning: "〜してもいい" },
+        { id: 16, word: "France", meaning: "フランス" },
+        { id: 17, word: "Internet", meaning: "インターネット" },
+        { id: 18, word: "neighborhood", meaning: "近所" },
+        { id: 19, word: "sightseeing", meaning: "観光" },
+        { id: 20, word: "comic books", meaning: "漫画" }
+    ],
+    "2021-2-g4": [
+        { id: 1, word: "dictionary", meaning: "辞書" },
+        { id: 2, word: "began", meaning: "始まった" },
+        { id: 3, word: "famous", meaning: "有名な" },
+        { id: 4, word: "soap", meaning: "石鹸" },
+        { id: 5, word: "free time", meaning: "自由時間" },
+        { id: 6, word: "catch", meaning: "捕まえる" },
+        { id: 7, word: "weather", meaning: "天気" },
+        { id: 8, word: "for a long time", meaning: "長い間" },
+        { id: 9, word: "give up", meaning: "あきらめる" },
+        { id: 10, word: "stay with", meaning: "〜のところに泊まる" },
+        { id: 11, word: "go back", meaning: "戻る" },
+        { id: 12, word: "at home", meaning: "家で" },
+        { id: 13, word: "took", meaning: "連れて行った" },
+        { id: 14, word: "me", meaning: "私を" },
+        { id: 15, word: "talking", meaning: "話すこと" },
+        { id: 16, word: "sumo wrestler", meaning: "お相撲さん" },
+        { id: 17, word: "host family", meaning: "ホストファミリー" },
+        { id: 18, word: "hometown", meaning: "故郷" },
+        { id: 19, word: "brought", meaning: "持ってきた" },
+        { id: 20, word: "Disneyland", meaning: "ディズニーランド" }
+    ],
+    "2021-1-g4": [
+        { id: 1, word: "member", meaning: "メンバー" },
+        { id: 2, word: "stories", meaning: "話" },
+        { id: 3, word: "slowly", meaning: "ゆっくり" },
+        { id: 4, word: "garden", meaning: "庭" },
+        { id: 5, word: "short", meaning: "短い" },
+        { id: 6, word: "town", meaning: "町" },
+        { id: 7, word: "found", meaning: "見つけた" },
+        { id: 8, word: "say goodbye", meaning: "さよならを言う" },
+        { id: 9, word: "get home", meaning: "家に帰る" },
+        { id: 10, word: "not as good as", meaning: "〜ほど良くない" },
+        { id: 11, word: "be interested in", meaning: "〜に興味がある" },
+        { id: 12, word: "be able to", meaning: "〜できる" },
+        { id: 13, word: "lost", meaning: "なくした" },
+        { id: 14, word: "There is", meaning: "〜がある" },
+        { id: 15, word: "will", meaning: "〜するつもり" },
+        { id: 16, word: "India", meaning: "インド" },
+        { id: 17, word: "flowers", meaning: "花" },
+        { id: 18, word: "postcard", meaning: "ポストカード" },
+        { id: 19, word: "speech", meaning: "スピーチ" },
+        { id: 20, word: "camera", meaning: "カメラ" }
+    ],
     "2024-3-g5": [
         { id: 1, word: "pocket", meaning: "ポケット" },
         { id: 2, word: "candy", meaning: "キャンディ" },
@@ -338,6 +1155,160 @@ export const vocabDatabase = {
         { id: 18, word: "thirsty", meaning: "喉が渇いた" },
         { id: 19, word: "picnic", meaning: "ピクニック" },
         { id: 20, word: "Australia", meaning: "オーストラリア" }
+    ],
+    "2024-2-g5": [
+        { id: 1, word: "birthday party", meaning: "お誕生日パーティー" },
+        { id: 2, word: "jump", meaning: "ジャンプする" },
+        { id: 3, word: "animals", meaning: "動物" },
+        { id: 4, word: "red", meaning: "赤い" },
+        { id: 5, word: "eat", meaning: "食べる" },
+        { id: 6, word: "book", meaning: "本" },
+        { id: 7, word: "sing", meaning: "歌う" },
+        { id: 8, word: "live in", meaning: "〜に住んでいる" },
+        { id: 9, word: "at home", meaning: "家に" },
+        { id: 10, word: "a little", meaning: "少し" },
+        { id: 11, word: "Welcome to", meaning: "〜へようこそ" },
+        { id: 12, word: "go to bed", meaning: "寝る" },
+        { id: 13, word: "open", meaning: "開ける" },
+        { id: 14, word: "we", meaning: "私たちは" },
+        { id: 15, word: "do", meaning: "する" },
+        { id: 16, word: "zoo", meaning: "動物園" },
+        { id: 17, word: "umbrella", meaning: "傘" },
+        { id: 18, word: "soup", meaning: "スープ" },
+        { id: 19, word: "best friends", meaning: "親友" },
+        { id: 20, word: "Canada", meaning: "カナダ" }
+    ],
+    "2024-1-g5": [
+        { id: 1, word: "Christmas tree", meaning: "クリスマスツリー" },
+        { id: 2, word: "team", meaning: "チーム" },
+        { id: 3, word: "black", meaning: "黒い" },
+        { id: 4, word: "house", meaning: "家" },
+        { id: 5, word: "needs", meaning: "必要とする" },
+        { id: 6, word: "stars", meaning: "星" },
+        { id: 7, word: "music", meaning: "音楽" },
+        { id: 8, word: "come to school", meaning: "学校に来る" },
+        { id: 9, word: "How old", meaning: "何才" },
+        { id: 10, word: "Of course", meaning: "もちろん" },
+        { id: 11, word: "See you tomorrow", meaning: "また明日" },
+        { id: 12, word: "How about", meaning: "〜はどう？" },
+        { id: 13, word: "Which", meaning: "どちら" },
+        { id: 14, word: "our", meaning: "私たちの" },
+        { id: 15, word: "Don't", meaning: "〜するな" },
+        { id: 16, word: "winter", meaning: "冬" },
+        { id: 17, word: "dress", meaning: "ドレス" },
+        { id: 18, word: "pizza", meaning: "ピザ" },
+        { id: 19, word: "classmates", meaning: "クラスメート" },
+        { id: 20, word: "ice cream", meaning: "アイスクリーム" }
+    ],
+    "2023-3-g5": [
+        { id: 1, word: "racket", meaning: "ラケット" },
+        { id: 2, word: "park", meaning: "公園" },
+        { id: 3, word: "museum", meaning: "美術館" },
+        { id: 4, word: "paints", meaning: "描く" },
+        { id: 5, word: "zoo", meaning: "動物園" },
+        { id: 6, word: "rabbit", meaning: "ウサギ" },
+        { id: 7, word: "pink", meaning: "ピンク色の" },
+        { id: 8, word: "do homework", meaning: "宿題をする" },
+        { id: 9, word: "at home", meaning: "家で" },
+        { id: 10, word: "How long", meaning: "どのくらい" },
+        { id: 11, word: "after school", meaning: "放課後" },
+        { id: 12, word: "a cup of", meaning: "1杯の" },
+        { id: 13, word: "Mine", meaning: "私のもの" },
+        { id: 14, word: "Who", meaning: "誰" },
+        { id: 15, word: "be quiet", meaning: "静かにする" },
+        { id: 16, word: "tennis", meaning: "テニス" },
+        { id: 17, word: "art", meaning: "アート" },
+        { id: 18, word: "hats", meaning: "帽子" },
+        { id: 19, word: "magazines", meaning: "雑誌" },
+        { id: 20, word: "coffee", meaning: "コーヒー" }
+    ],
+    "2023-2-g5": [
+        { id: 1, word: "pets", meaning: "ペット" },
+        { id: 2, word: "small", meaning: "小さい" },
+        { id: 3, word: "speak English", meaning: "英語を話す" },
+        { id: 4, word: "What color", meaning: "何色" },
+        { id: 5, word: "meet", meaning: "会う" },
+        { id: 6, word: "textbooks", meaning: "教科書" },
+        { id: 7, word: "dance", meaning: "踊る" },
+        { id: 8, word: "from A to B", meaning: "AからBまで" },
+        { id: 9, word: "How much", meaning: "いくら" },
+        { id: 10, word: "in the morning", meaning: "朝に" },
+        { id: 11, word: "over there", meaning: "あそこに" },
+        { id: 12, word: "go to bed", meaning: "寝る" },
+        { id: 13, word: "I am", meaning: "私は〜です" },
+        { id: 14, word: "They", meaning: "彼らは" },
+        { id: 15, word: "yours", meaning: "あなたのもの" },
+        { id: 16, word: "spring", meaning: "春" },
+        { id: 17, word: "library", meaning: "図書館" },
+        { id: 18, word: "eggs", meaning: "卵" },
+        { id: 19, word: "baseball fan", meaning: "野球ファン" },
+        { id: 20, word: "sisters", meaning: "姉妹" }
+    ],
+    "2023-1-g5": [
+        { id: 1, word: "name", meaning: "名前" },
+        { id: 2, word: "subject", meaning: "教科" },
+        { id: 3, word: "cake shop", meaning: "ケーキ屋さん" },
+        { id: 4, word: "play games", meaning: "ゲームをする" },
+        { id: 5, word: "breakfast", meaning: "朝食" },
+        { id: 6, word: "a big fan", meaning: "大ファン" },
+        { id: 7, word: "fish", meaning: "魚" },
+        { id: 8, word: "Have a nice day", meaning: "良い一日を" },
+        { id: 9, word: "That's right", meaning: "その通り" },
+        { id: 10, word: "talk about", meaning: "〜について話す" },
+        { id: 11, word: "at night", meaning: "夜に" },
+        { id: 12, word: "years old", meaning: "〜才" },
+        { id: 13, word: "help me", meaning: "手伝って" },
+        { id: 14, word: "What are you doing", meaning: "何してるの" },
+        { id: 15, word: "cook", meaning: "料理する" },
+        { id: 16, word: "telephone number", meaning: "電話番号" },
+        { id: 17, word: "toast", meaning: "トースト" },
+        { id: 18, word: "future dream", meaning: "将来の夢" },
+        { id: 19, word: "London", meaning: "ロンドン" },
+        { id: 20, word: "letter", meaning: "手紙" }
+    ],
+    "2022-3-g5": [
+        { id: 1, word: "sings", meaning: "歌う" },
+        { id: 2, word: "nice", meaning: "すてきな" },
+        { id: 3, word: "sister", meaning: "姉妹" },
+        { id: 4, word: "snowing", meaning: "雪が降っている" },
+        { id: 5, word: "restaurants", meaning: "レストラン" },
+        { id: 6, word: "doctor", meaning: "医者" },
+        { id: 7, word: "flower", meaning: "花" },
+        { id: 8, word: "at school", meaning: "学校で" },
+        { id: 9, word: "live in", meaning: "〜に住む" },
+        { id: 10, word: "come to", meaning: "〜に来る" },
+        { id: 11, word: "What time", meaning: "何時に" },
+        { id: 12, word: "Of course", meaning: "もちろん" },
+        { id: 13, word: "Their", meaning: "彼らの" },
+        { id: 14, word: "don't", meaning: "〜しない" },
+        { id: 15, word: "us", meaning: "私たちを" },
+        { id: 16, word: "band", meaning: "バンド" },
+        { id: 17, word: "California", meaning: "カリフォルニア" },
+        { id: 18, word: "bath", meaning: "お風呂" },
+        { id: 19, word: "French", meaning: "フランス語" },
+        { id: 20, word: "Spanish", meaning: "スペイン語" }
+    ],
+    "2022-2-g5": [
+        { id: 1, word: "classes", meaning: "授業" },
+        { id: 2, word: "buys", meaning: "買う" },
+        { id: 3, word: "or", meaning: "または" },
+        { id: 4, word: "animals", meaning: "動物" },
+        { id: 5, word: "watches", meaning: "見る" },
+        { id: 6, word: "house", meaning: "家" },
+        { id: 7, word: "great", meaning: "すごい" },
+        { id: 8, word: "Look at", meaning: "〜を見て" },
+        { id: 9, word: "wake up", meaning: "起きる" },
+        { id: 10, word: "a lot of", meaning: "たくさんの" },
+        { id: 11, word: "Welcome to", meaning: "〜へようこそ" },
+        { id: 12, word: "Have a good night", meaning: "ぐっすり眠ってね" },
+        { id: 13, word: "where", meaning: "どこ" },
+        { id: 14, word: "His", meaning: "彼の" },
+        { id: 15, word: "I do", meaning: "します" },
+        { id: 16, word: "tulips", meaning: "チューリップ" },
+        { id: 17, word: "basketball", meaning: "バスケットボール" },
+        { id: 18, word: "postcards", meaning: "ポストカード" },
+        { id: 19, word: "living room", meaning: "リビング" },
+        { id: 20, word: "art teacher", meaning: "美術の先生" }
     ],
     "2025-2-g4": [
         { id: 1, word: "understand", meaning: "理解する" },
@@ -789,6 +1760,347 @@ export const vocabDatabase = {
         { id: 49, word: "evoke", meaning: "1. 呼び起こす\n2. 喚起する\n3. 想起させる" },
         // Q15-18: 熟語（全て正解）
         { id: 50, word: "figure on", meaning: "1. 当てにする\n2. 予想する" }
+    ],
+    "2023-3-g3": [
+
+        { id: 1, word: "catch", meaning: "捕まえる、釣る" },
+        { id: 2, word: "experience", meaning: "経験", sentence: "It was an interesting experience.", translation: "それは面白い経験だった。" },
+        { id: 3, word: "vacation", meaning: "休暇" },
+        { id: 4, word: "relax", meaning: "リラックスする", sentence: "You should relax more.", translation: "もっとリラックスすべきだ。" },
+        { id: 5, word: "journalist", meaning: "ジャーナリスト", sentence: "She writes for a newspaper.", translation: "彼女は新聞の記事を書いている。" },
+        { id: 6, word: "dentist", meaning: "歯医者" },
+        { id: 7, word: "kite", meaning: "凧", sentence: "Fly a kite.", translation: "凧を飛ばす。" },
+        { id: 8, word: "castle", meaning: "城" },
+        { id: 9, word: "knock", meaning: "ノックする", sentence: "Knock on the door.", translation: "ドアをノックする。" },
+        { id: 10, word: "drop", meaning: "落とす" },
+        { id: 11, word: "celebrate", meaning: "祝う", sentence: "Celebrate Christmas.", translation: "クリスマスを祝う。" },
+        { id: 12, word: "invite", meaning: "招待する" },
+        { id: 13, word: "Nobody", meaning: "誰も〜ない", sentence: "Nobody could go.", translation: "誰も行けなかった。" },
+        { id: 14, word: "Anyone", meaning: "誰か" },
+        { id: 15, word: "leave", meaning: "出発する" },
+        { id: 16, word: "at least", meaning: "少なくとも", sentence: "It takes at least six hours.", translation: "少なくとも6時間はかかる。" },
+        { id: 17, word: "full of", meaning: "〜でいっぱいの", sentence: "It is full of books.", translation: "それは本でいっぱいだ。" },
+        { id: 18, word: "opinion", meaning: "意見", sentence: "In my opinion.", translation: "私の意見では。" },
+        { id: 19, word: "guess", meaning: "推測" },
+        { id: 20, word: "in bed", meaning: "寝ている", sentence: "She was sick in bed.", translation: "彼女は病気で寝込んでいた。" },
+        { id: 21, word: "dictionary", meaning: "辞書" },
+        { id: 22, word: "find out", meaning: "見つけ出す、わかる", sentence: "He found out there was a camera.", translation: "彼はカメラがあることに気づいた。" },
+        { id: 23, word: "stronger", meaning: "より強い", sentence: "She is stronger than him.", translation: "彼女は彼より強い。" },
+        { id: 24, word: "different kinds", meaning: "様々な種類" },
+        { id: 25, word: "seen", meaning: "見た（過去分詞）", sentence: "He has seen many flowers.", translation: "彼は多くの花を見たことがある。" },
+        { id: 26, word: "museum", meaning: "博物館、美術館" },
+        { id: 27, word: "painted", meaning: "描かれた", sentence: "It was painted long ago.", translation: "それは昔に描かれた。" }
+    ],
+    "2022-3-g3-sub": [
+        // Q1: glad (正解)
+        { id: 1, word: "glad", meaning: "嬉しい", sentence: "I'm so glad to hear that.", translation: "それを聞いてとても嬉しいよ。", questionId: 1 },
+        { id: 2, word: "studied hard", meaning: "一生懸命勉強した", sentence: "You studied hard.", translation: "よく勉強したね。", questionId: 1 },
+        // Q2: experience (正解)
+        { id: 3, word: "experience", meaning: "経験", sentence: "It was a great experience.", translation: "素晴らしい経験でした。", questionId: 2 },
+        { id: 4, word: "Seattle", meaning: "シアトル", sentence: "I studied English in Seattle.", translation: "シアトルで英語を勉強した。", questionId: 2 },
+        // Q3: carefully (正解)
+        { id: 5, word: "carefully", meaning: "注意深く", sentence: "Ride your bicycle carefully.", translation: "気をつけて自転車に乗りなさい。", questionId: 3 },
+        { id: 6, word: "dark", meaning: "暗い", sentence: "It's getting dark outside.", translation: "外が暗くなってきた。", questionId: 3 },
+        // Q4: fighting (正解)
+        { id: 7, word: "fighting", meaning: "格闘の", sentence: "I like fighting games.", translation: "格闘ゲームが好き。", questionId: 4 },
+        { id: 8, word: "against", meaning: "〜に対して", sentence: "Play against my friends.", translation: "友達と対戦する。", questionId: 4 },
+        // Q5: mistakes (正解)
+        { id: 9, word: "mistakes", meaning: "間違い", sentence: "There were many spelling mistakes.", translation: "スペルミスがたくさんあった。", questionId: 5 },
+        { id: 10, word: "report", meaning: "レポート", sentence: "He wrote a report.", translation: "彼はレポートを書いた。", questionId: 5 },
+        // Q6: expensive (正解)
+        { id: 11, word: "expensive", meaning: "高価な", sentence: "An expensive bicycle.", translation: "高い自転車。", questionId: 6 },
+        { id: 12, word: "money", meaning: "お金", sentence: "He doesn't have much money.", translation: "彼はお金があまりない。", questionId: 6 },
+        // Q7: believe (正解)
+        { id: 13, word: "believe", meaning: "信じる", sentence: "I can't believe it!", translation: "信じられない！", questionId: 7 },
+        { id: 14, word: "excited", meaning: "興奮した", sentence: "I'm so excited.", translation: "すごく楽しみ。", questionId: 7 },
+        // Q8: other (正解)
+        { id: 15, word: "the other", meaning: "もう一人の", sentence: "The other lives in Paris.", translation: "もう一人はパリに住んでいる。", questionId: 8 },
+        { id: 16, word: "sisters", meaning: "姉妹", sentence: "I have two sisters.", translation: "姉妹が二人いる。", questionId: 8 },
+        // Q9: interested (正解)
+        { id: 17, word: "interested in", meaning: "〜に興味がある", sentence: "I'm interested in Japanese culture.", translation: "日本文化に興味がある。", questionId: 9 },
+        { id: 18, word: "history", meaning: "歴史", sentence: "Japanese culture and history.", translation: "日本の文化と歴史。", questionId: 9 },
+        // Q10: with (正解)
+        { id: 19, word: "help with", meaning: "〜の手伝い", sentence: "Do you need any help with your bike?", translation: "自転車のことで手伝いが必要？", questionId: 10 },
+        { id: 20, word: "fix", meaning: "直す", sentence: "I need to fix the seat.", translation: "サドルを直さないと。", questionId: 10 },
+        // Q11: afraid (正解)
+        { id: 21, word: "afraid of", meaning: "〜が怖い", sentence: "I'm afraid of sleeping alone.", translation: "一人で寝るのが怖い。", questionId: 11 },
+        { id: 22, word: "scary", meaning: "怖い", sentence: "I read scary books.", translation: "怖い本を読む。", questionId: 11 },
+        // Q12: shook (正解)
+        { id: 23, word: "shook hands", meaning: "握手した", sentence: "He shook hands with the player.", translation: "彼は選手と握手した。", questionId: 12 },
+        { id: 24, word: "stadium", meaning: "スタジアム", sentence: "At the stadium.", translation: "スタジアムで。", questionId: 12 },
+        // Q13: to be (正解)
+        { id: 25, word: "to be", meaning: "〜になること", sentence: "His dream is to be an actor.", translation: "彼の夢は俳優になること。", questionId: 13 },
+        { id: 26, word: "famous", meaning: "有名な", sentence: "A famous actor.", translation: "有名な俳優。", questionId: 13 },
+        // Q14: taught (正解)
+        { id: 27, word: "taught", meaning: "教えた", sentence: "She taught at a university.", translation: "彼女は大学で教えた。", questionId: 14 },
+        { id: 28, word: "enjoyed", meaning: "楽しんだ", sentence: "The students enjoyed her classes.", translation: "生徒は彼女の授業を楽しんだ。", questionId: 14 },
+        // Q15: cooler (正解)
+        { id: 29, word: "cooler", meaning: "より涼しい", sentence: "It was much cooler.", translation: "ずっと涼しかった。", questionId: 15 },
+        { id: 30, word: "mountain", meaning: "山", sentence: "At the top of the mountain.", translation: "山の頂上で。", questionId: 15 }
+    ],
+    "2022-2-g3-sub": [
+        // Q1: bright (正解)
+        { id: 1, word: "bright", meaning: "明るい", sentence: "It is very bright inside.", translation: "中はとても明るい。", questionId: 1 },
+        { id: 2, word: "windows", meaning: "窓", sentence: "A lot of big windows.", translation: "大きな窓がたくさん。", questionId: 1 },
+        // Q2: without (正解)
+        { id: 3, word: "without", meaning: "〜なしで", sentence: "He left without his umbrella.", translation: "彼は傘なしで出かけた。", questionId: 2 },
+        { id: 4, word: "got wet", meaning: "濡れた", sentence: "He got wet in the rain.", translation: "彼は雨に濡れた。", questionId: 2 },
+        // Q3: happened (正解)
+        { id: 5, word: "happened", meaning: "起こった", sentence: "What happened?", translation: "何があったの？", questionId: 3 },
+        { id: 6, word: "wallet", meaning: "財布", sentence: "I left my wallet at home.", translation: "財布を家に忘れた。", questionId: 3 },
+        // Q4: same (正解)
+        { id: 7, word: "same", meaning: "同じ", sentence: "We have the same shoe size.", translation: "私たちは靴のサイズが同じ。", questionId: 4 },
+        { id: 8, word: "borrow", meaning: "借りる", sentence: "I borrow his running shoes.", translation: "彼のランニングシューズを借りる。", questionId: 4 },
+        // Q5: still (正解)
+        { id: 9, word: "still", meaning: "まだ", sentence: "Are you still taking a bath?", translation: "まだお風呂に入っているの？", questionId: 5 },
+        { id: 10, word: "finished", meaning: "終わった", sentence: "I'll be finished in 15 minutes.", translation: "15分で終わるよ。", questionId: 5 },
+        // Q6: by (正解)
+        { id: 11, word: "by", meaning: "〜のそばに", sentence: "We live by a small river.", translation: "小さな川のそばに住んでいる。", questionId: 6 },
+        { id: 12, word: "nature", meaning: "自然", sentence: "We love nature.", translation: "私たちは自然が好き。", questionId: 6 },
+        // Q7: spent (正解)
+        { id: 13, word: "spent", meaning: "使った", sentence: "I spent too much money.", translation: "お金を使いすぎた。", questionId: 7 },
+        { id: 14, word: "angry", meaning: "怒った", sentence: "My mother got angry.", translation: "母が怒った。", questionId: 7 },
+        // Q8: for (正解)
+        { id: 15, word: "pay for", meaning: "〜の代金を払う", sentence: "I'll pay for it.", translation: "私が払うよ。", questionId: 8 },
+        { id: 16, word: "birthday", meaning: "誕生日", sentence: "It's your birthday today.", translation: "今日は君の誕生日だ。", questionId: 8 },
+        // Q9: off (正解)
+        { id: 17, word: "get off", meaning: "降りる", sentence: "He gets off the bus.", translation: "彼はバスを降りる。", questionId: 9 },
+        { id: 18, word: "walk", meaning: "歩く", sentence: "He likes to walk.", translation: "彼は歩くのが好き。", questionId: 9 },
+        // Q10: enough (正解)
+        { id: 19, word: "enough", meaning: "十分な", sentence: "Small enough to put in my backpack.", translation: "リュックに入るくらい小さい。", questionId: 10 },
+        { id: 20, word: "computer", meaning: "コンピュータ", sentence: "I want a computer.", translation: "コンピュータが欲しい。", questionId: 10 },
+        // Q11: pair (正解)
+        { id: 21, word: "a pair of", meaning: "一組の", sentence: "A pair of white shoes.", translation: "白い靴一足。", questionId: 11 },
+        { id: 22, word: "dress", meaning: "ドレス", sentence: "I bought a cute dress.", translation: "かわいいドレスを買った。", questionId: 11 },
+        // Q12: around (正解)
+        { id: 23, word: "look around", meaning: "見て回る", sentence: "Look around the shopping mall.", translation: "ショッピングモールを見て回る。", questionId: 12 },
+        { id: 24, word: "movie", meaning: "映画", sentence: "Before the movie starts.", translation: "映画が始まる前に。", questionId: 12 },
+        // Q13: won't (正解)
+        { id: 25, word: "won't you", meaning: "〜でしょう（付加疑問）", sentence: "You'll drive me, won't you?", translation: "連れて行ってくれるよね？", questionId: 13 },
+        { id: 26, word: "drive", meaning: "車で送る", sentence: "Drive me to my soccer game.", translation: "サッカーの試合に送って。", questionId: 13 },
+        // Q14: nicer (正解)
+        { id: 27, word: "nicer", meaning: "より素敵な", sentence: "The green sweater is nicer.", translation: "緑のセーターの方が素敵。", questionId: 14 },
+        { id: 28, word: "colors", meaning: "色", sentence: "I like both of these colors.", translation: "この2つの色、両方好き。", questionId: 14 },
+        // Q15: studying (正解)
+        { id: 29, word: "keep studying", meaning: "勉強し続ける", sentence: "I need to keep studying.", translation: "勉強し続けないと。", questionId: 15 },
+        { id: 30, word: "remember", meaning: "覚える", sentence: "Until I remember everything.", translation: "全部覚えるまで。", questionId: 15 }
+    ],
+    "2022-1-g3-sub": [
+        // Q1: roof (正解)
+        { id: 1, word: "roof", meaning: "屋根", sentence: "The house with a brown roof.", translation: "茶色い屋根の家。", questionId: 1 },
+        { id: 2, word: "white", meaning: "白い", sentence: "A big white house.", translation: "大きな白い家。", questionId: 1 },
+        // Q2: interview (正解)
+        { id: 3, word: "interview", meaning: "インタビュー", sentence: "Questions for an interview.", translation: "インタビューのための質問。", questionId: 2 },
+        { id: 4, word: "famous", meaning: "有名な", sentence: "A famous singer.", translation: "有名な歌手。", questionId: 2 },
+        // Q3: peaceful (正解)
+        { id: 5, word: "peaceful", meaning: "平和な、穏やかな", sentence: "A peaceful life.", translation: "穏やかな生活。", questionId: 3 },
+        { id: 6, word: "lake", meaning: "湖", sentence: "A lake near the mountains.", translation: "山の近くの湖。", questionId: 3 },
+        // Q4: foreign (正解)
+        { id: 7, word: "foreign", meaning: "外国の", sentence: "A foreign country.", translation: "外国。", questionId: 4 },
+        { id: 8, word: "China", meaning: "中国", sentence: "I've been to China.", translation: "中国に行ったことがある。", questionId: 4 },
+        // Q5: caught (正解)
+        { id: 9, word: "caught", meaning: "捕まえた", sentence: "I caught a frog.", translation: "カエルを捕まえた。", questionId: 5 },
+        { id: 10, word: "outside", meaning: "外に", sentence: "Take that back outside.", translation: "それを外に戻して。", questionId: 5 },
+        // Q6: repeating (正解)
+        { id: 11, word: "repeating", meaning: "繰り返す", sentence: "By repeating the words.", translation: "単語を繰り返すことで。", questionId: 6 },
+        { id: 12, word: "remembered", meaning: "覚えた", sentence: "She remembered them all.", translation: "彼女は全部覚えた。", questionId: 6 },
+        // Q7: boring (正解)
+        { id: 13, word: "boring", meaning: "退屈な", sentence: "This movie is boring.", translation: "この映画は退屈だ。", questionId: 7 },
+        { id: 14, word: "interesting", meaning: "面白い", sentence: "Something more interesting.", translation: "もっと面白いもの。", questionId: 7 },
+        // Q8: break (正解)
+        { id: 15, word: "break", meaning: "破る", sentence: "Break my promise.", translation: "約束を破る。", questionId: 8 },
+        { id: 16, word: "promise", meaning: "約束", sentence: "I don't want to break my promise.", translation: "約束を破りたくない。", questionId: 8 },
+        // Q9: off (正解)
+        { id: 17, word: "turn off", meaning: "消す", sentence: "Turn off the light.", translation: "電気を消す。", questionId: 9 },
+        { id: 18, word: "bedroom", meaning: "寝室", sentence: "In your bedroom.", translation: "あなたの寝室で。", questionId: 9 },
+        // Q10: belonged (正解)
+        { id: 19, word: "belonged to", meaning: "〜に所属していた", sentence: "I belonged to the club.", translation: "私はクラブに所属していた。", questionId: 10 },
+        { id: 20, word: "track and field", meaning: "陸上競技", sentence: "The track and field club.", translation: "陸上部。", questionId: 10 },
+        // Q11: about (正解)
+        { id: 21, word: "think about", meaning: "〜について考える", sentence: "Thinking about buying.", translation: "買うことを考えている。", questionId: 11 },
+        { id: 22, word: "larger", meaning: "より大きい", sentence: "A larger one.", translation: "より大きいもの。", questionId: 11 },
+        // Q12: in (正解)
+        { id: 23, word: "in bed", meaning: "ベッドにいる", sentence: "He's still in bed.", translation: "彼はまだベッドにいる。", questionId: 12 },
+        { id: 24, word: "brother", meaning: "兄弟", sentence: "Where's your brother?", translation: "お兄さん（弟）はどこ？", questionId: 12 },
+        // Q13: met (正解)
+        { id: 25, word: "met", meaning: "会った", sentence: "I met him last year.", translation: "去年彼に会った。", questionId: 13 },
+        { id: 26, word: "picture", meaning: "写真", sentence: "This picture with Sam Smith.", translation: "サム・スミスとのこの写真。", questionId: 13 },
+        // Q14: better (正解)
+        { id: 27, word: "better", meaning: "より良く", sentence: "She can play better.", translation: "彼女はより上手に弾ける。", questionId: 14 },
+        { id: 28, word: "piano", meaning: "ピアノ", sentence: "Play the piano.", translation: "ピアノを弾く。", questionId: 14 },
+        // Q15: that (正解)
+        { id: 29, word: "that", meaning: "〜である（関係代名詞）", sentence: "A language that is spoken.", translation: "話されている言語。", questionId: 15 },
+        { id: 30, word: "Spanish", meaning: "スペイン語", sentence: "Spanish is spoken in many countries.", translation: "スペイン語は多くの国で話されている。", questionId: 15 }
+    ],
+    "2023-3-g3-sub": [
+        // Q1: believe
+        { id: 1, word: "believe", meaning: "信じる", sentence: "I don't believe you.", translation: "私はあなたを信じない。", questionId: 1 },
+        { id: 2, word: "write", meaning: "書く", sentence: "I can write my name.", translation: "私は自分の名前を書ける。", questionId: 1 },
+        // Q2: along
+        { id: 3, word: "along", meaning: "〜に沿って", sentence: "Walk along the river.", translation: "川沿いを歩く。", questionId: 2 },
+        { id: 4, word: "beautiful", meaning: "美しい", sentence: "The river is beautiful.", translation: "その川は美しい。", questionId: 2 },
+        // Q3: cool
+        { id: 5, word: "cool", meaning: "涼しい、かっこいい", sentence: "It was cool.", translation: "涼しかった。", questionId: 3 },
+        { id: 6, word: "weather", meaning: "天気", sentence: "The weather was rainy.", translation: "天気は雨だった。", questionId: 3 },
+        // Q4: ready
+        { id: 7, word: "ready", meaning: "準備ができた", sentence: "Are you ready?", translation: "準備はできましたか？", questionId: 4 },
+        { id: 8, word: "studied", meaning: "勉強した", sentence: "I studied a lot.", translation: "私はたくさん勉強した。", questionId: 4 },
+        // Q5: met
+        { id: 9, word: "met", meaning: "会った（meetの過去形）", sentence: "We met in the club.", translation: "私たちはクラブで会った。", questionId: 5 },
+        { id: 10, word: "held", meaning: "開催した、開いた", sentence: "We held a party.", translation: "私たちはパーティーを開いた。", questionId: 5 },
+        // Q6: collect
+        { id: 11, word: "collect", meaning: "集める", sentence: "I collect stamps.", translation: "私は切手を集めています。", questionId: 6 },
+        { id: 12, word: "pay", meaning: "支払う", sentence: "Pay for the book.", translation: "本のためにお金を払う。", questionId: 6 },
+        // Q7: apron
+        { id: 13, word: "apron", meaning: "エプロン", sentence: "Wear an apron.", translation: "エプロンをつける。", questionId: 7 },
+        { id: 14, word: "clothes", meaning: "服", sentence: "Keep clothes clean.", translation: "服を清潔に保つ。", questionId: 7 },
+        // Q8: trip
+        { id: 15, word: "trip", meaning: "旅行", sentence: "Go on a trip.", translation: "旅行に行く。", questionId: 8 },
+        { id: 16, word: "vacation", meaning: "休暇", sentence: "Summer vacation.", translation: "夏休み。", questionId: 8 },
+        // Q9: over
+        { id: 17, word: "over", meaning: "〜を超えて、〜中", sentence: "All over the world.", translation: "世界中。", questionId: 9 },
+        { id: 18, word: "famous", meaning: "有名な", sentence: "A famous singer.", translation: "有名な歌手。", questionId: 9 },
+        // Q10: agree
+        { id: 19, word: "agree", meaning: "同意する", sentence: "I agree with you.", translation: "あなたに同意します。", questionId: 10 },
+        { id: 20, word: "boring", meaning: "退屈な", sentence: "Sports are boring.", translation: "スポーツは退屈だ。", questionId: 10 },
+        // Q11: afraid
+        { id: 21, word: "afraid", meaning: "恐れて、怖い", sentence: "I am afraid of flying.", translation: "私は飛ぶのが怖い。", questionId: 11 },
+        { id: 22, word: "surprised", meaning: "驚いた", sentence: "I was surprised.", translation: "私は驚いた。", questionId: 11 },
+        // Q12: trouble
+        { id: 23, word: "trouble", meaning: "トラブル、困難", sentence: "He is in trouble.", translation: "彼は困ったことになっている。", questionId: 12 },
+        { id: 24, word: "angry", meaning: "怒った", sentence: "He is angry.", translation: "彼は怒っている。", questionId: 12 },
+        // Q13: to help
+        { id: 25, word: "help", meaning: "助ける", sentence: "Ways to help students.", translation: "生徒を助けるための方法。", questionId: 13 },
+        { id: 26, word: "find", meaning: "見つける", sentence: "Find a way.", translation: "方法を見つける。", questionId: 13 },
+        // Q14: better
+        { id: 27, word: "better", meaning: "より良い", sentence: "This is better.", translation: "これはより良い。", questionId: 14 },
+        { id: 28, word: "enough", meaning: "十分な", sentence: "Practice enough.", translation: "十分に練習する。", questionId: 14 },
+        // Q15: study
+        { id: 29, word: "study", meaning: "勉強する", sentence: "I couldn't study.", translation: "私は勉強できなかった。", questionId: 15 },
+        { id: 30, word: "noisy", meaning: "うるさい", sentence: "It was too noisy.", translation: "それはうるさすぎた。", questionId: 15 }
+    ],
+    "2023-2-g3-sub": [
+        // Q1: same (正解)
+        { id: 1, word: "same", meaning: "同じ", sentence: "We were born on the same day.", translation: "私たちは同じ日に生まれた。", questionId: 1 },
+        { id: 2, word: "birthday", meaning: "誕生日", sentence: "My birthday is February 5th.", translation: "私の誕生日は2月5日です。", questionId: 1 },
+        // Q2: save (正解)
+        { id: 3, word: "save", meaning: "貯める、節約する", sentence: "I have to save some money.", translation: "お金を貯めなければならない。", questionId: 2 },
+        { id: 4, word: "Paris", meaning: "パリ", sentence: "Are you going to Paris?", translation: "パリに行くの？", questionId: 2 },
+        // Q3: probably (正解)
+        { id: 5, word: "probably", meaning: "おそらく", sentence: "He probably will.", translation: "おそらくそうするでしょう。", questionId: 3 },
+        { id: 6, word: "favorite", meaning: "お気に入りの", sentence: "It's his favorite sport.", translation: "それは彼の一番好きなスポーツです。", questionId: 3 },
+        // Q4: performance (正解)
+        { id: 7, word: "performance", meaning: "演技、パフォーマンス", sentence: "Everyone enjoyed his performance.", translation: "みんなが彼の演技を楽しんだ。", questionId: 4 },
+        { id: 8, word: "contest", meaning: "コンテスト", sentence: "He took part in a dance contest.", translation: "彼はダンスコンテストに参加した。", questionId: 4 },
+        // Q5: novels (正解)
+        { id: 9, word: "novels", meaning: "小説", sentence: "All of them were novels.", translation: "それらは全て小説だった。", questionId: 5 },
+        { id: 10, word: "characters", meaning: "登場人物", sentence: "I like the characters.", translation: "登場人物が好きです。", questionId: 5 },
+        // Q6: happened (正解)
+        { id: 11, word: "happened", meaning: "起こった", sentence: "What happened?", translation: "何があったの？", questionId: 6 },
+        { id: 12, word: "lost", meaning: "失くした", sentence: "I lost my watch.", translation: "時計を失くした。", questionId: 6 },
+        // Q7: contacts (正解)
+        { id: 13, word: "contacts", meaning: "連絡する", sentence: "He contacts his aunt.", translation: "彼は叔母に連絡する。", questionId: 7 },
+        { id: 14, word: "advice", meaning: "アドバイス", sentence: "He wants some advice.", translation: "彼はアドバイスが欲しい。", questionId: 7 },
+        // Q8: long (正解)
+        { id: 15, word: "long", meaning: "長く", sentence: "It rained all night long.", translation: "一晩中雨が降った。", questionId: 8 },
+        { id: 16, word: "sunny", meaning: "晴れた", sentence: "It's sunny now.", translation: "今は晴れている。", questionId: 8 },
+        // Q9: hurry (正解)
+        { id: 17, word: "hurry", meaning: "急ぎ", sentence: "I'm in a hurry.", translation: "急いでいます。", questionId: 9 },
+        { id: 18, word: "café", meaning: "カフェ", sentence: "Can we stop at that café?", translation: "あのカフェに寄れる？", questionId: 9 },
+        // Q10: up (正解)
+        { id: 19, word: "climbed up", meaning: "登った", sentence: "The cat climbed up a tree.", translation: "猫が木に登った。", questionId: 10 },
+        { id: 20, word: "worried", meaning: "心配した", sentence: "Paul was worried.", translation: "ポールは心配した。", questionId: 10 },
+        // Q11: front (正解)
+        { id: 21, word: "in front of", meaning: "〜の前で", sentence: "He speaks in front of his classmates.", translation: "彼はクラスメートの前で話す。", questionId: 11 },
+        { id: 22, word: "nervous", meaning: "緊張した", sentence: "He doesn't get nervous.", translation: "彼は緊張しない。", questionId: 11 },
+        // Q12: back (正解)
+        { id: 23, word: "wrote back", meaning: "返事を書いた", sentence: "He wrote back to me.", translation: "彼は私に返事を書いた。", questionId: 12 },
+        { id: 24, word: "surprised", meaning: "驚いた", sentence: "I was surprised.", translation: "私は驚いた。", questionId: 12 },
+        // Q13: won (正解)
+        { id: 25, word: "won", meaning: "勝った", sentence: "She won all of them.", translation: "彼女は全てに勝った。", questionId: 13 },
+        { id: 26, word: "tournaments", meaning: "トーナメント、大会", sentence: "She took part in three tournaments.", translation: "彼女は3つの大会に参加した。", questionId: 13 },
+        // Q14: best (正解)
+        { id: 27, word: "best", meaning: "最も良い", sentence: "It's the best place.", translation: "それは最高の場所です。", questionId: 14 },
+        { id: 28, word: "world", meaning: "世界", sentence: "The best place in the world.", translation: "世界で最高の場所。", questionId: 14 },
+        // Q15: don't (正解)
+        { id: 29, word: "don't you", meaning: "〜ですよね（付加疑問）", sentence: "You study Spanish, don't you?", translation: "スペイン語を勉強していますよね？", questionId: 15 },
+        { id: 30, word: "lesson", meaning: "レッスン", sentence: "I have a lesson every Friday.", translation: "毎週金曜にレッスンがあります。", questionId: 15 }
+    ],
+    "2023-1-g3-sub": [
+        // Q1: few (正解)
+        { id: 1, word: "a few", meaning: "少しの", sentence: "There are a few apples.", translation: "リンゴが少しあります。", questionId: 1 },
+        { id: 2, word: "hungry", meaning: "お腹が空いた", sentence: "I'm hungry.", translation: "お腹が空いた。", questionId: 1 },
+        // Q2: named (正解)
+        { id: 3, word: "named", meaning: "〜という名前の", sentence: "A dog named Woofy.", translation: "ウーフィーという名前の犬。", questionId: 2 },
+        { id: 4, word: "cute", meaning: "かわいい", sentence: "He is very cute.", translation: "彼はとてもかわいい。", questionId: 2 },
+        // Q3: title (正解)
+        { id: 5, word: "title", meaning: "タイトル、題名", sentence: "What is the title?", translation: "タイトルは何？", questionId: 3 },
+        { id: 6, word: "movie", meaning: "映画", sentence: "The Korean movie.", translation: "その韓国映画。", questionId: 3 },
+        // Q4: fits (正解)
+        { id: 7, word: "fits", meaning: "合う、似合う", sentence: "It fits you well.", translation: "よく似合っていますよ。", questionId: 4 },
+        { id: 8, word: "dress", meaning: "ドレス", sentence: "My new dress.", translation: "私の新しいドレス。", questionId: 4 },
+        // Q5: repeat (正解)
+        { id: 9, word: "repeat", meaning: "繰り返す", sentence: "Please repeat the question.", translation: "質問を繰り返してください。", questionId: 5 },
+        { id: 10, word: "understood", meaning: "理解した", sentence: "He understood only a little.", translation: "彼は少ししか理解できなかった。", questionId: 5 },
+        // Q6: holes (正解)
+        { id: 11, word: "holes", meaning: "穴", sentence: "They have holes in them.", translation: "穴が開いている。", questionId: 6 },
+        { id: 12, word: "socks", meaning: "靴下", sentence: "You can't wear those socks.", translation: "その靴下は履けないよ。", questionId: 6 },
+        // Q7: return (正解)
+        { id: 13, word: "return", meaning: "戻る、帰る", sentence: "She won't return home.", translation: "彼女は家に帰らない。", questionId: 7 },
+        { id: 14, word: "traveling", meaning: "旅行中", sentence: "She is traveling around Asia.", translation: "彼女はアジアを旅行中です。", questionId: 7 },
+        // Q8: tired (正解)
+        { id: 15, word: "tired of", meaning: "〜に飽きた", sentence: "I'm tired of this game.", translation: "このゲームに飽きた。", questionId: 8 },
+        { id: 16, word: "different", meaning: "異なる、違う", sentence: "Something different.", translation: "何か違うもの。", questionId: 8 },
+        // Q9: all (正解)
+        { id: 17, word: "all day", meaning: "一日中", sentence: "I read a book all day.", translation: "一日中本を読んだ。", questionId: 9 },
+        { id: 18, word: "rainy", meaning: "雨の", sentence: "It was cold and rainy.", translation: "寒くて雨だった。", questionId: 9 },
+        // Q10: of (正解)
+        { id: 19, word: "most of", meaning: "〜のほとんど", sentence: "Most of the people.", translation: "ほとんどの人。", questionId: 10 },
+        { id: 20, word: "gym", meaning: "体育館", sentence: "In the school gym.", translation: "学校の体育館で。", questionId: 10 },
+        // Q11: both (正解)
+        { id: 21, word: "both", meaning: "両方", sentence: "Both egg and tuna.", translation: "卵とツナの両方。", questionId: 11 },
+        { id: 22, word: "sandwiches", meaning: "サンドイッチ", sentence: "What kind of sandwiches?", translation: "どんな種類のサンドイッチ？", questionId: 11 },
+        // Q12: fall (正解)
+        { id: 23, word: "fall down", meaning: "転ぶ", sentence: "She doesn't want to fall down.", translation: "彼女は転びたくない。", questionId: 12 },
+        { id: 24, word: "slowly", meaning: "ゆっくりと", sentence: "She walks slowly.", translation: "彼女はゆっくり歩く。", questionId: 12 },
+        // Q13: taken (正解)
+        { id: 25, word: "taken", meaning: "撮られた", sentence: "Where was the photo taken?", translation: "写真はどこで撮られた？", questionId: 13 },
+        { id: 26, word: "Australia", meaning: "オーストラリア", sentence: "In Australia.", translation: "オーストラリアで。", questionId: 13 },
+        // Q14: Would (正解)
+        { id: 27, word: "Would you like to", meaning: "〜しませんか", sentence: "Would you like to come?", translation: "来ませんか？", questionId: 14 },
+        { id: 28, word: "dinner", meaning: "夕食", sentence: "Come for dinner.", translation: "夕食に来て。", questionId: 14 },
+        // Q15: performing (正解)
+        { id: 29, word: "performing", meaning: "演じること", sentence: "She loves performing.", translation: "彼女は演じるのが大好き。", questionId: 15 },
+        { id: 30, word: "in front of", meaning: "〜の前で", sentence: "In front of people.", translation: "人前で。", questionId: 15 }
+    ],
+    "2023-2-g3": [
+        { id: 1, word: "lend", meaning: "貸す" },
+        { id: 2, word: "keep", meaning: "（返さずに）持っておく", sentence: "You can keep it.", translation: "あげますよ（持っていていいですよ）。" },
+        { id: 3, word: "uniform", meaning: "ユニフォーム、制服" },
+        { id: 4, word: "dirty", meaning: "汚い", sentence: "My uniform is dirty.", translation: "ユニフォームが汚れている。" },
+        { id: 5, word: "true", meaning: "本当の", sentence: "That's not true.", translation: "それは本当ではない。" },
+        { id: 6, word: "ready", meaning: "準備ができた" },
+        { id: 7, word: "advice", meaning: "アドバイス、助言", sentence: "He gave me some advice.", translation: "彼は私にアドバイスをくれた。" },
+        { id: 8, word: "meaning", meaning: "意味" },
+        { id: 9, word: "without", meaning: "〜なしで", sentence: "He went out without a coat.", translation: "彼はコートなしで出かけた。" },
+        { id: 10, word: "through", meaning: "〜を通って" },
+        { id: 11, word: "shout", meaning: "叫ぶ" },
+        { id: 12, word: "hurt", meaning: "痛む、傷つける", sentence: "My finger hurts.", translation: "指が痛い。" },
+        { id: 13, word: "invite", meaning: "招待する", sentence: "I invited my friends.", translation: "友達を招待した。" },
+        { id: 14, word: "introduce", meaning: "紹介する" },
+        { id: 15, word: "hobby", meaning: "趣味" },
+        { id: 16, word: "a couple of", meaning: "2、3の〜", sentence: "A couple of times.", translation: "数回。" },
+        { id: 17, word: "do one's best", meaning: "全力を尽くす", sentence: "She did her best.", translation: "彼女は全力を尽くした。" },
+        { id: 18, word: "be proud of", meaning: "〜を誇りに思う", sentence: "I'm proud of her.", translation: "彼女を誇りに思う。" },
+        { id: 19, word: "First of all", meaning: "まず第一に", sentence: "First of all, let's clean.", translation: "まず第一に掃除しよう。" },
+        { id: 20, word: "clean", meaning: "掃除する" },
+        { id: 21, word: "for a while", meaning: "しばらくの間", sentence: "He lived there for a while.", translation: "彼はしばらくそこに住んでいた。" },
+        { id: 22, word: "matter", meaning: "問題" },
+        { id: 23, word: "look around", meaning: "見て回る", sentence: "Look around the museum.", translation: "美術館を見て回る。" },
+        { id: 24, word: "museum", meaning: "博物館、美術館" },
+        { id: 25, word: "taller", meaning: "より高い", sentence: "Taller than that building.", translation: "そのビルより高い。" },
+        { id: 26, word: "gone", meaning: "行ってしまった（完了）", sentence: "He has gone home.", translation: "彼は帰ってしまった。" },
+        { id: 27, word: "playing", meaning: "遊ぶこと（動名詞）", sentence: "Enjoy playing games.", translation: "ゲームをして楽しむ。" }
     ]
 };
 

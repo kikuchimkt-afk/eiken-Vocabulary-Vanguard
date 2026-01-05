@@ -7,8 +7,8 @@ export const grade3_2024_2Data = {
             choices: ["everywhere", "anytime", "anything", "everything"],
             choiceMeanings: ["どこでも", "いつでも", "何か（疑問文・否定文で）", "すべてのもの"],
             correctAnswer: 3,
-            structure: "Are you doing [V] anything special [O] this weekend [M]?",
-            explanation: "anything special: 何か特別なこと",
+            structure: "Are [aux] you [S] doing [V] anything special [O] this weekend [M]?",
+            explanation: "正解単語: anything (何か)。疑問文で「特別な何か (anything special)」をするか尋ねている。",
             translation: {
                 literal: "あなたはしていますか [V] 何か特別なことを [O] 今週末 [M]？",
                 natural: "今週末は何か特別なことをするの？",
@@ -23,7 +23,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["置いてきた／去った", "買った", "教えた", "始めた"],
             correctAnswer: 1,
             structure: "I [S] left [V] my dictionary [O] at school [M]!",
-            explanation: "leave: （物を）置き忘れる、置いてくる",
+            explanation: "正解単語: left (置き忘れた/置いてきた)。leave の過去形。学校に辞書を「置いてきた」ので宿題ができない。",
             translation: {
                 literal: "私は [S] 置いてきた [V] 辞書を [O] 学校に [M]！",
                 natural: "学校に辞書を置いてきちゃった！",
@@ -38,7 +38,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["聞こえる", "費やす", "包む", "到着する"],
             correctAnswer: 3,
             structure: "I [S] need to wrap [V] it [O] before she comes home [M].",
-            explanation: "wrap: 包む",
+            explanation: "正解単語: wrap (包む)。プレゼント (present) なので、紙とテープを使って「包む」必要がある。",
             translation: {
                 literal: "私は [S] 包む必要がある [V] それを [O] 彼女が帰宅する前に [M]。",
                 natural: "彼女が帰って来る前にそれを包まなきゃ。",
@@ -53,7 +53,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["歌う", "合格する", "成長する", "持つ"],
             correctAnswer: 2,
             structure: "Most of the students [S] were able to pass [V] the test [O].",
-            explanation: "pass the test: 試験に合格する",
+            explanation: "正解単語: pass (合格する)。pass the test で「試験に合格する」。一生懸命勉強した (studied hard) の結果として妥当。",
             translation: {
                 literal: "生徒のほとんどは [S] 試験に合格できた [V]。",
                 natural: "生徒のほとんどは試験に合格できた。",
@@ -67,8 +67,8 @@ export const grade3_2024_2Data = {
             choices: ["introduce", "believe", "bake", "relax"],
             choiceMeanings: ["紹介する", "信じる", "焼く", "リラックスする"],
             correctAnswer: 1,
-            structure: "Can I introduce [V] you [O] to my friend [M]?",
-            explanation: "introduce A to B: AをBに紹介する",
+            structure: "Can [aux] I [S] introduce [V] you [O] to my friend [M]?",
+            explanation: "正解単語: introduce (紹介する)。introduce A to B で「AをBに紹介する」。",
             translation: {
                 literal: "紹介していいですか [V] あなたを [O] 私の友達に [M]？",
                 natural: "あなたを友達に紹介してもいい？",
@@ -83,7 +83,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["日付", "考え", "世紀", "歴史"],
             correctAnswer: 3,
             structure: "It [S] was built [V] in the 17th century [M].",
-            explanation: "century: 世紀",
+            explanation: "正解単語: century (世紀)。17th century で「17世紀」。城がとても古い (very old) ことの説明。",
             translation: {
                 literal: "それは [S] 建てられた [V] 17世紀に [M]。",
                 natural: "それは17世紀に建てられた。",
@@ -98,7 +98,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["トリック", "伝統／慣習", "トラブル", "寺"],
             correctAnswer: 2,
             structure: "It [仮S] is [V] a tradition [C] for her [意味上のS] to make a big dinner [真S].",
-            explanation: "tradition: 伝統、慣習",
+            explanation: "正解単語: tradition (伝統/恒例行事)。毎年 (every year) クリスマスの日にごちそうを作ることが「恒例（伝統）」になっている。",
             translation: {
                 literal: "それは [S] 伝統です [C] 彼女にとって夕食を作ることが [真S]。",
                 natural: "彼女にとってごちそうを作るのは恒例のことだ。",
@@ -113,7 +113,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["〜の間に", "上の（副詞）", "〜の中へ", "〜を越えて"],
             correctAnswer: 2,
             structure: "please clean up [V] your room [O].",
-            explanation: "clean up: 掃除する、片付ける",
+            explanation: "正解単語: up。clean up で「きれいに掃除する/片付ける」。",
             translation: {
                 literal: "掃除してください [V] あなたの部屋を [O]。",
                 natural: "部屋を片付けてね。",
@@ -128,7 +128,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["〜について", "〜の下に", "〜に反対して", "〜を横切って"],
             correctAnswer: 1,
             structure: "Sue [S] was worried [V] about her new job [M].",
-            explanation: "be worried about: 〜を心配している",
+            explanation: "正解単語: about。be worried about ... で「...を心配している」。",
             translation: {
                 literal: "スーは [S] 心配していた [V] 彼女の新しい仕事について [M]。",
                 natural: "スーは最初新しい仕事について心配していた。",
@@ -143,7 +143,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["〜の上に", "〜で", "〜の", "〜の中に"],
             correctAnswer: 3,
             structure: "She [S] is [V] really proud [C] of herself [M].",
-            explanation: "be proud of: 〜を誇りに思う",
+            explanation: "正解単語: of。be proud of ... で「...を誇りに思う」。1位になった (won first place) ので自分を誇りに思っている。",
             translation: {
                 literal: "彼女は [S] です [V] 本当に誇りに思っている [C] 彼女自身を [M]。",
                 natural: "彼女は自分自身をとても誇りに思っている。",
@@ -158,7 +158,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["与えた", "壊した（破った）", "捕まえた", "見つけた"],
             correctAnswer: 2,
             structure: "because Yuka [S] broke [V] her promise [O].",
-            explanation: "break one's promise: 約束を破る",
+            explanation: "正解単語: broke (破った)。break one's promise で「約束を破る」。弟が怒っている (very angry) 原因。",
             translation: {
                 literal: "なぜならユカが [S] 破ったから [V] 彼女の約束を [O]。",
                 natural: "ユカが約束を破ったから。",
@@ -173,7 +173,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["たくさんの（量）", "大部分の", "より多くの", "最も少ない"],
             correctAnswer: 3,
             structure: "more and more people [S] are [V] interested [C] in space [M].",
-            explanation: "more and more: ますます多くの",
+            explanation: "正解単語: more。more and more で「ますます多くの」。比較級 and 比較級。",
             translation: {
                 literal: "ますます多くの人々が [S] です [V] 興味がある [C] 宇宙に [M]。",
                 natural: "最近、ますます多くの人が宇宙に興味を持っています。",
@@ -188,7 +188,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["書いた", "書く", "書く（三単現）", "書いている"],
             correctAnswer: 1,
             structure: "The author [S] wrote [V] it [O] when she was a child [M].",
-            explanation: "wrote: 書いた（writeの過去形）",
+            explanation: "正解単語: wrote (書いた)。過去の話 (when she was a child) なので過去形 wrote。",
             translation: {
                 literal: "著者は [S] 書いた [V] それを [O] 彼女が子供だった時 [M]。",
                 natural: "著者は子供の頃にそれを書いた。",
@@ -203,7 +203,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["より速く", "最も速く", "速く", "速すぎる"],
             correctAnswer: 1,
             structure: "She [S] can run [V] faster [M] than anyone [M].",
-            explanation: "faster: より速く（比較級）",
+            explanation: "正解単語: faster (より速く)。than (〜より) があるので比較級。",
             translation: {
                 literal: "彼女は [S] 走れる [V] より速く [M] 誰よりも [M]。",
                 natural: "彼女は誰よりも速く走れる。",
@@ -218,7 +218,7 @@ export const grade3_2024_2Data = {
             choiceMeanings: ["〜になる", "〜である", "〜であった（過去分詞）", "〜であった（過去形）"],
             correctAnswer: 3,
             structure: "Have [aux] you [S] ever been [V] to New York [M]?",
-            explanation: "have been to: 〜へ行ったことがある",
+            explanation: "正解単語: been。Have/Has (ever) been to ...? で「...へ行ったことがあるか（経験）」。",
             translation: {
                 literal: "あなたは [S] 今までにニューヨークへ行ったことがありますか [V]？",
                 natural: "ニューヨークへ行ったことはありますか？",

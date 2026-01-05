@@ -6,8 +6,22 @@ import './VocabApp.css';
 
 const VocabApp = () => {
     const { examId } = useParams();
-    const vocabList = vocabDatabase[examId] || [];
     const targetExam = getExamById(examId) || exams[0]; // Get exam metadata
+
+    // Get vocab list from database OR generate from exam data
+    let vocabList = vocabDatabase[examId];
+    if (!vocabList && targetExam?.data?.questions) {
+        vocabList = targetExam.data.questions.map((q, idx) => {
+            const correctIdx = q.correctAnswer - 1;
+            return {
+                id: idx + 1,
+                word: q.choices[correctIdx],
+                meaning: q.choiceMeanings ? q.choiceMeanings[correctIdx] : '',
+                questionId: q.id
+            };
+        });
+    }
+    vocabList = vocabList || [];
 
     // State
     const [started, setStarted] = useState(false);

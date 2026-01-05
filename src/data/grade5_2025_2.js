@@ -7,14 +7,14 @@ export const grade5_2025_2Data = {
             choices: ["drink", "floor", "jump", "breakfast"],
             choiceMeanings: ["飲み物", "床", "ジャンプ", "朝食"],
             correctAnswer: 2,
-            structure: "let's sit down [V] on the floor [M].",
-            explanation: "floor: 床",
+            structure: "Let's sit down [V] on the floor [M].",
+            explanation: "正解: floor（床）。テレビを見るなら「床」に座って見よう、ということだね。飲み物や朝食の上には座れないよ。",
             translation: {
                 literal: "座ろう [V] 床に [M]。",
-                natural: "床に座ろう。",
+                natural: "ユカ、床に座ってテレビを見ようよ。",
                 intermediate: "A: ユカ、床に座ってテレビを見ようよ。\nB: いいわよ。"
             },
-            rationale: "【文脈】sit down on ~ → floor（床）が適切。"
+            rationale: "「sit down on（〜に座る）」の後に続く場所として適切なのは「floor（床）」だね。"
         },
         {
             id: 2,
@@ -22,14 +22,14 @@ export const grade5_2025_2Data = {
             choices: ["plate", "fork", "kitchen", "tree"],
             choiceMeanings: ["皿", "フォーク", "台所", "木"],
             correctAnswer: 4,
-            structure: "Mr. Hara [S] has [V] a big tree [O].",
-            explanation: "tree: 木",
+            structure: "Mr. Hara [S] has [V] a big tree [O] in his garden [M].",
+            explanation: "正解: tree（木）。たくさんのオレンジがなっていると言っているから、庭にあるのは大きな「木」だね。",
             translation: {
-                literal: "原さんは [S] 持っている [V] 大きな木を [O]。",
-                natural: "原さんは庭に大きな木を持っている。",
+                literal: "原さんは [S] 持っている [V] 大きな木を [O] 彼の庭に [M]。",
+                natural: "原さんは庭に大きな木があるよ。",
                 intermediate: "原さんは庭に大きな木を持っています。それにはたくさんのオレンジがなっています。"
             },
-            rationale: "【文脈】many oranges → tree（木）が正解。"
+            rationale: "オレンジがなるのは「tree（木）」だね！お皿やフォークにはならないよ。"
         },
         {
             id: 3,
@@ -38,13 +38,13 @@ export const grade5_2025_2Data = {
             choiceMeanings: ["ページ", "カップ", "辞書", "物語"],
             correctAnswer: 3,
             structure: "Use [V] your dictionary [O].",
-            explanation: "dictionary: 辞書",
+            explanation: "正解: dictionary（辞書）。言葉の意味がわからないときは「辞書」を使うといいよ。",
             translation: {
-                literal: "使いなさい [V] 辞書を [O]。",
-                natural: "辞書を使いなさい。",
-                intermediate: "A: お母さん、この単語がわからないの。\nB: 無理よ。辞書を使いなさい、トム。"
+                literal: "使いなさい [V] あなたの辞書を [O]。",
+                natural: "自分の辞書を使いなさい。",
+                intermediate: "A: お母さん、この単語がわからないの。手伝って？\nB: 無理よ。自分の辞書を使いなさい、トム。"
             },
-            rationale: "【文脈】単語がわからない → dictionary（辞書）を使う。"
+            rationale: "言葉がわからないときに使うのは「dictionary（辞書）」だね！"
         },
         {
             id: 4,
@@ -52,14 +52,14 @@ export const grade5_2025_2Data = {
             choices: ["trumpet", "cup", "clock", "pencil"],
             choiceMeanings: ["トランペット", "カップ", "時計", "鉛筆"],
             correctAnswer: 1,
-            structure: "He [S] plays [V] the trumpet [O].",
-            explanation: "trumpet: トランペット",
+            structure: "He [S] plays [V] the trumpet [O] very well [M].",
+            explanation: "正解: trumpet（トランペット）。音楽の先生が演奏するのは楽器だね。「トランペット」が正解だよ。",
             translation: {
-                literal: "彼は [S] 演奏する [V] トランペットを [O]。",
-                natural: "彼はトランペットをとても上手に演奏する。",
+                literal: "彼は [S] 演奏する [V] トランペットを [O] とても上手に [M]。",
+                natural: "彼はトランペットをとても上手に演奏するよ。",
                 intermediate: "ブラウン先生は音楽の先生です。彼はトランペットをとても上手に演奏します。"
             },
-            rationale: "【文脈】music teacher + plays → trumpet（楽器）。"
+            rationale: "「music teacher（音楽の先生）」が演奏するのは「trumpet（トランペット）」だね！"
         },
         {
             id: 5,
@@ -68,13 +68,13 @@ export const grade5_2025_2Data = {
             choiceMeanings: ["すごい", "曇りの", "確かな", "おいしい"],
             correctAnswer: 1,
             structure: "It [S] is [V] great [C].",
-            explanation: "great: すごい",
+            explanation: "正解: great（すごい）。新しいコンピューターを見て「すごいね！」と褒めているんだ。「私も欲しい」と言っているからね。",
             translation: {
                 literal: "それは [S] です [V] すごい [C]。",
                 natural: "すごいね。",
-                intermediate: "A: これは私の新しいコンピューターよ。\nB: すごいね。私も欲しいな。"
+                intermediate: "A: これは私の新しいコンピューターよ。\nB: すごいね。私もひとつ欲しいな。"
             },
-            rationale: "【文脈】I want one, too → great（すごい）と褒めている。"
+            rationale: "「私も欲しい」と言うくらいだから、コンピューターを「great（すごい）」と思っているんだね！"
         },
         {
             id: 6,
@@ -83,13 +83,13 @@ export const grade5_2025_2Data = {
             choiceMeanings: ["食べる", "捕まえる", "料理する", "買う"],
             correctAnswer: 2,
             structure: "He [S] can catch [V] a ball [O].",
-            explanation: "catch: 捕まえる",
+            explanation: "正解: catch（捕まえる）。その賢い犬は、立ってボールを「捕まえる」ことができるんだね。",
             translation: {
                 literal: "彼は [S] 捕まえられる [V] ボールを [O]。",
-                natural: "彼はボールを捕まえられる。",
+                natural: "彼はボールを捕まえられるよ。",
                 intermediate: "サリーは賢い犬を飼っています。彼は立ってボールを捕まえることができます。"
             },
-            rationale: "【文脈】犬がボールを → catch（捕まえる）。"
+            rationale: "ボールをどうするかというと、「catch（捕まえる）」だね！"
         },
         {
             id: 7,
@@ -98,13 +98,13 @@ export const grade5_2025_2Data = {
             choiceMeanings: ["知っている", "作る", "座る", "勉強する"],
             correctAnswer: 2,
             structure: "Please make [V] sandwiches [O].",
-            explanation: "make: 作る",
+            explanation: "正解: make（作る）。お昼ご飯にサンドイッチを「作って」とお願いしているんだね。",
             translation: {
                 literal: "作って [V] サンドイッチを [O]。",
                 natural: "サンドイッチを作って。",
                 intermediate: "A: ママ、お昼にサンドイッチを作って。\nB: いいわよ、ジョン。"
             },
-            rationale: "【文脈】sandwiches for lunch → make（作る）。"
+            rationale: "サンドイッチは「make（作る）」ものだね！"
         },
         {
             id: 8,
@@ -113,13 +113,13 @@ export const grade5_2025_2Data = {
             choiceMeanings: ["です", "する", "わかる", "愛する"],
             correctAnswer: 3,
             structure: "I [S] see [V].",
-            explanation: "I see: わかった",
+            explanation: "正解: see。「I see.」で「わかった」「なるほど」という意味だよ。サッカーができない理由を聞いて納得したんだね。",
             translation: {
                 literal: "私は [S] わかる [V]。",
                 natural: "わかった。",
                 intermediate: "A: 風邪をひいたから今日はサッカーできないの。\nB: わかった。大丈夫よ。"
             },
-            rationale: "【熟語】I see = わかった、了解。"
+            rationale: "「I see.」は「わかった」という決まり文句だよ！"
         },
         {
             id: 9,
@@ -128,13 +128,13 @@ export const grade5_2025_2Data = {
             choiceMeanings: ["始める", "知っている", "呼ぶ", "失礼する"],
             correctAnswer: 4,
             structure: "Excuse [V] me [O].",
-            explanation: "Excuse me: すみません",
+            explanation: "正解: Excuse。「Excuse me.」で「すみません」と声をかけるときの言葉だよ。トイレの場所を聞きたいんだね。",
             translation: {
-                literal: "失礼します [V]。",
+                literal: "失礼します [V] 私を [O]。",
                 natural: "すみません。",
                 intermediate: "A: すみません。トイレはどこですか？\nB: あそこですよ。"
             },
-            rationale: "【熟語】Excuse me = すみません（声をかける時）。"
+            rationale: "「Excuse me.」は「すみません」という決まり文句だよ！"
         },
         {
             id: 10,
@@ -142,14 +142,14 @@ export const grade5_2025_2Data = {
             choices: ["Help", "Take", "Have", "Hear"],
             choiceMeanings: ["助ける", "取る", "持つ/過ごす", "聞く"],
             correctAnswer: 3,
-            structure: "Have [V] a good day [O].",
-            explanation: "Have a good day: 良い一日を",
+            structure: "Have a good day!",
+            explanation: "正解: Have。「Have a good day.」で「良い一日を」というお別れのあいさつだよ。",
             translation: {
-                literal: "過ごして [V] 良い一日を [O]。",
-                natural: "良い一日を。",
+                literal: "良い一日を！",
+                natural: "良い一日をね。",
                 intermediate: "A: さようなら、デイビッド。\nB: バイバイ、サム。良い一日を。"
             },
-            rationale: "【熟語】Have a good day = 良い一日を。"
+            rationale: "「Have a good day!」は「良い一日をね」という決まり文句だよ！"
         },
         {
             id: 11,
@@ -157,14 +157,14 @@ export const grade5_2025_2Data = {
             choices: ["on", "of", "for", "to"],
             choiceMeanings: ["〜の上に", "〜の", "〜のために", "〜へ"],
             correctAnswer: 4,
-            structure: "Welcome to [M] our sports club [O].",
-            explanation: "Welcome to ~: 〜へようこそ",
+            structure: "Welcome to our sports club!",
+            explanation: "正解: to。「Welcome to」で「〜へようこそ」という意味だよ。スポーツクラブへようこそ！",
             translation: {
-                literal: "ようこそ [V] スポーツクラブへ [M]。",
+                literal: "ようこそ [V] 私たちのスポーツクラブへ [M]。",
                 natural: "スポーツクラブへようこそ。",
                 intermediate: "A: スポーツクラブへようこそ、ポール。\nB: ありがとうございます、ジョンソン先生。"
             },
-            rationale: "【熟語】Welcome to ~ = 〜へようこそ。"
+            rationale: "「Welcome to」は「〜へようこそ」という決まり文句だよ！"
         },
         {
             id: 12,
@@ -173,28 +173,28 @@ export const grade5_2025_2Data = {
             choiceMeanings: ["〜から", "〜で", "〜の", "〜と一緒に"],
             correctAnswer: 2,
             structure: "I [S] play [V] basketball [O] at school [M].",
-            explanation: "at school: 学校で",
+            explanation: "正解: at。「at school」で「学校で」という意味だよ。学校でバスケをするんだね。",
             translation: {
                 literal: "私は [S] する [V] バスケを [O] 学校で [M]。",
-                natural: "私は学校でバスケをする。",
+                natural: "私は学校でバスケをするよ。",
                 intermediate: "私は学校でバスケをします。兄と友達もします。"
             },
-            rationale: "【熟語】at school = 学校で。"
+            rationale: "「at school」は「学校で」という決まり文句だよ！"
         },
         {
             id: 13,
             text: "Jack ( ) a junior high school student. He goes to a high school.",
             choices: ["aren't", "doesn't", "isn't", "don't"],
-            choiceMeanings: ["〜ではない(複)", "〜しない(三単現)", "〜ではない(単)", "〜しない"],
+            choiceMeanings: ["〜ではない", "〜しない", "〜ではない", "〜しない"],
             correctAnswer: 3,
             structure: "Jack [S] isn't [V] a junior high school student [C].",
-            explanation: "isn't: 〜ではない（三人称単数）",
+            explanation: "正解: isn't（isn't = is not）。ジャック（Jack）は1人の人だから「is」を使うよ。「中学生ではない」という否定文だから「isn't」だね。",
             translation: {
                 literal: "ジャックは [S] ではない [V] 中学生 [C]。",
-                natural: "ジャックは中学生ではない。",
+                natural: "ジャックは中学生じゃないよ。",
                 intermediate: "ジャックは中学生ではありません。彼は高校に通っています。"
             },
-            rationale: "【文法】Jack = 三人称単数 + be動詞否定 → isn't。"
+            rationale: "Jackは1人（三人称単数）だから、be動詞は「is」を使うよ！否定形は「isn't」だね。"
         },
         {
             id: 14,
@@ -202,29 +202,29 @@ export const grade5_2025_2Data = {
             choices: ["Who", "Where", "Whose", "When"],
             choiceMeanings: ["誰", "どこ", "誰の", "いつ"],
             correctAnswer: 3,
-            structure: "Whose [疑問詞] is it [S+V]?",
-            explanation: "Whose: 誰の",
+            structure: "Whose is it?",
+            explanation: "正解: Whose（誰の）。「私のお母さんのです」と答えているから、持ち主を聞く「Whose」を使うよ。",
             translation: {
-                literal: "誰の [疑問詞] ですか それは [S+V]？",
-                natural: "それは誰のですか？",
-                intermediate: "A: このドレスとても素敵ね。誰のですか？\nB: 私の母のです。"
+                literal: "誰の [C] ですか [V] それは [S]？",
+                natural: "それは誰の？",
+                intermediate: "A: このドレスとても素敵ね。誰の？\nB: 私のお母さんのだよ。"
             },
-            rationale: "【文法】my mother's（所有）と答えている → Whose。"
+            rationale: "持ち主を聞くときは「Whose（誰の）」を使うよ！"
         },
         {
             id: 15,
             text: "A: Bill, let's ( ) the homework together.<br>B: OK, Maria.",
             choices: ["check", "checked", "checks", "checking"],
-            choiceMeanings: ["確認する", "確認した", "確認する(三単現)", "確認している"],
+            choiceMeanings: ["確認する", "確認した", "確認する", "確認している"],
             correctAnswer: 1,
-            structure: "let's check [V] the homework [O].",
-            explanation: "let's + 動詞の原形",
+            structure: "Let's check [V] the homework [O] together [M].",
+            explanation: "正解: check（確認する）。「Let's」の後ろは、動詞のそのままの形（原形）を使うよ。一緒に宿題を確認しよう！",
             translation: {
                 literal: "確認しよう [V] 宿題を [O]。",
                 natural: "一緒に宿題を確認しよう。",
                 intermediate: "A: ビル、一緒に宿題を確認しよう。\nB: いいよ、マリア。"
             },
-            rationale: "【文法】let's + 動詞の原形 → check。"
+            rationale: "「Let's」の後は動詞の原形（元の形）が来るよ！"
         }
     ]
 };
