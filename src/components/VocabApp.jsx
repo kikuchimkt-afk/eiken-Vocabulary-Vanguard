@@ -186,7 +186,7 @@ const VocabApp = () => {
                 <div className="vocab-app-content start-screen">
                     <div className="vocab-header">
                         <h1>英検{targetExam.grade}単語</h1>
-                        <p className="vocab-subtitle">{targetExam.year}年度 {targetExam.session}{targetExam.isSubVenue ? '（準会場）' : ''}</p>
+                        <p className="vocab-subtitle">{targetExam.year}年度 {targetExam.session}{targetExam.badge ? `（${targetExam.badge}）` : ''}</p>
                     </div>
 
                     <div className="vocab-info-card">
