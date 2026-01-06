@@ -1,8 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { vocabDatabase } from '../data/vocabData';
 import { getExamById, exams } from '../data/exams';
 import './VocabApp.css';
+
+// localStorage用のキー生成
+const getStorageKey = (examId) => `vocab_memorized_${examId}`;
+
+// localStorageから覚えた単語を読み込み
+const loadMemorizedIds = (examId) => {
+    try {
+        const stored = localStorage.getItem(getStorageKey(examId));
+        if (stored) {
+            return new Set(JSON.parse(stored));
+        }
+    } catch (e) {
+        console.error('Failed to load memorized words:', e);
+    }
+    return new Set();
+};
+
+// localStorageに覚えた単語を保存
+const saveMemorizedIds = (examId, ids) => {
+    try {
+        localStorage.setItem(getStorageKey(examId), JSON.stringify([...ids]));
+    } catch (e) {
+        console.error('Failed to save memorized words:', e);
+    }
+};
 
 const VocabApp = () => {
     const { examId } = useParams();
@@ -23,21 +48,38 @@ const VocabApp = () => {
     }
     vocabList = vocabList || [];
 
-    // State
+    // State - localStorageから初期値を読み込み
     const [started, setStarted] = useState(false);
     const [isRandom, setIsRandom] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
     const [shuffledList, setShuffledList] = useState([]);
-    const [memorizedIds, setMemorizedIds] = useState(new Set());
+    const [memorizedIds, setMemorizedIds] = useState(() => loadMemorizedIds(examId));
     const [cheerMessage, setCheerMessage] = useState(null); // For popup
+
+    // memorizedIdsが変更されたらlocalStorageに保存
+    useEffect(() => {
+        saveMemorizedIds(examId, memorizedIds);
+    }, [examId, memorizedIds]);
 
     // Start Screen Info
     const remainingCount = vocabList.length - memorizedIds.size;
 
     // Initialize list on start
     const handleStart = () => {
-        let list = [...vocabList];
+        // 覚えた単語を除外してリストを作成
+        let list = vocabList.filter(word => !memorizedIds.has(word.id));
+
+        // 覚えていない単語がない場合は全単語を表示
+        if (list.length === 0) {
+            if (window.confirm("すべての単語を覚えました！🎉\n学習記録をリセットして最初からやり直しますか？")) {
+                setMemorizedIds(new Set());
+                list = [...vocabList];
+            } else {
+                return; // キャンセルした場合は何もしない
+            }
+        }
+
         if (isRandom) {
             // Fisher-Yates shuffle
             for (let i = list.length - 1; i > 0; i--) {
