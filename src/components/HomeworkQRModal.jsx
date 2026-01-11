@@ -37,7 +37,7 @@ const HomeworkQRModal = ({ isOpen, onClose, exam, onConfirm }) => {
 
     // 現在の試験情報
     const currentExamLabel = exam ? `${exam.year}年度 ${exam.session} ${exam.grade}` : '未選択';
-    const subVenueLabel = exam?.isSubVenue ? '(准会場)' : '';
+    const subVenueLabel = (exam?.isSubVenue || exam?.badge === '準会場') ? '(準会場)' : '';
 
     return (
         <div className="modal-overlay" onClick={onClose}>
@@ -90,11 +90,15 @@ const HomeworkQRModal = ({ isOpen, onClose, exam, onConfirm }) => {
                                     {(exams.filter(ex => !exam || ex.grade === exam.grade).length > 0
                                         ? exams.filter(ex => !exam || ex.grade === exam.grade)
                                         : exams
-                                    ).map((ex) => (
-                                        <option key={ex.id} value={`${ex.year}年度 ${ex.session} ${ex.grade}${ex.isSubVenue ? ' (准会場)' : ''}`}>
-                                            {ex.year}年度 {ex.session} {ex.grade} {ex.isSubVenue ? ' (准会場)' : ''}
-                                        </option>
-                                    ))}
+                                    ).map((ex) => {
+                                        const isSub = ex.isSubVenue || ex.badge === '準会場';
+                                        const label = `${ex.year}年度 ${ex.session} ${ex.grade}${isSub ? ' (準会場)' : ''}`;
+                                        return (
+                                            <option key={ex.id} value={label}>
+                                                {label}
+                                            </option>
+                                        );
+                                    })}
                                 </select>
                             </div>
                             <div className="form-group">

@@ -93,7 +93,7 @@ const HomeworkPrintPage = () => {
         <div className="homework-print-page" ref={containerRef}>
             {/* ヘッダー */}
             <div className="homework-header">
-                <h1>{exam.year}年度 {exam.session} {exam.grade} 大問１</h1>
+                <h1>{exam.year}年度 {exam.session} {exam.grade}{(exam.isSubVenue || exam.badge === '準会場') ? ' (準会場)' : ''} 大問１</h1>
                 <div className="homework-meta">
                     Name: ____________________ Date: ______________ Score: ______/{questionCount}
                 </div>

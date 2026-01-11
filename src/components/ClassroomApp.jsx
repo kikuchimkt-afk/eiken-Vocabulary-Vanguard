@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { getExamById, exams } from '../data/exams'; // Dynamic data loader
 import StructureVisualizer from './StructureVisualizer';
@@ -58,6 +58,7 @@ function ClassroomApp() {
     const [isNavVisible, setIsNavVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const lastFocusedQIdRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -174,6 +175,25 @@ function ClassroomApp() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [baseQuestions, isWeaknessMode, wrongQuestions.length, studentMode, isSubmitted, isInstructorMode]);
 
+    // Scroll Synchronization for Mode Switch
+    useLayoutEffect(() => {
+        if (lastFocusedQIdRef.current) {
+            const element = document.getElementById(`q-${lastFocusedQIdRef.current}`);
+            if (element) {
+                // Scroll the element to the top, but slightly below the header
+                const headerOffset = 80;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'instant' // Must be instant to avoid jarring visible jumping after render
+                });
+            }
+            lastFocusedQIdRef.current = null;
+        }
+    }, [isInstructorMode, questions]);
+
     const handleModeSwitch = (mode) => {
         setStudentMode(mode);
         // Reset everything on mode switch
@@ -270,9 +290,11 @@ function ClassroomApp() {
 
     const handleQRConfirm = (formData) => {
         // Find ID for next assignment
-        const nextExam = exams.find(ex =>
-            `${ex.year}年度 ${ex.session} ${ex.grade}${ex.isSubVenue ? ' (准会場)' : ''}` === formData.nextAssignment
-        );
+        const nextExam = exams.find(ex => {
+            const isSub = ex.isSubVenue || ex.badge === '準会場';
+            const label = `${ex.year}年度 ${ex.session} ${ex.grade}${isSub ? ' (準会場)' : ''}`;
+            return label === formData.nextAssignment;
+        });
         const nextExamId = nextExam ? nextExam.id : '';
 
         // Build URL with query parameters
@@ -326,7 +348,22 @@ function ClassroomApp() {
                         <input
                             type="checkbox"
                             checked={isInstructorMode}
-                            onChange={(e) => setIsInstructorMode(e.target.checked)}
+                            onChange={(e) => {
+                                // Capture the current visible question before toggling
+                                const questionBlocks = Array.from(document.querySelectorAll('.question-block'));
+                                // Find the one that is at or just below the header (approx 100px from top)
+                                const mostVisible = questionBlocks.find(block => {
+                                    const rect = block.getBoundingClientRect();
+                                    return rect.top >= 0 && rect.top <= window.innerHeight;
+                                });
+
+                                if (mostVisible) {
+                                    // Extract ID from the DOM ID (e.g., "q-8" -> "8")
+                                    lastFocusedQIdRef.current = mostVisible.id.replace('q-', '');
+                                }
+
+                                setIsInstructorMode(e.target.checked);
+                            }}
                         />
                         <div className="toggle-bg">
                             <div className="toggle-handle"></div>
@@ -444,7 +481,7 @@ function ClassroomApp() {
                     const isAnswered = userSel !== undefined;
 
                     return (
-                        <div key={q.id} className="question-block">
+                        <div key={q.id} id={`q-${q.id}`} className="question-block">
                             {isAnswered && studentMode === 'practice' && (
                                 <button className="reset-btn" onClick={() => handleReset(q.id)}>
                                     リセット
